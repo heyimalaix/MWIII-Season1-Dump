@@ -1,0 +1,12 @@
+ui_dmz_extract_successful,1,,c,i,0,0,2,,,,,1
+ui_dmz_missions_completed,1,,c,i,0,0,15,,,,,
+ui_geigercounter_meter,1,1,c,f,0,0,1,1,,,,
+ui_dmz_mission_overlay,1,,c,b,0,0,1,,,,,
+ui_barter_success,1,,c,b,0,0,1,,,,,
+ui_barter_list_index,1,,c,i,0,0,15,,,,,
+ui_waiting_for_aar,1,,c,b,0,0,1,,,,,
+ui_dmz_warp_state,1,,c,i,0,0,5,,,,,
+ui_dmz_warp_proximity,1,,c,i,0,0,2,,,,,
+ui_dmz_warp_timer,1,,c,i,0,0,30,,,,,
+ui_dmz_warp_hazard,1,,c,i,0,0,2,,,,,
+ui_dmz_bounty_squad_index,1,,c,i,0,0,7,,,,,

@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////////////
+//This file is generated from the Animation Blender tool
+///////////////////////////////////////////////////////////////////////////
+% force_cs_anim_index_match
+
+hard_leans: blendspace2d( rangex="-1,1", rangey="-1,1", blend_time="100",
+coords="{0,1},{-1,0},{0,0},{1,0},{0,0},{0,-1},{-1,-1},{1,-1},{1,1},{0,1},{-1,1}",
+edges="{2,0,1},{8,0,3},{10,1,0},{6,5,1},{5,2,1},{3,0,2},{5,3,2},{7,3,5}",
+valuex=[side_lean_factor], valuey=[forward_lean_factor] )  
+	{
+			sdr_com_strafe_lean_fwd
+			sdr_com_strafe_lean_left
+			sdr_com_strafe_lean_center
+			sdr_com_strafe_lean_right
+			sdr_com_strafe_lean_bwd
+			sdr_com_strafe_lean_bwd@1
+			sdr_com_strafe_lean_left_bwd
+			sdr_com_strafe_lean_right_bwd
+			sdr_com_strafe_lean_right_fwd
+			sdr_com_strafe_lean_fwd@1
+			sdr_com_strafe_lean_left_fwd
+	}
+

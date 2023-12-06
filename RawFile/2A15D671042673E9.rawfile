@@ -1,0 +1,53 @@
+(function (WK) {
+    var initDebug = function () {
+        //WK.webOnReady(browserDebug);
+        browserDebug();
+    };
+
+    let printLine = WK.printLine;
+
+    var browserDebug = function () {
+        document.addEventListener(
+            'keyup',
+            (event) => {
+                const keyName = event.key;
+
+                if (keyName == 'Enter') {
+                    // Telescope_CB_GainFocus();
+                    WK.Telescope_CB_ControllerButtonEvent('primary');
+                } else if (keyName == '4' || keyName == 'ArrowLeft') {
+                    WK.Telescope_CB_ControllerButtonEvent('left');
+                } else if (keyName == '6' || keyName == 'ArrowRight') {
+                    WK.Telescope_CB_ControllerButtonEvent('right');
+                } else if (keyName == '8' || keyName == 'ArrowUp') {
+                    WK.Telescope_CB_ControllerButtonEvent('up');
+                } else if (keyName == '2' || keyName == 'ArrowDown') {
+                    WK.Telescope_CB_ControllerButtonEvent('down');
+                } else if (keyName == 'a') {
+                    WK.Telescope_CB_ControllerButtonEvent('primary');
+                } else if (keyName == 'b') {
+                    WK.Telescope_CB_ControllerButtonEvent('secondary');
+                } else if (keyName == '7') {
+                    WK.Telescope_CB_ControllerButtonEvent('left_trigger');
+                } else if (keyName == '9') {
+                    WK.Telescope_CB_ControllerButtonEvent('right_trigger');
+                } else if (keyName == ' ') {
+                    WK.Telescope_CB_ControllerButtonEvent('primary');
+                } else if (keyName == 'F9') {
+                    printLine(keyName);
+                } else if (keyName == '[' || keyName == 'BracketLeft') {
+                    WK.Telescope_CB_ControllerButtonEvent('lb');
+                } else if (keyName == ']' || keyName == 'BracketRight') {
+                    WK.Telescope_CB_ControllerButtonEvent('rb');
+                } else if (keyName == "'") {
+                    WK.Telescope_CB_ControllerButtonEvent('rStick_pressed');
+                } else {
+                    printLine('Unknown key: ' + keyName);
+                }
+            },
+            false
+        );
+    };
+
+    initDebug();
+})(WK);

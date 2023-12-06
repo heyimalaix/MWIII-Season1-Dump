@@ -1,0 +1,9 @@
+#define obWarlordCallbackType_Initialization			"WarlordInitialization"
+#define obWarlordCallbackType_EnterCombat				"WarlordEnterCombat"
+#define obWarlordCallbackType_BodyguardInitialization	"BodyguardInitialization"
+
+#define OB_WARLORD_BUNDLE_TYPE "obwarlord"
+
+#define DEFAULT_COMBAT_CHATTER_COOLDOWN 120
+#define DEFAULT_COMBAT_CHATTER_TAUNTS_COOLDOWN 160
+#define DEFAULT_COMBAT_CHATTER_BARKS_TO_GUARDS_COOLDOWN 180

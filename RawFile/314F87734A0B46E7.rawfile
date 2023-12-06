@@ -1,0 +1,95 @@
+exec dev_vehicle_tweaks.cfg
+
+bind BUTTON_BACK	"togglescores"
+bind BUTTON_START	"togglemenu"
+
+exec default_mp_gamesettings.cfg
+
+exec start_up_jup_cp.cfg
+
+set #x36a8b3934fe63c89d 1
+
+set #x3f55a2434b3e1fe62 1
+set #x37b5549fcfa5138bc 5
+set #x347f350ee22cdd193 5
+set #x3b3f6a1a08afe923 2
+set #x39d197ef63ebcf985 0
+
+// cp_specops
+set #x3d65bbe57937d7c39 48
+
+// br loot
+set #x3e38e16d9fbf3fc43 "cp/loot/dungeons/loot_item_defs.csv"
+set #x3add02e4fff48882f "cp/loot/dungeons/loot_table_zones.csv"
+set #x35fcbce13ef8d5f 8
+set #x319fae1aad58e8c50 0
+set #x3a6a9b41b654afd1d 1
+
+//Ping System
+set #x3e8512e1508afefe8 0
+
+// Director
+set #x32e4907ccd20a8761 1
+
+//Allowing to choose all different game modes within CP in customgame
+set #x338bddf43cab9bdd6 1
+
+// ==== all of below should be moved to code ====
+
+// PC - default server settings:
+set #x3399f13d1217738fe 1
+
+set #x3b6cd0e473479a0d0 -60 460
+
+// set #x3f379bd15031567e7 300 450 300 1600 // cg_orbitCam Dvars not used anymore. Use camera assets instead.
+// set #x328439b52d9bfdd0e 0 0 90 0 // cg_orbitCam Dvars not used anymore. Use camera assets instead.
+
+set #x3330ea57ea86fcb72 1
+
+set #x3ce882ca282c2f85e 1
+
+//set #x35f5c12c95c44f093 1
+//set #x33914a6109ddfa630 0
+
+set #x3935090d3ed8df5f2 1
+set #x3279375a0bfb2862f 50
+set #x33f3eb7b5794fcb5f 1
+
+set #x3d99e414d9e6dc759 30
+lui_lootCard_shortInteractDistance 128
+lui_lootCard_mediumInteractDistance 256
+
+//set #x3b3a2cb7830cc296c 50 // allowing players to crouch below the water, TEMP IW9-81162
+
+//armor tweaks
+set #x39c790ecb6ccef79a 135
+set #x3ea4fd87f53ec4456 135
+set #x3a4d532f42d919827 1
+set #x3d75d5638785f3b09 135
+set #x3e6d511d33e0fe486 0
+set #x3fde1113ce9981d91 1 // Everyone keeps changing hardcoded values. Just going to keep this here until dynamic vests.
+set #x36d343ba1a78c032f 1
+set #x3ea195c4e2a186f73 0
+set #x389b8ecd1444ec74 1
+
+set #x37dcc2628da4d8ee9  1
+
+// code defaults to 200
+set #x3dabf849d922a2550 650
+
+// Make sure JUP CP vehicles do not run server vehicle workers across other threads
+set #x3b7c38322e1f65813 1
+
+
+// override the one in default_mp_gamesettings.cfg > dev_proto_global.cfg.  SP & CP should match.
+set #x3ef7063cb2b2d2fc6 0.85 //The starting temperature scale of corpses upon moment of death, as a fraction of the expected temperature of a body. Affects both player and agent corpses.
+set #x3beed2ab6bbb0a2de 10000 // The length of time, in Ms, over which a corpse will lose all its 'heat' (thermal temp becomes zero). Zero means the corpse doesn't lose heat. Affects both player and agent corpses.
+
+// Jupiter only: Disable command extrapolation in CP as we don't have networked CP in Jupiter
+set #x32c56b5ede81707e0 0
+
+// Jupiter only: JUP-245195: always send full messages in local CP play
+set #x3ed08b637b864777c 1
+
+//Disabling reactive camos as this system isnt being used anymore - JUP-248785 - 
+set #x35c9303075003946 1

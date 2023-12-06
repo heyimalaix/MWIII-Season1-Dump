@@ -1,0 +1,34 @@
+{
+	"default" : {
+	},
+	"overrides" : {
+		"default" : {
+		},
+		"RBT_DV_FillCluster_Part1" : { "debugIndirectArgs" : true },
+		"RBT_DV_FillCluster_Part2" : { "debugIndirectArgs" : true },
+		"RBT_DV_PipelineCullingPart1" : { "debugIndirectArgs" : true },
+		"RBT_DV_PipelineGenerateClusteringData" : { "debugIndirectArgs" : true },
+		"RBT_DV_PipelineGenerateDrawData" : { "debugIndirectArgs" : true },
+		"RBT_DV_PipelineStreamingData" : { "debugIndirectArgs" : true },
+
+		"RBT_EffectLighting_Process" : { "debugIndirectArgs" : true },
+		"RBT_EffectLighting_Process_MultilightGrid_Prepare" : { "debugIndirectArgs" : true },
+		"RBT_EffectLighting_Process_MultilightGrid_Sample" : { "debugIndirectArgs" : true },
+		"RBT_EffectLighting_Process_MultilightGrid_Combine" : { "debugIndirectArgs" : true },
+
+		"RBT_GP_GenerateSModelSurfData" : { "debugIndirectArgs" : true },
+		"RBT_GP_GenerateBatchSubMeshOffsets" : { "debugIndirectArgs" : true },
+		"RBT_GP_GenerateSubMeshClusterOffsets" : { "debugIndirectArgs" : true },
+		"RBT_GP_GenerateClusterTriOffsets" : { "debugIndirectArgs" : true },
+		"RBT_GP_GenerateSubMeshWorkgroups" : { "debugIndirectArgs" : true },
+		"RBT_GP_CullClusterBypass" : { "debugIndirectArgs" : true },
+		"RBT_GP_GenerateClusterTriCountsFromVisBits" : { "debugIndirectArgs" : true },
+		"RBT_GP_CullTrianglesBypass" : { "debugIndirectArgs" : true },
+		"RBT_GP_CullTriangles" : { "debugIndirectArgs" : true },
+
+		"RBT_SunShadow_UpdateMomentClipmap_SRVLoad" : { "debugIndirectArgs" : true },
+		"RBT_SunShadow_UpdateMomentClipmap" : { "debugIndirectArgs" : true },
+
+		"" : {}
+	}
+}

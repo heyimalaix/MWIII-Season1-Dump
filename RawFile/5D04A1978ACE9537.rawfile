@@ -1,0 +1,2662 @@
+// note: mp section is all the way at the bottom!!!
+
+
+// Iw9 vehicles -----------------------------------------
+
+//Using this in SP -  it also exists in mp_vehicle_always_loaded.atr
+mp_bromeo_drop_bromeo
+iw9_mp_infil_defender_vehicle_museum
+
+scenes
+{
+	#script_bundle_anim_slot
+}
+
+vertical_slice
+{
+	wnd_vert_street_balcony_street_to_gate_umike
+}
+
+nightwar
+{
+	nwr_0810_truck_getin_jltv
+}
+
+marina
+{
+	mar_0005_igc_tow_sh010_boat
+	mar_0005_igc_tow_sh020_boat
+	mar_0005_igc_tow_sh040_boat	
+	mar_0005_igc_tow_sh050_boat
+	
+	mar_0010_igc_intro_sh030_car
+	mar_0010_igc_intro_sh032_car
+	
+	mar_0090_barge_drug_loading_sceneA_boat
+}
+
+stolen
+{
+	stl_0010_igc_intro_s010_car_player		
+	stl_0010_igc_intro_s010_car_01
+	stl_0010_igc_intro_s010_car_02
+	stl_0010_igc_intro_s010_car_03
+	stl_0010_igc_intro_s010_car_04
+	stl_0010_igc_intro_s010_car_05
+	stl_0010_igc_intro_s010_car_06
+		
+	stl_0010_igc_intro_s020_car_player
+	stl_0010_igc_intro_s020_car_01
+	stl_0010_igc_intro_s020_car_02
+	stl_0010_igc_intro_s020_car_03
+	stl_0010_igc_intro_s020_car_04
+	stl_0010_igc_intro_s020_car_05
+	stl_0010_igc_intro_s020_car_06
+		
+	stl_0010_igc_intro_s030_car_player
+	stl_0010_igc_intro_s030_car_01
+	stl_0010_igc_intro_s030_car_02
+	stl_0010_igc_intro_s030_car_03
+	stl_0010_igc_intro_s030_car_04
+	stl_0010_igc_intro_s030_car_05
+	stl_0010_igc_intro_s030_car_06
+		
+	stl_0200_village_drive_car_player_enter
+	stl_0200_village_drive_car_01_enter
+	stl_0200_village_drive_car_02_enter
+	stl_0200_village_drive_car_03_enter
+	stl_0200_village_drive_car_04_enter
+	stl_0200_village_drive_car_05_enter
+	stl_0200_village_drive_car_06_enter
+		
+	stl_0200_village_drive_car_player_stop
+	stl_0200_village_drive_car_01_stop
+	stl_0200_village_drive_car_02_stop
+	stl_0200_village_drive_car_03_stop
+	stl_0200_village_drive_car_04_stop
+	stl_0200_village_drive_car_05_stop
+	stl_0200_village_drive_car_06_stop
+		
+	stl_0300_bridge_ambush_car_player_start
+	stl_0300_bridge_ambush_car_01_start
+	stl_0300_bridge_ambush_car_02_start
+	stl_0300_bridge_ambush_car_03_start
+	stl_0300_bridge_ambush_car_04_start
+	stl_0300_bridge_ambush_car_05_start
+	stl_0300_bridge_ambush_car_06_start
+	stl_0300_bridge_ambush_cargo_01_start
+	stl_0300_bridge_ambush_cargo_01_hatchpopout
+	stl_0300_bridge_ambush_cargo_02_hatchpopout
+	stl_0300_bridge_ambush_cargo_02_start
+		
+	stl_0300_bridge_ambush_car_01_driveup
+	stl_0300_bridge_ambush_car_06_driveup
+	stl_0300_bridge_ambush_car_player_driveup
+	
+	stl_0300_bridge_ambush_car_06_leadup_start
+	stl_0300_bridge_ambush_car_06_leadup_loop
+	stl_0300_bridge_ambush_car_06_leadup_end
+	
+	stl_0300_bridge_ambush_car_player_leadup_start
+	stl_0300_bridge_ambush_car_player_leadup_loop
+	stl_0300_bridge_ambush_car_player_leadup_end
+		
+	stl_0300_bridge_ambush_car_player_talk
+	
+	stl_0300_bridge_ambush_car_player_loop
+		
+	stl_0300_bridge_ambush_car_01_crash
+	stl_0300_bridge_ambush_car_06_crash
+	stl_0300_bridge_ambush_cargo_02_crash
+  
+  stl_0400_village_escape1_car_player
+  stl_0400_village_escape1_car05
+  
+  stl_0400_village_escape1_car_player_loop
+  
+  stl_0400_village_escape2_car_player
+  stl_0400_village_escape2_car02
+  stl_0400_village_escape2_car07
+  stl_0400_village_escape2_car08
+  
+  stl_0600_village_outro_walkup_car03
+  stl_0600_village_outro_start_car_player
+  stl_0600_igc_outro_s010_car01
+  stl_0600_igc_outro_s010_car03
+  stl_0600_igc_outro_s010_car05
+  stl_0600_igc_outro_s020_car01
+  stl_0600_igc_outro_s020_car03
+  stl_0600_igc_outro_s020_car05
+  stl_0600_igc_outro_b_s010_car03
+  stl_0600_igc_outro_b_s010_car05
+  stl_0600_igc_outro_b_s020_car01
+  stl_0600_igc_outro_b_s020_car03
+  stl_0600_igc_outro_b_s020_car05
+}
+
+prison
+{
+	prn_0160_prison_ext_helicopter_intro_heli
+
+	prn_0310_courtyard_activity_jltv01
+
+	prn_0510_cctv1_guards_out_truck02
+
+	prn_0540_cctv2_guards_out_truck06
+	prn_0540_cctv2_guards_idle_truck06
+
+	prn_1700_tower_chopper_arrival_heli
+
+	prn_1790_courtyard_chopper_crash_helicopter
+}
+
+shadowbase
+{
+	veh9_civ_lnd_van_cargo_windows_bl_door_open
+	veh9_civ_lnd_van_cargo_windows_br_door_open
+	veh9_civ_lnd_van_cargo_windows_rear_door_open
+	
+	sb_0200_airstp_apache_hijack_approach_chopper
+	sb_0200_airstp_apache_hijack_idle_chopper
+	
+	sb_0290_airstp_transition_outro_sh010_heli
+	sb_0290_airstp_transition_outro_sh020_heli
+	sb_0290_airstp_transition_outro_sh030_heli
+	sb_0300_raid_transition_intro_sh040_heli
+	sb_0300_raid_transition_intro_sh050_heli
+	sb_0300_raid_transition_intro_sh050_vanhero
+	sb_0300_raid_transition_intro_sh050_van01
+	sb_0300_raid_transition_intro_sh060_heli
+	sb_0300_raid_transition_intro_sh060_vanhero
+	sb_0300_raid_transition_intro_sh060_van01
+	
+	sb_0300_raid_transition_intro_explosion_heli
+	sb_0300_raid_transition_intro_explosion_jltv
+	
+	sb_0300_raid_transition_intro_tutorial_idle_vanhero
+	sb_0300_raid_transition_intro_tutorial_idle_van01
+	sb_0300_raid_transition_intro_tutorial_fail_vanhero
+	sb_0300_raid_transition_intro_entergate_vanhero
+	sb_0300_raid_transition_intro_entergate_van01
+	sb_0300_raid_transition_intro_exit_vanhero
+	sb_0300_raid_transition_intro_exit_van01
+	
+	sb_0400_mtrpl_transtion_intro_sh010_heli
+	sb_0400_mtrpl_transtion_intro_sh020_heli
+	sb_0400_mtrpl_transtion_intro_sh030_heli
+	
+	sb_0420_mtrpl_gate_entrance_intro_truck
+	
+	sb_0423_mtrpl_vignette_crate_truck
+	
+	sb_0590_hq_heli_shotdown_heli
+	
+	sb_0595_hq_buddy_boost_scene_heli
+	sb_0595_hq_buddy_boost_scene_tank
+	sb_0595_hq_buddy_boost_scene_tankturret
+	
+	sb_1000_igc_outro_sh010_tank
+	sb_1000_igc_outro_sh010_turret
+	sb_1000_igc_outro_sh020_tank
+	sb_1000_igc_outro_sh020_turret
+	sb_1000_igc_outro_sh030_tank
+	sb_1000_igc_outro_sh030_turret
+	sb_1000_igc_outro_sh040_tank
+	sb_1000_igc_outro_sh040_turret
+	sb_1000_igc_outro_sh050_tank
+	sb_1000_igc_outro_sh050_turret
+	sb_1000_igc_outro_sh070_tank
+	sb_1000_igc_outro_sh070_turret
+	sb_1000_igc_outro_sh080_tank
+	sb_1000_igc_outro_sh080_turret
+	sb_1000_igc_outro_sh010_tankgun
+	sb_1000_igc_outro_sh040_tankgun
+	sb_1000_igc_outro_sh050_tankgun
+	sb_1000_igc_outro_sh070_tankgun
+	sb_1000_igc_outro_sh080_tankgun
+}
+
+strike
+{
+	stk_0100_ghorbani_strike_scene_a_suv01
+	
+	stk_0100_ghorbani_inspect_helo
+}
+
+montage
+{
+	mtg_0510_canals_civs_bridge_car01
+	
+	mtg_0507_takedown_car_check_f_car
+	mtg_0507_takedown_car_check_b_car
+	mtg_0507_takedown_car_idle_f_car
+	mtg_0507_takedown_car_idle_b_car
+	mtg_0507_takedown_car_takedown_car
+	mtg_0507_takedown_car_sneak_takedown_car
+}
+
+tower
+{
+	twr_0010_igc_intro_sh010_veh01
+	twr_0010_igc_intro_sh020_veh01
+	twr_0010_igc_intro_sh020_veh02
+	twr_0010_igc_intro_sh030_veh01
+	twr_0010_igc_intro_sh030_veh02
+	twr_0010_igc_intro_sh030_veh03
+	twr_0010_igc_intro_sh030_veh04
+	twr_0010_igc_intro_sh030_veh05
+	twr_0010_igc_intro_sh040_veh01
+	twr_0010_igc_intro_sh050_veh01
+	twr_0010_igc_intro_sh050_veh02
+	twr_0010_igc_intro_sh060_veh02
+	twr_0010_igc_intro_sh060_veh03
+	twr_0010_igc_intro_sh060_veh04
+	twr_0010_igc_intro_sh060_veh05
+	twr_0020_flyin_intro_veh03
+	twr_0020_flyin_intro_veh04
+	twr_0020_flyin_intro_veh05
+	twr_0100_rooftop_rappel_arrival_veh01
+}
+
+border
+{
+	bdr_0010_rvr_cine_s70_truck2
+	bdr_0010_rvr_cine_s70_truck3
+	bdr_0010_rvr_cine_s70_truck4
+	bdr_0010_rvr_cine_s70_truck5
+	
+	bdr_0010_rvr_cine_s10_boat
+	bdr_0010_rvr_cine_s20_boat
+	bdr_0010_rvr_cine_s30_boat
+	bdr_0010_rvr_cine_s40_boat
+	bdr_0010_rvr_cine_s50_boat
+	bdr_0010_rvr_cine_s60_boat
+	bdr_0010_rvr_cine_s70_boat
+	bdr_0250_rvr_boat_docked_docking_boat
+}
+
+convoy
+{
+	//cinematic
+	cnv_0010_igc_intro_s010_blima
+	cnv_0010_igc_intro_s010_bike
+	cnv_0010_igc_intro_s010_truck01
+	cnv_0010_igc_intro_s020_blima
+	cnv_0010_igc_intro_s020_bike
+	cnv_0010_igc_intro_s020_truck01
+	cnv_0010_igc_intro_s030_blima
+	cnv_0010_igc_intro_s030_bike
+	cnv_0010_igc_intro_s030_truck01
+	cnv_0010_igc_intro_s040_blima
+	cnv_0010_igc_intro_s040_bike
+	cnv_0010_igc_intro_s040_truck01
+	cnv_0010_igc_intro_s050_blima
+	cnv_0010_igc_intro_s050_bike
+	cnv_0010_igc_intro_s050_truck01
+	cnv_0010_igc_intro_s060_blima
+	cnv_0010_igc_intro_s060_bike
+	cnv_0010_igc_intro_s060_truck01
+	cnv_0010_igc_intro_s070_blima
+	cnv_0010_igc_intro_s070_bike
+	cnv_0010_igc_intro_s070_truck01
+	cnv_0010_igc_intro_s080_blima
+	cnv_0010_igc_intro_s080_bike
+	cnv_0010_igc_intro_s080_truck01
+	
+	cnv_0110_blima_bike_takeover_truck01
+	cnv_0110_blima_bike_takeover_bike01
+	cnv_0110_blima_bike_takeover_bike01_idle01
+	
+	cnv_0110_blima_bike_takeover_alt_truck01
+	cnv_0110_blima_bike_takeover_alt_bike01
+	cnv_0110_blima_bike_takeover_alt_bike01_idle01
+	
+	cnv_car_hijack_exit_back_hatchback
+	
+		
+	cnv_0130_blima_takeover_scene_truck01
+	cnv_0130_blima_takeover_scene_bike01
+	
+	cnv_0240_upside_cut_enter_heli
+	cnv_0240_upside_cut_loop_heli
+	cnv_0240_upside_cut_bridge_heli
+	cnv_0240_upside_cut_fall_heli
+	
+	cnv_0250_jockey_farah_jump_bike01
+	cnv_0250_jockey_farah_jump_truck01
+	
+	cnv_0300_jockey_catch_scene1_a_veh02
+	cnv_0300_jockey_catch_scene1_b_veh01
+	cnv_0300_jockey_catch_scene1_b_veh02
+	cnv_0300_jockey_catch_scene1_b_veh03
+	cnv_0300_jockey_catch_scene1_b_veh04
+	
+	cnv_0500_offroad_apc_attack_ending_apc_comeout
+	cnv_0500_offroad_apc_attack_ending_apc
+	cnv_0500_offroad_apc_attack_ending_out_apc
+	
+	cnv_0560_offroad_engaging_farah_dirt_bike
+	
+	cnv_1000_igc_outro_part1_idle_vehicle
+	cnv_1000_igc_outro_part2_vehicle
+	cnv_1000_igc_outro_part2_heli
+	cnv_1000_igc_outro_part2_heli_sh020
+	
+	cnv_mkilo_swerve_left
+	cnv_mkilo_swerve_right
+	
+	cnv_veh_hit_flip_b
+	
+	cnv_biker_death_bike_01
+	cnv_biker_death_bike_02
+	
+	cnv_chase_decho_jump_idle_car
+	
+	cnv_test_car_hit_veha
+	cnv_test_car_hit_vehb
+	
+	mkilo_swerve_left_test
+	mkilo_swerve_right_test
+	
+	cnv_chase_cordcut_heli
+	cnv_chase_cordcut_fall_mkilo
+	cnv_chase_cordcut_idle_mkilo
+	cnv_chase_cordcut_doorclose_mkilo
+	
+	cnv_chase_mkilo_door_hit_enter_mkilo
+	cnv_chase_mkilo_door_hit_idle_mkilo
+	cnv_chase_mkilo_door_hit_scene_mkilo
+	cnv_chase_mkilo_door_hit_vm_mkilo
+	
+	cnv_0120_blima_farah_attack_scene_truck01
+	cnv_0120_blima_farah_attack_scene_bike01
+	cnv_0120_blima_farah_attack_scene_bike02
+	
+	cnv_0120_blima_bike_b_scene_truck01
+	cnv_0120_blima_bike_b_scene_bike01
+	cnv_0120_blima_bike_b_scene_bike02
+	
+	cnv_0150_blima_turret_vindia
+	cnv_0150_blima_turret_turret
+	cnv_0150_blima_turret_pickup
+	
+	cnv_0200_upside_bungee_idle_helo
+	
+	cnv_0200_upside_bungee_scene_helo
+	cnv_0200_upside_bungee_scene_truck
+	cnv_0200_upside_bungee_scene_bike01
+	cnv_0200_upside_bungee_scene_bike02
+	cnv_0200_upside_bungee_scene_bike03
+	cnv_0200_upside_bungee_scene_bike04
+	
+	cnv_0210_upside_bike_scene_bike01
+	cnv_0210_upside_bike_scene_bike02
+	cnv_0210_upside_bike_scene_truck
+	cargo_truck_hatch_open_interior_truck
+	
+	cnv_0220_upside_reach_bike
+	
+	cnv_0220_upside_passanger_enter_mkilo
+	cnv_0220_upside_passanger_idle_mkilo
+	cnv_0220_upside_passanger_scene_mkilo
+	
+	cnv_ges_0220_upside_truck
+	
+	cnv_decho_drift_r_enter_decho
+	cnv_decho_drift_r_idle_decho
+	cnv_decho_drift_r_exit_decho
+	
+	cnv_0110_blima_bike_a_scene_truck01
+	cnv_0110_blima_bike_a_scene_bike01
+	cnv_0110_blima_bike_a_death_truck02
+	cnv_0110_blima_bike_a_death_bike01
+	
+	cargo_truck_reaction_01
+	
+	
+	//GENERIC MP FLIPS
+	
+	iw9_mp_veh_pickup_fullsized_2014_flip_l
+	iw9_mp_veh_pickup_fullsized_2014_flip_f
+	iw9_mp_veh_pickup_fullsized_2014_flip
+	iw9_mp_veh_pickup_fullsized_2014_flip_f_rear
+	iw9_mp_veh_pickup_fullsized_2014_flip_r
+	iw9_mp_veh_pickup_fullsized_2014_roll_180
+	iw9_mp_veh_pickup_fullsized_2014_roll_180_l
+	iw9_mp_veh_pickup_fullsized_2014_roll_540
+	iw9_mp_veh_pickup_fullsized_2014_roll_540_l
+	iw9_mp_veh_pickup_fullsized_2014_fishtail
+	iw9_mp_veh_pickup_fullsized_2014_flip_b
+	
+		
+	iw9_veh_pickup_fullsized_2014_takeover_door_bed_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_bed_driverdead_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_hood_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_hood_driverdead_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_side_driverdead_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_side_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_top_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_top_driverdead_pickup
+	
+	iw9_veh_pickup_fullsized_2014_takeover_door_bed_emptyseat_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_hood_emptyseat_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_side_emptyseat_pickup
+	iw9_veh_pickup_fullsized_2014_takeover_door_top_emptyseat_pickup
+	
+	iw9_veh_mil_cargo_truck_takeover_door_bed_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_bed_driverdead_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_hood_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_hood_driverdead_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_side_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_side_driverdead_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_top_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_top_driverdead_cargotruck
+	
+	iw9_veh_mil_cargo_truck_takeover_door_side_emptyseat_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_hood_emptyseat_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_bed_emptyseat_cargotruck
+	iw9_veh_mil_cargo_truck_takeover_door_top_emptyseat_cargotruck
+	
+	iw9_veh_cargo_truck_seat_0_death_falloutdoor_geo_door
+//	iw9_veh_cargo_truck_seat_0_entry_geo_door
+//	iw9_veh_cargo_truck_seat_0_exit_combat_idle_geo_door
+//	iw9_veh_cargo_truck_seat_0_exit_combat_run_geo_door
+//	iw9_veh_cargo_truck_seat_0_exit_geo_door
+	iw9_veh_cargo_truck_seat_1_death_falloutdoor_geo_door
+//	iw9_veh_cargo_truck_seat_1_entry_geo_door
+//	iw9_veh_cargo_truck_seat_1_exit_combat_idle_geo_door
+//	iw9_veh_cargo_truck_seat_1_exit_combat_run_geo_door
+	iw9_veh_cargo_truck_seat_1_hatch_combat_idle_geo_tophatch
+	iw9_veh_cargo_truck_seat_1_hatch_hide_idle_geo_tophatch
+	iw9_veh_cargo_truck_seat_1_hatch_to_hide_geo_tophatch
+	iw9_veh_cargo_truck_seat_1_hatch_to_seated_geo_tophatch
+	iw9_veh_cargo_truck_seat_1_hide_to_hatch_geo_tophatch
+	iw9_veh_cargo_truck_seat_1_seated_to_hatch_geo_tophatch
+//	iw9_veh_civ_cargo_truck_seat_0_entry_geo_door
+//	iw9_veh_civ_cargo_truck_seat_0_exit_geo_door
+//	iw9_veh_civ_cargo_truck_seat_0_exit_run_geo_door
+//	iw9_veh_civ_cargo_truck_seat_1_entry_geo_door
+//	iw9_veh_civ_cargo_truck_seat_1_exit_geo_door
+//	iw9_veh_civ_cargo_truck_seat_1_exit_run_geo_door
+
+	
+	cnv_jockey_pickup_fullsized_2014_flip
+	cnv_jockey_pickup_fullsized_2014_flip_b
+	cnv_jockey_pickup_fullsized_2014_flip_l
+	cnv_jockey_pickup_fullsized_2014_flip_f
+	cnv_jockey_pickup_fullsized_2014_flip_f_rear
+	cnv_jockey_pickup_fullsized_2014_flip_r
+	cnv_jockey_pickup_fullsized_2014_fishtail
+	cnv_jockey_pickup_fullsized_2014_roll_180
+	cnv_jockey_pickup_fullsized_2014_roll_540
+	cnv_jockey_pickup_fullsized_2014_roll_180_l
+	cnv_jockey_pickup_fullsized_2014_roll_540_l
+	
+	cnv_jockey_cargo_truck_flip
+	cnv_jockey_cargo_truck_flip_f_rear
+	
+	cnv_jockey_cargo_truck_vehphys_flip
+	cnv_jockey_cargo_truck_vehphys_flip_f
+	cnv_jockey_cargo_truck_vehphys_roll_180
+	cnv_jockey_cargo_truck_vehphys_roll_180_l
+	cnv_jockey_cargo_truck_vehphys_flip_f_rear
+	
+	cnv_jockey_jltv_turret_vehphys_flip
+	cnv_jockey_jltv_turret_vehphys_flip_f
+	cnv_jockey_jltv_turret_vehphys_roll_180
+	cnv_jockey_jltv_turret_vehphys_roll_180_l
+	cnv_jockey_jltv_turret_vehphys_flip_f_rear
+	
+	iw9_veh_jltv_takeover_door_bed_jltv
+	iw9_veh_jltv_takeover_door_bed_driverdead_jltv
+	iw9_veh_jltv_takeover_door_hood_jltv
+	iw9_veh_jltv_takeover_door_hood_driverdead_jltv
+	iw9_veh_jltv_takeover_door_side_driverdead_jltv
+	iw9_veh_jltv_takeover_door_side_jltv
+	iw9_veh_jltv_takeover_door_top_jltv
+	iw9_veh_jltv_takeover_door_top_driverdead_jltv
+	
+	iw9_veh_jltv_takeover_door_bed_emptyseat_jltv
+	iw9_veh_jltv_takeover_door_hood_emptyseat_jltv
+	iw9_veh_jltv_takeover_door_side_emptyseat_jltv
+	iw9_veh_jltv_takeover_door_top_emptyseat_jltv
+
+}
+
+interdiction
+{
+	intd_0600_ship_boat_crash_speedboat
+}
+
+intercept
+{
+	icpt_0110_field_sniping_reveal_sh010_truck
+	icpt_0110_field_sniping_reveal_sh020_truck
+	icpt_0110_field_sniping_reveal_sh030_truck
+	
+	icpt_0250_sub_boat_scene_laswell_boat
+	icpt_0250_sub_boat_scene_door
+	icpt_0250_sub_boat_scene_enemyboat1_bottom
+	icpt_0250_sub_boat_scene_enemyboat1_top
+	icpt_0250_sub_boat_scene_enemyboat2_bottom
+	icpt_0250_sub_boat_scene_enemyboat2_top
+	icpt_0250_sub_boat_scene_enemyboat3_bottom
+	icpt_0250_sub_boat_scene_enemyboat3_top
+}
+
+wounded
+{
+	wnd_0110_awk_patrol_enter_veh01
+	
+	wnd_0350_car_escape_arrival_truck
+	wnd_0350_car_escape_arrival_idle_truck
+	wnd_0350_igc_car_escape_s010_truck
+	wnd_0350_igc_car_escape_s010_l_truck
+	wnd_0350_igc_car_escape_s010_r_truck
+	wnd_0350_igc_car_escape_s015_truck
+	wnd_0350_igc_car_escape_s017_truck
+	wnd_0350_igc_car_escape_s020_truck
+	wnd_0350_igc_car_escape_s030_truck
+	wnd_0350_igc_car_escape_s035_truck
+	wnd_0350_igc_car_escape_s040_truck
+	wnd_0350_igc_car_escape_s050_truck
+	wnd_0350_igc_car_escape_s055_truck
+	wnd_0350_igc_car_escape_s060_truck
+	wnd_0350_igc_car_escape_s065_truck
+	wnd_0350_igc_car_escape_s070_truck
+	wnd_0350_igc_car_escape_s010_van
+	wnd_0350_igc_car_escape_s015_van
+	wnd_0350_igc_car_escape_s017_van
+	wnd_0350_igc_car_escape_s020_van
+	wnd_0350_igc_car_escape_s030_van
+	wnd_0350_igc_car_escape_s035_van
+	wnd_0350_igc_car_escape_s040_van
+	wnd_0350_igc_car_escape_s050_van
+	wnd_0350_igc_car_escape_s055_van
+	wnd_0350_igc_car_escape_s060_van
+	wnd_0350_igc_car_escape_s065_van
+	wnd_0350_igc_car_escape_s070_van
+	
+}
+
+backstabbed
+{
+	vfx_bst_bridge_cargo_l
+	vfx_bst_bridge_cargo_r
+	vfx_bst_bridge_jltv
+	bstb_1000_igc_outro_enter_veh1
+	bstb_1000_igc_outro_veh1
+}
+
+gunship
+{
+	gsamb_1000_igc_outro_sh010_plane
+	
+	gshp_0305_comp_agavefield_enter_truck
+	gshp_0305_comp_agavefield_loading_truck
+	gshp_0305_comp_agavefield_exit_truck
+	
+	gshp_0305_comp_agavefield_truck_GL_truck
+	
+	gshp_0306_comp_construction_gate_scene_truck
+	gshp_0306_comp_construction_gate_idle_truck
+	
+	gshp_0310_comp_infil_truck_scene_truck01
+	
+	gshp_0310_comp_infil_truck_igc_truck01_s010
+	gshp_0310_comp_infil_truck_igc_truck01_s020
+	
+	gshp_0500_comp_igc_outro_sh010_truck
+	gshp_0500_comp_igc_outro_sh030_truck
+	
+	gshp_0500_amb_civ_gas_foodstand_idleA_car01
+	gshp_0500_amb_civ_gas_foodstand_walkA_car01
+	gshp_0500_amb_civ_gas_entercar_scene_car01
+
+	
+	gshp_0510_amb_truck_enter_lasso_truck
+	gshp_0510_amb_truck_enter_lasso_idle_truck
+	
+	gshp_0520_amb_truck_ambush_truck
+	gshp_0520_amb_truck_ambush_idle_car01
+	gshp_0520_amb_truck_ambush_car01
+	
+	gshp_0540_amb_truck_ally_escape_sceneA_car01
+	
+	gshp_0575_amb_mortar_truck_enter_truck
+	
+	gshp_0560_amb_civ_flee_car
+	
+	gshp_0590_amb_heli_exfil_heliplaceholder
+	gshp_0590_amb_heli_exfil_helidoors
+}
+
+party
+{
+	prty_0010_igc_intro_sh010_car
+	prty_0010_igc_intro_sh030_car
+	
+	
+	prty_0420_1f_delivery_scene_a_veh01
+	prty_0420_1f_delivery_scene_b_veh01
+	prty_0420_1f_delivery_interrupt_combat_veh01
+	
+}
+
+// AI relative door anims
+2014_pickup:overlay
+{
+	iw9_veh_pickup_fullsize_2014_seat_0_entry_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_1_entry_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_2_entry_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_3_entry_geo_door	
+	iw9_veh_pickup_fullsize_2014_seat_0_exit_combat_idle_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_1_exit_combat_idle_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_2_exit_combat_idle_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_3_exit_combat_idle_geo_door	
+	iw9_veh_pickup_fullsize_2014_seat_0_exit_run_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_1_exit_run_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_2_exit_run_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_3_exit_run_geo_door	
+	iw9_veh_pickup_fullsize_2014_seat_0_exit_idle_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_1_exit_idle_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_2_exit_idle_geo_door
+	iw9_veh_pickup_fullsize_2014_seat_3_exit_idle_geo_door
+}
+
+jltv:overlay
+{
+	iw9_mp_veh_jltv_seat_0_getin_geo_door
+	iw9_mp_veh_jltv_seat_1_getin_geo_door
+	iw9_mp_veh_jltv_seat_2_getin_geo_door
+	iw9_mp_veh_jltv_seat_3_getin_geo_door	
+	iw9_mp_veh_jltv_seat_0_exit_idle_geo_door
+	iw9_mp_veh_jltv_seat_1_exit_idle_geo_door
+	iw9_mp_veh_jltv_seat_2_exit_geo_door
+	iw9_mp_veh_jltv_seat_3_exit_geo_door	
+	iw9_mp_veh_jltv_seat_0_exit_combat_idle_geo_door
+	iw9_mp_veh_jltv_seat_1_exit_combat_idle_geo_door
+	iw9_mp_veh_jltv_seat_2_exit_combat_idle_geo_door
+	iw9_mp_veh_jltv_seat_3_exit_combat_idle_geo_door	
+	iw9_mp_veh_jltv_seat_0_exit_combat_run_geo_door
+	iw9_mp_veh_jltv_seat_1_exit_combat_run_geo_door
+	iw9_mp_veh_jltv_seat_2_exit_combat_run_geo_door
+	iw9_mp_veh_jltv_seat_3_exit_combat_run_geo_door
+}
+
+suv1996:overlay
+{	
+	iw9_veh_suv_1996_seat_0_entry_geo_door
+	iw9_veh_suv_1996_seat_1_entry_geo_door
+	iw9_veh_suv_1996_seat_2_entry_geo_door
+	iw9_veh_suv_1996_seat_3_entry_geo_door
+	iw9_veh_suv_1996_seat_0_exit_idle_geo_door
+	iw9_veh_suv_1996_seat_1_exit_idle_geo_door
+	iw9_veh_suv_1996_seat_2_exit_idle_geo_door
+	iw9_veh_suv_1996_seat_3_exit_idle_geo_door
+	iw9_veh_suv_1996_seat_0_exit_combat_idle_geo_door
+	iw9_veh_suv_1996_seat_1_exit_combat_idle_geo_door
+	iw9_veh_suv_1996_seat_2_exit_combat_idle_geo_door
+	iw9_veh_suv_1996_seat_3_exit_combat_idle_geo_door
+	iw9_veh_suv_1996_seat_0_exit_combat_run_geo_door
+	iw9_veh_suv_1996_seat_1_exit_combat_run_geo_door
+	iw9_veh_suv_1996_seat_2_exit_combat_run_geo_door
+	iw9_veh_suv_1996_seat_3_exit_combat_run_geo_door		
+}
+
+overland:overlay
+{
+	iw9_veh_overland_seat_0_entry_geo_door
+	iw9_veh_overland_seat_1_entry_geo_door
+	iw9_veh_overland_seat_2_entry_geo_door
+	iw9_veh_overland_seat_3_entry_geo_door	
+	iw9_veh_overland_seat_0_exit_idle_geo_door
+	iw9_veh_overland_seat_1_exit_idle_geo_door
+	iw9_veh_overland_seat_2_exit_idle_geo_door
+	iw9_veh_overland_seat_3_exit_idle_geo_door	
+	iw9_veh_overland_seat_0_exit_combat_idle_geo_door
+	iw9_veh_overland_seat_1_exit_combat_idle_geo_door
+	iw9_veh_overland_seat_2_exit_combat_idle_geo_door
+	iw9_veh_overland_seat_3_exit_combat_idle_geo_door	
+	iw9_veh_overland_seat_0_exit_combat_run_geo_door
+	iw9_veh_overland_seat_1_exit_combat_run_geo_door
+	iw9_veh_overland_seat_2_exit_combat_run_geo_door
+	iw9_veh_overland_seat_3_exit_combat_run_geo_door
+}
+
+cargotruck:overlay
+{
+	iw9_veh_cargo_truck_seat_0_entry_geo_door
+	iw9_veh_cargo_truck_seat_1_entry_geo_door
+	iw9_veh_cargo_truck_seat_0_exit_geo_door
+	iw9_veh_cargo_truck_seat_1_exit_geo_door
+	iw9_veh_cargo_truck_seat_0_exit_combat_idle_geo_door
+	iw9_veh_cargo_truck_seat_1_exit_combat_idle_geo_door
+	iw9_veh_cargo_truck_seat_0_exit_combat_run_geo_door
+	iw9_veh_cargo_truck_seat_1_exit_combat_run_geo_door
+}
+
+hatchback_1985:overlay
+{
+	iw9_veh_sedan_1985_seat_0_entry_geo_door
+	iw9_veh_sedan_1985_seat_1_entry_geo_door
+	iw9_veh_sedan_1985_seat_2_entry_geo_door
+	iw9_veh_sedan_1985_seat_3_entry_geo_door
+	iw9_veh_sedan_1985_seat_0_exit_patrol_idle_geo_door
+	iw9_veh_sedan_1985_seat_1_exit_patrol_idle_geo_door
+	iw9_veh_sedan_1985_seat_2_exit_patrol_idle_geo_door
+	iw9_veh_sedan_1985_seat_3_exit_patrol_idle_geo_door
+	iw9_veh_sedan_1985_seat_0_exit_combat_idle_geo_door
+	iw9_veh_sedan_1985_seat_1_exit_combat_idle_geo_door
+	iw9_veh_sedan_1985_seat_2_exit_combat_idle_geo_door
+	iw9_veh_sedan_1985_seat_3_exit_combat_idle_geo_door
+	iw9_veh_sedan_1985_seat_0_exit_combat_run_geo_door
+	iw9_veh_sedan_1985_seat_1_exit_combat_run_geo_door
+	iw9_veh_sedan_1985_seat_2_exit_combat_run_geo_door
+	iw9_veh_sedan_1985_seat_3_exit_combat_run_geo_door
+}
+
+techoarmor:overlay
+{
+	iw9_veh_pickup_fullsize_techoarmor_seat_0_entry_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_0_exit_combat_idle_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_0_exit_idle_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_0_exit_run_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_1_entry_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_1_exit_combat_idle_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_1_exit_idle_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_1_exit_run_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_2_entry_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_2_exit_combat_idle_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_2_exit_idle_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_2_exit_run_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_3_entry_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_3_exit_combat_idle_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_3_exit_idle_geo_door
+	iw9_veh_pickup_fullsize_techoarmor_seat_3_exit_run_geo_door
+
+}
+
+// Iw8 vehicles -----------------------------------------
+
+
+acharlie130:overlay
+{
+	acharlie130_reveal_reardoor_open
+	acharlie130_reveal_reardoor_closed
+}
+
+asierra:overlay
+{
+	vh_asierra_driver_exit_combat_idle
+	vh_asierra_driver_exit_patrol
+	vh_asierra_driver_exit_combat_run
+	vh_asierra_driver_get_in
+	vh_asierra_pass_exit_combat_idle
+	vh_asierra_pass_exit_patrol
+	vh_asierra_pass_exit_combat_run
+	vh_asierra_passenger_exit_combat_idle
+	vh_asierra_passenger_exit_patrol
+	vh_asierra_passenger_exit_combat_run
+	vh_asierra_pass_get_in
+	vh_asierra_bed_guy1_exit_combat_idle
+	vh_asierra_bed_guy1_exit_patrol
+	vh_asierra_bed_guy1_exit_combat_run
+	vh_asierra_bed_guy1_exit_patrol_talk
+	vh_asierra_bed_guy2_exit_combat_idle
+	vh_asierra_bed_guy2_exit_patrol
+	vh_asierra_bed_guy2_exit_combat_run
+	vh_asierra_bed_guy2_exit_patrol_talk
+	vh_asierra_bed_guy3_exit_combat_idle
+	vh_asierra_bed_guy3_exit_patrol
+	vh_asierra_bed_guy3_exit_combat_run
+	vh_asierra_bed_guy4_exit_combat_idle
+	vh_asierra_bed_guy4_exit_patrol
+	vh_asierra_bed_guy4_exit_combat_run
+	vh_asierra_bed_guy5_exit_combat_idle
+	vh_asierra_bed_guy5_exit_patrol
+	vh_asierra_bed_guy5_exit_combat_run
+	vh_asierra_bed_guy6_exit_combat_idle
+	vh_asierra_bed_guy6_exit_patrol
+	vh_asierra_bed_guy6_exit_combat_run
+	vh_asierra_trunk_exit
+	vh_asierra_bed_exit_combat_idle
+	vh_asierra_bed_exit_patrol
+}
+
+pindia:overlay
+{
+	vh_pindia_bed_exit_combat_idle
+	vh_pindia_bed_exit_patrol
+	vh_pindia_front_exit_combat_idle
+	vh_pindia_front_exit_patrol
+}
+
+vindia:overlay
+{
+	vh_vindia_back_door_exit_combat_idle
+	vh_vindia_left_door_exit_combat_idle
+	vh_vindia_right_door_exit_combat_idle
+}
+
+blima:overlay
+{
+	veh8_com_blima_Ldoor_open
+	veh8_com_blima_Rdoor_open
+}
+
+decho:overlay
+{
+	
+	cp_vh_decho_door_chase_pass_get_in
+	
+	vh_decho_driver_exit_patrol
+	vh_decho_driver_exit_combat_idle
+	vh_decho_driver_exit_combat_run
+	vh_decho_pass_exit_combat_run
+	vh_decho_pass_exit_combat_idle
+	vh_decho_pass_exit_patrol
+	vh_decho_cab1_exit_combat_run
+	vh_decho_cab1_exit_combat_idle
+	vh_decho_cab1_exit_patrol
+	vh_decho_cab2_exit_combat_run
+	vh_decho_cab2_exit_combat_idle
+	vh_decho_cab2_exit_patrol
+	
+	vh_decho_civ_pass3_exit_combat_idle
+	vh_decho_civ_pass3_exit_combat_run
+	vh_decho_civ_pass3_exit_patrol
+	
+	vh_decho_civ_pass4_exit_combat_idle
+	vh_decho_civ_pass4_exit_combat_run
+	vh_decho_civ_pass4_exit_patrol
+	
+	vh_decho_trunk_exit_combat_run
+	vh_decho_trunk_exit_combat_idle
+	vh_decho_trunk_exit_patrol
+	
+	vh_decho_police_trunk_exit_combat_idle
+	vh_decho_police_trunk_exit_combat_run
+	vh_decho_police_trunk_exit_patrol
+	
+	reb_com_veh8_decho_fl_door_open
+	reb_com_veh8_decho_fl_door_close
+	reb_com_veh8_decho_fr_door_open
+	reb_com_veh8_decho_fr_door_close
+	reb_com_veh8_decho_bl_door_open
+	reb_com_veh8_decho_bl_door_close
+	reb_com_veh8_decho_br_door_open
+	reb_com_veh8_decho_br_door_close
+	reb_com_veh8_decho_rear_door_open
+	reb_com_veh8_decho_rear_door_close
+}
+
+techo:overlay
+{
+	reb_com_veh8_techo_fl_door_open
+	reb_com_veh8_techo_fl_door_close
+	reb_com_veh8_techo_fr_door_open
+	reb_com_veh8_techo_fr_door_close
+	reb_com_veh8_techo_bl_door_open
+	reb_com_veh8_techo_bl_door_close
+	reb_com_veh8_techo_br_door_open
+	reb_com_veh8_techo_br_door_close
+	
+	vh_techo_driver_exit_combat_idle
+	vh_techo_driver_exit_combat_run
+	vh_techo_driver_exit_patrol
+	vh_techo_pass_exit_combat_idle
+	vh_techo_pass_exit_combat_run
+	vh_techo_pass_exit_patrol
+	vh_techo_cab1_exit_combat_idle
+	vh_techo_cab1_exit_combat_run
+	vh_techo_cab1_exit_patrol
+	vh_techo_cab2_exit_combat_idle
+	vh_techo_cab2_exit_combat_run
+	vh_techo_cab2_exit_patrol
+	
+	vh_techo_guy5_exit_patrol_l
+	vh_techo_guy5_exit_patrol_r
+	vh_techo_guy5_exit_combat_idle_l
+	vh_techo_guy5_exit_combat_idle_r
+	vh_techo_guy5_exit_combat_run_l
+	vh_techo_guy5_exit_combat_run_r
+	vh_techo_exit_react01
+	
+	vh_techo_crash_forward00
+	vh_techo_crash_backward00
+	vh_techo_crash_left00
+	vh_techo_crash_right00
+	vh_techo_crash_wobble00
+	
+	vh_techo_bed_exit_combat_idle
+	vh_techo_bed_exit_combat_run
+	vh_techo_bed_exit_patrol
+}
+
+umike:overlay
+{
+	SHF_040_armored_truck_door
+	SHF_040_armored_truck
+
+	vh_umike_exit_tailgate
+	vh_umike_driver_exit_combat_idle
+	vh_umike_driver_exit_combat_run
+	vh_umike_driver_exit_patrol
+	
+	vh_umike_passenger_exit_combat_idle
+	vh_umike_passenger_exit_combat_run
+	vh_umike_passenger_exit_patrol
+	
+	vh_umike_bed_exit_combat_idle
+}
+
+mkilo23:overlay
+{
+	vh_mkilo_driver_exit_combat_idle
+	vh_mkilo_driver_exit_combat_run
+	vh_mkilo_driver_exit_patrol
+	
+	vh_mkilo_pass_exit_combat_idle
+	vh_mkilo_pass_exit_combat_run
+	vh_mkilo_pass_exit_patrol
+	vh_mp_mkilo23_backgate_exit
+}
+
+skilo:overlay
+{
+	vh_skilo_driver_exit_patrol
+	vh_skilo_driver_exit_combat_idle
+	vh_skilo_driver_exit_combat_run
+	
+	vh_skilo_passenger_exit_patrol
+	vh_skilo_passenger_exit_combat_idle
+	vh_skilo_passenger_exit_combat_run
+	
+	vh_skilo_pass3_exit_patrol
+	vh_skilo_pass3_exit_combat_idle
+	vh_skilo_pass3_exit_combat_run
+}
+
+tromeo:overlay
+{
+	vh_tromeo_front_exit_combat_idle
+	vh_tromeo_front_exit_combat_run
+	vh_tromeo_front_exit_patrol
+	
+	reb_vh_tromeo_vehicle_driver_exit_patrol
+	reb_vh_tromeo__vehicle_driver_exit_combat_idle
+	reb_vh_tromeo_vehicle_driver_exit_combat_run
+	reb_vh_tromeo_vehicle_driver_get_in
+	pass_reb_vh_tromeo_vehicle_pass_exit_combat_run
+	pass_reb_vh_tromeo_vehicle_pass_exit_combat_idle
+	pass_reb_vh_tromeo_vehicle_pass_exit_patrol
+	pass_reb_vh_tromeo_vehicle_pass_get_in
+	reb_vh_tromeo_vehicle_cab1_exit_combat_run
+	reb_vh_tromeo_vehicle_cab1_exit_patrol
+	reb_vh_tromeo_vehicle_cab1_pass_exit_patrol
+	reb_vh_tromeo_vehicle_cab1_pass_get_in
+}
+
+lbravo
+{
+	lbravo_rotors
+}
+
+bombing_drone
+{
+	veh8_ind_air_bombing_drone_roll_left
+}
+
+	//temp vehicle explosions
+	veh8_common_pickup_expl_tag_origin_1
+	veh8_common_pickup_expl_tag_origin_2
+	veh8_common_pickup_expl_tag_origin_3
+	veh8_common_pickup_expl_tag_origin_4
+	
+	//Cold Open
+	co_pic_010_vanexit_van
+	
+	// Proxy War
+	
+	pw_infil_010_fastrope_idle_heliA
+	
+	pw_infil_010_fastrope_heliA
+	pw_infil_010_fastrope_heliB
+	
+	pw_exit_010_sniper_truck
+	pw_exit_010_sniper_truck2
+	pw_exit_010_sniper_truck3
+	pw_exit_010_sniper_truck_door_open
+	pw_exit_010_sniper_truck_door_open_plr
+	pw_exit_010_sniper_truck2_door_enter
+	pw_exit_010_sniper_truck2_door_open
+	pw_exit_010_sniper_truck2_door_exit
+	pw_exit_010_sniper_truck2_scene
+	pw_exit_010_sniper_truck1_scene
+	pw_exit_010_sniper_truck_suicide_scene
+	pw_exit_010_sniper_truck2_pull_in
+	pw_exit_010_sniper_truck1_pull_in
+	pw_exit_010_sniper_truck2_pull_in_idle
+	pw_exit_010_sniper_truck1_pull_in_idle
+	pw_swab_010_trck_idle
+	
+	pw_swab_010_trck
+	pw_swab_010_trck_door
+	
+	pw_rpg_010_truck1
+	pw_rpg_010_truck2
+	pw_rpg_010_drag_truck
+	
+	pxw_wood_025_binoculars_truck
+	pxw_wood_025_binoculars_truck_mkilo
+	
+	pxw_wood_025_phosp_plane_1
+	pxw_wood_025_phosp_plane_2
+	
+	pxw_wood_030_patrol_truck
+	pw_exit_010_ambush_truck_exp_scene
+	pw_exit_010_ambush_truck_main_scene
+	
+	// Truck flip sim
+	proxywar_truck_flip
+	
+	// Drone
+	
+	drn_refugees_010_car_01
+	drn_AllyApproach_020_car_01
+	
+	DRN_Ambient_decho_idle
+	DRN_Ambient_carfix_idle_techo01
+	
+	DRN_Truck_Idle_Decho_Idle
+	DRN_Truck_Idle_Decho_SceneA
+	DRN_Truck_Idle_Decho_SceneB
+	DRN_Truck_Idle_Decho_SceneC
+	
+	// Piccadilly
+	
+	pic_overwatch_bus_crash
+	piccadilly_london_bus_doors_open
+	
+	pic_car_movement_A_enter
+	pic_car_movement_A_loop
+	pic_car_movement_A_loop_shoot
+	pic_car_movement_A_death
+	pic_car_movement_A_react_front
+	pic_car_movement_A_react_behind
+	
+	pic_streets_bus
+	pic_streets_car_cop_1
+	pic_streets_car_audi_1
+	pic_streets_car_rover_1
+	pic_streets_car_skoda_1
+	pic_streets_car_volvo_1
+	pic_terAttack_scene_skoda
+	pic_terAttack_scene_audi
+	pic_terAttack_skoda_door_close
+	pic_terAttack_scene_skoda_crash
+	pic_terAttack_scene_audi_crash
+	pic_terAttack_scene_rover_crash
+	pic_terAttack_scene_volvo_crash
+	
+	pic_streets_fight_GP_rover
+	pic_streets_fight_GP_exit_rover_rover
+	pic_streets_fight_GP_exit_rover_skoda
+	
+	LON_PIC_051_cars_crashing_group03_no_translate_veh01
+	
+	//Safehouse
+	SHF_050_3p_outro_heli
+	
+	SH_AA_010_entry_chopper
+	SH_NH_012_truck_AATruck_Idle
+	SH_NH_012_truck_AATruck_Scene
+	sh_sch_060_stumble_tank
+	sh_sch_060_stumble_truck
+	sh_sch_060_tank_enter_intro_tank
+	sh_sch_060_tank_enter_tank
+	
+	SH_TNK_005_tank_mount_hatch_driver
+	SH_TNK_005_tank_mount_hatch_turret
+	
+	SH_TNK_007_tank_smash_gate_tank
+	
+	SH_025_cinderblock_split_sceneA_truck
+	
+	SH_TNK_010_tankmount_scene_tank
+	SH_TNK_050_finale_ram_tank
+	SH_TNK_050_finale_ram_truck
+	sh_tnk_030_wall_smash_tank
+	sh_tnk_030_wall_smash_truck
+	
+	sh_tnk_090_exit_tnk
+	
+	SH_107_truck_drive_in_ambulance
+	SH_107_truck_drive_in_truck
+	
+	SH_vh_mkilo23_pin00
+	SH_vh_techo_pin00
+	
+	SH_truck_hit_r_mkilo23
+	SH_truck_hit_r_umike
+	SH_truck_hit_l_mkilo23
+	SH_truck_hit_l_umike
+	
+	mp_ahotel64_intro_01
+	
+	SH_095_ambulance_ambulance
+	
+	//Estate
+	
+	EST_LI_000_infil_car
+	EST_LI_000_infil_decko
+	EST_LI_000_infil_decko_turret
+	
+	
+	EST_TF_030_explosion_fire_apache
+	EST_TF_030_explosion_explode_apache
+	
+	EST_TF_030_stairs_explosion_mindia
+	
+	est_blima_doors_open
+	est_hf_010_heli_chopper
+	est_hf_010_heli_rocket
+	est_hf_090_heli_crash
+	est_exf_010_heli_intro_blima
+	est_exf_020_exfil_getin_blima	
+	est_hf_010_heli_intro_chopper
+	est_exf_020_exfil_getin_blima_loop
+	est_exf_020_exfil_grab_blima_door
+	
+	//Highway
+	HOD_vehicle_hit_r_apc
+	HOD_vehicle_hit_l_apc
+	HOD_vehicle_dmg_loop_apc
+	HOD_vehicle_crash_apc
+	HOD_vehicle_hit_r_truck
+	HOD_vehicle_hit_l_truck
+	HOD_vehicle_dmg_loop_truck
+	HOD_vehicle_crash_truck
+	HOD_trap_car_bomb_car
+	HOD_gas_truck_zuniform
+	HOD_gas_truck_intro_zuniform
+	HOD_gas_truck_tailgate
+	HOD_gas_truck_exit_zuniform
+	
+	//Embassy
+	EMB_Truck_010_Attack_Scene_Truck
+	
+	EMB_infil_010_crash_helo
+	EMB_infil_010_crash_techo
+	EMB_infil_010_crash_ride_helo
+	EMB_infil_010_crash_crawl_helo
+	EMB_infil_010_crash_fall_helo
+	
+	emb_infil_10_crash_bg_techo01
+
+	emb_def_025_trucks_enter_veh01
+	emb_def_025_trucks_enter_veh02
+	emb_def_025_trucks_enter_veh03
+	emb_def_025_trucks_enter_veh04
+	
+	emb_exfil_010_wolfescapes_truck
+	
+	//Hometown
+	HTF_CARI_010_WhiteHelmetVan
+	HTF_CARI_060_RussianAttack_mkilo23
+	
+	HTF_CARI_065_civdeathcars_walfa01
+	HTF_CARI_065_civdeathcars_secho01
+	
+	HTF_POP_030_phone_kid_enter_idle_truck
+	HTF_POP_030_phone_kid_loading_truck
+	HTF_POP_030_phone_kid_mid_idle_truck	
+	HTF_POP_030_phone_kid_leaving_truck
+	HTF_POP_030_phone_kid_idle_truck02
+	
+	HTF_POP_050_Captured_CaptiveTruck
+	HTF_POP_050_Captured_RussianTruck
+	HTF_POP_050_Captured_RussianTruck_jump_down
+	
+	HTF_BNKR_010_rescue_scene_blima
+	HTF_BNKR_010_rescue_scene_van01
+	HTF_BNKR_010_rescue_scene_van02
+	
+	htf_cari_010_rooftop_mindia01
+	htf_cari_010_rooftop_mindia02
+	
+	//St Petersburg
+	// street
+	stp_street_car_hit_truck_scene
+	stp_street_car_hit_truck_idle
+	//stp_street_car_hit_enter_van
+	//stp_street_car_hit_pickup_van
+	//stp_street_car_hit_drive_exit_van
+	stp_street_car_hit_enter_van
+	stp_street_car_hit_idle_van
+	stp_street_car_hit_pickup_van
+	stp_street_car_hit_idle02_van
+	stp_street_car_hit_door_close_van
+	stp_street_car_hit_drive_exit_van
+	stp_street_car_hit_get_in_van
+	stp_street_car_hit_nik_get_in_van
+	stp_street_car_hit_price_get_in_van
+	
+	stp_str_010_weapons_enter_vehicle
+	stp_str_010_weapons_close_vehicle
+	stp_str_010_weapons_exit_vehicle
+	stp_str_010_weapons_doors_open_van
+	stp_str_010_weapons_doors_close_van
+	
+	STP_bar_010_intro_scene_vehicle
+	
+	stp_can_020_civdeathcars_walfa01
+	// interrogation
+	stp_wh_010_acquire_van
+	stp_wh_010_acquire_van_idle
+	stp_wh_010_acquire_van_interact_door
+	stp_wh_020_intel_success_car
+	stp_wh_020_intel_success_van
+	stp_wh_010_exit_decline_car
+	stp_wh_010_exit_decline_van
+	stp_wh_020_exit_interact_left_car
+	stp_wh_020_exit_interact_right_car
+	
+	// apartment window exit
+	stp_apt_020_window_exit_veh01
+	
+	//stp overpass
+	stp_can_010_overpass_polvech01
+	
+	//stp canal
+	stp_can_020_street_civs_flee_veh01
+	stp_can_020_street_civs_flee_ambulance
+	
+	//gauntlet
+	stp_gauntlet_car_crash
+	
+	stp_gauntlet_doors_open_back_right_van
+	stp_gauntlet_doors_open_rear_van
+	stp_gauntlet_doors_close_back_right_van
+	stp_gauntlet_doors_close_rear_van
+	
+	//gauntlet shootout
+	stp_gauntlet_shootout_010_AQ_fight_arrive_VehA
+	stp_gauntlet_shootout_010_AQ_fight_arrive_VehB
+	stp_gauntlet_shootout_010_AQ_fight_arrive_VehC
+	
+	//Marines
+	MAR_intro_010_dropoff_truck
+	
+	mar_alley_vehicle_stop_a
+	mar_alley_vehicle_stop_b
+	
+	//IED Ambush
+	mar_con_010_ambush_ied_veh01
+	mar_con_010_ambush_ied_veh02
+	mar_con_010_ambush_ied_veh03
+	
+	// Retreat
+	mar_retreat_010_AQ_fight_death_tank
+	
+	//ZD30
+	ZD30C_000_3p_infil_lbirds_heli01
+	ZD30C_000_3p_infil_lbirds_heli02
+	ZD30C_000_3p_infil_lbirds_heli03
+
+	ZD30C_000_infil_ride_lbravo01
+	
+	ZD30C_000_infil_lbirds_heli01
+	ZD30C_000_infil_lbirds_heli02
+	ZD30C_000_infil_lbirds_heli03
+	
+	ZD30C_090_tunnel_courtyard_lbravo
+	
+	//LAB
+	LAB_BR_010_intro_start_tank
+	LAB_BR_010_intro_start_tank_02
+	lab_tbn_015_dock_start_idle_van
+	lab_tbn_015_dock_sceneA_van
+	lab_tbn_015_dock_sceneB_van
+	LAB_END_005_bomb_plant_veh01
+	LAB_END_010_finale_kickoff_sh03_heli
+	veh8_mil_lnd_bromeo_dst_rear_door_open
+	LAB_END_010_finale_idle_helicopter
+	LAB_END_010_finale_idle_sway_helicopter
+	LAB_END_010_finale_kickoff_sh02_veh01
+	lab_hill_020_bromeo_react
+	
+	//global
+	car_interaction_L_intro_car
+	car_interaction_L_idle_car
+	car_interaction_L_reaction_car
+	car_interaction_L_exit_car
+	car_interaction_L_death_car
+	car_interaction_R_intro_car
+	car_interaction_R_idle_car
+	car_interaction_R_reaction_car
+	car_interaction_R_exit_car
+	car_interaction_R_death_car
+	car_interaction_withBody_L_intro_car
+	car_interaction_withBody_L_idle_car
+	car_interaction_withBody_L_reaction_car
+	car_interaction_withBody_L_exit_car
+	car_interaction_withBody_L_death_car
+	car_interaction_withBody_R_intro_car
+	car_interaction_withBody_R_idle_car
+	car_interaction_withBody_R_reaction_car
+	car_interaction_withBody_R_exit_car
+	car_interaction_withBody_R_death_car
+	
+	vh_blima_rappel_heli_drop
+	vh_blima_rotors
+	
+	veh8_common_pickup_driving_idle_forward
+	veh8_common_pickup_driving_idle_backward
+	
+	//CP INTRO
+	cp_tarmac_sh130_ac130
+	
+	//MAGMA INTRO
+	//placeholders for goldscript lock
+	cine_terminal_vehicle_000
+	cine_terminal_vehicle_001
+	cine_terminal_vehicle_002
+	cine_terminal_vehicle_003
+	cine_terminal_vehicle_004
+	cine_terminal_vehicle_005
+	cine_terminal_vehicle_006
+	cine_terminal_vehicle_007
+	cine_terminal_vehicle_008
+	cine_terminal_vehicle_009
+	cine_terminal_vehicle_010
+	cine_terminal_vehicle_011
+	cine_terminal_vehicle_012
+	cine_terminal_vehicle_013
+	cine_terminal_vehicle_014
+	cine_terminal_vehicle_015
+	cine_terminal_vehicle_016
+	cine_terminal_vehicle_017
+	cine_terminal_vehicle_018
+	cine_terminal_vehicle_019
+	cine_terminal_vehicle_020
+	cine_terminal_vehicle_021
+	cine_terminal_vehicle_022
+	cine_terminal_vehicle_023
+	cine_terminal_vehicle_024
+	cine_terminal_vehicle_025
+	cine_terminal_vehicle_026
+	cine_terminal_vehicle_027
+	cine_terminal_vehicle_028
+	cine_terminal_vehicle_029
+	cine_terminal_vehicle_030
+	cine_terminal_vehicle_031
+	cine_terminal_vehicle_032
+	cine_terminal_vehicle_033
+	cine_terminal_vehicle_034
+	cine_terminal_vehicle_035
+	cine_terminal_vehicle_036
+	cine_terminal_vehicle_037
+	cine_terminal_vehicle_038
+	cine_terminal_vehicle_039
+	
+	//cine_ac130
+	cine_ac130_s0010_ac130_door
+	
+	//SEASON 5 INTRO
+	//cine_stad_int
+	cine_stadium_s0010_lb
+	cine_stadium_s0020_lb
+	cine_stadium_s0020_lb_gs
+	cine_stadium_s0030_lb
+	cine_stadium_s0030_lb_gs	
+	cine_stadium_s0060_lb
+	cine_stadium_s0060_lb_gs
+	cine_stadium_s0070_lb
+	cine_stadium_s0070_lb_gs
+	cine_stadium_s0080_lb
+	cine_stadium_s0090_lb
+	cine_stadium_s0100_lb
+	cine_stadium_s0110_lb
+	cine_stadium_s0120_lb
+	
+	// iw7 vehicles -----------------------------------------
+dropship
+{
+	vh_dropship_red_unload_doors_open
+	
+	// un
+	vh_dropship_rear_doors_close
+	vh_dropship_rear_doors_open
+	vh_dropship_front_door_left_close
+	vh_dropship_front_door_left_open
+	vh_dropship_front_door_right_close
+	vh_dropship_front_door_right_open
+	vh_dropship_front_door_right_close_no_stairs
+	vh_dropship_front_door_right_open_no_stairs
+	
+	vh_dropship_thrusters_up
+	vh_dropship_thrusters_down
+	vh_dropship_front_thrusters_out
+	vh_dropship_front_thrusters_in
+	
+	vh_dropship_back_wing_up
+	vh_dropship_back_wing_down
+	
+	vh_dropship_landing_gear_down
+	vh_dropship_landing_gear_up
+	
+	vh_dropship_strap_idle_light_01
+	vh_dropship_strap_idle_light_02
+	vh_dropship_strap_idle_heavy_01
+	vh_dropship_strap_idle_heavy_02
+	vh_dropship_strap_idle_settle
+	
+	//sdf
+	vh_dropship_sdf_front_door_left_open
+	vh_dropship_sdf_front_door_right_open
+	vh_dropship_sdf_rear_doors_open
+	vh_dropship_sdf_rear_doors_close
+	vh_dropship_sdf_front_door_left_close
+	vh_dropship_sdf_front_door_right_close
+	
+	vh_dropship_sdf_thrusters_up
+	vh_dropship_sdf_thrusters_down
+	
+	vh_dropship_sdf_wings_down
+	vh_dropship_sdf_wings_up
+	
+	vh_dropship_sdf_thrusters_rattle
+	
+	grav_dropship_veh_outro_1
+	grav_dropship_veh_outro_2
+
+	//old - these need to be removed
+	jsp_dropship_jumpout_apc_idle
+	jsp_dropship_jumpout_apc_unload
+	jsp_dropship_apc_unload_idle
+	jsp_dropship_apc_unload
+	
+	asteroid_approach_chair_sitdown
+	rogue_finale_dropship_exit	
+	
+	vh_ca_dropship_side_door_l_close
+	vh_ca_dropship_side_door_l_open
+	vh_ca_dropship_side_door_r_close
+	vh_ca_dropship_side_door_r_open
+}
+
+apc
+{
+	vh_apc_driving_idle_forward
+	vh_apc_driving_idle_backward
+	
+	vh_apc_emp_door_open_left
+	vh_apc_red_emp_unload_door
+	vh_apc_red_unload_doors
+	vh_apc_red_unload_door_l
+	vh_apc_red_unload_door_r
+	vh_apc_red_unload_door_back
+	vh_apc_org_unload_door_l
+	vh_apc_org_unload_door_r
+	vh_apc_org_unload_door_back
+}
+
+stango
+{
+	vh_stango_driving_idle_forward
+	vh_stango_driving_idle_backward
+}
+
+armored_truck
+{
+	vh_armored_truck_driving_forward
+	vh_armored_truck_driving_backward
+}
+
+bulldozer
+{
+	veh_ind_lnd_automated_bulldozer_forward
+	veh_ind_lnd_automated_bulldozer_backward
+}
+
+bomberdrone
+{
+	veh8_ind_air_bomber_fly_base
+	fly_noise : additive
+	{
+		veh8_ind_air_bomber_fly_noise	
+	}
+}
+
+firetruck
+{
+	veh_un_firetruck_01_driving_forward
+	veh_un_firetruck_01_driving_backward
+}
+
+flatbed
+{
+	veh_ind_lnd_cargo_flatbed_opencab_driving_forward
+	veh_ind_lnd_cargo_flatbed_opencab_driving_backward
+}
+
+hatchback
+{
+	veh_un_hatchback_driving_forward
+	veh_un_hatchback_driving_backward
+}
+
+pocket_drone
+{
+	vm_support_drone_fire
+	vm_support_drone_fire_idle
+	vm_support_drone_fire_settle
+	vm_support_drone_throw
+	vm_support_drone_throw_settle
+	vm_support_drone_throw_settle_drone
+	
+	pocket_drone_destabilize_loop
+	pocket_drone_destabilize02_loop
+	
+	equip_pocket_drone_hover_loop
+	equip_pocket_drone_damaged_loop
+	equip_pocket_drone_death_loop
+}
+
+forklift
+{
+	vehicle_forklift_drive_forward
+	vehicle_forklift_drive_backward
+	
+	forklift_lift
+	{	
+		vehicle_forklift_lift_lowered
+		vehicle_forklift_lift_raised
+		vehicle_forklift_lift_range
+	}
+}
+
+improvised
+{
+	improvised_blade
+	{
+		vehicle_improvised_blade_raised
+		vehicle_improvised_blade_lowered
+	}
+}
+
+missile_boat
+{
+}
+
+missile_boat_engine_door
+{
+	vh_missile_boat_engine_top_door_open
+	vh_missile_boat_engine_top_door_close
+	vh_missile_boat_engine_bottom_door_open
+	vh_missile_boat_engine_bottom_door_close
+}
+
+missile_boat_engine
+{
+	vh_missile_boat_engine_rotate
+}
+
+missile_boat_turret
+{
+	vh_missile_boat_turret_open
+	vh_missile_boat_turret_close	
+}
+
+missile_boat_turret_door
+{
+	vh_missile_boat_turret_door_open
+	vh_missile_boat_turret_door_close
+}
+
+veh_mil_air_ca_destroyer
+{
+	vfx_ftl_ca_destroyer_in
+	vfx_ftl_ca_destroyer_out
+	ph_mil_air_ca_destroyer_space_explosion
+}
+
+mons
+{
+	vfx_ftl_mons_in
+	vfx_ftl_mons_out
+}
+
+mons_turret_open_and_close
+{
+	veh_mil_air_ca_mons_main_cannon_open
+	veh_mil_air_ca_mons_main_cannon_close
+}
+
+tow_cart
+{
+	vehicle_towcart_drive_forward
+	vehicle_towcart_drive_backward
+}
+
+weapon_drone
+{
+	//weapon_drone_proto
+	weapon_drone_fly_init
+	weapon_drone_fly_loop
+	weapon_drone_fly_docked
+	weapon_drone_arms_docked
+	weapon_drone_fly_static
+	
+	landing_drone_fly_init
+	landing_drone_fly_loop
+	landing_drone_fly_docked
+	landing_drone_arms_docked
+	landing_drone_fly_static
+	
+	landing_drone_recovery
+	
+	landing_drone_fail_overlay : additive
+	{
+		landing_drone_fly_fail
+	}
+				
+	drone_move_f_overlay : additive
+	{
+		weapon_drone_fly_move_f
+		landing_drone_fly_move_f
+	}
+	
+	drone_move_b_overlay : additive
+	{
+		weapon_drone_fly_move_b
+		landing_drone_fly_move_b
+	}
+	
+	drone_move_l_overlay : additive
+	{
+		weapon_drone_fly_move_l
+		landing_drone_fly_move_l
+	}
+	
+	drone_move_r_overlay : additive
+	{
+		weapon_drone_fly_move_r
+		landing_drone_fly_move_r
+	}
+	
+	drone_acc_f_overlay : additive
+	{
+		weapon_drone_fly_acc_f
+		landing_drone_fly_acc_f
+	}
+	
+	drone_acc_b_overlay : additive
+	{
+		weapon_drone_fly_acc_b
+		landing_drone_fly_acc_b
+	}
+	
+	drone_acc_l_overlay : additive
+	{
+		weapon_drone_fly_acc_l
+		landing_drone_fly_acc_l
+	}
+	
+	drone_acc_r_overlay : additive
+	{
+		weapon_drone_fly_acc_r
+		landing_drone_fly_acc_r
+	}
+}
+
+
+jackal
+{
+	
+	jackal_fly_idle
+	jackal_fly_to_hover
+	jackal_hover_idle
+	jackal_hover_to_fly
+	jackal_takeoff
+	
+	jackal_death_overlay : additive
+	{	
+		jackal_death_01
+		jackal_death_02
+		jackal_death_03
+		jackal_death_04
+		jackal_hov_damage_01
+	}
+	
+	jackal_hov_speed_f_overlay : additive
+	{
+		jackal_hov_speed_f
+	}
+	
+	jackal_hov_speed_b_overlay : additive
+	{
+		jackal_hov_speed_b
+	}
+	
+	jackal_hov_speed_l_overlay : additive
+	{
+		jackal_hov_speed_l
+	}
+	
+	jackal_hov_speed_r_overlay : additive
+	{
+		jackal_hov_speed_r
+	}
+	
+	jackal_hov_acc_f_overlay : additive
+	{
+		jackal_hov_acc_f
+	}
+	
+	jackal_hov_acc_b_overlay : additive
+	{
+		jackal_hov_acc_b
+	}
+	
+	jackal_hov_acc_l_overlay : additive
+	{
+		jackal_hov_acc_l
+	}
+	
+	jackal_hov_acc_r_overlay : additive
+	{
+		jackal_hov_acc_r
+	}
+	
+	jackal_hov_acc_overlay : additive
+	{
+		jackal_hov_acc
+	}
+	
+	jackal_hov_dec_overlay : additive
+	{
+		jackal_hov_dec
+	}
+
+}
+
+// levels section -----------------------------------------
+
+scripted
+{
+	// TITAN
+	titan_LZ_land_dropship_enter
+	titan_LZ_land_dropship_exit
+	titan_LZ_land_dropship_idle
+	
+}
+
+rouge_asteroid
+{
+	asteroid_approach_jspDropship_flightpath
+	rogue_infil_dropship_flyin
+	shipcrib_rogue_dropship_screen_enter
+	rogue_infil_dropship_screen_exit
+	SH_rogue_infil_dropship_flyin
+	SH_rogue_infil_dropship_idle_wait
+	SH_rogue_infil_dropship_idle_start
+	rogue_infil_door_scene_C
+	
+	rogue_finale_dropship_land
+	rogue_finale_dropship_land_idle
+	rogue_finale_dropship_fake_land
+}
+
+titan
+{
+	iw7_scripted_titan_beacon_dropoff_dropship
+	iw7_scripted_titan_beacon_dropoff_apc
+	
+	titan_first_gate_breakthrough_apc01
+	titan_first_gate_breakthrough_apc02
+	
+	titan_hill_refinery_space_jeep_01_toss
+	
+	titan_refinery_gate_breakthrough_apc	
+	
+	titan_c12_fight_dropship_dropoff
+	titan_c12_fight_apc_event02
+	titan_c12_fight_apc_event03_exit
+	
+	titan_second_gate_breakthrough_apc
+	
+	titan_mons_bombardment_apc
+	titan_bunker_bombardment_apc_getin
+	titan_bunker_bombardment_jackal_getin
+	
+	titan_bringinjackal_plrjackal_arrival
+	titan_bringinjackal_sltjackal_arrival
+	
+	titan_turbinelockrelease_salter_jackal
+	
+	titan_hot_landing_allyjackals_jkl01_intro
+	titan_hot_landing_allyjackals_jkl01_idle
+	titan_hot_landing_allyjackals_jkl01_exit
+	titan_hot_landing_allyjackals_jkl02_intro
+	titan_hot_landing_allyjackals_jkl02_idle
+	titan_hot_landing_allyjackals_jkl02_exit
+	titan_hot_landing_allyjackals_jkl03_intro
+	titan_hot_landing_allyjackals_jkl03_idle
+	titan_hot_landing_allyjackals_jkl03_exit
+	titan_hot_landing_allyjackals_jkl04_intro
+	titan_hot_landing_allyjackals_jkl04_idle
+	titan_hot_landing_allyjackals_jkl04_exit
+	
+	titan_hot_landing_player_jackal_skid
+	titan_hot_landing_player_jackal_skid_idle	
+	titan_hot_landing_player_jackal_skid_enter	
+	titan_hot_landing_player_jackal_mover
+	titan_hot_landing_player_jackal_player
+		
+	titan_apc_dropoff_scene_apc
+	titan_apc_dropoff_scene_dropship
+	
+	titan_mons_intro_truck1_blowup
+	titan_mons_intro_truck2_blowup
+	
+	titan_LZ_land_apc_enter
+	titan_LZ_land_apc_idle	
+	
+	titan_ending_ret
+	titan_ending_mons
+	titan_ending_mons_intro
+}
+
+europa
+{
+	europa_dropship_intro_dropship_start
+	europa_canyon_sltjackal_bridge_dodge_01
+}
+
+moon
+{
+	moon_dbljmp_to_cover_apc
+	iw7_moon_jsp_enm_destroyer_veh_death
+	iw7_moon_jsp_enm_destroyer_veh_crashed_01
+	moon_suckout_hallway_cart
+	moon_suckout_knockback_cart
+	moon_suckout_scene_cart
+	moon_suckout_scene_forklift
+	moon_suckout_scene_sdf_destroyer
+	//infil
+	moon_infil_drive_jp1
+	moon_infil_drive_jp2
+	moon_infil_drive_jp3
+	moon_infil_drive_jp4
+	moon_infil_drive_ret
+	moon_infil_drive_ca_apc
+	moon_infil_drive_tigris
+	moon_infil_drive_sdf_destroyer
+	moon_infil_crash_jp1
+
+	// Moonjackal space launch
+	moon_arena_launch_space_plr_jackal
+	moon_arena_launch_space_plr_jackal_boost
+}
+
+mars
+{
+	mars_intro_retribution_crash	
+	mars_intro_olympus_mons_crash
+	
+	//Marscrib Raven Boost Rig PCAP
+	
+	mars_crib_armory_dropship_landing
+	mars_10_14_raven_dropship
+	
+	mars_10_16_dropship_exit
+	
+	//truck drive up in marsbase intro area
+	iw7_fxanim_sp_mars_truck_01_anim
+	
+	mars_gate_support_dropship_flyin
+	mars_gate_support_dropship_flyout
+	mars_gate_support_dropship_resupport
+	
+	mars_base_greenhouse_dropship_crash_flyin
+	mars_base_greenhouse_dropship_crash_idle
+	mars_base_greenhouse_dropship_crash
+	
+	mars_base_elevator_dropship_flyin
+	mars_base_elevator_dropship_resupply
+	mars_base_elevator_dropship_flyout
+	
+	//yard
+	yard_control_center_turn_xo_ship
+	yard_control_center_extraction_xo_ship
+	yard_control_center_extraction_sdf_ship_1
+	yard_control_center_extraction_sdf_ship_2
+}
+
+prisoner
+{	
+	// Roadblock
+	pnr_truck_crash_cab
+	pnr_truck_crash_trailer
+	prisoner_roadblock_apc_follow_end
+	prisoner_roadblock_apc_follow_idle
+	prisoner_roadblock_apc_follow_start
+	prisoner_roadblock_apc_lead_end
+	prisoner_roadblock_apc_lead_idle
+	prisoner_roadblock_apc_lead_start
+	prisoner_roadblock_bus
+	prisoner_roadblock_bus_start
+	prisoner_roadblock_bus_end
+	prisoner_roadblock_bus_idle	
+	
+	// Injured
+	prisoner_injured_atom_truck
+	
+	// TBone
+	prisoner_tbone_apc_lead
+	prisoner_tbone_apc_follow
+	prisoner_tbone_18wheeler
+	prisoner_tbone_firetruck01	
+	prisoner_tbone_firetruck02	
+	
+	// Prisoner Courtyard
+	pnr_courtyard_van2_van
+	pnr_courtyard_van2_van_idle
+	pnr_courtyard_van1_van_idle
+	
+	// Church Balcony
+	prisoner_ship_safehouse_choke_v_2
+	
+	prisoner_hvr_struggle_dropship_3
+	
+	pnr_churchfall_dropship_arrive
+	pnr_churchfall_dropship_idle
+	pnr_churchfall_dropship_idle_2
+	
+}	
+
+gravity
+{
+	//intro 2.0
+	grav_intro_ret_suckout
+	grav_intro_mons_suckout
+	grav_intro_frig_suckout
+	
+	grav_hullbreach_jackal
+	grav_hullbreach_jackal_platform_flyby
+	
+	//gun grab
+	grav_gungrab_dropship_dropoff
+	
+	//Jackal Rodeo
+	grav_jackal_rodeo_destroyer_crash
+
+
+}
+
+pearlharbor
+{
+	ph_un_hq_rooftop_dropship_door
+	
+	ph_parade_dropship_rdoor_idle
+	ph_parade_attack_plr_knockback_rdoor
+	ph_parade_attack_plr_knockback_rdoor_idle
+	
+	ph_parade_1_11_raven_dropship
+	
+	ph_parade_end_crash_dropship
+	
+	ph_crash_dropship_wakeup_dropship
+	ph_crash_dropship_wakeup_sdf_dropship_01
+	ph_crash_dropship_wakeup_sdf_dropship_02
+	ph_crash_dropship_wakeup_sdf_dropship_01_turret
+	ph_crash_dropship_wakeup_sdf_dropship_02_turret
+	
+	ph_coast_ship_battle_ambient_un_destroyer
+	ph_coast_ship_battle_ambient_un_destroyer_loop
+	ph_coast_ship_battle_ambient_sdf_destroyer01_intro
+	ph_coast_ship_battle_ambient_sdf_destroyer01_loop
+	ph_coast_ship_battle_ambient_sdf_destroyer02_intro
+	ph_coast_ship_battle_ambient_sdf_destroyer02_loop
+	
+	ph_lake_crash_cruiser
+
+	ph_ccd_jump_over_wall_un_dest
+	ph_ccd_dust_car_front
+	script_vehicle_littlebird_bench
+	
+	ph_cafe_front_door_droppods_car
+	ph_cafe_front_door_droppods_pod
+	ph_cafe_front_door_droppods_pod02
+	ph_cafe_front_door_droppods_pod03
+	
+	ph_cafe_droppod_exit_door
+	
+	ph_jackals_hvt_handoff_truck
+	
+	ph_jackals_landing_retribution
+	ph_jackals_landing_retribution_dps
+	
+	ph_jackals_launch_space_ca_dest
+	ph_jackals_launch_space_ca_dest_2
+	ph_jackals_launch_space_ca_dest_3
+	ph_jackals_launch_space_un_dest
+	ph_jackals_launch_space_ret
+	ph_jackals_launch_space_ret_dps
+	
+	ph_jackals_launch_space_plr_jackal
+	ph_jackals_launch_space_plr_jackal_dps
+	ph_jackals_launch_space_plr_jackal_boost_dps
+	
+	ph_hill400_dropship_cockpit_roll_droppod
+	
+	ph_hill400_dropship_crash
+	ph_hill400_dropship_crash_idle
+
+	ph_ret_flyby_high
+	ph_intro_dropship_landing
+	
+	ph_hill400_sdf_dropship_crash
+	ph_hill400_sdf_dropship_crash_part_b
+	
+	ph_trenchrun_local_megacannon
+	ph_trenchrun_local_mons
+	
+}
+
+heist
+{
+	
+	heist_mons_attack_mons
+	heist_mons_attack_ret
+	heist_mons_entrance
+	heist_mons_attack_jackal
+	heist_mons_slide_fall_frigate
+	heist_mons_attack_dropship
+	heist_mons_attack_flight_missileboat
+	heist_mons_attack_flight_dropship
+
+}
+heist_space
+{
+  hs_outro_monscrash_player_jackal_mover
+}
+
+sa_wounded
+{
+  sa_wounded_infil_player_jackal_mover
+  sa_wounded_outro_jackal_plr
+}
+
+//INFILTRATIONS  ----------------------------------------
+//Blackhawk
+mp_faridah_infil_bird_A
+mp_faridah_infil_bird_B
+mp_faridah_infil_bird_C
+
+//MP Riot ambient
+	riot_un_destroyer
+	riot_ca_destroyer
+
+// old vehicles -----------------------------------------
+blackhawk
+{
+	bh_rotors
+}
+
+hovercraft
+{
+	hovercraft_rocking
+}
+
+humvee
+{
+	humvee_passenger_2_turret_minigun
+	humvee_turret_2_passenger_minigun
+}
+
+mi28
+{
+	mi28_rotors
+}
+
+m880_launcher
+{
+	m880_launcher_idle_driving_idle_forward
+}
+
+mig
+{
+	mig_landing_gear_up	
+}
+
+sedan
+{
+
+	vehicle_80s_sedan1_flattire_lf
+	vehicle_80s_sedan1_flattire_lb
+	vehicle_80s_sedan1_flattire_rf
+	vehicle_80s_sedan1_flattire_rb
+	vehicle_80s_sedan1_destroy
+}
+
+
+snowmobile
+{
+    snowmobile_vehicle_driving_idle
+}
+
+
+snowmobile_player
+{
+	player_sleeve_pose
+	player_sleeve_flapping
+}
+
+suburban
+{
+	suburban_player
+	{
+		player_suburban_minigun_fire2idle_l
+		player_suburban_minigun_fire2idle_r
+		player_suburban_minigun_idle_l
+		player_suburban_minigun_idle_r
+		player_suburban_minigun_idle2fire_l
+		player_suburban_minigun_idle2fire_r	
+	}
+
+}
+
+technical
+{
+	technical_driving_idle_forward
+	technical_driving_idle_backward
+}
+
+tank
+{
+}
+
+
+truck
+{
+	door_pickup_driver_climb_in
+	door_pickup_passenger_climb_in
+
+}
+
+battle_hind
+{
+	battle_hind_spinning_rotor
+	battle_hind_explode_c
+}
+
+iveco_lynx
+{
+	gaz_dismount_backl_door
+	gaz_dismount_backr_door
+	gaz_dismount_frontl_door
+	gaz_dismount_frontr_door
+	gaz_mount_frontl_door
+	gaz_mount_frontr_door
+	gaz_enter_back_door
+	gaz_turret_getout_gaz
+	humvee_50cal_driving_idle_forward
+	humvee_50cal_driving_idle_backward
+}
+
+// levels section -----------------------------------------
+
+las_vegas
+{
+
+	littlebird_player
+	{
+		vegas_player_littlebird_lean_out
+		vegas_player_littlebird_lean_in
+		vegas_player_littlebird_lean_out_b
+		vegas_player_littlebird_lean_in_b
+	}
+
+}
+
+// mw3 levels, going to be removed!!!! --------------------
+prague
+{
+	prague_drop_mi17
+	prague_idle_mi17
+}
+
+youngblood
+{
+	//car door in civilian area
+	yb_car_entrance_driver_b_car
+	yb_car_entrance_passenger_b_car
+
+	//truck at end
+	youngblood_truck_gate_open
+	youngblood_truck_gate_close
+	//car last position
+	yb_car_jump_car
+}
+
+
+jungle_ghost
+{
+	jungle_ghost_helicrash_helicopter
+	jungle_ghost_helicrash_helicopter_idle
+}
+
+
+//*prototype* nx_vh_night_raven assets *prototype*
+
+testmaps
+{
+
+}
+
+mp
+{
+	airstrike_mp_roll
+}
+
+
+jb_test
+
+// Universal Additive Anims (from scriptables)
+veh8_common_preload
+
+vehicle_damage: additive
+{
+	veh8_common_pickup_door_RF_open_expl
+	veh8_common_pickup_door_RB_open_expl
+	veh8_common_pickup_door_LF_open_expl
+	veh8_common_pickup_door_LB_open_expl
+	veh8_common_pickup_door_LR_open_expl
+	veh8_common_pickup_door_RR_open_expl
+	veh8_common_pickup_hood_open_expl
+	veh8_common_pickup_trunk_open_expl
+	
+	veh8_common_pickup_door_LB_open_slight
+	veh8_common_pickup_door_LF_open_slight	
+	veh8_common_pickup_door_RB_open_slight	
+	veh8_common_pickup_door_RF_open_slight	
+	veh8_common_pickup_door_RR_open_slight	
+	veh8_common_pickup_door_LR_open_slight
+	veh8_common_pickup_hood_open_slight
+	veh8_common_pickup_trunk_open_slight
+	
+	veh8_common_pickup_door_LB_wiggle
+	veh8_common_pickup_door_LF_wiggle
+	veh8_common_pickup_door_RB_wiggle
+	veh8_common_pickup_door_RF_wiggle
+	veh8_common_pickup_door_RR_wiggle
+	veh8_common_pickup_door_LR_wiggle
+	veh8_common_pickup_hood_wiggle
+	veh8_common_pickup_trunk_wiggle
+
+	veh8_common_pickup_expl_LB
+	veh8_common_pickup_expl_LF
+	veh8_common_pickup_expl_RF
+	veh8_common_pickup_expl_RB	
+	
+	veh8_common_pickup_expl_LB_2
+	veh8_common_pickup_expl_LF_2
+	veh8_common_pickup_expl_RF_2
+	veh8_common_pickup_expl_RB_2
+
+	veh8_common_pickup_expl_rock
+
+	veh8_common_pickup_rocking_RF
+	veh8_common_pickup_rocking_RB
+	veh8_common_pickup_rocking_LF
+	veh8_common_pickup_rocking_LB
+
+	veh8_common_pickup_flattire_LB
+	veh8_common_pickup_flattire_LF
+	veh8_common_pickup_flattire_RB
+	veh8_common_pickup_flattire_RF
+	
+	veh8_common_pickup_flattire_LB_2
+	veh8_common_pickup_flattire_LF_2
+	veh8_common_pickup_flattire_RB_2
+	veh8_common_pickup_flattire_RF_2
+
+	veh8_common_van_expl_LB
+	veh8_common_van_expl_LF
+	veh8_common_van_expl_RF
+	veh8_common_van_expl_RB	
+	
+	veh8_common_van_expl_LB_2
+	veh8_common_van_expl_LF_2
+	veh8_common_van_expl_RF_2
+	veh8_common_van_expl_RB_2
+
+	veh_civ_lnd_utility_van_door_LB_open_slight
+	veh_civ_lnd_utility_van_door_RB_open_slight
+}
+
+//IW9 WARZONE SEASON 3 INTRO
+cinematic_jeep
+{
+	iw9_wz_s3_intro_sh200_jeep01
+	iw9_wz_s3_intro_sh200_jeep02
+	iw9_wz_s3_intro_sh210_jeep01
+	iw9_wz_s3_intro_sh220_jeep01
+	iw9_wz_s3_intro_sh230_jeep01
+	iw9_wz_s3_intro_sh230_jeep02
+}
+
+//WZ SEASON 4 INTRO
+wz_s4_intro_sh040_heli
+wz_s4_intro_sh040_jltv01
+wz_s4_intro_sh040_jltv02
+wz_s4_intro_sh040_jltv03
+wz_s4_intro_sh040_jltv04
+wz_s4_intro_sh040_jltv05
+wz_s4_intro_sh040_jltv06
+wz_s4_intro_sh040_jltv07
+wz_s4_intro_sh040_jltv08
+wz_s4_intro_sh040_jltv09
+wz_s4_intro_sh050_jltv01
+wz_s4_intro_sh050_jltv02
+wz_s4_intro_sh050_jltv03
+wz_s4_intro_sh050_jltv04
+wz_s4_intro_sh050_jltv05
+wz_s4_intro_sh050_jltv06
+wz_s4_intro_sh050_jltv07
+wz_s4_intro_sh050_jltv08
+wz_s4_intro_sh050_jltv09
+wz_s4_intro_sh060_jltv01
+wz_s4_intro_sh060_jltv02
+wz_s4_intro_sh060_jltv03
+wz_s4_intro_sh060_jltv04
+wz_s4_intro_sh060_jltv05
+wz_s4_intro_sh060_heli02
+wz_s4_intro_sh060_heli03
+wz_s4_intro_sh060_rhib01
+wz_s4_intro_sh060_rhib02
+wz_s4_intro_sh070_rhib01
+wz_s4_intro_sh070_heli01
+wz_s4_intro_sh080_jltv02
+wz_s4_intro_sh080_jltv01
+wz_s4_intro_sh080_jltv03
+wz_s4_intro_sh080_jltv04
+wz_s4_intro_sh080_rhib01
+wz_s4_intro_sh080_rhib02
+wz_s4_intro_sh080_heli01
+wz_s4_intro_sh085_jltv01
+wz_s4_intro_sh085_jltv02
+wz_s4_intro_sh085_jltv03
+wz_s4_intro_sh085_jltv04
+wz_s4_intro_sh085_jltv05
+wz_s4_intro_sh085_jltv06
+wz_s4_intro_sh085_heli01
+wz_s4_intro_sh087_jltv01
+wz_s4_intro_sh087_jltv02
+wz_s4_intro_sh087_heli01
+wz_s4_intro_sh090_jltv01
+wz_s4_intro_sh090_jltv02
+wz_s4_intro_sh090_jltv03
+wz_s4_intro_sh090_jltv04
+wz_s4_intro_sh090_jltv05
+wz_s4_intro_sh090_jltv06
+wz_s4_intro_sh090_heli01
+wz_s4_intro_sh100_heli02
+wz_s4_intro_sh100_heli03
+wz_s4_intro_sh100_jltv01
+wz_s4_intro_sh100_jltv02
+wz_s4_intro_sh100_jltv03
+wz_s4_intro_sh100_jltv05
+wz_s4_intro_sh100_jltv06
+wz_s4_intro_sh100_jltv07
+wz_s4_intro_sh100_tank
+wz_s4_intro_sh100_tankturret
+
+//CP RAID4 OUTRO
+cp_raid4_outro_igc_b_jltv
+cp_raid4_outro_igc_b_heli
+cp_raid4_outro_igc_b_truck
+cp_raid4_outro_igc_b_truck02
+cp_raid4_outro_igc_b_truck03
+
+cp_raid4_outro_igc_b_sh010_jltv
+cp_raid4_outro_igc_b_sh010_heli
+cp_raid4_outro_igc_b_sh010_truck
+cp_raid4_outro_igc_b_sh010_truck02
+cp_raid4_outro_igc_b_sh010_truck03
+
+cp_raid4_outro_igc_b_sh020_truck
+cp_raid4_outro_igc_b_sh020_truck02
+cp_raid4_outro_igc_b_sh020_jltv
+
+cp_raid4_outro_igc_b_sh060_truck
+cp_raid4_outro_igc_b_sh060_truck02
+cp_raid4_outro_igc_b_sh060_jltv
+
+cp_raid4_outro_igc_b_sh070_heli
+
+cp_raid4_outro_igc_b_sh080_truck
+
+cp_raid4_outro_igc_b_sh090_heli
+
+cp_raid4_outro_igc_b_sh100_jltv
+cp_raid4_outro_igc_b_sh100_heli
+cp_raid4_outro_igc_b_sh100_truck
+cp_raid4_outro_igc_b_sh100_truck02
+cp_raid4_outro_igc_b_sh100_truck03
+
+
+//WZ SEASON 5 EXFIL OUTRO
+wz_s5_exfil_outro_igc_sh010_heli
+wz_s5_exfil_outro_igc_sh020_heli
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// JUP SCRIPTED SECTION ////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//sp_jup_m2
+m2_0100_infil_previs_veh01
+m2_0100_infil_previs_veh02
+m2_0100_infil_previs_veh03
+m2_0100_infil_previs_veh04
+m2_0100_infil_previs_drive_veh01
+m2_0100_infil_previs_drive_veh02
+m2_0100_infil_previs_drive_veh03
+m2_0100_infil_previs_drive_veh04
+
+sp_jup_flashback
+{
+	fbk_0010_igc_intro_sh010_veh
+	fbk_0010_igc_intro_sh010_car01
+	fbk_0010_igc_intro_sh010_car02
+	fbk_0010_igc_intro_sh010_car03
+	fbk_0010_igc_intro_sh010_car04
+	fbk_0010_igc_intro_sh020_veh
+	fbk_0010_igc_intro_sh020_car03
+	fbk_0010_igc_intro_sh020_car04
+	fbk_0010_igc_intro_sh030_veh
+	fbk_0010_igc_intro_sh030_car01
+	fbk_0010_igc_intro_sh030_car02
+	fbk_0010_igc_intro_sh030_car03
+	fbk_0010_igc_intro_sh030_car04
+	fbk_0010_igc_intro_sh040_veh
+	fbk_0010_igc_intro_sh040_car03
+	fbk_0010_igc_intro_sh050_veh
+	fbk_0010_igc_intro_sh060_veh
+	
+	fbk_0110_outside_drive_car01
+	fbk_0110_outside_drive_car02
+	fbk_0110_outside_drive_car03
+	fbk_0110_outside_drive_car04
+	fbk_0110_outside_drive_car05
+	fbk_0110_outside_drive_car06
+	fbk_0110_outside_drive_car07
+	fbk_0110_outside_drive_car08
+	fbk_0110_outside_drive_car09
+	fbk_0110_outside_drive_car10
+	fbk_0110_outside_drive_car11
+	fbk_0110_outside_drive_car12
+	fbk_0110_outside_drive_car13
+	fbk_0110_outside_drive_car14
+	fbk_0110_outside_drive_car15
+	fbk_0110_outside_drive_car16
+	fbk_0110_outside_drive_car17
+	fbk_0110_outside_drive_car18
+	fbk_0110_outside_drive_car19
+	fbk_0110_outside_drive_car20
+	fbk_0110_outside_drive_car21
+	fbk_0110_outside_drive_car22
+	fbk_0110_outside_drive_car23
+	fbk_0110_outside_drive_veh
+	fbk_0110_outside_drive_policecar01
+	fbk_0110_outside_drive_truck01
+	
+	fbk_0130_outside_civescape_car01
+	
+	fbk_0150_garage_drive_veh
+	fbk_0150_garage_drive_car01
+	fbk_0150_garage_drive_car02
+	fbk_0150_garage_drive_ambulance01
+	fbk_0150_garage_drive_ambulance02
+	fbk_0150_garage_drive_ambulance03
+	fbk_0150_garage_drive_car03
+	fbk_0150_garage_drive_car04
+	fbk_0150_garage_drive_car05
+	fbk_0150_garage_drive_car06
+	fbk_0150_garage_drive_police01
+	
+	fbk_0190_garage_exit_veh
+	fbk_0190_garage_exit_idle_veh
+	fbk_0190_garage_exit_plr_veh
+	
+	fbk_0420_garage_crash_enter_ambulance
+	fbk_0420_garage_crash_enter_idle_ambulance
+	fbk_0420_garage_crash_ambulance
+	fbk_0420_garage_crash_idle_ambulance
+	fbk_0420_garage_crash_van01
+	fbk_0420_garage_crash_van02
+	fbk_0420_garage_crash_car01
+	
+	fbk_0500_igc_capture_sh010_ambulance
+	
+	fbk_1000_igc_outro_open_heli
+	fbk_1000_igc_outro_open_idle_heli
+	fbk_1000_igc_outro_land_heli
+	fbk_1000_igc_outro_land_idle_heli
+	fbk_1000_igc_outro_sh010_heli
+	fbk_1000_igc_outro_sh020_heli
+	fbk_1000_igc_outro_sh130_heli
+	fbk_1000_igc_outro_sh140_heli
+}
+
+cp_jup_silo
+{
+		
+}
+
+sp_jup_tundra
+{
+	jup_tun_car_flip_backward
+	jup_tun_car_flip_forward
+	jup_tun_car_flip_left
+	jup_tun_car_flip_right
+	jup_tun_jockey_car_fishtail	
+}
+cp_jup_chemical
+{
+	// added to scriptables.atr
+	//veh_jup_mil_ru_heli_transport_chemical_rotor_idle
+	
+}
+
+
+
+cp_jup_ranch
+{
+	//infil
+	jup_ranch_infil_veh
+	
+	jup_ranch_infil_shot01_veh
+	jup_ranch_infil_shot02_veh
+	jup_ranch_infil_shot03_veh
+	jup_ranch_infil_shot04_veh
+	jup_ranch_infil_shot05_veh
+	jup_ranch_infil_shot06_veh
+	jup_ranch_infil_shot07_veh
+	
+	//exfil
+	jup_ranch_exfil_veh
+	jup_ranch_1000_igc_outro_scene_jltv
+}
+
+cp_jup_dam
+{
+	//infil
+	jup_dam_exfil_helicopter_enter_01
+	jup_dam_exfil_helicopter_loop_01
+	jup_dam_exfil_helicopter_exit_01
+}
+
+cp_jup_apartment
+{
+	
+}
+
+cp_jup_airstrip
+{
+	
+}
+
+// T10 - Vehicles ----------------------------------------
+
+contract
+{
+	t10_con_van_sev_van_enter
+	t10_con_van_sev_van_enter2
+	t10_con_van_sev_van_intro
+	t10_con_side_door_open_van
+	t10_con_side_door_close_van
+	t10_con_back_door_close_van
+	t10_con_back_door_open_van
+	
+	t10_con_van_open_van
+	t10_con_van_close_van
+	t10_con_van_enter_van
+	t10_con_van_exit_van
+	t10_con_van_convo01_exit_van
+	
+	t10_con_vanalt_enter_van
+	
+	
+	
+}
+
+
+extraction
+{
+t10_xtr_exfil_swing_out_heli_ally
+t10_xtr_exfil_rooftop_drag_heli_ally
+
+}
+
+
+imposter
+{
+	// imposter
+}
+
+redacted
+{
+	// redacted
+}
+
+storm
+{
+	// storm
+}
+

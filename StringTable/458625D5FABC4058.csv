@@ -1,0 +1,5 @@
+inherit,mp/loot/br/resurgence_massive/lootset_root.csv,,
+reqAdd,brloot_equip_gasmask_durable,4,4
+reqAdd,killstreak,2,2
+reqAdd,brloot_weapon_lm_dblmg_lege,1,1
+reqAdd,brloot_plunder_cash_epic_2,1,1

@@ -1,0 +1,97 @@
+// cp_zmb tweaks
+set #x39e7bc885a6c0ab17 1
+
+// Override some of the default_mp_gamesettings
+set #x3afbadc40f9c215d0				missions
+set #x3e65e9a96eb2ff62b						missions
+set #x3ef237da69bb64ef6						cp_raid1
+set #x3818c699a5caaee4f 4
+set #x33f3eb7b5794fcb5f 4
+set #x360feb5eea5e607fe	50
+set #x34fd54c4ab2f3824b 0
+set #x3dab906b864429b12 0
+set #x315115ef896ca26f2 3
+
+set #x388e213738a43d195 1
+
+set #x31b75981ca4039810 0
+set #x38cb00b8c1f5ff522 ""
+
+//Agents
+set #x3279375a0bfb2862f 48
+
+set #x3c804bf7eae3d0887 3.5
+
+//Player
+set #x384e78cbf99f29b7a 0
+set #x37cec8a27173f7e7f 100
+
+//Perks
+set #x36a381b8385734e4e 25.0
+
+set #x35f5c12c95c44f093 1
+set #x33bb847d049003050 3
+
+set #x379a0c60ce3306d67 0.000 0.000 0.000 0.000 // color 0 - no outline
+set #x379a0c50ce3306b34 0.882 0.882 0.882 1.000 // color 1 - white
+set #x379a0c80ce33071cd 0.804 0.157 0.157 1.000 // color 2 - red
+set #x379a0c70ce3306f9a 0.431 0.745 0.235 1.000 // color 3 - green
+set #x379a0c20ce330649b 0.157 0.784 0.784 1.000 // color 4 - cyan
+set #x379a0c10ce3306268 0.784 0.490 0.157 1.000 // color 5 - orange
+set #x379a0c40ce3306901 0.804 0.804 0.035 1.000 // color 6 - yellow
+set #x379a0c30ce33066ce 0.000 0.000 0.000 0.000 // color 7 - unused
+
+//perks
+set #x37a7f2a2e15e3dfe0 0.8
+set #x3f40f24cb42ab7857 1.3
+
+// heartbeat sensor
+set #x3de669dcc10d79a5f 1200
+set #x33c63d7ac4a762a33 1000
+set #x32a0e47cad5763e2d 1
+
+// heartbeat sensor EMP
+set #x32696eb38810e836b 1250
+set #x374d7317cbf47bb16 3000
+set #x38de73c63e86506a6 1000
+
+// Rendering
+set #x3383a1df841f0a521 0.25
+set #x3478c91c9c350cd6d 0
+set #x31dde331a8e0153d8 4
+set #x3884ae2ef9303556b 4
+
+// Motion blur
+set #x38fef9b7e4f880571 1
+set #x3ea4c44a08cd23d5d 0.20
+set #x3c7590c5a3289a2d 1 
+
+// character models
+
+
+// tracers
+set #x384557ffe187ea403	100		// resetting to default, as default_mp_gamesettings.cfg sets this to zero
+set #x3959f4d8cd6f7f693 0
+
+// Gamepad
+
+// Rendering
+set #x3383a1df841f0a521 0.25
+set #x3478c91c9c350cd6d 0
+set #x31dde331a8e0153d8 4
+set #x3884ae2ef9303556b 4
+set #x36a0375d33fc78dba 1
+
+// Supers
+set #x3c3a18965db644b6b                1
+set #x3a32b3f4662c49591         1
+
+//vehicle leanout
+set #x346303a909b8aa33 1
+
+// AI won't take world collision damage
+set #x351781d75e2ddda6a  0
+
+addlbexclude 0
+
+set #x37e5512406a54dd39 0

@@ -1,0 +1,13 @@
+//SP IS SETTING THESE IN SCRIPT - scripts\sp\player::initPlayerDvars();
+set #x39b2ea90201cd1769 1.0
+set #x3d4673b611c1095e2 3.0
+set #x3e4d22caf98b9c508 6  				//interpolation reate for the target waver amplitude when gasping
+set #x39abed8f25e678e42 2 		//the interpolation rate for the target waver amplitude when recovering from gasp
+set #x3f5c70c619319fd78 2 		//the sway scale when gasping( should be 2, the max)
+set #x32484a71942959ca1 1.5	//how long it takes to recover after gasping
+
+set #x3aa00632345cc19c6 6 					//interpolation rate for hte target waver amplitude
+set #x3354df28ba4e88353 2 			//interpolation rate for recoving breath
+set #x3ec62a0ad86dfa5ce 1.18			//the sway scale when releasing breath hold( 2 max )
+set #x39b2ea90201cd1769 1		//how long it takes to recover after releasing breath hold
+

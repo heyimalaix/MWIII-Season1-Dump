@@ -1,0 +1,4 @@
+inherit,mp/loot/br/default/lootset_root.csv,,,,
+tagReject,nocache,100,,,
+reqAdd,plunder & [1],1,,,# Required Plunder
+reqAdd,ammo,1,,,# Chance of Ammo

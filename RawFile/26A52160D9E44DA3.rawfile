@@ -1,0 +1,72 @@
+//temp testing new jog mechanics globally - Moved to code: IWH-43706
+
+set #x3d6e9737c61d85126 0.17
+set #x3758a6d35ad293ab1 0.2
+
+//stop jog during fast turns
+set #x3c5417f6d2646e866 300
+set #x3c7ed287569b36410 200
+
+// Global
+set #x3a231cfac8ee0c3c6					0		// bool value to turn on forward angle system. Tune with walkStrafeSpeedAngle, jogStrafeSpeedAngle, sprintStrafeSpeedAngle
+
+// Walk
+set #x32ef52edfce42be82 					0		// The angle difference from forward, where forward movement desire remains full strength.
+
+// Jog
+set #x31baafcdeb445a3f								1		// Enables jog with forward on the stick
+set #x3e9641937f4d57148							0.3		// Generic jog blend time
+set #x3805a19fc5c7d6186							0.15	// Blend time from jog to ads
+set #x3db0c4fdc6e7996bc						0.15	// Blend time from jog to fire
+set #x32400bb2fc879999c				55      // Min angles ( degrees ) of the movement stick from forward to maintain the jog animation
+set #x323ceaab586e81827					40		// Min angles ( degrees ) of the movememy stick from forward to start the jog animation
+set #x3f6d720dc5ad332ac			0.7		// Min deflection of the movement stick to maintain the jog animation
+set #x3c46c27d7fe7742b7				0.85	// Min deflection of the movement stick to start the jog animation
+set	#x31f1e37449f3ff1ce				1.15	// The scale applied to the player speed when moving forward and jogging.  Jogging is disabled while using the weapon, while not standing, etc
+
+// Sprint
+set #x3c2392537fd77638 			0.5		// Heavily dampen player strafe to make the sprint feel more like a locked in state.
+set #x36b01071e8dc79f1f					30		// The angle difference from forward, where forward movement desire remains full strength.
+
+set #x3a7e2999c310bffd7					1		// Sprint view height set #x3f18c30b0e1d58ffd suit asset. OFF DUE TO BUG WITH GOING PRONE CURRENTLY ON CODE
+set #x32df9b1db66804270				40		// Scale on the time to move from stand height to sprint height. Higher is faster.
+
+// ADS Speeds
+set #x3b482ac209dffea6f						1.0		// Slow down ADS out of sprint.
+
+// set #x3d49d0a63ceeadf67					1.4		//speed boost while super sprinting (tuned in suit asset)
+
+//set #x36e0632d6cf0bbf5d 1 //  allows reload during sprint
+
+set #x3a979bf070d9aaac2						1
+set #x3e35765a6d202b8f1				1		//turn on super sprint motion blur
+set #x32bfed596e97d44be					1.2	    //speed boost while super sprinting (scale of sprint speed)
+set #x3fe15905aaeb1ec02					0		//0 = Double Click Sprint, 1-Double tap forward
+set #x357aa3d6baf040379			0.3		//Seconds to input the total super sprint double click sequence
+set #x32f14cb36a6e88c45					0.2		//Blend time in and out of super sprint
+set #x36bc867db18615fb0		0.2		//Percentage of controller deflection from forward to neutrail required to activate control
+set #x3cefb0857f61d7fb1			0.2		//Seconds to input the total control sequence
+set #x327d507afc5454135	0.2		//Percentage of controller deflection from neutral to right that is allowed to activate control
+set #x3682072696cc710f9					0       //view offset while super sprint
+set #x356854e98116e5308				60 		//speed to blend to super sprint height
+set #x3812c7b1fdc5e6848	0.4		//Min charge percent to start a super sprint
+set #x34bd68646d267f5fa				1		//scale of recharge rate for super sprint meter
+set #x31854e5036107fded						2		// Super sprint length
+
+
+set #x3e570c2de24a4fd25			300		//the amount of time we spend accelerating (leaning) when starting to move
+set #x31ec3c62efe4ea17c 		700		//the amount of time we spend accelerating (leaning) when starting to sprint
+set #x3682ef84b8645e688 	700		//the amount of time we spend accelerating (leaning) when starting supersprint
+set #x383e3b389e1b711dd 		20		//going past that angle ignores the above defined values and sticks to default behavior
+
+
+//Foot IK
+
+set #x3619dba25635fa518       9
+set #x38e0ccff58ee98e69         12
+set #x3bd46f422d13d23c      3
+set #x3dd098ffa6932405        9
+
+set #x325d4e59294a5d6cc        0.1     //reduce the slope angle at which the raise is fully applied" 0.1            
+set #x35b594528cbd873bb           10      //Speed at which the ankle starts to raise 0-->300 (value can't be greater than set #x3d22c70e05e1fdebd)
+set #x3d22c70e05e1fdebd           15      //speed at which the ankle is fully raised 0-->300

@@ -1,0 +1,598 @@
+// code will zero stats before this is run
+
+//////// general setup ////////
+setWZLeaguePlayLoadout "defaultSet" 1
+setWZLeaguePlayLoadout "inUse" 1
+
+//////// killstreaks ////////
+setWZLeaguePlayLoadout "killstreakSetups" 0 "killstreak" "none"
+setWZLeaguePlayLoadout "killstreakSetups" 1 "killstreak" "none"
+setWZLeaguePlayLoadout "killstreakSetups" 2 "killstreak" "none"
+
+//////// rig ////////
+setWZLeaguePlayLoadout "archetype" "archetype_assault"
+setWZLeaguePlayLoadout "archetypePerk" "specialty_null"
+setWZLeaguePlayLoadout "archetypeSuper" "super_ammo_drop"
+setWZLeaguePlayLoadout "head" 10
+setWZLeaguePlayLoadout "body" 6
+
+//////// gesture ////////
+setWZLeaguePlayLoadout "gesture" "gesture000"
+setWZLeaguePlayLoadout "taunt" "iw7_taunt_rare_6"
+setWZLeaguePlayLoadout "taunts" 0 "iw7_taunt_rare_6"
+setWZLeaguePlayLoadout "taunts" 1 "iw7_taunt_rare_6"
+setWZLeaguePlayLoadout "taunts" 2 "iw7_taunt_rare_6"
+setWZLeaguePlayLoadout "taunts" 3 "iw7_taunt_rare_6"
+
+////////cp //////
+setWZLeaguePlayLoadout "cpLoadoutSel" 0
+
+///////CPFieldUpgrade///////
+setWZLeaguePlayLoadout "cpFieldUpgrade" "role_tank"
+
+/////munitions//////
+setWZLeaguePlayLoadout "munitionSetups" 0 "munition" "empty1"
+setWZLeaguePlayLoadout "munitionSetups" 1 "munition" "empty2"
+setWZLeaguePlayLoadout "munitionSetups" 2 "munition" "empty3"
+
+setWZLeaguePlayLoadout "munitionWaveModeSetups" 0 "munition" "empty1"
+setWZLeaguePlayLoadout "munitionWaveModeSetups" 1 "munition" "empty2"
+setWZLeaguePlayLoadout "munitionWaveModeSetups" 2 "munition" "empty3"
+
+//////// classes ////////
+
+// Loadout 1 - AR
+setWZLeaguePlayLoadout_loc "loadouts" 0 "name" "LUA_MENU_MP/LOADOUT_1"
+setWZLeaguePlayLoadout "loadouts" 0 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 0 "overkill" 0
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "weapon" "iw9_ar_mike4"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "weapon" "iw9_la_gromeo"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 2 "weapon" "iw9_la_gromeo"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 0 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 0 "equipmentSetups" 0 "equipment" "equip_frag"
+setWZLeaguePlayLoadout "loadouts" 0 "equipmentSetups" 1 "equipment" "equip_snapshot_grenade"
+setWZLeaguePlayLoadout "loadouts" 0 "loadoutPerks" 0 "specialty_hustle"
+setWZLeaguePlayLoadout "loadouts" 0 "loadoutPerks" 1 "specialty_eod"
+setWZLeaguePlayLoadout "loadouts" 0 "loadoutPerks" 2 "specialty_restock"
+setWZLeaguePlayLoadout "loadouts" 0 "extraPerks" 0 "specialty_surveillance"
+setWZLeaguePlayLoadout "loadouts" 0 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 0 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 0 "equippedPerkPackageIndex" 0
+
+
+// Loadout 2 - SMG
+setWZLeaguePlayLoadout_loc "loadouts" 1 "name" "LUA_MENU_MP/LOADOUT_2"
+setWZLeaguePlayLoadout "loadouts" 1 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 1 "overkill" 0
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "weapon" "iw9_sm_mpapa5"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "reticle" "none"role_1
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "weapon" "iw9_pi_papa220"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 0 "attachmentSetup" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "weapon" "iw9_pi_papa220"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 1 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 1 "equipmentSetups" 0 "equipment" "equip_throwing_knife"
+setWZLeaguePlayLoadout "loadouts" 1 "equipmentSetups" 1 "equipment" "equip_smoke"
+setWZLeaguePlayLoadout "loadouts" 1 "loadoutPerks" 0 "specialty_scavenger_plus"
+setWZLeaguePlayLoadout "loadouts" 1 "loadoutPerks" 1 "specialty_grenade_expert"
+setWZLeaguePlayLoadout "loadouts" 1 "loadoutPerks" 2 "specialty_warhead"
+setWZLeaguePlayLoadout "loadouts" 1 "extraPerks" 0 "specialty_surveillance"
+setWZLeaguePlayLoadout "loadouts" 1 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 1 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 1 "equippedPerkPackageIndex" 1
+
+
+// Loadout 3 - LMG
+setWZLeaguePlayLoadout_loc "loadouts" 2 "name" "LUA_MENU_MP/LOADOUT_3"
+setWZLeaguePlayLoadout "loadouts" 2 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 2 "overkill" 0
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "weapon" "iw9_lm_ahotel"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "weapon" "iw9_la_juliet"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 2 "weapon" "iw9_la_juliet"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 2 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 2 "equipmentSetups" 0 "equipment" "equip_thermite"
+setWZLeaguePlayLoadout "loadouts" 2 "equipmentSetups" 1 "equipment" "equip_decoy"
+setWZLeaguePlayLoadout "loadouts" 2 "loadoutPerks" 0 "specialty_hustle"
+setWZLeaguePlayLoadout "loadouts" 2 "loadoutPerks" 1 "specialty_huntmaster"
+setWZLeaguePlayLoadout "loadouts" 2 "loadoutPerks" 2 "specialty_tactical_recon"
+setWZLeaguePlayLoadout "loadouts" 2 "extraPerks" 0 "specialty_guerrilla"
+setWZLeaguePlayLoadout "loadouts" 2 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 2 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 2 "equippedPerkPackageIndex" 2
+
+
+// Loadout 4 - AR
+setWZLeaguePlayLoadout_loc "loadouts" 3 "name" "LUA_MENU_MP/LOADOUT_4"
+setWZLeaguePlayLoadout "loadouts" 3 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 3 "overkill" 1
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "weapon" "iw9_dm_xmike2010"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "weapon" "iw9_ar_akilo105"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 2 "weapon" "iw9_ar_akilo105"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 3 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 3 "equipmentSetups" 0 "equipment" "equip_c4"
+setWZLeaguePlayLoadout "loadouts" 3 "equipmentSetups" 1 "equipment" "equip_gas_grenade"
+setWZLeaguePlayLoadout "loadouts" 3 "loadoutPerks" 0 "specialty_munitions_2"
+setWZLeaguePlayLoadout "loadouts" 3 "loadoutPerks" 1 "specialty_grenade_expert"
+setWZLeaguePlayLoadout "loadouts" 3 "loadoutPerks" 2 "specialty_tactical_recon"
+setWZLeaguePlayLoadout "loadouts" 3 "extraPerks" 0 "specialty_survivor"
+setWZLeaguePlayLoadout "loadouts" 3 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 3 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 3 "equippedPerkPackageIndex" 6
+
+
+// Loadout 5 - SMG
+setWZLeaguePlayLoadout_loc "loadouts" 4 "name" "LUA_MENU_MP/LOADOUT_5"
+setWZLeaguePlayLoadout "loadouts" 4 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 4 "overkill" 0
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "weapon" "iw9_lm_foxtrot"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "weapon" "iw9_pi_golf17"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 2 "weapon" "iw9_pi_golf17"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 4 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 4 "equipmentSetups" 0 "equipment" "equip_claymore"
+setWZLeaguePlayLoadout "loadouts" 4 "equipmentSetups" 1 "equipment" "equip_concussion"
+setWZLeaguePlayLoadout "loadouts" 4 "loadoutPerks" 0 "specialty_tac_resist"
+setWZLeaguePlayLoadout "loadouts" 4 "loadoutPerks" 1 "specialty_eod"
+setWZLeaguePlayLoadout "loadouts" 4 "loadoutPerks" 2 "specialty_covert_ops"
+setWZLeaguePlayLoadout "loadouts" 4 "extraPerks" 0 "specialty_overcharge_field_upgrade"
+setWZLeaguePlayLoadout "loadouts" 4 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 4 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 4 "equippedPerkPackageIndex" 4
+
+// Loadout 6 - DMR
+setWZLeaguePlayLoadout_loc "loadouts" 5 "name" "LUA_MENU_MP/LOADOUT_6"
+setWZLeaguePlayLoadout "loadouts" 5 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 5 "overkill" 0
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "weapon" "iw9_sn_mromeo"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "weapon" "iw9_pi_decho"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 2 "weapon" "iw9_pi_decho"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 5 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 5 "equipmentSetups" 0 "equipment" "equip_molotov"
+setWZLeaguePlayLoadout "loadouts" 5 "equipmentSetups" 1 "equipment" "equip_gas_grenade"
+setWZLeaguePlayLoadout "loadouts" 5 "loadoutPerks" 0 "specialty_hustle"
+setWZLeaguePlayLoadout "loadouts" 5 "loadoutPerks" 1 "specialty_grenade_expert"
+setWZLeaguePlayLoadout "loadouts" 5 "loadoutPerks" 2 "specialty_warhead"
+setWZLeaguePlayLoadout "loadouts" 5 "extraPerks" 0 "specialty_quick_fix"
+setWZLeaguePlayLoadout "loadouts" 5 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 5 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 5 "equippedPerkPackageIndex" 5
+
+// Loadout 7 - AR
+setWZLeaguePlayLoadout_loc "loadouts" 6 "name" "LUA_MENU_MP/LOADOUT_7"
+setWZLeaguePlayLoadout "loadouts" 6 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 6 "overkill" 0
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "weapon" "iw9_sh_mviktor"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "weapon" "iw9_la_rpapa7"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 2 "weapon" "iw9_la_rpapa7"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 6 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 6 "equipmentSetups" 0 "equipment" "equip_frag"
+setWZLeaguePlayLoadout "loadouts" 6 "equipmentSetups" 1 "equipment" "equip_flash"
+setWZLeaguePlayLoadout "loadouts" 6 "loadoutPerks" 0 "specialty_hustle"
+setWZLeaguePlayLoadout "loadouts" 6 "loadoutPerks" 1 "specialty_eod"
+setWZLeaguePlayLoadout "loadouts" 6 "loadoutPerks" 2 "specialty_restock"
+setWZLeaguePlayLoadout "loadouts" 6 "extraPerks" 0 "specialty_surveillance"
+setWZLeaguePlayLoadout "loadouts" 6 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 6 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 6 "equippedPerkPackageIndex" 0
+
+// Loadout 8 - AR
+setWZLeaguePlayLoadout_loc "loadouts" 7 "name" "LUA_MENU_MP/LOADOUT_8"
+setWZLeaguePlayLoadout "loadouts" 7 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 7 "overkill" 0
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "weapon" "iw9_br_msecho"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "weapon" "iw9_me_knife"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 2 "weapon" "iw9_me_knife"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 7 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 7 "equipmentSetups" 0 "equipment" "equip_semtex"
+setWZLeaguePlayLoadout "loadouts" 7 "equipmentSetups" 1 "equipment" "equip_snapshot_grenade"
+setWZLeaguePlayLoadout "loadouts" 7 "loadoutPerks" 0 "specialty_scavenger_plus"
+setWZLeaguePlayLoadout "loadouts" 7 "loadoutPerks" 1 "specialty_grenade_expert"
+setWZLeaguePlayLoadout "loadouts" 7 "loadoutPerks" 2 "specialty_warhead"
+setWZLeaguePlayLoadout "loadouts" 7 "extraPerks" 0 "specialty_surveillance"
+setWZLeaguePlayLoadout "loadouts" 7 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 7 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 7 "equippedPerkPackageIndex" 1
+
+// Loadout 9 - Shotgun
+setWZLeaguePlayLoadout_loc "loadouts" 8 "name" "LUA_MENU_MP/LOADOUT_9"
+setWZLeaguePlayLoadout "loadouts" 8 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 8 "overkill" 0
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "weapon" "iw9_sm_victor"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "weapon" "iw9_pi_swhiskey"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 2 "weapon" "iw9_pi_swhiskey"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 8 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 8 "equipmentSetups" 0 "equipment" "equip_thermite"
+setWZLeaguePlayLoadout "loadouts" 8 "equipmentSetups" 1 "equipment" "equip_smoke"
+setWZLeaguePlayLoadout "loadouts" 8 "loadoutPerks" 0 "specialty_hustle"
+setWZLeaguePlayLoadout "loadouts" 8 "loadoutPerks" 1 "specialty_huntmaster"
+setWZLeaguePlayLoadout "loadouts" 8 "loadoutPerks" 2 "specialty_tactical_recon"
+setWZLeaguePlayLoadout "loadouts" 8 "extraPerks" 0 "specialty_guerrilla"
+setWZLeaguePlayLoadout "loadouts" 8 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 8 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 8 "equippedPerkPackageIndex" 2
+
+// Loadout 10 - Sniper
+setWZLeaguePlayLoadout_loc "loadouts" 9 "name" "LUA_MENU_MP/LOADOUT_10"
+setWZLeaguePlayLoadout "loadouts" 9 "inUse" 1
+setWZLeaguePlayLoadout "loadouts" 9 "overkill" 0
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "weapon" "iw9_ar_kilo53"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 0 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "weapon" "iw9_me_riotshield"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 1 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 2 "weapon" "iw9_me_riotshield"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 2 "reticle" "none"
+setWZLeaguePlayLoadout "loadouts" 9 "weaponSetups" 2 "variantID" 0
+setWZLeaguePlayLoadout "loadouts" 9 "equipmentSetups" 0 "equipment" "equip_at_mine"
+setWZLeaguePlayLoadout "loadouts" 9 "equipmentSetups" 1 "equipment" "equip_concussion"
+setWZLeaguePlayLoadout "loadouts" 9 "loadoutPerks" 0 "specialty_munitions_2"
+setWZLeaguePlayLoadout "loadouts" 9 "loadoutPerks" 1 "specialty_grenade_expert"
+setWZLeaguePlayLoadout "loadouts" 9 "loadoutPerks" 2 "specialty_tactical_recon"
+setWZLeaguePlayLoadout "loadouts" 9 "extraPerks" 0 "specialty_survivor"
+setWZLeaguePlayLoadout "loadouts" 9 "fieldUpgrades" 0 "super_ammo_drop"
+setWZLeaguePlayLoadout "loadouts" 9 "fieldUpgrades" 1 "none"
+setWZLeaguePlayLoadout "loadouts" 9 "equippedPerkPackageIndex" 6
+
+//////// streak preferences setup ////////
+setWZLeaguePlayLoadout "streakPreferences" "none" 0
+setWZLeaguePlayLoadout "streakPreferences" "uav" 0
+setWZLeaguePlayLoadout "streakPreferences" "airdrop" 0
+setWZLeaguePlayLoadout "streakPreferences" "dronedrop" 0
+setWZLeaguePlayLoadout "streakPreferences" "counter_uav" 0
+setWZLeaguePlayLoadout "streakPreferences" "ball_drone_backup" 0
+setWZLeaguePlayLoadout "streakPreferences" "sentry_shock" 0
+setWZLeaguePlayLoadout "streakPreferences" "orbital_deployment" 0
+setWZLeaguePlayLoadout "streakPreferences" "thor" 0
+setWZLeaguePlayLoadout "streakPreferences" "precision_airstrike" 0
+setWZLeaguePlayLoadout "streakPreferences" "jammer" 0
+setWZLeaguePlayLoadout "streakPreferences" "jackal" 0
+setWZLeaguePlayLoadout "streakPreferences" "minijackal" 0
+setWZLeaguePlayLoadout "streakPreferences" "nuke" 0
+setWZLeaguePlayLoadout "streakPreferences" "spiderbot" 0
+setWZLeaguePlayLoadout "streakPreferences" "directional_uav" 0
+setWZLeaguePlayLoadout "streakPreferences" "bombardment" 0
+setWZLeaguePlayLoadout "streakPreferences" "remote_c8" 0
+setWZLeaguePlayLoadout "streakPreferences" "venom" 0
+
+//Operators
+setWZLeaguePlayLoadoutsPlayerData "customizationSetup" "operators" 0 "milsim_western_1"
+setWZLeaguePlayLoadoutsPlayerData "customizationSetup" "operators" 1 "milsim_eastern_1"
+
+setWZLeaguePlayLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_western_1" "skin" 5995
+setWZLeaguePlayLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_eastern_1" "skin" 5996
+
+//////// rig preferences setup ////////
+
+// NOTE-EricG: Please try to keep the following sorted by order of CaC appearance and grouped by archetype
+
+// assault
+setWZLeaguePlayLoadout "archetypePreferences" 0 "archetype" "archetype_assault"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "archetypePerk" "specialty_boom"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "archetypeSuper" "none"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "head" "head_1"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "body" "body_1"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "taunt" "iw7_taunt_rare_6"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "taunts" 0 "iw7_taunt_rare_6"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "taunts" 1 "iw7_taunt_rare_6"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "taunts" 2 "iw7_taunt_rare_6"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "taunts" 3 "iw7_taunt_rare_6"
+setWZLeaguePlayLoadout "archetypePreferences" 0 "gesture" "gesture000"
+
+// heavy
+setWZLeaguePlayLoadout "archetypePreferences" 1 "archetype" "archetype_assault"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "archetypePerk" "specialty_regenfaster"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "archetypeSuper" "none"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "head" "head_1"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "body" "body_1"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "taunt" "iw7_taunt_rare_8"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "taunts" 0 "iw7_taunt_rare_8"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "taunts" 1 "iw7_taunt_rare_8"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "taunts" 2 "iw7_taunt_rare_8"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "taunts" 3 "iw7_taunt_rare_8"
+setWZLeaguePlayLoadout "archetypePreferences" 1 "gesture" "gesture009"
+
+// synaptic
+setWZLeaguePlayLoadout "archetypePreferences" 2 "archetype" "archetype_assault"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "archetypePerk" "specialty_rush"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "archetypeSuper" "none"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "head" "head_1"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "body" "body_1"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "taunt" "iw7_taunt_rare_10"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "taunts" 0 "iw7_taunt_rare_10"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "taunts" 1 "iw7_taunt_rare_10"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "taunts" 2 "iw7_taunt_rare_10"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "taunts" 3 "iw7_taunt_rare_10"
+setWZLeaguePlayLoadout "archetypePreferences" 2 "gesture" "gesture009"
+
+// ftl
+setWZLeaguePlayLoadout "archetypePreferences" 3 "archetype" "archetype_assault"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "archetypePerk" "specialty_superpack"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "archetypeSuper" "none"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "head" "head_1"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "body" "body_1"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "taunt" "iw7_taunt_rare_3"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "taunts" 0 "iw7_taunt_rare_3"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "taunts" 1 "iw7_taunt_rare_3"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "taunts" 2 "iw7_taunt_rare_3"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "taunts" 3 "iw7_taunt_rare_3"
+setWZLeaguePlayLoadout "archetypePreferences" 3 "gesture" "gesture009"
+
+// engineer
+setWZLeaguePlayLoadout "archetypePreferences" 4 "archetype" "archetype_assault"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "archetypePerk" "specialty_equipment_ping"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "archetypeSuper" "none"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "head" "head_1"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "body" "body_1"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "taunt" "iw7_taunt_rare_14"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "taunts" 0 "iw7_taunt_rare_14"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "taunts" 1 "iw7_taunt_rare_14"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "taunts" 2 "iw7_taunt_rare_14"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "taunts" 3 "iw7_taunt_rare_14"
+setWZLeaguePlayLoadout "archetypePreferences" 4 "gesture" "gesture009"
+
+//ghost
+setWZLeaguePlayLoadout "archetypePreferences" 5 "archetype" "archetype_assault"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "archetypePerk" "specialty_mark_targets"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "archetypeSuper" "none"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "head" "head_1"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "body" "body_1"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "taunt" "iw7_taunt_rare_7"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "taunts" 0 "iw7_taunt_rare_7"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "taunts" 1 "iw7_taunt_rare_7"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "taunts" 2 "iw7_taunt_rare_7"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "taunts" 3 "iw7_taunt_rare_7"
+setWZLeaguePlayLoadout "archetypePreferences" 5 "gesture" "gesture009"

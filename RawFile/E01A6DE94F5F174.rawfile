@@ -1,0 +1,28 @@
+%force_cs_anim_index_match
+
+soldier_patrol_walk_1d : blendspace1d( range="0,80", blend_time="500", coords="30,41,53,71", value=[desiredspeed] ) loopsync phase_sync_leader phase_sync_follower
+{
+	patrol_walk_spd30 : randomloop( blendtime="0.5", restart="false", norepeat="true", seed=[animtime] ) phase_sync_leader phase_sync_follower
+	{
+		sdr_patrol_walk_spd30_01	//31
+		sdr_patrol_walk_spd30_02	//28
+	}
+	patrol_walk_spd41 : randomloop( blendtime="0.5", restart="false", norepeat="true", seed=[animtime] ) phase_sync_leader phase_sync_follower
+	{
+		sdr_patrol_walk_spd40_01	//39
+		sdr_patrol_walk_spd40_02	//40
+		sdr_patrol_walk_spd40_03	//44
+		sdr_patrol_walk_spd40_04	//43
+	}
+	patrol_walk_spd53 : randomloop( blendtime="0.5", restart="false", norepeat="true", seed=[animtime] ) phase_sync_leader phase_sync_follower
+	{
+		sdr_patrol_walk_spd50_01	//52
+		sdr_patrol_walk_spd50_02	//54
+	}
+	patrol_walk_spd71 : randomloop( blendtime="0.5", restart="false", norepeat="true", seed=[animtime] ) phase_sync_leader phase_sync_follower
+	{
+		sdr_patrol_walk_spd70_01	//68
+		sdr_patrol_walk_spd70_02	//72
+		sdr_patrol_walk_spd70_03	//69
+	}
+}

@@ -1,0 +1,30 @@
+set #x355033e1616a8be5e 300
+
+set #x36726b7eb3c852a14 0.6 //Scales the bob cycle speed when teh player is in air.  Effects both camera bob and the weapon animation rate
+set #x3dd287a085d599c1 1 //A speed ration is calculated agains some max speeds defined based on the player state.  During freefall the player can reach very high speed which denerate high speed raition.  This dvar is used to clamp it.
+
+
+//iw9 jump speed nerfs
+set #x39d9e070929891859 1
+
+set #x3e6a9e6f8e573c34c 0.95
+set #x3e6a9e7f8e573c57f 0.79
+set #x3e6a9e4f8e573bee6 0.77
+ 
+set #x3d9710e8c2b0b17e6 1.1
+set #x33dbdde7d28b7b481 0.92
+set #x33dbddd7d28b7b24e 0.88
+set #x33dbde07d28b7b8e7 0.83
+
+set #x3560ca771341f4f9d 0.98
+
+set #x3c6cc71c7fdb6ee5f 150
+set #x35ca7d1a64ed4c48b 1
+
+set #x3dc601b7fedbb4a7a 1.2
+set #x3a98e5a1291cb3e83 0.7 //Scales the speed of ADS transitions when jumping"
+set #x3a8e88263b836e985 1.0 //"Time in msec for the jumpAdsSpeedScale to lerp in from the time the player jumps"
+set #x3c832164e32a829ee 700.0 //"Time in msec for the jumpAdsSpeedScale to lerp in from the time the player jumps"
+
+set #x37bb87864b2da410d 1.5
+set #x3fcaf3b0a55499f82 270

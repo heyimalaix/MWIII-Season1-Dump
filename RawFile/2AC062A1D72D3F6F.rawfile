@@ -1,0 +1,49 @@
+// Pinned progress bar
+#define OBJECTIVE_PINNED_PROG_BAR_HIDE 0 
+#define OBJECTIVE_PINNED_PROG_BAR_SHOW_TEXT 1
+#define OBJECTIVE_PINNED_PROG_BAR_SHOW_ALL 2 // text and bar
+
+// Background type states - Mirrored in Lua as OBJECTIVE.Background and C++ as ObjectiveBackground
+#define OBJECTIVE_BACKGROUND_TYPE_DEFAULT 0
+#define OBJECTIVE_BACKGROUND_TYPE_NO_BACKGROUND 1
+#define OBJECTIVE_BACKGROUND_TYPE_CARRY 2
+#define OBJECTIVE_BACKGROUND_TYPE_MISSION 3
+#define OBJECTIVE_BACKGROUND_TYPE_MISSION_TRACKED 4
+#define OBJECTIVE_BACKGROUND_TYPE_POI 5
+#define OBJECTIVE_BACKGROUND_TYPE_CIRCLE 6
+#define OBJECTIVE_BACKGROUND_TYPE_DIAMOND 7
+#define OBJECTIVE_BACKGROUND_TYPE_STRONGHOLD 8
+#define OBJECTIVE_BACKGROUND_TYPE_SIDE_RELATIVE 9
+#define OBJECTIVE_BACKGROUND_TYPE_PLUNDER_GREEN 10
+#define OBJECTIVE_BACKGROUND_TYPE_PLUNDER_YELLOW 11
+
+//Dungeons
+#define OBJECTIVE_DEFAULT_OBJECTIVE_ICON "icon_waypoint_objective_general"
+#define OBJECTIVE_DEFAULT_OBJECTIVE_ICON_SIZE "icon_medium"
+
+// Campaign
+#define CONST_MAX_OBJECTIVE_LOCATIONS 8 // Defined in Native: MAX_OBJECTIVE_LOCATIONS
+#define CONST_MAX_OBJECTIVES 32 // Defined in Native: MAX_OBJECTIVES
+
+#define OBJECTIVE_SCALE_DISTANCE_DEFAULT 1000 // Maximum distance an objective marker can be before it begins shrinking in the HUD.
+#define OBJECTIVE_PROMPT_SCREEN_OFFSET -55 // Vertical offset applied to objectives at the same location as interact prompts
+#define OBJECTIVE_AI_Z_OFFSET 25 // Vertical offset applied to objectives assigned to a bot. Places above the head.
+
+#define OBJECTIVE_REMINDER_DEFAULT_DELAY 180000 //How long, in milliseconds, do we wait before reminding the player of the objective?
+#define OBJECTIVE_REMINDER_REFRESH_DELAY 5 //How long, in seconds, do we wait between objective reminder timer refreshes?
+#define OBJECTIVE_REMINDER_DISPLAY_TIME 10000 //How long, in milliseconds, does the objective reminder remain on screen when it displays?;
+
+#define FOCUS_PLAYER_NOTIFY "focus_pressed"
+#define OBJECTIVE_UPDATED_NOTIFY "objectives_updated"
+
+#define OBJECTIVE_STATE_EMPTY "empty"	// Not Shown
+#define OBJECTIVE_STATE_ACTIVE "active"	// Shows in the pause menu / minimap but not in the HUD / focus mode
+#define OBJECTIVE_STATE_INVISIBLE "invisible"	// Shows in the HUD but not in the pause menu / focus mode / minimap
+#define OBJECTIVE_STATE_COMPLETE "done"	// Shows in the pause menu as complete
+#define OBJECTIVE_STATE_CURRENT "current"	// Shows in the pause menu / focus mode / minimap and in the HUD
+#define OBJECTIVE_STATE_FAILED "failed"// Shows a failed notification and marks as failed in the pause menu
+
+#define OBJECTIVE_SPLASH_REMINDER 6
+#define OBJECTIVE_SPLASH_DISPLAYTIME 3
+#define OBJECTIVE_SPLASH_DISPLAYING "objective_splash_onscreen"
+#define OBJECTIVE_SPLASH_BLOCKED "other_splash_onscreen"

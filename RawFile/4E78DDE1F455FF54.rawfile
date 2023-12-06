@@ -1,0 +1,22 @@
+// This is shared by CP and MP.
+// Look at the _mp or _cp file for gamemode-specific settings
+
+set #x366c38b5b61297ac1					0
+set #x39995278b4b4099ae				1
+
+// UI
+set #x3650f534f8936e53d 		0.65
+set #x393e54c9cd1655b1e				14
+set #x35eef98b01f9b6123				14
+set #x356dfb4f435263764			0.37
+set #x3e6e55586a2edb6e4			0.03
+set #x3c8acb20fd046d934				15
+set #x3889267ea67475f5d				15
+set #x3e668fb9a78b1773e				20
+set #x34c7d3632cc701fc3				20
+set #x31c7d4165269ed633			5
+
+// SHARED GAMETYPE DEFAULTS
+
+// gameplay
+set #x3c653d32c30815d2b				15

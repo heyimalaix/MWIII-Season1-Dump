@@ -1,0 +1,18 @@
+%force_cs_anim_index_match
+
+	ai_freefall: blendspace2d( rangex="-45,45", rangey="-90,90", blend_time="0",
+	coords="{-45,-90},{0,-90},{45,-90},{-45,0},{0,0},{45,0},{-45,90},{0,90},{45,90}",
+	edges="{3,4,6},{4,6,7},{4,5,8},{4,7,8},{0,1,4},{0,3,4},{2,4,5},{1,2,4}",
+	valuex=0, valuey=0 ) loopsync
+	{
+		sdr_com_skydive_1
+		sdr_com_skydive_2
+		sdr_com_skydive_3
+		sdr_com_skydive_4
+		sdr_com_skydive_idle
+		sdr_com_skydive_6
+		sdr_com_skydive_7
+		sdr_com_skydive_8
+		sdr_com_skydive_9
+	}
+		

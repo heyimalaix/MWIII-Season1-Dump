@@ -1,0 +1,14 @@
+{
+	"desc": "Hudless",
+	"aspect_ratio_high": 100,
+	"aspect_ratio_low": 0,
+	"layout": "layout_customization/hudless.json",
+	"children": [
+		{
+			"desc": "no hud no problem",
+			"aspect_ratio_high": 100,
+			"aspect_ratio_low": 0,
+			"layout": "layout_customization/hudless.json"
+		}
+	]
+}

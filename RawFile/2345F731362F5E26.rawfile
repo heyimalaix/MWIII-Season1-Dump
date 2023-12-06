@@ -1,0 +1,16 @@
+%force_cs_anim_index_match
+
+wide_slice_strafe_start: blendspace1d( range="-180,180", blend_time="200",
+coords="-180,-135,-90,-45,0,45,90,135,180",
+value=[strafeyaw] ) nonloopsync
+{
+	sdr_cqb_strafe_walk_start_2
+	sdr_cqb_strafe_walk_start_3_alt
+	sdr_cqb_strafe_walk_start_6
+	sdr_cqb_strafe_walk_start_9
+	sdr_cqb_strafe_walk_start_8
+	sdr_cqb_strafe_walk_start_7
+	sdr_cqb_strafe_walk_start_4
+	sdr_cqb_strafe_walk_start_1
+	sdr_cqb_strafe_walk_start_2@1
+}

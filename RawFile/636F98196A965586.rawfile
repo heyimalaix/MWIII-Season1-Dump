@@ -1,0 +1,8 @@
+// mobile platform settings
+// this is executed immediately after default_mp.cfg and default_mp_gamesettings.cfg
+
+set #x3ef237da69bb64ef6 mp_don3_mobile
+
+// increase ping tolerance for mobile
+set #x324fa0ed770cb180f 132.0
+set #x381223b6af8fdb7a8 0.05

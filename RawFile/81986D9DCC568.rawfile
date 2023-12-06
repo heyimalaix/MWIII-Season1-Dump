@@ -1,0 +1,15 @@
+// this gets run when you run with a fresh profile and when you reset #x38c95068c1f418e19
+// code will zero stats before this is run
+
+//////// general setup ////////
+// Init crossplay
+setJupiterNonGamePlayerData "cross_play_enabled" 1
+
+// Init Customization
+setJupiterNonGamePlayerData "customization_background" 0 35606
+setJupiterNonGamePlayerData "customization_patch" 0 37351
+
+//////// Loadouts ////////
+exec mp\stats_init_jupiter_public_loadouts
+exec mp\stats_init_jupiter_private_loadouts
+exec mp\stats_init_jupiter_stats

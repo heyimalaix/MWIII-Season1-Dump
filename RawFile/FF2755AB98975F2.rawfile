@@ -1,0 +1,13 @@
+// Start up with base configs
+exec default_splitscreen.cfg
+
+set #x33f3eb7b5794fcb5f 4
+
+//EXTINCTION - ALIENS
+set #x3ec7b9e4fd572c929						0
+set #x3a7eb83ac413d6834						0
+set #x37026ceffe6e03f2d				0
+set #x3d8e28af8e0b469de						1
+set #x35538cb783826583d 						0
+set #x38a732e8d96227f1d							0
+set #x3935090d3ed8df5f2						1

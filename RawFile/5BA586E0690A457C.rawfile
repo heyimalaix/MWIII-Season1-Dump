@@ -1,0 +1,17 @@
+exec shared_qa_automation.cfg
+
+///////////////////////////////////////////
+// Bots
+///////////////////////////////////////////
+
+set #x3409bdb274de67d6e 48								// Num of bots to spawn when enter game. Has no effect in matchmaking because bots in mm are controlled by DW.
+set #x3921449ecbffc9ef3 _mgl_mp 					// Load gametype for different bot difficulty table selection.
+set #x321490214e104e768 0	// in DEMO LS mode, without this dvar set #x3fa188bb584287b3 0, bots will be kicked due to inventory state invalid.
+
+///////////////////////////////////////////
+// Bots Behavior Analyzer Log
+///////////////////////////////////////////
+
+set #x398397926ff200d49 1	// If true, print log for Bots Behavior Analyzer.
+set #x3cdd059b09c8bb733    5	// The interval to print player position log for Bots Behavior Analyzer.
+set #x3e594acb63958e3d9          0	// enable print debug log in BBA

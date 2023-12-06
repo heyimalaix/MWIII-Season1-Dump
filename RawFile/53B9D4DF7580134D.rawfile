@@ -1,0 +1,14 @@
+{
+	"desc": "Classic",
+	"aspect_ratio_high": 100,
+	"aspect_ratio_low": 0,
+	"layout": "layout_customization/classic.json",
+	"children": [
+		{
+			"desc": "if it ain't broke",
+			"aspect_ratio_high": 100,
+			"aspect_ratio_low": 0,
+			"layout": "layout_customization/classic.json"
+		}
+	]
+}

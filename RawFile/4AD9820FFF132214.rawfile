@@ -1,0 +1,78 @@
+// T9 Hellhound Idles
+#idle
+#howl
+
+// T9 Hellhound Idle Exit Run
+ai_t9_zombie_dog_com_run_exit_8
+
+
+locomotion : loopsync
+{
+	// T9 Hellhound Locomotion
+	move_loops
+	{
+		#move_loop
+	}
+}
+
+// T9 Hellhound Move Turns
+#move_turn
+
+
+// T9 Hellhound Attacks
+#melee
+#melee_low
+
+// T9 Hellhound Deaths
+#death_generic
+
+// T9 Hellhound Moving Deaths
+
+// T9 Hellhound Pains
+
+
+// T9 Hellhound Stuns
+#stun_prep
+#stun_loop
+#stun_end
+
+// T9 Hellhound knockdowns
+#knockdown
+
+//T9 Traversals
+#traversal
+
+// TODO: do we need these traversals?
+ai_t9_zombie_dog_trv_part_acc_across_from_comps_01
+ai_t9_zombie_dog_trv_part_acc_across_from_landing_01
+ai_t9_zombie_dog_trv_part_acc_across_to_comps_01
+ai_t9_zombie_dog_trv_part_acc_across_to_landing_01
+ai_t9_zombie_dog_trv_part_acc_low_to_mid_01
+ai_t9_zombie_dog_trv_part_acc_mid_to_low_01
+ai_t9_zombie_dog_trv_part_acc_mid_to_upper_01
+ai_t9_zombie_dog_trv_part_acc_upper_to_mid_01
+
+//T9 Hellhound Spawns
+body
+{
+	
+}
+
+#animscripted
+
+server_ragdoll : public server_ragdoll( xanim_server_ragdoll_root_origin = [xanim_server_ragdoll_root_origin],
+										xanim_server_ragdoll_root_angles = [xanim_server_ragdoll_root_angles])
+{
+}
+
+ragdoll : public clientauth overlay ragdoll (ragdoll_handle=[entity_ragdoll_handle])
+{
+}
+
+live_ragdoll
+{
+    #live_ragdoll
+}
+
+// Brain Rot pet
+#pet

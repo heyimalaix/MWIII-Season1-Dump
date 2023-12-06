@@ -1,0 +1,32 @@
+//resolution of the circular stencil for the sniper scope- CODY disabling these per PPon's request.
+//set #x35e8ab9790c89c6de  2
+//set #x35e8aba790c89c911  2
+
+//crosshair that moves around
+set #x3877b886b490e4274 1
+
+//tracer draw offsets( SETTING THESE HACKY FOR SWIMMING SLOW TRACERS )
+set #x37544964b1d74cd54 0
+set #x32e64c59b32fd1807 0
+set #x3cfb6be4e7f16bd72 0
+set #x3b659976e19b4f7cd 0
+
+//corpsefade
+set #x3d0c58d9d1cafc3f1 1
+set #x338837c27ff977ff4 42
+set #x3cade6cb5a274052b 60
+set #x343d925d73a1baa51 32
+set #x3d32f6c547ece75e2 50
+set #x38849cd963a939fa2 1
+set #x34787f06642bc4d69 0.3
+
+//scope effects - defaulting these to make the scope effect not visible when scope tweaks are enabled
+set #x36e0520b3429bc727 1 
+set #x3aeb8d4c548f13fdc 1 
+set #x3b800bfe397ec33c5 0 
+set #x39b97ed8c81ba5780 0 
+set #x39b75038c8194402a 0 
+set #x3d9d6cb4ee573cd65 0 
+set #x3d9fad54ee59c5e1b 0 
+set #x3e279a155fc74eee8 0.1 
+set #x33656ceb845a77513 0.1

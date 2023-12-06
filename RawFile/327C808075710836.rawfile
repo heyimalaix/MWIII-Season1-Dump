@@ -1,0 +1,123 @@
+exec dev_proto_jog.cfg
+exec dev_proto_jump.cfg
+exec dev_proto_dropshot.cfg
+exec dev_proto_mount.cfg
+exec dev_proto_damage_feedback.cfg
+exec dev_proto_render.cfg
+exec dev_proto_stairs.cfg
+exec dev_proto_camera_impulse.cfg
+exec dev_proto_viewkick.cfg
+exec dev_proto_mantle.cfg
+exec dev_proto_slide.cfg
+exec dev_proto_camera_smoothing.cfg
+exec dev_proto_viewbob.cfg
+exec dev_proto_swim.cfg
+exec dev_proto_edge_hang.cfg
+exec dev_proto_melee.cfg
+exec dev_proto_flinch.cfg
+exec dev_proto_perks.cfg
+exec dev_proto_focus.cfg
+exec dev_proto_css.cfg
+exec dev_proto_thirdperson.cfg
+
+set #x3dfc9b5885f2ec38f 0 //use with caution = clamps motion so diagonals do not move faster than forward.  Prevents jogging into wall at an angle from being the fastest forward motion
+set #x3520359a8a094afe4 1// same as above, but only when touching walls.  Fixes wall strafe exploit
+
+//ladder
+// set #x3a4aceb50302ba38c 195 // was 100 in iw8, speeding up since normal descend is 72.  dconst default updated to 195.
+
+//parachute
+set #x3323fbac0c259f2ac 400 //horizontal soeed - below this paly a soft landing. Above it play a fast landing.
+set #x3fe343b9f4ac424c5 130 //horizontal speed - below this play a still landing
+set #x3d913fcaaf0bd1add 2000 //supposed to be the vertical speed to trigger hard landing, I do not see this working.
+
+//disableing haptics until this bug is fixed: https://dev.activision.com/jira/browse/IW9-453510
+set #x3ac952b50f9746ff8 0
+
+//reload checkpoints, setting to 0 allows for reload cancelling
+set #x3765526110378fb79 1
+set #x395b17582cb3dc34e 1
+
+//
+set #x3632794ac5e880915 1
+
+//sp snap aim on offhands
+set #x35e9258cb7c4418a3 1
+
+//waypoint
+set #x3c813d29e6dcb138c 3500 
+set #x3c836e09e6df17a0e 100
+set #x32c230807a2da89ec 0.3
+
+//attachment icons
+//set #x326cf061dc1b79755 1
+
+//sniper breath hold delay
+//set #x33a6dba5a756e9be5 300
+
+//when lasers activate during AD
+set #x39d943ed9a3d9895f 1.0
+
+//viewmodel rotation recoil to account for FOV hack
+//set #x3cde96b942d0f2c91 1
+
+//set #x3a979bf070d9aaac2 1
+
+set #x319507dc253d7c276 5
+
+//nameplate
+set #x35d3419d70529eba3 2
+set #x3bae2c885106b92cc 7.5
+//set #x3cf324cb717cbcb9d 0 //we change this via gamemode.  Tier 1 allies should not cull nameplates so aggresively to avoid friendly fire
+set #x37bfcfdc308fe296 1
+set #x3ef2aedc7d2d602f 1
+
+//corpse fade
+set #x3ef7063cb2b2d2fc6 0.75 //inital opacity of corpse temperature on death
+set #x3beed2ab6bbb0a2de 10 //time it takes to fade to no temperature after death
+
+// hip aim laser correction
+set #x3ecccaa614dfb721e 1
+set #x3d0476175bd5dd60a 15  //speed it lerps between locked and unlocked
+set #x36a5a55fd65115de4 0.65  //default amount laser corrects to bullet trajectory
+set #x336c60a25e28b8a83 0.3 //how much laser correction it uses when turning or jumping
+set #x344acb6834341cd93 50 //if yaw speed exceeds this amount, laser will use low lerp percent
+set #x336c60a25e28b8a83 5 //speed it interpolates btween laser correction and no laser correction when state is toggled( like reload )
+
+//offhand trajectory preview, set #x3fa188bb584287b3 not show bounce segments
+set #x32a830996685a1dd3 1
+
+//offhand re-throw blend time
+set #x39820e171f1e12202 0.12
+
+
+//outlines
+set #x3b0555ef7f98d8aa6 0
+set #x3f6fae5d1789642cf jup_enemy_outline
+set #x3142f5cbe8ba50120 1
+
+
+//stalker boots perk
+set #x3968d60ab1846324c 18
+set #x3b30df564b4195ae8 20
+set #x3324605366ae19f76 16
+set #x33b113130f5448462 18
+
+//assault gloves
+set #x37872e8636ae5c6b0 1.23
+
+//lightweight dvars
+set #x3f00e1ef0ec244215 4
+set #x399248a4050c19dc8 4
+set #x3ba3d58ce0db99861 6
+set #x39b3e040ee92dd1c1 8
+set #x3ee3db86167a5c479 12
+set #x33cdeb421ed520514 9
+set #x3cde0c0ad8209d3c7 2
+set #x35e460019e586bb63 12
+set #x3c7abfb742c08b80 12	
+
+
+//to combat against snaking
+set #x32eb9bee31efbe4b5 600
+set #x32019494c9544dbd3 0

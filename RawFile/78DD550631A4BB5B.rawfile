@@ -1,0 +1,6 @@
+
+#define DATATYPE_INT				"Integer"
+#define DATATYPE_FLOAT				"Float"
+#define DATATYPE_STRING				"String"
+#define DATATYPE_ARRAY				"Array"
+#define DATATYPE_PROGRESSTRACKER	"ProgressTracker"

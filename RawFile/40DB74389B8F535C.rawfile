@@ -1,0 +1,326 @@
+{
+	"optionsData": {
+		"VehicleControls": 2,
+		"TouchSquadInfoDisplaySelfMobile": 2,
+		"MobileCameraHorzSensitivity": 60,
+		"AdsTouchSensitivityMultiplier": 1.4,
+		"ADSSensitivityMultiplierTimingMobile": 2
+	},
+	"layoutData": {
+		"PauseButton": {
+			"requiredInfo": {
+				"horizontalOffset": 375.444366,
+				"verticalOffset": 24.333265
+			}
+		},
+		"PlaneJumpButton": {
+			"requiredInfo": {
+				"verticalOffset": -118.833206,
+				"horizontalOffset": 1427.810181
+			}
+		},
+		"KillstreakButton": {
+			"requiredInfo": {
+				"horizontalOffset": 131.329773,
+				"verticalOffset": 270.969025
+			}
+		},
+		"PlayerStance": {
+			"requiredInfo": {
+				"horizontalOffset": -388.222153,
+				"verticalOffset": 236.777802
+			}
+		},
+		"MatchStatusScores": {
+			"scale": 0.125926,
+			"requiredInfo": {
+				"horizontalOffset": 163,
+				"verticalOffset": 55.5
+			}
+		},
+		"KillstreakList": {
+			"requiredInfo": {
+				"horizontalOffset": 178.481995,
+				"verticalOffset": 96
+			}
+		},
+		"JumpButton": {
+			"scale": -0.031481,
+			"requiredInfo": {
+				"verticalOffset": 481.008575,
+				"horizontalOffset": 386.725006
+			}
+		},
+		"C4DetonateButton": {
+			"requiredInfo": {
+				"horizontalOffset": 581.277878,
+				"verticalOffset": 671.666733
+			},
+			"scale": -0.031481
+		},
+		"ExecutionButton": {
+			"requiredInfo": {
+				"horizontalOffset": 485.99939,
+				"verticalOffset": 400.444366
+			},
+			"scale": -0.448148
+		},
+		"BRInteractiveLootCard": {
+			"requiredInfo": {
+				"horizontalOffset": 29.538452,
+				"verticalOffset": 332.789337
+			},
+			"scale": 0.028704
+		},
+		"VehicleHorn": {
+			"requiredInfo": {
+				"horizontalOffset": 351.277679,
+				"verticalOffset": 284.444458
+			}
+		},
+		"MicrophoneButton": {
+			"requiredInfo": {
+				"horizontalOffset": 374.277832,
+				"verticalOffset": 195.22226
+			},
+			"scale": 0.264815
+		},
+		"ProneButton": {
+			"requiredInfo": {
+				"horizontalOffset": 41.333618,
+				"verticalOffset": 92.111206
+			}
+		},
+		"MobilePingButton": {
+			"requiredInfo": {
+				"horizontalOffset": 375.293701,
+				"verticalOffset": 283.470856
+			},
+			"scale": 0.042593
+		},
+		"MissionTracker": {
+			"scale": -0.239816,
+			"requiredInfo": {
+				"verticalOffset": 67.551765,
+				"horizontalOffset": 240.482986
+			}
+		},
+		"ThrowBackButton": {
+			"requiredInfo": {
+				"horizontalOffset": 328.397888,
+				"verticalOffset": 560.920776
+			},
+			"scale": -0.230555
+		},
+		"ADSHoldBreathButton": {
+			"requiredInfo": {
+				"verticalOffset": 510.781311,
+				"horizontalOffset": -860.163849
+			}
+		},
+		"BRParachuteSwitchCameraButton": {
+			"requiredInfo": {
+				"horizontalOffset": 372.781891,
+				"verticalOffset": 536.84166
+			}
+		},
+		"UpstairsButton": {
+			"requiredInfo": {
+				"horizontalOffset": 430.219391,
+				"verticalOffset": 817.520691
+			}
+		},
+		"MobileEventPointsDisplay": {
+			"requiredInfo": {
+				"horizontalOffset": 529.722076,
+				"verticalOffset": 30.333467
+			}
+		},
+		"SelfReviveIcon": {
+			"requiredInfo": {
+				"horizontalOffset": -321.611298,
+				"verticalOffset": 272.388763
+			},
+			"scale": 0.190741
+		},
+		"Obituary": {
+			"requiredInfo": {
+				"horizontalOffset": 20.00025,
+				"verticalOffset": 1166.836731
+			}
+		},
+		"MobileOpenInventoryButton": {
+			"requiredInfo": {
+				"horizontalOffset": -486.166451,
+				"verticalOffset": 69.888885
+			}
+		},
+		"ApplyArmorButton": {
+			"requiredInfo": {
+				"horizontalOffset": -485.558685,
+				"verticalOffset": 187.898682
+			}
+		},
+		"MeleeButton": {
+			"requiredInfo": {
+				"horizontalOffset": 448.094086,
+				"verticalOffset": 327.391815
+			},
+			"scale": -0.156481
+		},
+		"HipFireButton": {
+			"scale": 0.20463,
+			"requiredInfo": {
+				"verticalOffset": 710.190262,
+				"horizontalOffset": 58.039246
+			}
+		},
+		"VehicleFlares": {
+			"requiredInfo": {
+				"horizontalOffset": 550.778076,
+				"verticalOffset": 141
+			}
+		},
+		"ADSButton": {
+			"requiredInfo": {
+				"horizontalOffset": 110.500809,
+				"verticalOffset": 728.211456
+			},
+			"scale": 0.602778
+		},
+		"ControlSettingButton": {
+			"requiredInfo": {
+				"horizontalOffset": 375.833527,
+				"verticalOffset": 107.222191
+			}
+		},
+		"FieldUpgradeButton": {
+			"requiredInfo": {
+				"horizontalOffset": 4.86908,
+				"verticalOffset": 270.684448
+			}
+		},
+		"FieldUpgradeButtonMP": {
+			"requiredInfo": {
+				"horizontalOffset": 4.86908,
+				"verticalOffset": 270.684448
+			}
+		},
+		"BRMinimap": {
+			"requiredInfo": {
+				"horizontalOffset": 22.108093,
+				"verticalOffset": 19.773178
+			}
+		},
+		"MinimapMP": {
+			"requiredInfo": {
+				"horizontalOffset": 22.108093,
+				"verticalOffset": 19.773178
+			}
+		},
+		"BRMatchStatusInfo": {
+			"requiredInfo": {
+				"horizontalOffset": 114.038902,
+				"verticalOffset": 30.108949
+			}
+		},
+		"RightJoystick": {
+			"scale": -0.5,
+			"requiredInfo": {
+				"horizontalOffset": 426.429504,
+				"verticalOffset": 1089.14624
+			},
+			"isHidden": true
+		},
+		"TeamHealthBarContainer": {
+			"requiredInfo": {
+				"horizontalOffset": 12.91394,
+				"verticalOffset": 71.394428
+			}
+		},
+		"DownstairsButton": {
+			"requiredInfo": {
+				"horizontalOffset": 544.465942,
+				"verticalOffset": 742.410004
+			}
+		},
+		"OffhandCancelButton": {
+			"requiredInfo": {
+				"horizontalOffset": 378.713379,
+				"verticalOffset": 553.605835
+			}
+		},
+		"SpectatorPlayerCard": {
+			"requiredInfo": {
+				"horizontalOffset": 36.495316,
+				"verticalOffset": 893.888885
+			}
+		},
+		"BRParachuteWidget": {
+			"requiredInfo": {
+				"verticalOffset": -119.929047,
+				"horizontalOffset": 1425.588257
+			}
+		},
+		"Joystick": {
+			"autoRunButtonYOff": 286.491699,
+			"requiredInfo": {
+				"horizontalOffset": 155.767952,
+				"verticalOffset": 229.367554
+			}
+		},
+		"ReloadButton": {
+			"requiredInfo": {
+				"horizontalOffset": 720.220703,
+				"verticalOffset": 447.661438
+			}
+		},
+		"VehicleDiagram": {
+			"requiredInfo": {
+				"horizontalOffset": -368.444458,
+				"verticalOffset": 314.222198
+			}
+		},
+		"WeaponMountButton": {
+			"requiredInfo": {
+				"horizontalOffset": -424.989059,
+				"verticalOffset": 410.3405
+			}
+		},
+		"PlunderAmount": {
+			"requiredInfo": {
+				"horizontalOffset": -136.637115,
+				"verticalOffset": 272.452148
+			}
+		},
+		"ContextualButton": {
+			"scale": -0.017592,
+			"requiredInfo": {
+				"verticalOffset": -40.132919,
+				"horizontalOffset": 381.357849
+			}
+		},
+		"CrouchButton": {
+			"requiredInfo": {
+				"horizontalOffset": 328.332611,
+				"verticalOffset": 191.000153
+			}
+		},
+		"MobileGlobalPlayerSplash": {
+			"requiredInfo": {
+				"horizontalOffset": 276.094818,
+				"verticalOffset": 242.777603
+			},
+			"scale": -0.114815
+		},
+		"ExitVehicleButton": {
+			"requiredInfo": {
+				"horizontalOffset": 421.667267,
+				"verticalOffset": 456.666595
+			},
+			"scale": 0.176853
+		}
+	},
+	"textReference": "LUA_MENU_MOBILE/UXP_MAGELLAN_INF002",
+	"parent": "layout_customization/mgl_inf002.json"
+}

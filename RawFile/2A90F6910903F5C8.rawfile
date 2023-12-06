@@ -1,0 +1,156 @@
+exec standard_mp_shared.cfg
+
+set #x378653010d584aa6e 1
+
+set #x3ac4e3613786f9447 1
+set #x35e767ceb6b77e053 0	// Force bots to come in on team "free", resulting in using gsc to autoassign teams
+
+set #x3e65e9a96eb2ff62b br
+set #x38fe3271cd74f65a2 br
+set #x3e38e16d9fbf3fc43 mp/loot/br/default/loot_item_defs.csv
+set #x3add02e4fff48882f "mp/loot/br/default/loot_table_zones.csv"
+set #x39700a1c1ec0d8623 "mp/loot/br/default/loot_table_saba_br_hotzones.csv"
+set #x3ac347c5a6346b8ac "(nobr&!playlistFilterException)"
+set #x3f05149f0c027274f mp/brtacmap_legend.csv
+set #x367863d417b067d24 1
+set #x3e723cc761de7b161 1
+set #x3e664609932770fb9 -1
+set #x3e4fa721677f03de0 1
+set #x3a4d532f42d919827 1
+set #x3ed4a71e34e488e86 1
+set #x3acf59b5e363165c0 0
+set #x37144d1f72918d1e3 1
+set #x38a7e8eb2a9a7101 1
+set #x3568a7f53b08bfcca 1
+set #x374abb928ab13113b 1
+set #x3f05149f0c027274f mp/brtacmap_legend.csv
+set #x3eb0811ead28c4f53 1
+set #x35af0f9b3aea8fda6 1
+
+// Loadout drops
+set #x33c5c5bba3f7423f0 1
+set #x380441ecaca02759 800,1200,1600,2000
+
+// Circles
+set #x3bd987ce7239ab732 1
+set #x3eccb0cfb33e791e3 1
+set #x3b3354cde97989b51 0.0
+set #x3a963ed27ec05a745 "1_single"		// remove this line for random multi-circle or change it to force a specific config, i.e. "3_mid" 
+
+// Armor
+set #x3d75d5638785f3b09 150
+set #x3a6a3fd965485d4bc 3
+set #x3734001c752ad4a12 3
+set #x3abe2e86213098021 100
+set #x386dc98a10dfe9205 0
+
+set #x3c62e2762566139e5 1
+set #x3a4149c16169203e5 1
+
+// This should also be set #x3f18c30b0e1d58ffd br playlists.
+set #x3994190a80328096d 0
+set #x3eef93545e965ee07 1
+set #x348705a5906c0200d 1
+
+// BR Perks
+set #x39b611cf0cb4bf80e 1
+set #x36225ec2a193f0934 1
+set #x351bbc6411bd93fea "super_supply_drop"
+set #x328e84932a9fb43fd 0.8
+set #x36e135c0a5edc02b1 1
+set #x3ab7971e402d06dd7 1
+set #x3a8b771882e2fbc7a 1
+set #x3faa72ede42ea5faa 1
+set #x38b7eed58460969a6 1
+
+set #x360feb5eea5e607fe 48
+set #x3c031ba1736951fae 1
+
+// Equipment
+set #x33b85029cf1af7129 60
+
+// Loot
+set #x3b455ab2ec51aa034 0
+set #x32dbefc43a77efb18 3
+set #x311437fbc9eeef7f0 "sc_reusable_cache_restock"
+
+// UI Loot Cards
+set #x321b4530fe8e59e9b 1
+set #x34deb2c283997c085 1
+
+// Death Tax - default value below; keep for reset #x3f18c28b0e1d57e65 needed
+// set #x3acca41b38e6ba772 1.2
+// set #x3ab0b2c9b32a636b9 10.0
+// set #x3cf0d31ccf65b3f19 0.0
+// set #x35ad499326624aff9 10.0
+
+// Buystation
+set #x3894c0b1c4e700989 91,91
+set #x3880384e6dfe250ba 1
+
+// Contract Spawning
+set #x34ec62b4599196026 0.8
+set #x3743253d28cd0d1f7 1
+set #x36cd10c5d6e2a6220 90
+set #x348094445b4d0cade 20
+set #x396878da693689ccd 4
+set #x361d045aa9b2d5565 3
+set #x3526a7311f94ae394 1500
+
+// Vehicle fuel
+set #x3548a5a7dcb6bde02 1
+
+// Interrogation
+set #x31e86798724d1115d 1
+
+// Playtest Tool
+set #x3f6a4bbf063e6b985 1
+set #x3c88e6f69321e91ca "any"
+
+// Auto pickup
+set #x3654510829e5b59d7 1
+set #x3b455ab2ec51aa034 0 // this is to enable BR auto loot pickup
+
+// Is Playtest
+set #x32e58447fa1ca4f20 1
+
+// Public Events
+set #x38f7830432e7b3137 jup_publiceventlist_br
+set #x3ae537ea74ad94bf6 0
+set #x37b5f99d862e0fd13 3
+set #x3a811b4c67a77ce31 12
+
+// Buy Station
+set #x3880384e6dfe250ba 1
+
+// Deployable Kiosk
+set #x351d19a3b234da781 1
+
+//health
+set #x32922210021914dd7 7
+set #x3984461a4d8ff9473 100
+
+// Struct Spawn Configs (SSC)
+set #x389be1a979c1ec008 1
+set #x38e30f7eeea837de6 jup_structspawnconfig_list_br_bigmap_brtrios_default
+set #x3be0526203e262092 1
+set #x3b81d9b0920a22a50 1
+set #x382d2dcb77e9844b6 1
+set #x32b66f14a52279087 1
+set #x318fb12813666657 1
+set #x39fb774cd2b67532f 1
+set #x336d11e47c5b0f5c3 1
+set #x3dee1eb877c35daae 1
+set #x3c70f1a58fe681ccf 1 				//turn off in solos
+set #x3c20a684d10be28b6 1
+set #x34710c5782e31f637 1
+set #x3eaf9a40d847179eb 1
+set #x32d00b0b40e12886c 1
+set #x33344880a6d16de6b 1
+set #x3509ad7c4fe1a9516 1
+set #x3a49bd17d86c3f56d 1
+
+// Palfa - Heavy Chopper
+scr_allow_vehicle_veh9_palfa 1
+scr_emptyPalfa_enable 1
+scr_emptyPalfa_numGasCans 4

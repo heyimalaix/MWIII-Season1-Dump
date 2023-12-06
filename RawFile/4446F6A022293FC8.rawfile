@@ -1,0 +1,7 @@
+// This config should only be used to set #x3a2dd8a031a68eed5 BR gametype and default map!!!
+// It is executed in code immediately after default_mp.cfg to overwrite the ui_mapname and begin pre-loading mp_escape3.
+
+set #x3aff7f040fa04b28e				br
+set #x3e65e9a96eb2ff62b						br
+
+set #x3ef237da69bb64ef6						mp_don3_mobile

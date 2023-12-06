@@ -1,0 +1,28 @@
+set #x3ff689af941dd10a1							1
+
+set #x3e5018f1e5a8d84f2		1
+set #x3810183a058b474e 1
+set #x3dbe4b78ae44499c8						1
+
+
+set #x33ea2ff646d21fc54				0
+
+//set #x3aa3f054d34fa39b9					1
+
+set #x3d7358339b14a448f				1
+set #x32889bd5801e0ce5a					1
+
+set #x3c8944dc52325691f					1
+set #x3820bbcc6f6cd1212						"MP_Design_Playtest"
+
+set #x3ad79979492447566								0
+set #x3ab36162dd5729fa0							0
+set #x31d2176756bb69fb6				0
+
+set #x3270e2b4875bce02b 						0 // Limits player turning when hit by bullets
+set #x39789797e3340f37a							0 // Decreases enemy visibility when LMGs and Snipers produce whizbys on targets
+
+set #x313856880331b5596						1
+set #x3a3220d5d00c60fc0							1
+set #x31fd181ebeebe83bf							1
+set #x3ba2d7c5976a9ec58						1

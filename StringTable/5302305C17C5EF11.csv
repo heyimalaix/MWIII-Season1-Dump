@@ -1,0 +1,10 @@
+inherit,mp/loot/br/resurgence_massive/lootset_root.csv,,
+reqAdd,brloot_self_revive,2,2
+reqAdd,brloot_super_reinforcement_flare,2,2
+reqAdd,killstreak|gear,4,4
+reqAdd,,3,5
+reqAdd,plunder,5,7
+reqLimit,gear,3,
+reqLimit,killstreak,3,
+reqLimit,brloot_super_reinforcement_flare,2,2
+reqLimit,brloot_self_revive,2,2

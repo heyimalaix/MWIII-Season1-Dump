@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////
+//This file is generated from the Animation Blender tool
+///////////////////////////////////////////////////////////////////////////
+% force_cs_anim_index_match
+stand_run_loop: blendspace2d( rangex="-180.000,180.000", rangey="0,300", blend_time="250.00",
+coords="{0,207},{45,207},{-45,207},{0,270},{45,270},{-45,270}",
+edges="{5,2,3},{3,2,0},{3,0,1},{4,3,1}",
+valuex=[strafeyaw], valuey=[desiredspeed] ) loopsync
+	{
+			rush_com_strafe_run_8
+			rush_com_strafe_run_7
+			rush_com_strafe_run_9
+			rush_com_strafe_sprint_8
+			rush_com_strafe_sprint_7
+			rush_com_strafe_sprint_9
+	}
+

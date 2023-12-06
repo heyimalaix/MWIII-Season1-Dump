@@ -1,0 +1,5 @@
+#define METABONE_DATA_TYPE_DAMAGEABLE "Types_Damageable" 
+#define METABONE_DATA_TYPE_WEAKSPOT "Types_Weakspot" 
+#define METABONE_DATA_TYPE_ARMOR "Types_Armor" 
+
+#define TAG_RADIUS_DEFAULT 1 

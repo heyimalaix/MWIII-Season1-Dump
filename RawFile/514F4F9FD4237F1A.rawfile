@@ -1,0 +1,8 @@
+#define CONST_FROST_BLAST_SFX_ACTIVATE "eqp_fug_frostblast_activate" //Oneshot played on the player entity for ALL players 
+#define CONST_FROST_BLAST_SFX_STORM "eqp_fug_frostblast_storm_oneshot" //Oneshot played above the origin of the storm in the world for all players
+#define CONST_FROST_BLAST_SFX_FREEZE "eqp_fug_frostblast_zombie_freeze" //played on AI who have been frozen
+#define CONST_FROST_BLAST_SFX_SHATTER "eqp_fug_frostblast_zombie_shatter" //played on AI who have shattered/exploded
+
+#define CONST_FROST_BLAST_SLOW_TYPE "frost_blast"
+
+#define CONST_FROST_BLAST_REF "super_frost_blast"

@@ -1,0 +1,33 @@
+// Temp testing New mount Tuning glset_mouobally
+
+set #x355e238a73a71582e 1
+
+//always scale FOV and apply offsets, even if dual fov flag is on optic
+set #x3aabc55882250c7a9 0
+
+// Contextual Mount
+set #x3a18a4a6752d3c19f	1
+set #x38d91bb989ba3932f	52
+set #x38902a4e9dc3c39d		5
+set #x3c02707ef491c6d46		5
+
+set #x3f0c7b6694a85f9b5			13	// Increase pitch range while mounted
+set #x35b3823a417c0827f				333	// Amount of time player needs to move laterally away from edgeto dismount while side-mounted
+set #x3264f569773e301c9				333	// Amount of time player needs to move laterally away from edgeto dismount while top-mounted
+set #x39126e92bb250f2b9 					100	// Backing up to exit mount now happens faster to make mount exit more fluid
+set #x3bd7b701569576a4d				0.09// Updated cam shake on top mount now that it's removed from the anim
+set #x33004d9b3d16ae571				0.09// Updated cam shake on side mount now that it's removed from the anim
+
+// ADS mount settings
+// set #x392fe63a31eb958d9			1	// Set mount input to ADS button press for easier attach
+// set #x3e01e82ad6f287f5			35	// Reduce sticky range for legacy system. Keep this inline with the below value
+// set #x390d27b8f3e813758				35	// Reduce sticky range now that mount is on ADS to reduce accidental mounts
+// set #x3f8e2e24f4e5d1415		25	// Reduce sticky range now that mount is on ADS to reduce accidental mounts
+// set #x398fbf7dc46f5088		25	// Reduce sticky range now that mount is on ADS to reduce accidental mounts
+
+
+//set #x39a45464c46791686 95//max rate of the view bob when yawing
+//set #x3dc4db51ed11fceca 1.25//rate of viewbob when yawing
+
+set #x357dcf2dacbf2029a 0.0
+

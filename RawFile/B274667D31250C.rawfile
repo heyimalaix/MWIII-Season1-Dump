@@ -1,0 +1,10 @@
+%force_cs_anim_index_match
+
+patrol_stairs_down : blendspace1d( range="-90,90", blend_time="100",
+	coords="-90,0,90",
+	value=[leanyaw] ) loopsync parse_cull(disable)
+{
+	reb_stl_patrol_stairs_forward_down_l
+	reb_stl_patrol_stairs_forward_down
+	reb_stl_patrol_stairs_forward_down_r
+}

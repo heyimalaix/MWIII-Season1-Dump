@@ -1,0 +1,34 @@
+set #x3e6a9e6f8e573c34c 0.96
+set #x3e6a9e7f8e573c57f 0.81
+set #x3e6a9e4f8e573bee6 0.78
+		
+set #x33dbdde7d28b7b481 0.97
+set #x33dbddd7d28b7b24e 0.92
+set #x33dbde07d28b7b8e7 0.88
+		
+set #x3d9710e8c2b0b17e6 1.1
+		
+set #x3dc601b7fedbb4a7a 1.17
+set #x3a98e5a1291cb3e83 0.7
+set #x37872e8636ae5c6b0 1.23		
+		
+set #x39a3536c5bfce0fed 1.0
+set #x32037c8364bccd37f 1.2
+set #x35e05ea0c8cf6d40 1.2
+set #x3a190ae1b7ce51eb9 1
+set #x3f48c865f2c1bcfd0 0.15
+
+//to combat against snaking
+set #x32eb9bee31efbe4b5 600
+set #x32019494c9544dbd3 0
+
+set #x370ca97fc8b1134be 1.45
+set #x3b88332ac3467f6f4 1 // default 1 
+set #x38a46ec4077221fb7 330 / default 360
+set #x324facc127bd38c23 355 
+set #x3f4b381fe847f785c 355
+set #x3847129fe02a9362b 355          //should match no_move/no jump times
+
+set #x3321a49cd2ecb97b3 0
+
+// NOTE: anything new added here may need to be changed from a dconst to a dvar so it works in ship

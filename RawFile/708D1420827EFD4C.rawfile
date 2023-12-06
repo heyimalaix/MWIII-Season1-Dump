@@ -1,0 +1,84 @@
+#simple
+
+body
+{
+	scenes
+	{
+		#script_bundle_anim_slot
+	}
+}
+
+animscripted_node
+{
+    #animscripted
+}
+
+locomotion : loopsync
+{
+	move_loops
+	{
+		#move_loop
+	}
+}
+
+aim_2 : additive
+{
+    #aim_2
+}
+aim_4 : additive
+{
+    #aim_4
+}
+aim_6 : additive
+{
+    #aim_6
+}
+aim_8 : additive
+{
+    #aim_8
+}
+aim_graft_node : additive unnormalized graft
+{
+}
+
+
+
+head_state_le: overlay toggle( index=[head_state_le], blendtime=".3", blendcurve="ease_inout_quad", restart="false")
+{
+	#head_le_closed
+    #head_le_open
+}
+
+head_state_mid: overlay toggle( index=[head_state_mid], blendtime=".3", blendcurve="ease_inout_quad", restart="false")
+{
+	#head_mid_closed
+    #head_mid_open
+}
+
+head_state_ri: overlay toggle( index=[head_state_ri], blendtime=".3", blendcurve="ease_inout_quad", restart="false")
+{
+	#head_ri_closed
+    #head_ri_open
+}
+
+
+server_ragdoll : public server_ragdoll( xanim_server_ragdoll_root_origin = [xanim_server_ragdoll_root_origin],
+										xanim_server_ragdoll_root_angles = [xanim_server_ragdoll_root_angles])
+{
+}
+
+ragdoll : public clientauth overlay ragdoll (ragdoll_handle=[entity_ragdoll_handle])
+{
+}
+
+ik_terrain : ik_terrain (entityspeed=[speed], turn_scrub_value=[turn_scrub_value], platform_origin=[platform_origin], platform_angles=[platform_angles], platform_id=[platform_id]) lod_cull(1)
+{
+}
+
+ik_foot_antislide : clientonly ik_antislide( ik_antislide_speed=[speed]  )
+{
+}
+
+ik_node : ik_node () lod_cull(1)
+{		
+}

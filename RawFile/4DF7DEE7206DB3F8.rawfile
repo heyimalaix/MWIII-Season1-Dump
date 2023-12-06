@@ -1,0 +1,64 @@
+//Idle
+#idle
+
+body
+{
+	
+}
+
+#animscripted
+
+locomotion : loopsync
+{
+	//Locomotion
+	move_loops
+	{
+		#move_loop
+	}
+}
+
+#move_strafe
+
+//React
+#react
+
+//Deaths
+#death
+
+//Traversals
+#traversal
+
+//Life Drain
+#life_drain
+
+//Pain
+#pain
+
+//Bind
+#bind
+
+//Summon
+#summon
+
+//Stun
+#stun
+
+
+server_ragdoll : public server_ragdoll( xanim_server_ragdoll_root_origin = [xanim_server_ragdoll_root_origin],
+										xanim_server_ragdoll_root_angles = [xanim_server_ragdoll_root_angles])
+{
+}
+
+ragdoll : public clientauth overlay ragdoll (ragdoll_handle=[entity_ragdoll_handle])
+{
+}
+
+ragdoll_recovery
+{
+    #ragdoll_recovery
+}
+
+live_ragdoll_knockdown
+{
+    #live_ragdoll
+}

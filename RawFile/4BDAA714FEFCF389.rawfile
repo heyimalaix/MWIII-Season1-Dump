@@ -1,0 +1,3158 @@
+{
+	"DisabledVisibility": {
+		"Categories": [
+			"Singleplayer",
+			"Cooperative",
+			"Codcaster"
+		],
+		"Conditions": [
+			"VISIBILITY_CONDITIONS.InBirdsEyeCP",
+			"VISIBILITY_CONDITIONS.UsingComputer",
+			"VISIBILITY_CONDITIONS.IsWeaponAPC",
+			"VISIBILITY_CONDITIONS.IsMediaDemo",
+			"VISIBILITY_CONDITIONS.IsTerrorist",
+			"VISIBILITY_CONDITIONS.PvpeActive",
+			"VISIBILITY_CONDITIONS.InLocationSelectorCP",
+			"VISIBILITY_CONDITIONS.ShowBink",
+			"VISIBILITY_CONDITIONS.IsInventoryOpen",
+			"VISIBILITY_CONDITIONS.IsSPPlayerDead",
+			"VISIBILITY_CONDITIONS.IsDpadPopupOpen",
+			"VISIBILITY_CONDITIONS.IsChyronOn",
+			"VISIBILITY_CONDITIONS.IsChyronOnCp",
+			"VISIBILITY_CONDITIONS.IsDevDamage",
+			"VISIBILITY_CONDITIONS.InOverwatchCP",
+			"VISIBILITY_CONDITIONS.SpectatingRemoteKillstreakCP",
+			"VISIBILITY_CONDITIONS.UsingApacheCP",
+			"VISIBILITY_CONDITIONS.UsingCruiseMissileCP",
+			"VISIBILITY_CONDITIONS.InKillstreakOverlays",
+			"VISIBILITY_CONDITIONS.UsingRCDinCP",
+			"VISIBILITY_CONDITIONS.UsingScoutDroneCP",
+			"VISIBILITY_CONDITIONS.IsEMPDroneActiveCP",
+			"VISIBILITY_CONDITIONS.UsingRemoteKillstreakCP",
+			"VISIBILITY_CONDITIONS.UsingSmartPhoneCP",
+			"VISIBILITY_CONDITIONS.UsingContactsCopyCP",
+			"VISIBILITY_CONDITIONS.UsingTabletUSB",
+			"VISIBILITY_CONDITIONS.UsingTabletScanner",
+			"VISIBILITY_CONDITIONS.UsingJuggernautCP",
+			"VISIBILITY_CONDITIONS.UsingMobileTurretCp",
+			"VISIBILITY_CONDITIONS.InJavelinCP",
+			"VISIBILITY_CONDITIONS.EnemyDetonationDevice",
+			"VISIBILITY_CONDITIONS.IsBeingRevivedCP",
+			"VISIBILITY_CONDITIONS.IsVotingCP",
+			"VISIBILITY_CONDITIONS.IsVoteSysCP",
+			"VISIBILITY_CONDITIONS.IsSpectating",
+			"VISIBILITY_CONDITIONS.IsSnakeCamActive",
+			"VISIBILITY_CONDITIONS.UsingBradleyCP",
+			"VISIBILITY_CONDITIONS.IsVehicleDriverCP",
+			"VISIBILITY_CONDITIONS.VehicleTechnicalCP",
+			"VISIBILITY_CONDITIONS.ISSkyDivingCP",
+			"VISIBILITY_CONDITIONS.ActionCam",
+			"VISIBILITY_CONDITIONS.MatchCountdown",
+			"VISIBILITY_CONDITIONS.PrematchPeriod",
+			"VISIBILITY_CONDITIONS.UsingMobileTurret",
+			"VISIBILITY_CONDITIONS.UsingApache",
+			"VISIBILITY_CONDITIONS.InLocationSelector",
+			"VISIBILITY_CONDITIONS.InPOTG",
+			"VISIBILITY_CONDITIONS.IsSessionInvalid",
+			"VISIBILITY_CONDITIONS.BRMatchCountdown",
+			"VISIBILITY_CONDITIONS.IsSkyDiving",
+			"VISIBILITY_CONDITIONS.IsOverlayActive",
+			"VISIBILITY_CONDITIONS.OutOfBounds"
+		]
+	},
+	"CommonFields": {
+		"alpha": {
+			"type": "float",
+			"default": 0.0
+		},
+		"scale": {
+			"type": "float",
+			"default": 0.0
+		},
+		"isHidden": {
+			"type": "bool",
+			"default": false
+		},
+		"showInGameTypes": {
+			"type": "array",
+			"default": [
+				"br",
+				"mp"
+			]
+		},
+		"_deadZoneRadius": {
+			"type": "float",
+			"default": 0.0
+		},
+		"_fuzzyTouchRadius": {
+			"type": "float",
+			"default": 0.0
+		}
+	},
+	"SchemeFields": [
+		"Ground",
+		"Parachute",
+		"Spectator",
+		"Driver",
+		"MP",
+		"CasualQuest"
+	],
+	"Modules": {
+		"ADSButton": {
+			"1": {
+				"class": "TouchADSButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_ads",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "ADSControlTypeMobile"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"ADSControlTypeMobile": [
+						"ADSButton"
+					]
+				},
+				"classKey": "A"
+			},
+			"displayName": "LUA_MENU_MOBILE/ADS_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut"
+			]
+		},
+		"JumpButton": {
+			"1": {
+				"class": "TouchJumpButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_jump",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/JUMP_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Crouch",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut"
+			]
+		},
+		"SquatButton": {
+			"1": {
+				"class": "SquatTouchButton",
+				"package": "ui.generated.widgets",
+				"icon": "ui_customization_editor_squat",
+				"advanceIcon": "ui_customization_editor_advance_crouch1",
+				"layoutName": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_SQUAT_BUTTON_DESC_1",
+				"description": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_SQUAT_DESC_1",
+				"selectedIcon": 1,
+				"width": 120,
+				"height": 120,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "ProneButtonBehavior"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"ProneButtonBehavior": [
+						"SquatButton",
+						"ProneButton",
+						"CrouchButton"
+					],
+					"classID": [
+						"SquatButton",
+						"ProneButton",
+						"CrouchButton"
+					]
+				},
+				"classKey": "A"
+			},
+			"displayName": "LUA_MENU_MOBILE/SQUAT_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars"
+			]
+		},
+		"CrouchButton": {
+			"1": {
+				"class": "CrouchTouchButton",
+				"package": "ui.generated.widgets",
+				"icon": "ui_customization_editor_squat",
+				"advanceIcon": "ui_customization_editor_advance_crouch3",
+				"layoutName": "LUA_MENU_MOBILE/CROUCH_VARIANT_NAME_1",
+				"description": "LUA_MENU_MOBILE/CROUCH_VARIANT_DESC_1",
+				"selectedIcon": 1,
+				"width": 120,
+				"height": 120,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "ProneButtonBehavior"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"ProneButtonBehavior": [
+						"SquatButton",
+						"ProneButton",
+						"CrouchButton"
+					]
+				}
+			},
+			"displayName": "LUA_MENU_MOBILE/CROUCH_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Crouch",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut"
+			]
+		},
+		"ProneButton": {
+			"1": {
+				"class": "ProneTouchButton",
+				"package": "ui.generated.widgets",
+				"icon": "ui_customization_editor_creeping",
+				"advanceIcon": "ui_customization_editor_creeping",
+				"layoutName": "LUA_MENU_MOBILE/PRONE_VARIANT_NAME_1",
+				"description": "LUA_MENU_MOBILE/PRONE_VARIANT_DESC_1",
+				"selectedIcon": 1,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "ProneButtonBehavior"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"ProneButtonBehavior": [
+						"SquatButton",
+						"ProneButton",
+						"CrouchButton"
+					]
+				}
+			},
+			"displayName": "LUA_MENU_MOBILE/PRONE_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Crouch",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat"
+			]
+		},
+		"WeaponMountButton": {
+			"1": {
+				"class": "WeaponMountButton",
+				"package": "ui.generated.widgets",
+				"icon": "ui_customization_editor_weapon_mount",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/WEAPON_MOUNT_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile"
+			]
+		},
+		"HipFireButton": {
+			"1": {
+				"class": "TouchHipFireButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_hipfire",
+				"layoutName": "LUA_MENU_MOBILE/DEFAULT",
+				"advanceIcon": "ui_customization_editor_variant_HipFire",
+				"description": "LUA_MENU_MOBILE/VARIANT_HIPFIRE_DESC_1",
+				"selectedIcon": 1,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "TouchManualFireSemiMobile",
+						"2": "TouchClusterReleaseToUseMobile"
+					}
+				},
+				"classKey": "A"
+			},
+			"displayName": "LUA_MENU_MOBILE/HIP_FIRE_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut"
+			]
+		},
+		"ReloadButton": {
+			"1": {
+				"class": "TouchReloadButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_reload",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/RELOAD_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat"
+			]
+		},
+		"WeaponInspectButton": {
+			"1": {
+				"class": "TouchWeaponInspectButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_weapon_inspect",
+				"description": "LUA_MENU_MOBILE/WEAPON_INSPECT_DESC",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/WEAPON_INSPECT",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]
+		},
+		"RightJoystick": {
+			"1": {
+				"class": "TouchRightJoystick",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_shot",
+				"layoutName": "LUA_MENU_MOBILE/DEFAULT",
+				"description": {
+					"1": "LUA_MENU_MOBILE/VARIANT_RIGHT_JOYSTICK_DESC_1",
+					"2": "LUA_MENU_MOBILE/VARIANT_RIGHT_JOYSTICK_DESC_2"
+				},
+				"selectedIcon": 1,
+				"advanceIcon": {
+					"1": "ui_customization_editor_variant_right_joystick1",
+					"2": "ui_customization_editor_variant_right_joystick2"
+				},
+				"optionalFields": {
+					"holdDelay": {
+						"type": "float",
+						"default": 0.0
+					},
+					"maxPositionOffsetFactor": {
+						"type": "float",
+						"default": 0.0
+					}
+				},
+				"variantGroup": {
+					"options": {
+						"1": "TouchManualFireSemiMobile",
+						"2": "TouchClusterReleaseToUseMobile"
+					}
+				},
+				"classKey": "A"
+			},
+			"displayName": "LUA_MENU_MOBILE/RIGHT_JOYSTICK",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingCruiseMissile",
+				"VISIBILITY_CONDITIONS.InLocationSelector",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.UsingRCD"
+			]
+		},
+		"PlayerStance": {
+			"1": {
+				"class": "MobileBRPlayerStance",
+				"package": "ui.generated.widgets",
+				"icon": "ui_customization_editor_player_stance",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/PLAYER_STANCE",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin"
+			]
+		},
+		"ArmorHealth": {
+			"1": {
+				"class": "MobileBRArmorHealth",
+				"package": "ui.generated.widgets",
+				"icon": "ui_customization_editor_healthbar",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/ARMOR_HEALTH",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1"
+			]
+		},
+		"SelfReviveIcon": {
+			"1": {
+				"class": "MobileBRHUDPlayerStatusIconRevive",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_mp_br_player_status_token_self_revive",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/SELF_REVIVE_ICON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin"
+			]
+		},
+		"SpectatorArmorHealth": {
+			"1": {
+				"class": "MobileBRSpectatingArmorHealth",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_spectator_player_info",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/SPECTATOR_ARMOR_HEALTH",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer"
+			]
+		},
+		"AmmoCounter": {
+			"1": {
+				"class": "MobileAmmoCounter",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_ammo_counter",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {
+					"_alignment": {
+						"type": "float",
+						"default": 0.0
+					}
+				}
+			},
+			"displayName": "LUA_MENU_MOBILE/AMMO_COUNTER",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat"
+			]
+		},
+		"AmmoCounterMP": {
+			"1": {
+				"class": "MobileAmmoCounter",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_ammo_counter",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {
+					"_alignment": {
+						"type": "float",
+						"default": 0.0
+					}
+				}
+			},
+			"displayName": "LUA_MENU_MOBILE/AMMO_COUNTER",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat"
+			]
+		},
+		"EquipmentArea": {
+			"1": {
+				"class": "MobileBREquipmentArea",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_equipment_area",
+				"advanceIcon": "ui_customization_editor_advance_weaponslot1",
+				"layoutName": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_BUTTON_DESC_1",
+				"description": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_DESC_1",
+				"selectedIcon": 2,
+				"width": 534,
+				"height": 112,
+				"variantGroup": {
+					"options": {
+						"1": "WeaponAlterFireTypeMobile",
+						"2": "WeaponAmmoCounterTypeMobile"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"WeaponAmmoCounterTypeMobile": [
+						"AmmoCounter"
+					]
+				},
+				"classKey": "A"
+			},
+			"2": {
+				"class": "MobileWeaponsSingle",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_equipment_area_2",
+				"advanceIcon": "ui_customization_editor_advance_weaponslot2",
+				"layoutName": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_BUTTON_DESC_2",
+				"variantGroup": {
+					"options": {
+						"1": "WeaponAlterFireTypeMobile",
+						"2": "WeaponAmmoCounterTypeMobile"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"WeaponAmmoCounterTypeMobile": [
+						"AmmoCounter"
+					]
+				},
+				"description": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_DESC_2",
+				"selectedIcon": 2,
+				"width": 264,
+				"height": 112,
+				"classKey": "B"
+			},
+			"3": {
+				"class": "MobileWeaponsSingle",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_equipment_area_2",
+				"advanceIcon": "ui_customization_editor_advance_weaponslot2",
+				"layoutName": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_BUTTON_DESC_3",
+				"variantGroup": {
+					"options": {
+						"1": "WeaponAlterFireTypeMobile",
+						"2": "WeaponAmmoCounterTypeMobile"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"WeaponAmmoCounterTypeMobile": [
+						"AmmoCounter"
+					]
+				},
+				"description": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_DESC_3",
+				"selectedIcon": 2,
+				"width": 264,
+				"height": 112,
+				"classKey": "C"
+			},
+			"optionIdToWidgetProperty": {
+				"WeaponAlterFireTypeMobile": "_alterFireType",
+				"WeaponAmmoCounterTypeMobile": "_ammoCounterType"
+			},
+			"displayName": "LUA_MENU_MOBILE/EQUIPMENT_AREA",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.GulagArenaCountdown",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2"
+			]
+		},
+		"EquipmentAreaMP": {
+			"1": {
+				"class": "MobileBREquipmentArea",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_equipment_area",
+				"advanceIcon": "ui_customization_editor_advance_weaponslot1",
+				"layoutName": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_BUTTON_DESC_1",
+				"description": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_DESC_1",
+				"selectedIcon": 2,
+				"width": 534,
+				"height": 112,
+				"variantGroup": {
+					"options": {
+						"1": "WeaponAlterFireTypeMobileMP",
+						"2": "WeaponAmmoCounterTypeMobileMP"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"WeaponAmmoCounterTypeMobileMP": [
+						"AmmoCounterMP"
+					]
+				},
+				"classKey": "A"
+			},
+			"2": {
+				"class": "MobileWeaponsSingle",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_equipment_area_2",
+				"advanceIcon": "ui_customization_editor_advance_weaponslot2",
+				"layoutName": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_BUTTON_DESC_2",
+				"variantGroup": {
+					"options": {
+						"1": "WeaponAlterFireTypeMobileMP",
+						"2": "WeaponAmmoCounterTypeMobileMP"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"WeaponAmmoCounterTypeMobileMP": [
+						"AmmoCounterMP"
+					]
+				},
+				"description": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_DESC_2",
+				"selectedIcon": 2,
+				"width": 264,
+				"height": 112,
+				"classKey": "B"
+			},
+			"3": {
+				"class": "MobileWeaponsSingle",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_equipment_area_2",
+				"advanceIcon": "ui_customization_editor_advance_weaponslot2",
+				"layoutName": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_BUTTON_DESC_3",
+				"variantGroup": {
+					"options": {
+						"1": "WeaponAlterFireTypeMobileMP",
+						"2": "WeaponAmmoCounterTypeMobileMP"
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"WeaponAmmoCounterTypeMobileMP": [
+						"AmmoCounterMP"
+					]
+				},
+				"description": "LUA_MENU_MOBILE/WEAPONS_ADVANCED_EQUIPAREA_DESC_3",
+				"selectedIcon": 2,
+				"width": 264,
+				"height": 112,
+				"classKey": "C"
+			},
+			"optionIdToWidgetProperty": {
+				"WeaponAlterFireTypeMobileMP": "_alterFireType",
+				"WeaponAmmoCounterTypeMobileMP": "_ammoCounterType"
+			},
+			"displayName": "LUA_MENU_MOBILE/EQUIPMENT_AREA",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.GulagArenaCountdown",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2"
+			]
+		},
+		"GrenadeArea": {
+			"1": {
+				"class": "MobileBRGrenadeArea",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_grenade_area",
+				"advanceIcon": "ui_customization_editor_advance_grenade_area1",
+				"layoutName": "LUA_MENU_MOBILE/DEFAULT",
+				"description": "LUA_MENU_MOBILE/GRENADE_AREA_DESC_1",
+				"selectedIcon": 2,
+				"width": 250,
+				"height": 112,
+				"optionalFields": {},
+				"classKey": "A"
+			},
+			"2": {
+				"class": "MobileGrenadeDirectThrowArea",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_grenade_area",
+				"advanceIcon": "ui_customization_editor_advance_grenade_area2",
+				"layoutName": "LUA_MENU_MOBILE/GRENADE_AREA_BUTTON_DESC_2",
+				"description": "LUA_MENU_MOBILE/GRENADE_AREA_DESC_2",
+				"selectedIcon": 2,
+				"width": 241,
+				"height": 100,
+				"optionalFields": {},
+				"classKey": "B"
+			},
+			"displayName": "LUA_MENU_MOBILE/GRENADE_AREA",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.GulagArenaCountdown"
+			]
+		},
+		"GrenadeAreaMP": {
+			"1": {
+				"class": "MobileBRGrenadeArea",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_grenade_area",
+				"advanceIcon": "ui_customization_editor_advance_grenade_area1",
+				"layoutName": "LUA_MENU_MOBILE/DEFAULT",
+				"description": "LUA_MENU_MOBILE/GRENADE_AREA_DESC_1",
+				"selectedIcon": 2,
+				"width": 250,
+				"height": 112,
+				"optionalFields": {},
+				"classKey": "A"
+			},
+			"2": {
+				"class": "MobileGrenadeDirectThrowArea",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_grenade_area",
+				"advanceIcon": "ui_customization_editor_advance_grenade_area2",
+				"layoutName": "LUA_MENU_MOBILE/GRENADE_AREA_BUTTON_DESC_2",
+				"description": "LUA_MENU_MOBILE/GRENADE_AREA_DESC_2",
+				"selectedIcon": 2,
+				"width": 241,
+				"height": 100,
+				"optionalFields": {},
+				"classKey": "B"
+			},
+			"displayName": "LUA_MENU_MOBILE/GRENADE_AREA",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.GulagArenaCountdown"
+			]
+		},
+		"DebugAutoFireToggleButton": {
+			"1": {
+				"class": "TouchDebugAutoFireToggleButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_debug_auto_fire",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger"
+			]
+		},
+		"BRMinimap": {
+			"1": {
+				"class": "MobileBRMinimap",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_mini_map",
+				"description": "",
+				"selectedIcon": 2,
+				"layoutName": "LUA_MENU_MOBILE/WIDGET_CLASSIC_STYLE",
+				"width": 230,
+				"height": 270,
+				"variantGroup": {
+					"options": {
+						"1": "BRMinimapStyleMobile",
+						"2": "BRMinimapRotationMobile"
+					}
+				},
+				"classKey": "A"
+			},
+			"optionIdToWidgetProperty": {
+				"BRMinimapStyleMobile": "_mapStyle",
+				"BRMinimapRotationMobile": "_rotateStyle"
+			},
+			"displayName": "LUA_MENU_MOBILE/WIDGET_NAME_MINIMAP",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Crouch",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"MinimapMobile": {
+			"1": {
+				"class": "MobileMinimap",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_mini_map",
+				"description": "",
+				"selectedIcon": 2,
+				"layoutName": "LUA_MENU_MOBILE/WIDGET_CLASSIC_STYLE",
+				"width": 230,
+				"height": 230,
+				"variantGroup": {
+					"options": {
+						"1": "MinimapStyleMobile",
+						"2": "MinimapRotationMobile"
+					}
+				}
+			},
+			"optionIdToWidgetProperty": {
+				"MinimapStyleMobile": "_mapStyle",
+				"MinimapRotationMobile": "_rotateStyle"
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Crouch",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3"
+			],
+			"comment": "Widget is unused in MGL-VS since we use 'BRMinimap' in both br and mp mode to make sure player setting is consistent in BR and trial"
+		},
+		"MinimapMP": {
+			"1": {
+				"class": "MobileBRMinimap",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_mini_map",
+				"description": "",
+				"selectedIcon": 2,
+				"layoutName": "LUA_MENU_MOBILE/WIDGET_CLASSIC_STYLE",
+				"width": 230,
+				"height": 230,
+				"variantGroup": {
+					"options": {
+						"1": "MinimapStyleMobile",
+						"2": "MinimapRotationMobile"
+					}
+				},
+				"classKey": "A"
+			},
+			"optionIdToWidgetProperty": {
+				"MinimapStyleMobile": "_mapStyle",
+				"MinimapRotationMobile": "_rotateStyle"
+			},
+			"displayName": "LUA_MENU_MOBILE/WIDGET_NAME_MINIMAP",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Crouch",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"HealthBar": {
+			"1": {
+				"class": "TouchHealthBar",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_healthbar",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/HEALTHBAR_MP",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"ActivateButton": {
+			"1": {
+				"class": "TouchActivateButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_activate",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars"
+			]
+		},
+		"ContextualButton": {
+			"1": {
+				"class": "TouchContextualButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_contextual_button",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/CONTEXTUAL_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars"
+			]
+		},
+		"OffhandCancelButton": {
+			"1": {
+				"class": "MobileOffhandCancelButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_offhand_cancel",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/OFFHAND_CANCEL_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InLocationSelector"
+			]
+		},
+		"ADSZoomButton": {
+			"1": {
+				"class": "MobileADSZoomButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_ads_zoom_in",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/ADS_ZOOM_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunnerAsJuggernaut",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger"
+			]
+		},
+		"ADSThermalButton": {
+			"1": {
+				"class": "MobileADSThermalButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_ads_thermal",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/ADS_THERMAL_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunnerAsJuggernaut"
+			]
+		},
+		"ADSHoldBreathButton": {
+			"1": {
+				"class": "MobileADSHoldBreathButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_ads_hold_breath",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/ADS_HOLD_BREATH_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars"
+			]
+		},
+		"SuperSprintButton": {
+			"1": {
+				"class": "TouchSuperSprintButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_super_sprint",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/SUPER_SPRINT_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]
+		},
+		"MeleeButton": {
+			"1": {
+				"class": "TouchMeleeButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_melee",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/MELEE_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat"
+			]
+		},
+		"GrenadeCountdownPrompt": {
+			"1": {
+				"class": "TouchGrenadeCountdownPrompt",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": "",
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike"
+			]
+		},
+		"ThrowBackButton": {
+			"1": {
+				"class": "TouchThrowBackButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_throwback",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/THROW_BACK_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars"
+			]
+		},
+		"SettingsButton": {
+			"1": {
+				"class": "TouchSettingsButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_setting",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker"
+			]
+		},
+		"FieldUpgradeButton": {
+			"1": {
+				"class": "TouchFieldUpgrade",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_field_upgrade",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/FIELD_UPGRADE_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike"
+			]
+		},
+		"FieldUpgradeButtonMP": {
+			"1": {
+				"class": "TouchFieldUpgrade",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_field_upgrade",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/FIELD_UPGRADE_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike"
+			]
+		},
+		"PlaneJumpButton": {
+			"1": {
+				"class": "MobileBRPlaneJumpButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_plane_jump",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/PLANE_JUMP_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.BRInfilSelection"
+			]
+		},
+		"BRParachuteWidget": {
+			"1": {
+				"class": "MobileBRParachuteWidget",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_parachute_widget",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/BR_PARACHUTE_WIDGET",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsQuickInventoryOpen",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile"
+			]
+		},
+		"BRParachuteSwitchCameraButton": {
+			"1": {
+				"class": "MobileBRParachuteSwitchCameraButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_parachute_switch_camera",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/BR_PARACHUTE_SWITCH_CAMERA_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsQuickInventoryOpen",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile"
+			]
+		},
+		"BRAltimeterDisplay": {
+			"1": {
+				"class": "MobileBRAltimeterDisplay",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_altimeter_display",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/BR_ALTIMETER_DISPLAY",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunnerAsJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike"
+			]
+		},
+		"ApplyArmorButton": {
+			"1": {
+				"class": "TouchApplyArmorButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_apply_armor_button",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/APPLY_ARMOR_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat"
+			]
+		},
+		"KillstreakButton": {
+			"1": {
+				"class": "MobileBRKillstreakButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_killstreak_button",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/KILLSTREAK_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.InJavelin"
+			]
+		},
+		"PauseButton": {
+			"1": {
+				"class": "TouchPauseButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_mp_mobile_Pause_Button",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/PAUSE_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			],
+			"priority": 100.0
+		},
+		"MobilePingButton": {
+			"1": {
+				"class": "MobilePingButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_mark",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/PING_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			],
+			"priority": 95.0
+		},
+		"MicrophoneButton": {
+			"1": {
+				"class": "TouchMicrophoneButton",
+				"package": "ui.generated.widgets.wzm",
+				"icon": "ui_customization_editor_microphone",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/MICROPHONE_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			],
+			"priority": 95.0
+		},
+		"TacMapButton": {
+			"1": {
+				"class": "TouchTacMapButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin"
+			],
+			"priority": 100.0
+		},
+		"JoystickVehicle": {
+			"1": {
+				"class": "TouchLeftVehicleJoystick",
+				"package": "ui.generated.widgets",
+				"icon": "ui_customization_editor_joystick_vehicle",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {
+					"maxJoystickDistance": {
+						"type": "float",
+						"default": 0.0
+					},
+					"_directionZones": {
+						"type": "array",
+						"default": []
+					}
+				}
+			},
+			"displayName": "LUA_MENU_MOBILE/JOYSTICK_VEHICLE",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingWheelson"
+			]
+		},
+		"BRInteractiveLootCard": {
+			"1": {
+				"class": "MobileLootCardWrapper",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_interactive_loot_card",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/BR_INTERACTIVE_LOOT_CARD",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat"
+			],
+			"priority": 90.0
+		},
+		"ExitVehicleButton": {
+			"1": {
+				"class": "TouchExitVehicleButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_exit_vehicle",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/EXIT_VEHICLE_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingRCD"
+			]
+		},
+		"VehicleDiagram": {
+			"1": {
+				"class": "TouchVehicleDiagram",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_vehicle_diagram",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/VEHICLE_STATUS",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner"
+			]
+		},
+		"PickupOnUseHint": {
+			"1": {
+				"class": "MobilePickupOnUseHint",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike"
+			]
+		},
+		"UpstairsButton": {
+			"1": {
+				"class": "TouchUpstairsButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_up_stairs",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/UP_STAIRS",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile"
+			]
+		},
+		"DownstairsButton": {
+			"1": {
+				"class": "TouchDownstairsButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_down_stairs",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/DOWN_STAIRS",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike"
+			]
+		},
+		"TeamHealthBarContainer": {
+			"1": {
+				"class": "MobileTeamHealthBarContainer",
+				"package": "ui.generated.widgets.wzm.ingame",
+				"icon": "ui_customization_editor_squad_info",
+				"width": 456,
+				"height": 232,
+				"description": "",
+				"layoutName": "LUA_MENU_MOBILE/DEFAULT",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"classKey": "A",
+				"variantGroup": {
+					"options": {
+						"1": "TouchSquadInfoDisplaySelfMobile"
+					}
+				},
+				"altSizes": {
+					"1": {
+						"width": 285,
+						"height": 212,
+						"RequiredOptions": {
+							"TouchSquadInfoDisplaySelfMobile": 0
+						}
+					},
+					"2": {
+						"width": 297,
+						"height": 288,
+						"RequiredOptions": {
+							"TouchSquadInfoDisplaySelfMobile": 1
+						}
+					}
+				}
+			},
+			"2": {
+				"class": "MobileTeamHealthBarContainer",
+				"package": "ui.generated.widgets.wzm.ingame",
+				"icon": "ui_customization_editor_squad_info",
+				"width": 456,
+				"height": 232,
+				"description": "",
+				"layoutName": "LUA_MENU_MOBILE/SQUADINFO_LAYOUT_VARIANT_COMPACT",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"classKey": "B",
+				"variantGroup": {
+					"options": {
+						"1": "SquadInfoLayoutMobile",
+						"2": "TouchSquadInfoDisplaySelfMobile"
+					}
+				},
+				"altSizes": {
+					"1": {
+						"width": 170,
+						"height": 185,
+						"RequiredOptions": {
+							"TouchSquadInfoDisplaySelfMobile": 0,
+							"SquadInfoLayoutMobile": "Column"
+						}
+					},
+					"2": {
+						"width": 170,
+						"height": 250,
+						"RequiredOptions": {
+							"TouchSquadInfoDisplaySelfMobile": 1,
+							"SquadInfoLayoutMobile": "Column"
+						}
+					},
+					"3": {
+						"width": 492,
+						"height": 55,
+						"RequiredOptions": {
+							"TouchSquadInfoDisplaySelfMobile": 0,
+							"SquadInfoLayoutMobile": "Line"
+						}
+					},
+					"4": {
+						"width": 646,
+						"height": 57,
+						"RequiredOptions": {
+							"TouchSquadInfoDisplaySelfMobile": 1,
+							"SquadInfoLayoutMobile": "Line"
+						}
+					},
+					"5": {
+						"width": 341,
+						"height": 120,
+						"RequiredOptions": {
+							"TouchSquadInfoDisplaySelfMobile": 0,
+							"SquadInfoLayoutMobile": "Square"
+						}
+					},
+					"6": {
+						"width": 341,
+						"height": 120,
+						"RequiredOptions": {
+							"TouchSquadInfoDisplaySelfMobile": 1,
+							"SquadInfoLayoutMobile": "Square"
+						}
+					}
+				}
+			},
+			"displayName": "LUA_MENU_MOBILE/SQUAD_INFO",
+			"optionIdToWidgetProperty": {
+				"SquadInfoLayoutMobile": "_squadInfoLayoutMobile",
+				"TouchSquadInfoDisplaySelfMobile": "_showSelfHealthBar"
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"SquadLeadInfoPrompt": {
+			"1": {
+				"class": "MobileSquadLeadInfoPrompt",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_squad_lead_info",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/SQUAD_LEAD_INFO_PROMPT",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.BRInfilSelection"
+			]
+		},
+		"BRGasmaskReadout": {
+			"1": {
+				"class": "MobileBRGasmaskReadout",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_gas_mask",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/GAS_MASK_STATUS",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsQuickInventoryOpen",
+				"VISIBILITY_CONDITIONS.InScoreboard",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin"
+			]
+		},
+		"BRKioskQuickPurchase": {
+			"1": {
+				"class": "MobileBRKioskQuickPurchase",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_br_mini_map_round",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/BR_KIOSK_QUICK_PURCHASE",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile"
+			],
+			"priority": 50.0
+		},
+		"BRMatchStatusInfo": {
+			"1": {
+				"class": "MobileBRMatchStatusInfoBar",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_match_status",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/BR_MATCH_STATUS_INFO",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"Obituary": {
+			"1": {
+				"class": "MobileObituary",
+				"package": "ui.generated.widgets",
+				"icon": "ui_customization_editor_obituary",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/OBITUARY",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingCruiseMissile",
+				"VISIBILITY_CONDITIONS.UsingRCD",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingRemoteKillstreak",
+				"VISIBILITY_CONDITIONS.HardcoreMode",
+				"VISIBILITY_CONDITIONS.IsPlayerDead",
+				"VISIBILITY_CONDITIONS.EMPJammed",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"Compass": {
+			"1": {
+				"class": "MobileCompass",
+				"package": "ui.generated.widgets",
+				"icon": "ui_customization_editor_compass",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/COMPASS",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.HardcoreMode",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.EMPJammed",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"PlunderAmount": {
+			"1": {
+				"class": "MobileBRPlunderAmountWidget",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_plunder_amount",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/CASH",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.HardcoreMode",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.EMPJammed",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]
+		},
+		"VehicleDirectionalArrows": {
+			"1": {
+				"class": "TouchVehicleDirectionalArrows",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_vehicle_directional_arrows",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/JOYSTICK_VEHICLE",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver"
+			]
+		},
+		"VehicleFlares": {
+			"1": {
+				"class": "TouchVehicleFlares",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_vehicle_flare",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/FL_VEH_FLARES",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver"
+			]
+		},
+		"VehicleFlyDownButton": {
+			"1": {
+				"class": "TouchVehicleFlyDownButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/FL_VEH_DESCEND",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingRCD"
+			]
+		},
+		"VehicleFlyUpButton": {
+			"1": {
+				"class": "TouchVehicleFlyUpButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/FL_VEH_ASCEND",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingRCD"
+			]
+		},
+		"VehicleHandbrake": {
+			"1": {
+				"class": "TouchVehicleHandbrake",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_vehicle_handbrake",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/VEH_HANDBRAKE",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver"
+			]
+		},
+		"VehicleHorn": {
+			"1": {
+				"class": "TouchVehicleHorn",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_vehicle_horn",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/VEH_HORN",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver"
+			]
+		},
+		"VehicleSteering": {
+			"1": {
+				"class": "TouchVehicleSteering",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/JOYSTICK_VEHICLE",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver"
+			]
+		},
+		"Joystick": {
+			"1": {
+				"class": "TouchLeftJoystick",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_thumbnail_joystick",
+				"width": 288,
+				"height": 288,
+				"description": "",
+				"selectedIcon": 1,
+				"layoutName": "LUA_MENU_MOBILE/DEFAULT",
+				"advanceIcon": "ui_customization_editor_joystick",
+				"variantGroup": {
+					"options": {
+						"1": "IsJoystickEnableDirectionZoneMobile"
+					}
+				},
+				"optionalFields": {
+					"autoRunButtonYOff": {
+						"type": "float",
+						"default": 0.0
+					},
+					"sprintMultiplier": {
+						"type": "float",
+						"default": 0.7
+					},
+					"superSprintMultiplier": {
+						"type": "float",
+						"default": 1.5
+					},
+					"_directionZones": {
+						"type": "array",
+						"default": []
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"classID": [
+						"SuperSprintButton"
+					]
+				},
+				"classKey": "A"
+			},
+			"2": {
+				"class": "TouchLeftJoystick",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_thumbnail_joystick",
+				"width": 288,
+				"height": 288,
+				"description": "",
+				"selectedIcon": 1,
+				"layoutName": "LUA_MENU_MOBILE/WIDGET_CLASSIC_STYLE",
+				"advanceIcon": "ui_customization_editor_joystick",
+				"variantGroup": {
+					"options": {
+						"1": "IsJoystickEnableDirectionZoneMobile",
+						"2": "IsJoystickIntendAutoMantleMobile"
+					}
+				},
+				"optionalFields": {
+					"autoRunButtonYOff": {
+						"type": "float",
+						"default": 0.0
+					},
+					"sprintMultiplier": {
+						"type": "float",
+						"default": 0.7
+					},
+					"superSprintMultiplier": {
+						"type": "float",
+						"default": 1.5
+					},
+					"_directionZones": {
+						"type": "array",
+						"default": []
+					}
+				},
+				"widgetsToRefreshOnPropertyChange": {
+					"classID": [
+						"SuperSprintButton"
+					]
+				},
+				"classKey": "B"
+			},
+			"optionIdToWidgetProperty": {
+				"IsJoystickEnableDirectionZoneMobile": "_isEnableDirectionZone",
+				"IsJoystickIntendAutoMantleMobile": "_isIntendAutoMantle"
+			},
+			"displayName": "LUA_MENU_MOBILE/JOYSTICK",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_MoveCameraAndWalk",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Crouch",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Walk",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.InLocationSelector",
+				"VISIBILITY_CONDITIONS.UsingRCD",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3"
+			],
+			"priority": 100.0,
+			"editorModeWidget": "EditorModeJoystick"
+		},
+		"DefaultCamera": {
+			"1": {
+				"class": "TouchDefaultCamera",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {
+					"continuousJoystickRange": {
+						"type": "int",
+						"default": 150
+					}
+				}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_MoveCamera",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_MoveCameraAndWalk",
+				"VISIBILITY_CONDITIONS.InLocationSelector"
+			]
+		},
+		"ChopperCamera": {
+			"1": {
+				"class": "TouchChopperCamera",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"visibilityCondition": []
+		},
+		"CloseTacMapButton": {
+			"1": {
+				"class": "MobileCloseMapButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/CLOSE_TACMAP",
+			"visibilityCondition": []
+		},
+		"MissionTracker": {
+			"1": {
+				"class": "MobileBRMissionTracker",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_custom_contract",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "ContractCompactMobile"
+					}
+				}
+			},
+			"displayName": "LUA_MENU_MOBILE/MISSIONTRACKER",
+			"optionIdToWidgetProperty": {
+				"ContractCompactMobile": "_contractCompactMobile"
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunnerAsJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"MobileOpenInventoryButton": {
+			"1": {
+				"class": "MobileOpenInventoryButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_open_inventory",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/OPEN_CLOSE_INVENTORY_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]
+		},
+		"MobileGameplayWarning": {
+			"1": {
+				"class": "MobileGameplayWarning",
+				"package": "ui.generated.widgets.WZM.ingame",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer"
+			]
+		},
+		"SpectatorEquipmentSection": {
+			"1": {
+				"class": "MobileSpectatingEquipmentSection",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_spectator_equipment_area",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/SPECTATOR_EQIPMENT_SECTION",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer"
+			]
+		},
+		"SpectatorPlayerCard": {
+			"1": {
+				"class": "MobileSpectatorPlayerCard",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_spectator_calling_card",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/SPECTATOR_PLAYER_CARD",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer"
+			],
+			"priority": -1.0
+		},
+		"ChangeSeat": {
+			"1": {
+				"class": "TouchChangeSeatButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_change_seat",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/CHANGE_SEAT",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger"
+			]
+		},
+		"BRLoadoutFlyOut": {
+			"1": {
+				"class": "MobileBRLoadoutNotifyPanel",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selecticon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/MISSIONTRACKER",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunnerAsJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsGeigerPhoneActive",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.GulagArenaCountdown",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			],
+			"priority": 100.0
+		},
+		"SpectatorRequestRedeploy": {
+			"1": {
+				"class": "MobileSpectatingRequestRedeployButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_spectator_request_redeploy",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/SPECTATOR_REQUEST_REDEPLOY",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer"
+			]
+		},
+		"ExecutionButton": {
+			"1": {
+				"class": "TouchExecutionButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_execution",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/EXECUTION_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]
+		},
+		"MobileLootFeedback": {
+			"1": {
+				"class": "MobileLootFeedback",
+				"package": "ui.generated.widgets.WZM.ingame",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_PickUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_Reload",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ADSAutoShoot3",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ManualShoot2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_IdentifyEnemies",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_KillAutoShoot",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp1",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_ArmorUp2",
+				"VISIBILITY_CONDITIONS.MGL_FTUE_FinalCombat"
+			]
+		},
+		"GoToPosition": {
+			"1": {
+				"class": "MobileGoToPositionButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_melee",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/GO_TO_POSITION",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay"
+			]
+		},
+		"TouchVehicleArrowControls": {
+			"1": {
+				"class": "TouchVehicleArrowControls",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_forward_backward",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/VEHICLE_CONTROLS",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsVehicleDriver"
+			]
+		},
+		"MobileEventPointsDisplay": {
+			"1": {
+				"class": "MobileEventPointsDisplay",
+				"package": "ui.generated.widgets.WZM.ingame",
+				"icon": "ui_customization_editor_event_point",
+				"layoutName": "LUA_MENU_MOBILE/DEFAULT",
+				"width": 100,
+				"height": 34,
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"2": {
+				"class": "MobileEventPointsDisplay",
+				"package": "ui.generated.widgets.WZM.ingame",
+				"icon": "ui_customization_editor_full_event_point",
+				"layoutName": "LUA_MENU_MOBILE/EVENT_POINT_FULL_LAYOUT",
+				"width": 165,
+				"height": 34,
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/EVENT_POINTS_DISPLAY",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"MobileGlobalPlayerSplash": {
+			"1": {
+				"class": "MobileGlobalPlayerSplash",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_global_splash",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/GLOBAL_PLAYER_SPLASH",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsMenuOpen",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.HardcoreMode",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.EMPJammed",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker"
+			]
+		},
+		"IntroductionSplash": {
+			"1": {
+				"class": "MobileIntroductionSplash",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.InfilPreStart",
+				"VISIBILITY_CONDITIONS.InfilIntro",
+				"VISIBILITY_CONDITIONS.InfilEnd"
+			],
+			"priority": 100.0
+		},
+		"SpectatingLoadout": {
+			"1": {
+				"class": "MobileSpectatingLoadout",
+				"package": "ui.generated.widgets.touch",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "AAR/AAR_LOADOUT_ITEMS",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer"
+			],
+			"priority": 100.0
+		},
+		"PublicEventGameplayTimer": {
+			"1": {
+				"class": "MobilePublicEventGameplayTimer",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_public_event_timer",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/PUBLIC_EVENT_TIMER",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.IsGeigerPhoneActive",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunnerAsJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			],
+			"priority": 100.0
+		},
+		"MobileOpenSpectatingLoadoutButton": {
+			"1": {
+				"class": "MobileOpenSpectatingLoadoutButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_open_spectating_loadout",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/SPECTATOR_LOADOUT_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer"
+			],
+			"priority": 1.0
+		},
+		"ControlSettingButton": {
+			"1": {
+				"class": "TouchControlSettingButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_control_setting_button",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/CONTROL_SETTING_BUTTON_NAME",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunnerAsJuggernaut",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"TurretHeat": {
+			"1": {
+				"class": "MobileTurretHeat",
+				"package": "ui.generated.widgets.touch",
+				"icon": "",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner"
+			]
+		},
+		"EarnedStreak": {
+			"1": {
+				"class": "MobileEarnedStreak",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_killstreak_button",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/UXP_EARNED_STREAK",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.NormalGameplay"
+			]
+		},
+		"C4DetonateButton": {
+			"1": {
+				"class": "TouchC4DetonateButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_c4_detonator",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/C4_DETONATE_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike"
+			]
+		},
+		"TacCamParked": {
+			"1": {
+				"class": "MobileTacCamParked",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_mobile_coustomization_kfe_icon_tacticalcamera",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/TAC_CAM_INFO",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.UsingAirstrike"
+			]
+		},
+		"DropBombButton": {
+			"1": {
+				"class": "TouchDropBombButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_drop_bomb",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/DROP_BOMB_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay"
+			]
+		},
+		"UseBombButton": {
+			"1": {
+				"class": "TouchUseBombButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_use_bomb",
+				"description": "",
+				"selectedIcon": 1,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/USE_BOMB_BUTTON",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay"
+			]
+		},
+		"KillstreakList": {
+			"1": {
+				"class": "MobileKillstreakList",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_mobile_coustomization_mp_icon_killstreak",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/KILLSTREAK_LIST_MP",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]
+		},
+		"MobileMatchStatusScores": {
+			"1": {
+				"class": "MobileMatchStatusScores",
+				"package": "ui.generated.widgets.wzm.ingame",
+				"icon": "ui_mobile_coustomization_mp_icon_bar",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/MATCH_STATUS_SCORES_MP",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer"
+			]
+		},
+		"ChampionTeamScore": {
+			"1": {
+				"class": "MobileChampionTeamScore",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_mobile_coustomization_champion_bar",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"ChampionMissionTracker": {
+			"1": {
+				"class": "MobileChampionMissionTracker",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_customization_editor_overtime_timer",
+				"description": "",
+				"selectedIcon": 2,
+				"width": 425,
+				"height": 185,
+				"optionalFields": {}
+			},
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunnerAsJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.SpectatingAndSwitchingPlayer"
+			]
+		},
+		"BRLoadoutSelectionButton": {
+			"1": {
+				"class": "MobileBRLoadoutSelectionButton",
+				"package": "ui.generated.widgets.touch",
+				"icon": "ui_mobile_coustomization_icon_loadout",
+				"description": "",
+				"selectedIcon": 1,
+				"width": 64,
+				"height": 64,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/BR_LOADOUT_SELECT",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.Gulag",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.UsingAirstrike",
+				"VISIBILITY_CONDITIONS.UsingClusterstrike",
+				"VISIBILITY_CONDITIONS.IsInAirMobile",
+				"VISIBILITY_CONDITIONS.BRInfilSelection",
+				"VISIBILITY_CONDITIONS.IsBinoculars",
+				"VISIBILITY_CONDITIONS.SpectatingAndNotSwitchingPlayer",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsVictim",
+				"VISIBILITY_CONDITIONS.IsInExecutionAsAttacker",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingJLTVAsGunner",
+				"VISIBILITY_CONDITIONS.InJavelin",
+				"VISIBILITY_CONDITIONS.IsBeingRevived",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut"
+			]
+		},
+		"HoverJetMoveToPlayer": {
+			"1": {
+				"class": "MobileHoverJetMoveToPlayer",
+				"package": "ui.generated.widgets.wzm",
+				"icon": "ui_customization_editor_killstreak_hoverjet",
+				"description": "",
+				"selectedIcon": 1,
+				"width": 104,
+				"height": 104,
+				"optionalFields": {}
+			},
+			"displayName": "LUA_MENU_MOBILE/VTOL_FOLLOW_MP",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay"
+			]
+		}
+	},
+	"Ground": [
+		"PublicEventGameplayTimer",
+		"BRLoadoutSelectionButton",
+		"WeaponInspectButton",
+		"C4DetonateButton",
+		"ControlSettingButton",
+		"MobileGlobalPlayerSplash",
+		"SelfReviveIcon",
+		"MobileOpenInventoryButton",
+		"MissionTracker",
+		"MobilePingButton",
+		"BRInteractiveLootCard",
+		"EquipmentArea",
+		"PlunderAmount",
+		"BRMinimap",
+		"Obituary",
+		"Compass",
+		"BRMatchStatusInfo",
+		"MobileEventPointsDisplay",
+		"BRGasmaskReadout",
+		"TeamHealthBarContainer",
+		"DownstairsButton",
+		"UpstairsButton",
+		"KillstreakButton",
+		"ApplyArmorButton",
+		"FieldUpgradeButton",
+		"PauseButton",
+		"MicrophoneButton",
+		"ThrowBackButton",
+		"MeleeButton",
+		"ExecutionButton",
+		"SuperSprintButton",
+		"ADSHoldBreathButton",
+		"ADSThermalButton",
+		"ADSZoomButton",
+		"OffhandCancelButton",
+		"WeaponMountButton",
+		"ContextualButton",
+		"GrenadeArea",
+		"AmmoCounter",
+		"ArmorHealth",
+		"PlayerStance",
+		"HipFireButton",
+		"Joystick",
+		"ProneButton",
+		"CrouchButton",
+		"SquatButton",
+		"ReloadButton",
+		"JumpButton",
+		"ADSButton",
+		"RightJoystick",
+		"TacCamParked"
+	],
+	"MP": [
+		"PublicEventGameplayTimer",
+		"HoverJetMoveToPlayer",
+		"MatchStatusScores",
+		"KillstreakList",
+		"UseBombButton",
+		"DropBombButton",
+		"C4DetonateButton",
+		"ControlSettingButton",
+		"MobileGlobalPlayerSplash",
+		"HealthBar",
+		"MobilePingButton",
+		"BRInteractiveLootCard",
+		"EquipmentAreaMP",
+		"MinimapMP",
+		"Obituary",
+		"Compass",
+		"FieldUpgradeButtonMP",
+		"PauseButton",
+		"MicrophoneButton",
+		"ThrowBackButton",
+		"MeleeButton",
+		"ExecutionButton",
+		"SuperSprintButton",
+		"ADSHoldBreathButton",
+		"ADSThermalButton",
+		"ADSZoomButton",
+		"OffhandCancelButton",
+		"WeaponMountButton",
+		"ContextualButton",
+		"GrenadeAreaMP",
+		"AmmoCounterMP",
+		"PlayerStance",
+		"HipFireButton",
+		"Joystick",
+		"ProneButton",
+		"CrouchButton",
+		"SquatButton",
+		"ReloadButton",
+		"JumpButton",
+		"ADSButton",
+		"RightJoystick",
+		"TacCamParked"
+	],
+	"CasualQuest": [
+		"ChampionMissionTracker",
+		"ChampionTeamScore"
+	],
+	"Driver": [
+		"VehicleHorn",
+		"VehicleFlares",
+		"VehicleDiagram",
+		"ExitVehicleButton"
+	],
+	"Spectator": [
+		"MobileOpenSpectatingLoadoutButton",
+		"SpectatorRequestRedeploy",
+		"SpectatorEquipmentSection",
+		"SpectatorArmorHealth",
+		"SpectatorPlayerCard"
+	],
+	"Parachute": [
+		"BRAltimeterDisplay",
+		"BRParachuteSwitchCameraButton",
+		"BRParachuteWidget",
+		"PlaneJumpButton"
+	]
+}

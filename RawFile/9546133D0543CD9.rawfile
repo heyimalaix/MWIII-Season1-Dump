@@ -1,0 +1,21 @@
+%force_cs_anim_index_match
+
+vehicle_lean_aim : scrub1d( timerange="-205, 205", timevalue=[aim_yaw], alwayson="true", childindex="1" ) parse_cull(disable)
+{
+	vehicle_lean_aim_pitch : blendspace1d( range="-45,45", blend_time="0", coords="-45,0,45", value=[aim_pitch] ) parse_cull(disable)
+	{
+		iw9_mp_veh_jltv_windowFR_scrub_up
+		iw9_mp_veh_jltv_windowFR_scrub_neutral
+		iw9_mp_veh_jltv_windowFR_scrub_down
+	}
+}
+
+vehicle_2014_lean_aim : scrub1d( timerange="-205, 205", timevalue=[aim_yaw], alwayson="true", childindex="1" ) parse_cull(disable)
+{
+	vehicle_2014_lean_aim_pitch : blendspace1d( range="-45,45", blend_time="0", coords="-45,0,45", value=[aim_pitch] ) parse_cull(disable)
+	{
+		iw9_mp_veh_pickup_fullsized_2014_windowfr_scrub_up
+		iw9_mp_veh_pickup_fullsized_2014_windowfr_scrub_neutral
+		iw9_mp_veh_pickup_fullsized_2014_windowfr_scrub_down
+	}
+}

@@ -1,0 +1,373 @@
+// code will zero stats before this is run
+
+//////// general setup ////////
+setCoopLoadout "defaultSet" 1
+setCoopLoadout "inUse" 1
+
+//////// killstreaks ////////
+setCoopLoadout "killstreakSetups" 0 "killstreak" "uav"
+setCoopLoadout "killstreakSetups" 1 "killstreak" "cruise_predator"
+setCoopLoadout "killstreakSetups" 2 "killstreak" "fuel_airstrike"
+
+//////// rig ////////
+setCoopLoadout "archetype" "archetype_assault"
+setCoopLoadout "archetypePerk" "specialty_null"
+setCoopLoadout "archetypeSuper" "super_ammo_drop"
+setCoopLoadout "head" 10
+setCoopLoadout "body" 6
+
+//////// gesture ////////
+setCoopLoadout "gesture" "gesture000"
+setCoopLoadout "taunt" "iw7_taunt_rare_6"
+setCoopLoadout "taunts" 0 "iw7_taunt_rare_6"
+setCoopLoadout "taunts" 1 "iw7_taunt_rare_6"
+setCoopLoadout "taunts" 2 "iw7_taunt_rare_6"
+setCoopLoadout "taunts" 3 "iw7_taunt_rare_6"
+
+////////cp //////
+setCoopLoadout "cpLoadoutSel" 0
+
+///////CPFieldUpgrade///////
+setCoopLoadout "cpFieldUpgrade" "role_tank"
+
+/////munitions//////
+setCoopLoadout "munitionSetups" 0 "munition" "empty1"
+setCoopLoadout "munitionSetups" 1 "munition" "empty2"
+setCoopLoadout "munitionSetups" 2 "munition" "empty3"
+
+setCoopLoadout "munitionWaveModeSetups" 0 "munition" "empty1"
+setCoopLoadout "munitionWaveModeSetups" 1 "munition" "empty2"
+setCoopLoadout "munitionWaveModeSetups" 2 "munition" "empty3"
+//////// classes ////////
+
+// Loadout 1 - Assault
+setCoopLoadout_loc "loadouts" 0 "name" "LUA_MENU_MP/LOADOUT_1"
+setCoopLoadout "loadouts" 0 "inUse" 1
+setCoopLoadout "loadouts" 0 "overkill" 0
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "weapon" "iw9_ar_mike4"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "reticle" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 0 "variantID" 0
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "weapon" "iw9_pi_papa220"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "reticle" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 1 "variantID" 0
+setCoopLoadout "loadouts" 0 "weaponSetups" 2 "weapon" "iw9_pi_papa220"
+setCoopLoadout "loadouts" 0 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 2 "reticle" "none"
+setCoopLoadout "loadouts" 0 "weaponSetups" 2 "variantID" 0
+setCoopLoadout "loadouts" 0 "equipmentSetups" 0 "equipment" "equip_frag"
+setCoopLoadout "loadouts" 0 "equipmentSetups" 1 "equipment" "equip_flash"
+setCoopLoadout "loadouts" 0 "loadoutPerks" 0 "specialty_munitions_2"
+setCoopLoadout "loadouts" 0 "loadoutPerks" 1 "specialty_scavenger_plus"
+setCoopLoadout "loadouts" 0 "loadoutPerks" 2 "specialty_hardline"
+setCoopLoadout "loadouts" 0 "extraPerks" 0 "specialty_quick_fix"
+setCoopLoadout "loadouts" 0 "fieldUpgrades" 0 "super_tac_cover"
+setCoopLoadout "loadouts" 0 "fieldUpgrades" 1 "none"
+setCoopLoadout "loadouts" 0 "equippedPerkPackageIndex" 5
+
+
+// Loadout 2 - Hunter
+setCoopLoadout_loc "loadouts" 1 "name" "LUA_MENU_MP/LOADOUT_2"
+setCoopLoadout "loadouts" 1 "inUse" 1
+setCoopLoadout "loadouts" 1 "overkill" 0
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "weapon" "iw9_sm_papa90"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "reticle" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 0 "variantID" 0
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "weapon" "iw9_la_gromeo"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "reticle" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 1 "variantID" 0
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "weapon" "iw9_la_gromeo"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "reticle" "none"
+setCoopLoadout "loadouts" 1 "weaponSetups" 2 "variantID" 0
+setCoopLoadout "loadouts" 1 "equipmentSetups" 0 "equipment" "equip_frag"
+setCoopLoadout "loadouts" 1 "equipmentSetups" 1 "equipment" "equip_shockstick"
+setCoopLoadout "loadouts" 1 "loadoutPerks" 0 "specialty_tactical_recon"
+setCoopLoadout "loadouts" 1 "loadoutPerks" 1 "specialty_huntmaster"
+setCoopLoadout "loadouts" 1 "loadoutPerks" 2 "specialty_restock"
+setCoopLoadout "loadouts" 1 "extraPerks" 0 "specialty_overcharge_field_upgrade"
+setCoopLoadout "loadouts" 1 "fieldUpgrades" 0 "super_recon_drone"
+setCoopLoadout "loadouts" 1 "fieldUpgrades" 1 "none"
+setCoopLoadout "loadouts" 1 "equippedPerkPackageIndex" 2
+
+
+// Loadout 3 - Stalker
+setCoopLoadout_loc "loadouts" 2 "name" "LUA_MENU_MP/LOADOUT_3"
+setCoopLoadout "loadouts" 2 "inUse" 1
+setCoopLoadout "loadouts" 2 "overkill" 1
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "weapon" "iw9_sn_mromeo"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "reticle" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 0 "variantID" 0
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "weapon" "iw9_pi_papa220"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "reticle" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 1 "variantID" 0
+setCoopLoadout "loadouts" 2 "weaponSetups" 2 "weapon" "iw9_pi_papa220"
+setCoopLoadout "loadouts" 2 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 2 "reticle" "none"
+setCoopLoadout "loadouts" 2 "weaponSetups" 2 "variantID" 0
+setCoopLoadout "loadouts" 2 "equipmentSetups" 0 "equipment" "equip_at_mine"
+setCoopLoadout "loadouts" 2 "equipmentSetups" 1 "equipment" "equip_shockstick"
+setCoopLoadout "loadouts" 2 "loadoutPerks" 0 "specialty_hustle"
+setCoopLoadout "loadouts" 2 "loadoutPerks" 1 "specialty_huntmaster"
+setCoopLoadout "loadouts" 2 "loadoutPerks" 2 "specialty_covert_ops"
+setCoopLoadout "loadouts" 2 "extraPerks" 0 "specialty_overwatch"
+setCoopLoadout "loadouts" 2 "fieldUpgrades" 0 "super_sound_veil"
+setCoopLoadout "loadouts" 2 "fieldUpgrades" 1 "none"
+setCoopLoadout "loadouts" 2 "equippedPerkPackageIndex" 5
+
+
+// Loadout 4 - Shotgun
+setCoopLoadout_loc "loadouts" 3 "name" "LUA_MENU_MP/LOADOUT_4"
+setCoopLoadout "loadouts" 3 "inUse" 0
+setCoopLoadout "loadouts" 3 "overkill" 0
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "weapon" "iw9_lm_kilo21"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "fourx02"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "bar_lm_long_p02"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "reticle" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 0 "variantID" 0
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "weapon" "iw9_la_juliet"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "reticle" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 1 "variantID" 0
+setCoopLoadout "loadouts" 3 "weaponSetups" 2 "weapon" "iw9_la_gromeo"
+setCoopLoadout "loadouts" 3 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 2 "reticle" "none"
+setCoopLoadout "loadouts" 3 "weaponSetups" 2 "variantID" 0
+setCoopLoadout "loadouts" 3 "equipmentSetups" 0 "equipment" "equip_c4"
+setCoopLoadout "loadouts" 3 "equipmentSetups" 1 "equipment" "equip_flash"
+setCoopLoadout "loadouts" 3 "loadoutPerks" 0 "specialty_hustle"
+setCoopLoadout "loadouts" 3 "loadoutPerks" 1 "specialty_huntmaster"
+setCoopLoadout "loadouts" 3 "loadoutPerks" 2 "specialty_covert_ops"
+setCoopLoadout "loadouts" 3 "extraPerks" 0 "specialty_guerrilla"
+setCoopLoadout "loadouts" 3 "fieldUpgrades" 0 "super_deadsilence"
+setCoopLoadout "loadouts" 3 "fieldUpgrades" 1 "none"
+setCoopLoadout "loadouts" 3 "equippedPerkPackageIndex" 2
+
+
+// Loadout 5 - Sniper
+setCoopLoadout_loc "loadouts" 4 "name" "LUA_MENU_MP/LOADOUT_5"
+setCoopLoadout "loadouts" 4 "inUse" 0
+setCoopLoadout "loadouts" 4 "overkill" 0
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "weapon" "iw9_sn_mromeo"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "reticle" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 0 "variantID" 0
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "weapon" "iw9_pi_decho"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "reticle" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 1 "variantID" 0
+setCoopLoadout "loadouts" 4 "weaponSetups" 2 "weapon" "iw9_pi_decho"
+setCoopLoadout "loadouts" 4 "weaponSetups" 2 "attachmentSetup" 0 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 2 "attachmentSetup" 1 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 2 "attachmentSetup" 2 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 2 "attachmentSetup" 3 "attachment" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 2 "reticle" "none"
+setCoopLoadout "loadouts" 4 "weaponSetups" 2 "variantID" 0
+setCoopLoadout "loadouts" 4 "equipmentSetups" 0 "equipment" "equip_claymore"
+setCoopLoadout "loadouts" 4 "equipmentSetups" 1 "equipment" "equip_shockstick"
+setCoopLoadout "loadouts" 4 "loadoutPerks" 0 "specialty_hustle"
+setCoopLoadout "loadouts" 4 "loadoutPerks" 1 "specialty_huntmaster"
+setCoopLoadout "loadouts" 4 "loadoutPerks" 2 "specialty_covert_ops"
+setCoopLoadout "loadouts" 4 "extraPerks" 0 "specialty_guerrilla"
+setCoopLoadout "loadouts" 4 "fieldUpgrades" 0 "super_ammo_drop"
+setCoopLoadout "loadouts" 4 "fieldUpgrades" 1 "none"
+setCoopLoadout "loadouts" 4 "equippedPerkPackageIndex" 2
+
+
+//////// streak preferences setup ////////
+setCoopLoadout "streakPreferences" "none" 0
+setCoopLoadout "streakPreferences" "uav" 0
+setCoopLoadout "streakPreferences" "airdrop" 0
+setCoopLoadout "streakPreferences" "dronedrop" 0
+setCoopLoadout "streakPreferences" "counter_uav" 0
+setCoopLoadout "streakPreferences" "ball_drone_backup" 0
+setCoopLoadout "streakPreferences" "sentry_shock" 0
+setCoopLoadout "streakPreferences" "orbital_deployment" 0
+setCoopLoadout "streakPreferences" "thor" 0
+setCoopLoadout "streakPreferences" "precision_airstrike" 0
+setCoopLoadout "streakPreferences" "jammer" 0
+setCoopLoadout "streakPreferences" "jackal" 0
+setCoopLoadout "streakPreferences" "minijackal" 0
+setCoopLoadout "streakPreferences" "nuke" 0
+setCoopLoadout "streakPreferences" "spiderbot" 0
+setCoopLoadout "streakPreferences" "directional_uav" 0
+setCoopLoadout "streakPreferences" "bombardment" 0
+setCoopLoadout "streakPreferences" "remote_c8" 0
+setCoopLoadout "streakPreferences" "venom" 0
+
+//////// rig preferences setup ////////
+
+// NOTE-EricG: Please try to keep the following sorted by order of CaC appearance and grouped by archetype
+
+// assault
+setCoopLoadout "archetypePreferences" 0 "archetype" "archetype_assault"
+setCoopLoadout "archetypePreferences" 0 "archetypePerk" "specialty_boom"
+setCoopLoadout "archetypePreferences" 0 "archetypeSuper" "super_pac_sentry"
+setCoopLoadout "archetypePreferences" 0 "head" "head_1"
+setCoopLoadout "archetypePreferences" 0 "body" "body_1"
+setCoopLoadout "archetypePreferences" 0 "taunt" "iw7_taunt_rare_6"
+setCoopLoadout "archetypePreferences" 0 "taunts" 0 "iw7_taunt_rare_6"
+setCoopLoadout "archetypePreferences" 0 "taunts" 1 "iw7_taunt_rare_6"
+setCoopLoadout "archetypePreferences" 0 "taunts" 2 "iw7_taunt_rare_6"
+setCoopLoadout "archetypePreferences" 0 "taunts" 3 "iw7_taunt_rare_6"
+setCoopLoadout "archetypePreferences" 0 "gesture" "gesture000"
+
+// heavy
+setCoopLoadout "archetypePreferences" 1 "archetype" "archetype_assault"
+setCoopLoadout "archetypePreferences" 1 "archetypePerk" "specialty_regenfaster"
+setCoopLoadout "archetypePreferences" 1 "archetypeSuper" "none"
+setCoopLoadout "archetypePreferences" 1 "head" "head_1"
+setCoopLoadout "archetypePreferences" 1 "body" "body_1"
+setCoopLoadout "archetypePreferences" 1 "taunt" "iw7_taunt_rare_8"
+setCoopLoadout "archetypePreferences" 1 "taunts" 0 "iw7_taunt_rare_8"
+setCoopLoadout "archetypePreferences" 1 "taunts" 1 "iw7_taunt_rare_8"
+setCoopLoadout "archetypePreferences" 1 "taunts" 2 "iw7_taunt_rare_8"
+setCoopLoadout "archetypePreferences" 1 "taunts" 3 "iw7_taunt_rare_8"
+setCoopLoadout "archetypePreferences" 1 "gesture" "gesture009"
+
+// synaptic
+setCoopLoadout "archetypePreferences" 2 "archetype" "archetype_assault"
+setCoopLoadout "archetypePreferences" 2 "archetypePerk" "specialty_rush"
+setCoopLoadout "archetypePreferences" 2 "archetypeSuper" "none"
+setCoopLoadout "archetypePreferences" 2 "head" "head_1"
+setCoopLoadout "archetypePreferences" 2 "body" "body_1"
+setCoopLoadout "archetypePreferences" 2 "taunt" "iw7_taunt_rare_10"
+setCoopLoadout "archetypePreferences" 2 "taunts" 0 "iw7_taunt_rare_10"
+setCoopLoadout "archetypePreferences" 2 "taunts" 1 "iw7_taunt_rare_10"
+setCoopLoadout "archetypePreferences" 2 "taunts" 2 "iw7_taunt_rare_10"
+setCoopLoadout "archetypePreferences" 2 "taunts" 3 "iw7_taunt_rare_10"
+setCoopLoadout "archetypePreferences" 2 "gesture" "gesture009"
+
+// ftl
+setCoopLoadout "archetypePreferences" 3 "archetype" "archetype_assault"
+setCoopLoadout "archetypePreferences" 3 "archetypePerk" "specialty_superpack"
+setCoopLoadout "archetypePreferences" 3 "archetypeSuper" "none"
+setCoopLoadout "archetypePreferences" 3 "head" "head_1"
+setCoopLoadout "archetypePreferences" 3 "body" "body_1"
+setCoopLoadout "archetypePreferences" 3 "taunt" "iw7_taunt_rare_3"
+setCoopLoadout "archetypePreferences" 3 "taunts" 0 "iw7_taunt_rare_3"
+setCoopLoadout "archetypePreferences" 3 "taunts" 1 "iw7_taunt_rare_3"
+setCoopLoadout "archetypePreferences" 3 "taunts" 2 "iw7_taunt_rare_3"
+setCoopLoadout "archetypePreferences" 3 "taunts" 3 "iw7_taunt_rare_3"
+setCoopLoadout "archetypePreferences" 3 "gesture" "gesture009"
+
+// engineer
+setCoopLoadout "archetypePreferences" 4 "archetype" "archetype_assault"
+setCoopLoadout "archetypePreferences" 4 "archetypePerk" "specialty_equipment_ping"
+setCoopLoadout "archetypePreferences" 4 "archetypeSuper" "none"
+setCoopLoadout "archetypePreferences" 4 "head" "head_1"
+setCoopLoadout "archetypePreferences" 4 "body" "body_1"
+setCoopLoadout "archetypePreferences" 4 "taunt" "iw7_taunt_rare_14"
+setCoopLoadout "archetypePreferences" 4 "taunts" 0 "iw7_taunt_rare_14"
+setCoopLoadout "archetypePreferences" 4 "taunts" 1 "iw7_taunt_rare_14"
+setCoopLoadout "archetypePreferences" 4 "taunts" 2 "iw7_taunt_rare_14"
+setCoopLoadout "archetypePreferences" 4 "taunts" 3 "iw7_taunt_rare_14"
+setCoopLoadout "archetypePreferences" 4 "gesture" "gesture009"
+
+//ghost
+setCoopLoadout "archetypePreferences" 5 "archetype" "archetype_assault"
+setCoopLoadout "archetypePreferences" 5 "archetypePerk" "specialty_mark_targets"
+setCoopLoadout "archetypePreferences" 5 "archetypeSuper" "none"
+setCoopLoadout "archetypePreferences" 5 "head" "head_1"
+setCoopLoadout "archetypePreferences" 5 "body" "body_1"
+setCoopLoadout "archetypePreferences" 5 "taunt" "iw7_taunt_rare_7"
+setCoopLoadout "archetypePreferences" 5 "taunts" 0 "iw7_taunt_rare_7"
+setCoopLoadout "archetypePreferences" 5 "taunts" 1 "iw7_taunt_rare_7"
+setCoopLoadout "archetypePreferences" 5 "taunts" 2 "iw7_taunt_rare_7"
+setCoopLoadout "archetypePreferences" 5 "taunts" 3 "iw7_taunt_rare_7"
+setCoopLoadout "archetypePreferences" 5 "gesture" "gesture009"

@@ -1,0 +1,20 @@
+{
+	map			"cp_zm_sandbox"
+	longname	"LUA_MENU/MAPNAME_ZM_SANDBOX"
+	gametype	"Aliens"
+	description "LUA_MENU/MAPNAME_ZM_SANDBOX"
+	mapimage    "image_mp_map_templogo"
+	mapvoteimage "image_mp_map_templogo_vote"
+	mappack		"0" 
+	wegame		"1"
+}
+{
+	map			"cp_zod"
+	longname	"LUA_MENU/MAPNAME_ZOD"
+	gametype	"Aliens"
+	description "LUA_MENU/MAPNAME_ZOD"
+	mapimage    "image_mp_map_templogo"
+	mapvoteimage "image_mp_map_templogo_vote"
+	mappack		"0" 
+	wegame		"1"
+}

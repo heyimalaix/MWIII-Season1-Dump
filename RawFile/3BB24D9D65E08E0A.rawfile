@@ -1,0 +1,71 @@
+//REMOVING BR_GAMETYPE_PLUNDER.CFG AND BRINING OVER NON-DEV DVARS ONLY.
+//COMMENT OUT TUTORIAL SPECIFIC ONES THAT WE SET AT THE BOTTOM
+
+set #x3ac4e3613786f9447 1
+set #x3e65e9a96eb2ff62b 				br_duos
+set #x38fe3271cd74f65a2 					br_duos
+set #x3f6f24e020168ade8 nothing
+set #x3e38e16d9fbf3fc43 mp/loot/br/default/loot_item_defs.csv
+set #x3add02e4fff48882f mp/loot/br/plunder/loot_table_zones.csv
+//set #x367863d417b067d24 				0
+set #x3e664609932770fb9 		-1
+set #x3eef93545e965ee07 1
+set #x3cb2d56d085e5a9b9 6
+//set #x3faf1db5754891b2d 				6
+//set #x3e022fd0199a95f84 			1200
+set #x3e432209cc5fbc970 	18000
+set #x3f77b78837563fb9a 				1
+set #x31a7a6d4ee3338761 		1
+set #x3d507d3832769e0d7 			1
+set #x3a07d25d87bb595de 			1000
+set #x3d541be8ce632eac6 				1
+set #x3c567928926183d31					120
+set #x396c1cdc24f5c05ae			1
+set #x333b1cb6fd6a90efd		30
+set #x34806b7415b66c1b5 			999 // * 100 in gsc
+set #x39126054077cbefac 		1
+set #x325741495f8eabdbe	1
+set #x348705a5906c0200d 	1
+set #x3f7fd890fe210edec 15000
+set #x3c65e749258a1fab5 15800
+set #x3d7a5882fe16d92e3 1
+set #x312027360b079c1db 1.5
+set #x38d9ad523f40be455 12000
+set #x37b5f99d862e0fd13 3
+set #x3a811b4c67a77ce31 12
+set #x3d043ee66392f7b83 5
+set #x3d4d6daf477c70c15 20
+set #x33d5d040cfb4f675c 20
+set #x3eb0d22cbca665b98 20
+set #x39167e04e9c743a3f 20
+set #x37144d1f72918d1e3 1
+set #x36d36f3e8fbc43781 "2,3,5"
+set #x398ad200418c78f99 1
+
+
+// loot
+set #x3f8e5c3daa6c01012 dmz
+//set #x3f29fa998fb70c4d5 mp/brmission_rewards_dmz.csv
+//set #x385ba512aed5ce540 mp/brmission_reward_groups_dmz.csv
+
+//Just storing this here to remember it for testing so we can use less kits/bots to test squad features
+//set #x315115ef896ca26f2 4
+set #x3c62e2762566139e5 1
+set #x3a4149c16169203e5 1
+
+// 10 minutes - increase as necessary
+set #x3c3e2a35bc5c5b595 600
+
+//END BR_GAMETYPE_PLUNDER.CFG DVARS
+//TUTORIAL SPECIFIC DVARS BELOW:
+set #x367863d417b067d24 				0
+set #x3faf1db5754891b2d 1
+set #x318b7464a93050781 0
+set #x370bf831e0968bcdd 1 
+set #x34ec62b4599196026 0.0
+set #x3e022fd0199a95f84 0
+set #x325feb62305248c26 0
+set #x33ada79b2236a5c12 1
+set #x3f29fa998fb70c4d5 "mp/brmission_rewards_dmz.csv"
+set #x385ba512aed5ce540 "mp/brmission_reward_groups_dmz.csv"
+set #x390b976de573aecf2 ""

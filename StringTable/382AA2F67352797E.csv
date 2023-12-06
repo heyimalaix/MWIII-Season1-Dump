@@ -1,0 +1,10 @@
+tagReject,nodmz,100,,
+tagReject,nodrop,100,,
+rollChance,weapon,6,,
+tagChance,0&weapon,50,,
+tagChance,1&weapon,70,,
+tagChance,2&weapon,25,,
+tagChance,3&weapon,6,,
+tagChance,4&weapon,1,,
+reqAdd,,1,0,100
+reqAdd,weapon,1,0,50

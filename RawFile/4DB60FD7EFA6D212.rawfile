@@ -1,0 +1,6 @@
+%force_cs_anim_index_match
+
+gesture_root : overlay unnormalized toggle( index=[gestureindex], clearonnotetrack="finish", clearwhendone="true", restart="true", blendtime=0.2, notifyname="gesture" )
+{
+	#gestures
+}

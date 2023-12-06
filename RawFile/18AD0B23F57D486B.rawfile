@@ -1,0 +1,46 @@
+exec dev_vehicle_tweaks.cfg
+
+bind BUTTON_BACK  "+focus"
+bind BUTTON_START "pause"
+
+exec default_sp_gamesettings.cfg
+
+// From autoexec_dev_sp.cfg - REMOVE THIS AFTER THIS IS IN CODE!
+set #x38ed2de15a35af946 110
+set #x36ae031c45ebcb9c8 230
+set #x37d5238094b39ea9f 90
+set #x34504124df10e455c 110
+set #x3d23739a82b9a631e 320
+set #x3976f04146d2fc191 100 
+
+set #x3462c02175c7faa76  200
+set #x3c50a36b97adbd70c 250
+
+// player movement
+// NOTE: Temp values only! Remove after these values have been set #x3bf10085d2bc8f03f code
+set #x3a4be0b456bb1b4d7				1.5	// 1.45
+set #x3b0ebeb2f7b61c3d3			1.4
+set #x3d3a08bdf0a580883				1500	// 3200
+set #x38bd9ffb12b0ee078			750	// 3200
+set #x3b266d781b7e00327 			140	// 150	Minimum XY velocity to trigger wallrunning (does not include Z)
+set #x3f852b7b82b05cfbc 		0.65	// 0.75	How forward facing a player must be relative to its velocity to trigger wallrun
+set #x34b5fd3847bd607fa 			28	// 20	distance the initializing trace fires out to the side to see if a wall run should occur
+set #x3872925167bf2fe79 				40	// 35	Maximum vertical range of wallrun based on incident velocity
+set #x3d7f5170950a9c073 				40	// 35	jump height to achieve when jumping off a wall
+set #x343ea9819b496c77b 			32	// 30	2D Velocity to push off wall
+
+// double jump
+set #x327b3a2250e07b128				1	// 200
+set #x39f64fb61e32e2765		150	// 225
+set #x355f8843ddb54785b				150	// 300	
+set #x319d37d7e230df82f		750	// 1500
+set #x32b0ad45373ce2764			2000	// 2500
+set #x33ab0313f7e723fa1				1	// 0
+
+// demeanors
+set #x3580c654ad67ad91c	600
+set #x3d9fcab5c22569e2e	600
+
+set #x3330ea57ea86fcb72 1
+
+set #x3a979bf070d9aaac2 1

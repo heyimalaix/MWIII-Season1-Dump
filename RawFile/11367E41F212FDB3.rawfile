@@ -1,0 +1,18 @@
+%force_cs_anim_index_match
+
+slopes_blendspace_2d: blendspace2d( rangex="-30,30", rangey="-30,30", blend_time="200",
+coords="{-15,-15},{0,-15},{15,-15},{-15,0},{0,0},{15,0},{-15,15},{0,15},{15,15}",
+edges="{0,1,3},{1,3,4},{1,4,5},{1,2,5},{4,5,7},{5,7,8},{3,4,7},{3,6,7}",
+valuex=[reference_roll], valuey=[reference_pitch] ) parse_cull(disable)
+{
+	sdr_com_exposed_crouch_slope_wrldref_add_1
+	sdr_com_exposed_crouch_slope_wrldref_add_2
+	sdr_com_exposed_crouch_slope_wrldref_add_3
+	sdr_com_exposed_crouch_slope_wrldref_add_4
+	sdr_com_exposed_crouch_slope_wrldref_add_5
+	sdr_com_exposed_crouch_slope_wrldref_add_6
+	sdr_com_exposed_crouch_slope_wrldref_add_7
+	sdr_com_exposed_crouch_slope_wrldref_add_8
+	sdr_com_exposed_crouch_slope_wrldref_add_9
+}
+

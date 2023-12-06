@@ -1,0 +1,28 @@
+///////////////////////////////////////////////////////////////////////////
+//This file is generated from the Animation Blender tool
+///////////////////////////////////////////////////////////////////////////
+% force_cs_anim_index_match
+strafe_run_loop: blendspace2d( rangex="-180.000,180.000", rangey="0,255", blend_time="250.00",
+coords="{-180.00,65},{-135,65},{-90,65},{-45,78},{0,78},{45,78},{90,65},{135,65},{180,65},{-180.000,100},{-135.87,100},{-90,100},{-45,104},{0,104},{45,104},{90,100},{135,100},{180.000,100}",
+edges="{11,2,3},{6,4,2},{11,1,2},{10,0,1},{4,3,2},{10,9,0},{6,5,4},{17,16,8},{11,10,1},{12,11,3},{15,14,5},{12,9,10},{15,6,7},{12,10,11},{12,3,4},{13,12,4},{13,4,5},{16,14,15},{14,13,5},{15,5,6},{16,15,7},{16,7,8},{17,14,16}",
+valuex=[strafeyaw], valuey=[desiredspeed] ) loopsync
+	{
+			rsh_com_strafe_slwalk_2
+			rsh_com_strafe_slwalk_3
+			rsh_com_strafe_slwalk_6
+			rsh_com_strafe_slwalk_9
+			rsh_com_strafe_slwalk_8
+			rsh_com_strafe_slwalk_7
+			rsh_com_strafe_slwalk_4
+			rsh_com_strafe_slwalk_1
+			rsh_com_strafe_slwalk_2@1
+			rsh_com_strafe_walk_2
+			rsh_com_strafe_walk_3
+			rsh_com_strafe_walk_6
+			rsh_com_strafe_walk_9
+			rsh_com_strafe_walk_8
+			rsh_com_strafe_walk_7
+			rsh_com_strafe_walk_4
+			rsh_com_strafe_walk_1
+			rsh_com_strafe_walk_2@1
+	}

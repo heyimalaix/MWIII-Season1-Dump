@@ -1,0 +1,7 @@
+// this should only house ONLINE specific settings
+
+//exec IW9 file
+exec default_online_mp.cfg
+
+// All Gamemode Settings go in here
+exec default_mp_modesettings_jup.cfg

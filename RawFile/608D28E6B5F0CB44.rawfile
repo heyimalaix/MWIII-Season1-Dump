@@ -1,0 +1,7 @@
+// If new dvars with flag DVAR_ARCHIVED are added, recommend changing their flag to DVAR_ARCHIVED_NO_DEMO to prevent them from being saved unexpectedly
+cg_drawViewPos 1
+cg_drawMinimalFPS 1
+cg_drawFPSlabels 0
+cg_debug_draw_upper_right_debug_info 1
+cg_drawversion 1
+cg_drawBspVersion 1

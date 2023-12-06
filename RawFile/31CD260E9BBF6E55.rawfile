@@ -1,0 +1,74 @@
+set #x3ec091141cb078db6 1
+set #x3f3f4556449d659f1 1
+
+//
+set #x3b298987099d27e6b 6.0      		// "The near distance of the player's edge query frustum while jump-and-hang." 
+set #x3d1a4ad36bb91705e 35.0			// "The far distance of the player's edge query frustum while jump-and-hang." 
+set #x3a3f29fa8712cbb7a 0.5		// "The near half width of the player's edge query frustum while jump-and-hang." 
+set #x36d188a77958acad9 10.0		// "The far half width of the player's edge query frustum while jump-and-hang." 
+
+set #x3dd0357140295ced1 0
+
+
+// movement speed on ledge-hang
+set #x3d45d3db0e585caf3 45.0			// "The max speed of horizontal movement when hanging on edges." );
+
+
+// Jump off height and distance
+set #x3629c04bc9682ed80 32.0				// "Height when jump off the hanging state." );
+set #x38245ea7e0cd98098 30.0			// "How far the player can horizontally jump off from where the player is hanging." );
+
+
+// Player body's distance away from hanging edge
+set #x370cc43da72773a34 19.0	// "The horizontal distance away from edge." 
+set #x399298dad3d498162 -63.0	// "The vertical distance away from edge."   
+
+set #x37b824d27ac466bdf 12 // "The distance you peek up and over edge." 
+set #x37ca22527654be800 -1.5
+
+//mantle heights 
+set #x3b0d6dac61fbc4a0 86  //mantle hieght from ground.  All high mantles should be edge hangable though.  Edge hang takes priority.
+set #x358ae759068ffd3a6 -6 //to counteract jumping height for mantles.
+set #x313a4a1d2eb1269bd 180  //angle at which to restrict a sideways turn while mantling.
+
+
+//edge grab heights
+set #x3fae54246263bb26d 80.0 	//edge hang height from ground							//0.0f, 200.0f, "Player will only mantle and hang on a surface this many units above the player origin (feet) when player is hanging." )
+set #x3a89d9882f1086e54 80.0 	//edge hang height from air 	// "The upper height offset of the player's edge query frustum while jump-and-hang from player origin." 
+
+set #x3afb083c67d1e6ec9  80.0 								//0.0f, 200.0f, "Player will only mantle on/over a surface this many units above the player origin (feet) when player is on the ground." )
+set #x395ed7c278d2f60cc 86.0			//-1000.0, 1000.0f, "Indicates the minimum height the mantle edge must be above the player's origin to be able to hang on it when player isn't hanging." )
+set #x3728c589037b63bec 40.0 	//-1000.0, 1000.0f, "Indicates the minimum height the mantle edge must be above the player's origin to be able to mantle on/over it while player is hanging." )
+set #x31f236193484428e3 67 // "Indicates the minimum height the mantle edge must be above the player's origin to be able to hang on it when player isn't hanging and in air."
+
+// How far a hang edge should be able to hang on the ground
+set #x329c1179ebe7132d5 110.0	//"The vertical distance offset from the player origin for mantle hang while on the ground." );
+set #x33e6ad088adeed6e7 30.0	//"The horizontal distance offset from the player origin for mantle hang while on the ground." );
+
+// How far a hang edge should be able to hang in air 
+set #x367d2e08fb61c0c8a 80.0		//"The vertical distance offset from the player origin for mantle hang while in the air." );
+set #x3cfb308f155fe3ff8 35.0		//"The horizontal distance offset from the player origin for mantle hang while in the air." );
+
+//For debug the view frustum shape, use these two dvars:
+set #x34247c3de034a3926 false		//"Enable the check of upper body hang-able edges by force.");
+set #x31f9ea8914e612f0 false 	//debug hang edge
+
+set #x331c48d7ab18fddb 0.5
+set #x38374c4078af1a779 5000
+set #x3bcd0d8233b3a63f4 180
+
+//VIEW CLAMP
+set #x3a517a6e0826f60ea 90.0					//"The maximum angle that a player can look up while hanging." )
+set #x3f08dd09b3d0cb35d 100.0						//"The maximum angle that a player can look right and left while hanging." )
+set #x38cefb8ec4d0362fb 40.0			//"The base angle that a player can look down while hang." )
+set #x330cfe9177258ec02 40.0				//"The max or min angle that a player can look down while hanging.  This can be a peak or crater." )
+set #x33c918ca1a6008cbe 10.0		//"The yaw at which the player's down pitch cap starts approaching bg_hang_pitch_down_base_cap while hanging." )
+set #x31bb6c46146fae9ba 90.0		//"The yaw at which the player's down pitch cap arrives at bg_hang_pitch_down_base_cap while hanging." )
+set #x3b86f6bf94c81fb9f 45.0			//"The angular difference between the camera yaw angle and the yaw clamp angle where soft angle clamping gets applied." )
+set #x392182bd9a0d851c0 15.0			//"The angular difference between the camera pitch angle and the pitch clamp angle where soft angle clamping gets applied." )
+set #x3fc176527835d5b30 300			//"The total time that clamping interpolation takes place over." )
+set #x3dcaecc5921c51aea 0			//"The time it takes the clamping interpolation to reach max speed." )
+set #x39c89a4d464e5968d 300			//"The time it takes the clamping interpolation to decelerate from max speed to 0." )
+
+set #x322cb0ae79c2bedf1 330 //min time to ads/peek over the wall
+set #x39eba6ab15e4f723b 1

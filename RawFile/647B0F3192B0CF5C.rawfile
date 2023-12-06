@@ -1,0 +1,26 @@
+# Manifest
+manifest_enabled,true
+manifest_keys_file,ManifestKeys.json
+manifest_entries_file,ManifestEntries.json
+manifest_download_timeout_seconds,30
+manifest_initial_download_retries,3
+manifest_initial_download_retry_interval_seconds,1
+manifest_update_interval_seconds,1800
+
+# DllValidation
+dllvalidation_file_enabled,false,PC
+dllvalidation_memory_enabled,true,PC
+dllvalidation_file_enabled,false,PS4
+dllvalidation_memory_enabled,false,PS4
+dllvalidation_file_enabled,false,PS5
+dllvalidation_memory_enabled,false,PS5
+dllvalidation_file_enabled,false,XB3
+dllvalidation_memory_enabled,false,XB3
+dllvalidation_file_enabled,false,XB4
+dllvalidation_memory_enabled,false,XB4
+
+# SSL
+cert_pinning_enabled,false
+
+# Cache
+max_cache_size_in_mb,50

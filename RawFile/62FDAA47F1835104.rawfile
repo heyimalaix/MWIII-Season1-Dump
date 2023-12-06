@@ -1,0 +1,3 @@
+// vehicle
+#define SCOOTER_EU_VEHICLE_REF "veh9_civ_lnd_scooter_eu"
+#define SCOOTER_EU_VEHICLE_TYPE "veh9_civ_lnd_scooter_eu_physics_mp" 

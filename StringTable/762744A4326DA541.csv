@@ -1,0 +1,6 @@
+choose,0,,,,,
+choose,1,,,,,
+zone,oldtown_hotzone_01,fortress,mp/loot/br/default/strongholds/lootset_stronghold_high.csv,mp/loot/br/default/strongholds/lootset_cache_spawns_stronghold.csv,,#Zone
+zone,oldtown_hotzone_02,fortress,mp/loot/br/default/strongholds/lootset_stronghold_high.csv,mp/loot/br/default/strongholds/lootset_cache_spawns_stronghold.csv,,#Zone
+zone,oldtown_hotzone_03,fortress,mp/loot/br/default/strongholds/lootset_stronghold_high.csv,mp/loot/br/default/strongholds/lootset_cache_spawns_stronghold.csv,,#Zone
+zone,oldtown_hotzone_04,fortress,mp/loot/br/default/strongholds/lootset_stronghold_high.csv,mp/loot/br/default/strongholds/lootset_cache_spawns_stronghold.csv,,#Zone

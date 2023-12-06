@@ -1,0 +1,192 @@
+
+// SCRIPTABLE
+/////////////////////////////////////////////////////////////////////////////////////////
+#define ITEM_SCRIPTABLE_GROUP_ID "common_items"
+#define ITEM_SCRIPTABLE_GROUP_SIZE_MAX 500
+#define ITEM_SCRIPTABLE_GROUP_CLEANUP_BATCH_SIZE 10
+
+#define ITEM_LIFE_DURATION_S 90
+#define ITEM_AUTO_PICKUP_COOLDOWN_S 0.1
+
+// Ensure this stays in sync with scriptable_server.cpp
+#define CONST_ITEM_COUNT_BITS 11
+#define CONST_MAX_ITEM_COUNT ( 1 << CONST_ITEM_COUNT_BITS )
+#define CONST_ITEM_COUNT_MASK ( CONST_MAX_ITEM_COUNT - 1 )
+
+#define CONST_ITEM_COUNT_ALT_BITS 6
+#define CONST_MAX_ITEM_COUNT_ALT ( 1 << CONST_ITEM_COUNT_ALT_BITS )
+#define CONST_ITEM_COUNT_ALT_MASK ( CONST_MAX_ITEM_COUNT_ALT - 1 )
+
+#define CONST_ITEM_COUNT_RARITY_BITS 3
+#define CONST_MAX_ITEM_COUNT_RARITY ( 1 << CONST_ITEM_COUNT_RARITY_BITS )
+#define CONST_ITEM_COUNT_RARITY_MASK ( CONST_MAX_ITEM_COUNT_RARITY - 1 )
+
+#define CONST_ITEM_COUNT_RIGHT_SHIFT 0
+#define CONST_ITEM_COUNT_LEFT_SHIFT CONST_ITEM_COUNT_BITS
+#define CONST_ITEM_COUNT_ALT_SHIFT ( CONST_ITEM_COUNT_BITS + CONST_ITEM_COUNT_BITS )
+#define CONST_ITEM_COUNT_RARITY_SHIFT ( CONST_ITEM_COUNT_BITS + CONST_ITEM_COUNT_BITS + CONST_ITEM_COUNT_ALT_BITS )
+
+// PLAYER WEAPON DATA
+/////////////////////////////////////////////////////////////////////////////////////////
+#define CONST_PLAYER_WEAPON_DATA_MAX_SIZE 2
+
+// INVENTORY
+/////////////////////////////////////////////////////////////////////////////////////////
+#define CONST_INVENTORY_ITEM_TYPE_BITS 8
+#define CONST_INVENTORY_ITEM_INDEX_BITS 8
+#define CONST_INVENTORY_ITEM_INDEX_MASK ( 1 << CONST_INVENTORY_ITEM_INDEX_BITS ) - 1
+#define CONST_INVENTORY_ITEM_TYPE_MASK ( ( 1 << CONST_INVENTORY_ITEM_TYPE_BITS ) - 1 ) << CONST_INVENTORY_ITEM_TYPE_BITS
+
+#define CONST_PLUNDER_SLOT_TYPE 0
+#define CONST_WEAPON_SLOT_TYPE 1
+#define CONST_EQUIPMENT_SLOT_TYPE 2
+#define CONST_KILLSTREAK_SLOT_TYPE 3
+#define CONST_SUPER_SLOT_TYPE 4
+#define CONST_AMMO_SLOT_TYPE 5
+#define CONST_GASMASK_SLOT_TYPE 6
+#define CONST_SELF_REVIVE_SLOT_TYPE 7
+#define CONST_ALL_PURPOSE_SLOT_TYPE 10
+#define CONST_LOOTABLE_CONTAINER_SLOT_TYPE 11
+
+#define CONST_BR_PLAYERDATA_WEAPON_INDEX 2
+#define CONST_BR_BACKPACK_OMNVAR_WEAPON_INDEX 3
+
+#define CONST_BACKPACK_INDEX_NONE -1
+#define CONST_BACKPACK_DEFAULT_SIZE 8 //this default should match the default backpackSize in the gametypebundle.schema
+
+#define CONST_BACKPACK_TYPE_INDEX_SMALL 0
+#define CONST_BACKPACK_TYPE_INDEX_MEDIUM 1
+#define CONST_BACKPACK_TYPE_INDEX_LARGE 2
+
+#define CONST_DECISION_LAYER_SOURCE_CACHE 0
+#define CONST_DECISION_LAYER_SOURCE_SCRIPTABLE 1
+#define CONST_DECISION_LAYER_SOURCE_LOADOUT 2
+
+// UPGRADES
+/////////////////////////////////////////////////////////////////////////////////////////
+#define CONST_UPGRADE_TYPE_AMMOMOD "ammomod"
+#define CONST_UPGRADE_TYPE_AETHERTOOL "aethertool"
+#define CONST_UPGRADE_TYPE_AETHERCRYSTAL "aethercrystal"
+#define CONST_UPGRADE_TYPE_GOLDEN_ARMOR_PLATE "golden_armor_plate"
+#define CONST_UPGRADE_TYPE_DOG_WHISTLE "dog_whistle"
+
+// LOOT TABLE
+/////////////////////////////////////////////////////////////////////////////////////////
+#define CONST_LOOT_TABLE_COL_LOOT_ID 0
+#define CONST_LOOT_TABLE_COL_REF 1
+#define CONST_LOOT_TABLE_COL_QUALITY 2
+#define CONST_LOOT_TABLE_COL_COST 3
+#define CONST_LOOT_TABLE_COL_SALVAGE 4
+#define CONST_LOOT_TABLE_COL_LICENSE 5
+#define CONST_LOOT_TABLE_COL_IS_PREMIUM 6
+
+#define CONST_LOOT_ID_WEAPON_TABLE "weapon"
+#define CONST_LOOT_ID_EQUIPMENT_TABLE "equipment"
+#define CONST_LOOT_ID_SUPER_TABLE "super"
+#define CONST_LOOT_ID_KILLSTREAK_TABLE "killstreak"
+#define CONST_LOOT_ID_PERK_TABLE "perk"
+#define CONST_LOOT_ID_CONSUMABLE_TABLE "consumable"
+#define CONST_LOOT_ID_UPGRADE_TABLE "upgrade"
+#define CONST_LOOT_ID_ZM_SUPER_TABLE "zmsuper"
+
+#define CONST_AMMO_TYPE_PST_SMG "brloot_ammo_919" //pistols & SMGs
+#define CONST_AMMO_TYPE_SHG "brloot_ammo_12g" //shotguns
+#define CONST_AMMO_TYPE_AR_LMG "brloot_ammo_762" //ARs BRs & LMGs
+#define CONST_AMMO_TYPE_SNP "brloot_ammo_50cal" //snipers
+#define CONST_AMMO_TYPE_RPG "brloot_ammo_rocket" // rpg
+
+// DROP POSITIONING
+/////////////////////////////////////////////////////////////////////////////////////////
+#define CONST_RING_ITEM_SLOT_QUANTITY 5		// number of items per ring, try to keep this an average/max of items that drop on death if possible
+#define CONST_GRAVITY_ARC_ACTIVE true
+#define CONST_TRACE_ACTIVE true
+#define CONST_RING_YAW 30.0					//offset in yaw per ring so that they don't all line up;
+#define CONST_SLOT_YAW_RAND_MIN ( -5.0 )
+#define CONST_SLOT_YAW_RAND_MAX 5.0
+#define CONST_RING_DIST_START 75.0			//this is the distance from the baseOrigin to the first ring
+#define CONST_RING_DIST_EACH 35.0			//this is additional distance between rings after the first ring
+#define CONST_RING_DIST_RAND_MIN - 5.0		//some per item random distances
+#define CONST_RING_DIST_RAND_MAX 5.0		//this is additional distance between rings after the first ring
+#define CONST_TRACE_GROUND_FLOAT 0			// IW9-NOTE-Lockwood: touching the ground for dmz;
+#define CONST_TRACE_GRAVITY_UP_HEIGHT 60.0
+#define CONST_TRACE_CEILING_FLOAT ( -6.0 )
+#define CONST_TRACE_YAW_UP_HEIGHT 21.0
+#define CONST_TRACE_WALL_GRACE_FLOAT 18.0
+#define CONST_TRACE_HEIGHT_CHECK_FLOAT 10.0
+
+// Spawned items
+#define CONST_LIST_SPAWN_RING_DIST_START 27.0	//Items_SpawnFromList override of CONST_RING_DIST_START
+#define CONST_LIST_SPAWN_RING_DIST_EACH 13.0	//Items_SpawnFromList override of CONST_RING_DIST_EACH
+
+// Player dropped items
+#define CONST_PLAYER_DROP_SLOT_YAW_RAND_MIN - 30.0		//Items_DropItem override of CONST_SLOT_YAW_RAND_MIN
+#define CONST_PLAYER_DROP_SLOT_YAW_RAND_MAX 30.0		//Items_DropItem override of CONST_SLOT_YAW_RAND_MAX
+#define CONST_PLAYER_DROP_RING_DIST_RAND_MIN - 30.0		//Items_DropItem override of CONST_RING_DIST_RAND_MIN
+#define CONST_PLAYER_DROP_RING_DIST_RAND_MAX 30.0		//Items_DropItem override of CONST_RING_DIST_RAND_MAX
+
+// CACHE
+/////////////////////////////////////////////////////////////////////////////////////////
+#define CONST_CACHE_PARTNAME "body"
+#define CONST_CACHE_ITEMTYPE "cache"
+
+#define DEFAULT_MIN_CONTAINER_ITEMS 4
+#define CONST_MAX_CONTAINER_ITEMS 10
+#define CONST_CONTAINER_ITEM_OMNVAR_PREFIX "loot_container_item_"
+#define CONST_CONTAINER_QUANTITY_OMNVAR_PREFIX "loot_container_quantity_"
+#define CONST_CONTAINER_TYPE_OMNVAR_PREFIX "loot_container_type_"
+
+#define CONST_CONTAINER_SLOT_ID_BITS 31
+#define CONST_CONTAINER_SLOT_ID_LOOTID_BITS 20
+#define CONST_CONTAINER_SLOT_ID_EXTRA_PAYLOAD_BITS 11
+
+#define CONST_CACHE_STATENAME_CLOSED_USABLE "closed_usable"
+#define CONST_CACHE_STATENAME_CLOSED_USABLE_NO_COLLISION "closed_usable_no_collision"
+#define CONST_CACHE_STATENAME_PARTIALLY_OPENING_UNUSABLE "partially_opening_unusable"
+#define CONST_CACHE_STATENAME_PARTIALLY_CLOSING_UNUSABLE "partially_closing_unusable"
+#define CONST_CACHE_STATENAME_PARTIALLY_OPEN_IN_USE_UNUSABLE "partially_open_in_use_unusable"
+#define CONST_CACHE_STATENAME_PARITALLY_OPEN_USABLE "partially_open_usable"
+#define CONST_CACHE_STATENAME_FULLY_OPENING_UNUSABLE "fully_opening_unusable"
+#define CONST_CACHE_STATENAME_FULLY_OPEN_UNUSABLE "fully_open_unusable"
+
+// Corresponds to the name of the bag displayed when this container is opened
+// Keep in sync with values defined in brloot.gsh and INVENTORY.CONTAINER_TYPE in InventoryUtils.lua
+#define CONTAINER_TYPE_GENERIC 1 //DMZ/CONTAINER
+#define CONTAINER_TYPE_ENEMY_BACKPACK 2 //DMZ/ENEMY_BACKPACK
+#define CONTAINER_TYPE_CACHE 3 //DMZ/CACHE
+#define CONTAINER_TYPE_SAFE 4 //DMZ/SAFE
+#define CONTAINER_TYPE_GUN_SAFE 5 //DMZ/GUN_SAFE
+#define CONTAINER_TYPE_PLAYER_BACKPACK_ENEMY 6
+#define CONTAINER_TYPE_PLAYER_BACKPACK_TEAMMATE_START 7
+#define CONTAINER_TYPE_PLAYER_BACKPACK_TEAMMATE_END 12
+#define CONTAINER_TYPE_BALLOON_EXTRACT 13
+#define CONTAINER_TYPE_LOOT_DECISION 14
+#define CONTAINER_TYPE_DEAD_DROP 15
+#define CONTAINER_TYPE_DOUBLE_BACKPACK 16
+#define CONTAINER_TYPE_DOGHOUSE 17
+#define CONTAINER_TYPE_TURRET_TRAP_PANEL 18
+#define CONTAINER_TYPE_RIFT_GATE_PEDESTAL 19
+
+#define CONST_CACHE_STAND_STILL_FRAMES 2
+
+#define CONST_CACHE_OBTAINTYPE_EQUIP "lootcache_obtaintype_equip"
+#define CONST_CACHE_OBTAINTYPE_STOW "lootcache_obtaintype_stow"
+
+// MISC
+/////////////////////////////////////////////////////////////////////////////////////////
+#define COMMON_ITEM_DB_SUCCESS 0
+#define COMMON_ITEM_DB_ERR_EMPTY 1
+#define COMMON_ITEM_DB_ERR_NO_BUNDLE 2
+
+#define COMMON_ITEM_BUNDLE_TYPE "itemspawnentry:"
+#define COMMON_ITEM_LIST_BUNDLE_TYPE "itemspawnlist:"
+#define COMMON_ZONE_BUNDLE_TYPE "itemspawnzonedef:"
+#define COMMON_ZONE_LIST_BUNDLE_TYPE "itemspawnzonelist:"
+
+// this should be data driven somehow
+#define EMPTY_HANDS_WEAPON "iw9_me_fists_mp"
+
+#define COMMON_ITEM_CALLBACK_CACHE_LOOTED "lootcache_looted"
+#define COMMON_ITEM_CALLBACK_INSTANCE_INVENTORY_ITEM_EQUIPPED "instance_inventory_item_equipped"
+
+#define COMMON_ITEM_PLAYER_DROP_FORWARD_DIST 100
+#define COMMON_ITEM_PLAYER_DROP_NUM_RINGS 4

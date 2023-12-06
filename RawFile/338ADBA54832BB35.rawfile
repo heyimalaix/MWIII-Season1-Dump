@@ -1,0 +1,28 @@
+#define ActivityGuidingMarkerSetting_Enabled			"Types_EnableGuidingObjectiveMarker"
+#define ActivityGuidingMarkerSetting_Disabled			"Types_DisableGuidingObjectiveMarker"
+#define ActivityGuidingMarkerSetting_SpawnDelay			10.0	 //The time the Nexus waits before showing a newly spawned player a Guiding Objective Marker. In Seconds.
+#define ActivityGuidingMarkerSetting_EnableCheckDelay	2.0	 //The time the Nexus waits inbetween regularly checking to find a suitable activity to place a Guiding Objective Marker on if one can't be found. In Seconds.
+#define ActivityGuidingMarkerSetting_DisableCheckDelay	2.0	 //The time the Nexus waits inbetween regularly checking if the player's Guiding Objective Marker should be disabled. In Seconds.
+#define ActivityGuidingMarkerSetting_EnableTimeOutTime  60.0 //The time the Nexus waits before stopping to find a suitable activity to player a Guiding Objective Marker on if one can't be found. In Seconds.
+#define ActivityGuidingMarkerSetting_DisableTimeOutTime 180.0 //The maximum time a Guiding Objective Marker is allowed to be on the screen for the player before disabling itself. In Seconds.
+#define ActivityGuidingMarkerSetting_MaxDistance		12000.0 //The distance in which if the player gets more than this far away from a Guiding Objective Marker, the marker become disabled for that player.
+
+#define ActivityRewards_EnableCurrencyRewardsOnActivitySuccess_Default true //Toggle whether or not currency is rewarded to participating players on activity success
+#define ActivityRewards_EnableChestRewardsOnActivitySuccess_Default	true //Toggle whether or not a chest reward is spawned for participating players on activity success
+
+#define ActivityRewards_RiftNearbyPlacementCollisionSphereRadius 22
+#define ActivityRewards_RiftNearbyPlacementCollisionGroundZOffset 36 // the Rift origin is at ground level, but the center of the orb floats 36 units above the ground. This offset makes the collision check be centered at the same origin the Rift is visually
+#define ActivityRewards_RiftNearbyPlacementSearchRadius 100
+
+//Activity Score Event constants
+#define ActivityCompleteScoreEventMinorGreen "ob_minor_activity_complete_green"
+#define ActivityCompleteScoreEventMinorYellow "ob_minor_activity_complete_yellow"
+#define ActivityCompleteScoreEventMinorRed "ob_minor_activity_complete_red"
+#define ActivityCompleteScoreEventMinorOrange "ob_minor_activity_complete_orange"
+
+#define ActivityCompleteScoreEventMajorGreen "ob_major_activity_complete_green"
+#define ActivityCompleteScoreEventMajorYellow "ob_major_activity_complete_yellow"
+#define ActivityCompleteScoreEventMajorRed "ob_major_activity_complete_red"
+#define ActivityCompleteScoreEventMajorOrange "ob_major_activity_complete_orange"
+
+#define NOTIFY_ContractRewardRift_SPAWN_DONE "reward_rift_spawn_done" // sent when a contract reward rift is done spawning

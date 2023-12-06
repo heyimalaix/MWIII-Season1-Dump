@@ -1,0 +1,4 @@
+inherit,mp/loot/br/plunder/lootset_root.csv,,,,
+reqAdd,plunder,4,4,,# require plunder
+reqAdd,brloot_gascan_palfa,1,1,,
+reqAdd,valuable,5,5,,# chance for any item of higher quality

@@ -1,0 +1,206 @@
+#define ActivityCategory_None		"None"
+#define ActivityCategory_Activity	"Activity"
+#define ActivityCategory_Objective	"Objective"
+#define ActivityCategory_Contract	"Contract"
+#define ActivityCategory_Global		"Global"
+
+#define ActivityDefinition_LRU_CacheSize 13 //How many activity definition script bundles should be cached on the Nexus for quick access. Larger numbers means faster performance but worse storage footprint
+#define ActivityBroadcastDefinition_LRU_CacheSize 8 //How many activity broadcast definitions (a section of the activity script bundles) should be cached on the Nexus for quick access. Larger numbers means faster performance but worse storage footprint
+
+#define ActivityPlayerDistanceDefaultValue_Near		1000
+#define ActivityPlayerDistanceDefaultValue_Mid		2200
+#define ActivityPlayerDistanceDefaultValue_Far		10000
+	
+#define ActivityPlayerDistanceCategory_Near					"Near"
+#define ActivityPlayerDistanceCategory_Mid					"Mid"
+#define ActivityPlayerDistanceCategory_Far					"Far"
+#define ActivityPlayerDistanceCategory_Custom				"Custom"
+
+//If adding a new player join reason, please consider updating the focus scoring algorithm ("_calculateActivityFocusScoreDefaultImpl") in activity_player_common.gsc if needed
+#define ActivityPlayerJoinReason_Proximity	"PlayerJoinedProximity" //Player Joined because they were in close proximity to an Activity
+#define ActivityPlayerJoinReason_Damage		"PlayerJoinedDamage"	//Player Joined because they delivered damage to or took damage from a significant Activity entity
+#define ActivityPlayerJoinReason_Interact "PlayerJoinedInteract" //Player Joined because they iteracted with a significant object
+#define ActivityPlayerJoinReason_Squad	"PlayerJoinedSquad"	//Player Joined because one of their squad mates joined and they were brought along automatically
+#define ActivityPlayerJoinReason_Other		"PlayerJoinedOther"		//Player Joined for some other reason. Possibly because an Activity Script added them directly
+
+#define ActivityProximityJoin_CheckDelay				2.0 //How long to wait before checking for players within an Activity's Proximity Join Zone
+#define ActivityJoinRadiusPercentage					0.75 //The default portion of an activity's awareness zone that constitutes its automatic join radius. Enter in this portion and you have officially 'joined' that activity.
+
+//The struct type in the Activity Definition Script Bundle. This type is one of the choices for when the bundle enables The Player Join Trigger for interact scriptables.
+//This type represents the option where a bunch of 'activity_nexus_instance_joiner' script structs will be placed in the map and the Nexus will spawn interact scriptables at those locations.
+#define ActivityPlayerJoinThroughInteractSettingsType_SpawnScriptableOnScriptStruct "Types_SpawnInteractScriptablesOnScriptStructs"
+
+#define ActivityAwarenessZone_CheckDelay				2.3 //How long to wait before checking for players within an Activity's Awareness Zone
+#define ActivityAbandonmentSequence_LeaveWarningTime	5.0 //How long to wait after giving a player a warning before actually kicking them out of an activity
+
+#define ActivityPlayerAbandon_CountdownSequence_Enabled_Default				false //The default awareness zone abandon sequence enabled value. Should match scriptbundle default for "AbandonSequenceEnabled"
+#define ActivityPlayerAbandon_BroadcastEnabled_Default						true //The default awareness zone abandon sequence broadcast enabled value. Should match scriptbundle default for "AbandonSequenceEnabled"
+#define ActivityPlayerAbandon_CountdownSequence_DurationSeconds_Default		5.0 //The default awareness zone abandon sequence duration in seconds. Should match scriptbundle default for "AbandonSequenceEnabled"
+#define ActivityPlayerAbandon_SuccessfullyAbandonedBroadcastActivationName	"PlayerAbandonNotification"
+
+#define ActivityPlayerAbandonTriggerType_AwarenessProximity		0 //Constant to represent the Abandon Trigger which activates when a participating player exits the Activity Awareness zone. This must be enabled in the Script Bundle definition.
+#define ActivityPlayerAbandonTriggerType_Death					1 //Constant to represent the Abandon Trigger which activates when a participating player dies during the activity. This must be enabled in the Script Bundle definition.
+
+#define ActivityAmbientAIExclusionZone_UpdateDelay		2.5 //When an activity is actively preventing the spawning of Ambient AI, this value dicates how often the no spawn zone is updated. Useful for moving activities/objectives.
+
+#define ActivityStateTransition_CheckDelay				1.0 //How long to wait before checking if an Activity if ready to transition to a new state
+
+#define ActivityFocusSwitchDelay						10 //How long to wait before allowing another automatic switch of a player's focused activity after they had just recently switched
+#define ActivityFocusSwitchMinimumDelay					2  //The minimum time the focus watcher waits before checking if an automatic switch of a player's focused activity is valid
+
+#define ActivityNexusSpatialZone_Awareness			"Awareness_Zone"	//Represents the Activity Awareness zone. Players within this space are considered to be near the activity
+#define ActivityNexusSpatialZone_ProximityJoin		"Proximity_Join_Zone"	//Represents the Proximity Join zone. When players are in this space, the activity has the option to include them as a participant based on proximity
+#define ActivityNexusSpatialZone_AmbientExclusion	"Ambient_AI_Exclusion_Zone"	//Represents the Ambient AI Exclusion zone. When this is enabled in the script bundles, Ambient AI will not spawn in this space until the activity ends
+#define ActivityNexusSpatialZone_MapPlacedCenter	"Center_Spatial_Zone"	//Represents the physical location of the activity variant instance script struct placed in the map.
+#define ActivityNexusSpatialZone_Hibernation		"Hibernation_Zone" //Represents the Hibernation Zone. When players are not in this zone, the activity enters a "low power" hibernation status. The activity still runs just fine but certain Nexus functionality is slowed down or potentially even skipped for activities that are hibernating. This is for performance purposes.
+
+#define ActivityHibernationZone_CheckDelay 		16 //Amount of time to wait before starting to check if players are in/out of the Hibernation Zone. Checks are spread out throughout the given time.
+#define ActivityHibernationZone_DefaultRadius 	10000 //If no Hibernation Zone is specifically defined, this is the default radius for the Zone and the zone's origin will be the center of the activity instance
+
+#define SpatialZoneContainerGroup_ActivityInstance_AwarenessZone	"SpatialZoneContainerGroup_ActivityInstance_AwarenessZone" //The default Spatial Zone Container Group Player Watcher for all active Activity Instance's Awareness Zone. This watcher runs automatically on init.
+#define SpatialZoneContainerGroup_ActivityInstance_ProximityJoin	"SpatialZoneContainerGroup_ActivityInstance_ProximityJoin" //The default Spatial Zone Container Group Player Watcher for all active Activity Instance's Proximity Join Zone. This watcher runs automatically on init.
+#define SpatialZoneContainerGroup_ActivityInstance_HibernationZone	"SpatialZoneContainerGroup_ActivityInstance_HibernationZone" //The default Spatial Zone Container Group Player Watcher for all active Activity Instance's Hibernation Zone. This watcher runs automatically on init.
+
+#define ActivityCenterOriginSource_UniqueScriptStruct		"UniqueScriptStruct"		//The Activity's origin point is sourced from a specifically placed script struct with a unique targetname or script_noteworthy value
+#define ActivityCenterOriginSource_CreateScriptScriptStruct	"CreateScriptScriptStruct"	//The Activity's origin point is sourced from a script struct that is passed to the activity through Create Script metadata
+#define ActivityCenterOriginSource_OverrideFunction 		"OverrideFunction"			//The Activity's origin point is sourced from an override function registered for that activity type
+
+#define ActivityState_Idle 		"IdleState"
+#define ActivityState_Active 	"ActiveState"
+#define ActivityState_Ended 	"EndedState"
+#define ActivityState_Cleanup	"CleanupState"
+
+#define ActivityFunctionType_Setup					0 //Called immediately when an instance is created. Should prepare the instance for everything needed to begin
+#define ActivityFunctionType_Begin 1 //Called when the game logic for the activity is set in motion
+#define ActivityFunctionType_End	2 //Called when the game logic for the activity has been concluded
+#define ActivityFunctionType_Destroy				3 //Called when the instance is about to be destroyed. Should clean up all remaining remnants of an activity instance
+#define ActivityFunctionType_GetCenterPoint			4 //Called when there is a need to identify the center point of an activity instance. Should return a vector position.
+#define ActivityFunctionType_GetRewardStruct		5 //Called when there is a need to identify the reward struct of an activity instance. Should return a struct with a 'origins' vector and 'angles' vector
+#define ActivityFunctionType_GetRewardGroups		6 //Called when there is a need to identify the reward group of an activity instance. Should return an array of an array of player groups, where each player group will share loot inventory when they interact with the reward.
+#define ActivityFunctionType_GetRewardLootContents	7 //Called when there is a need to generate loot for a reward group. Should update the .contents property of the struct passed into this function with an array of structs, each containing a .lootId and .quantity property. See common_cache.gsc for more info on how this works.
+#define ActivityFunctionType_GetVotesNeededToAbandon	8 //Called to determine the minimum amount of votes required to abandon activity.
+
+#define ActivityObjectiveMarkerType_Scriptable	"Scriptable"
+#define ActivityObjectiveMarkerType_GSCScript	"GSCScript"
+
+#define ActivityAssetSharingOption_DontShareWithActivities					 "DontShareWithActivities"	//Assets (broadcasts, activity reward caches, etc.) with this sharing option will not be shared with any activity
+#define ActivityAssetSharingOption_ShareWithAllActivities					 "ShareWithAllActivities" //Assets (broadcasts, activity reward caches, etc.) with this sharing option will be shared with all activities registered with the Nexus
+#define ActivityAssetSharingOption_ShareWithActivitiesOfSpecificCategoryType "ShareWithActivitiesOfSpecificCategoryType" //Assets (broadcasts, activity reward caches, etc.) with this sharing option will be shared with all activities of the specified category that have been registered with the Nexus
+
+/*Whenever you add a new Activity Moment, don't forget to update the following places:
+	- The activityMoments array initiaized in "_createStruct_ActivityNexusProperties" in activity_common.gsc
+	- The ActivityMoment enum list in activityconstants.schema
+	- these ActivityMoments can also be used with the common callbacks system, not just the activity - specific system ( see scripts\mp\activities\activity_common::RunAllRegisteredCallbacksForActivityMoment )
+*/
+#define ActivityMoment_None								"None"
+#define ActivityMoment_InstanceBegin					"InstanceBegin"
+#define ActivityMoment_InstanceEnd						"InstanceEnd"
+#define ActivityMoment_ActivityBegin					"ActivityBegin"
+#define ActivityMoment_ActivityEnd						"ActivityEnd"
+#define ActivityMoment_ActivitySuccess					"ActivitySuccess"
+#define ActivityMoment_ActivityFailure					"ActivityFailure"
+#define ActivityMoment_PlayerJoin						"PlayerJoin"
+#define ActivityMoment_PlayerLeave						"PlayerLeave"
+#define ActivityMoment_PlayerRefocusedOnActivity		"PlayerRefocusedOnActivity"
+#define ActivityMoment_PlayerEnteredAwarenessZone		"PlayerEnteredAwarenessZone"
+#define ActivityMoment_PlayerExitedAwarenessZone		"PlayerExitedAwarenessZone"
+#define ActivityMoment_PlayerAbandon					"PlayerAbandon"
+#define ActivityMoment_ActivityStartedHibernating		"ActivityStartedHibernation"
+#define ActivityMoment_ActivityStoppedHibernating		"ActivityStoppedHibernating"
+#define ActivityMoment_RewardsSpawned					"RewardsSpawned" 				// announced when activity rewards have spawned. The relevantInfoStruct will contain the rewards that spawned.
+#define ActivityMoment_ActivationName					"ActivationName"
+
+#define ActivityMoment_VoteCast							"VoteCast"				// moment for when any vote is cast
+#define ActivityMoment_VoteEnd							"VoteEnd"				// moment for when a vote ends (for any reason)
+#define ActivityMoment_VoterLeft						"VoterLeft"				// moment for when a voter left a vote in progress
+#define ActivityMoment_VoterJoined						"VoterJoined"			// moment for a when a voter joined a vote in progress
+
+#define ActivityVoteResult_Success						"ActivityVoteResult_Success"	// used by activity_voting.gsc to determine if a vote ended in success
+#define ActivityVoteResult_Failure						"ActivityVoteResult_Failure"	// used by activity_voting.gsc to determine if a vote ended in failure
+#define ActivityVoteResult_Cancelled					"ActivityVoteResult_Cancelled"  // used by activity_voting.gsc to determine if a vote ended because it was cancelled (neither success nor failure)
+#define ActivityVoteResult_InProgress					"ActivityVoteResult_InProgress" // used by activity_voting.gsc to determine if a vote is still in progress
+
+#define ActivityVoteName_SquadAbandonVote				"ActivityVoteName_SquadAbandonVote"
+
+#define ActivityNotify_ActivityStarted					"activity_started"
+#define ActivityNotify_ActivityEnded					"activity_ended"
+#define ActivityNotify_ActivitySucceeded				"activity_succeeded"
+#define ActivityNotify_ActivityFailed					"activity_failed"
+#define ActivityNotify_InstanceDestroyed				"instance_destroyed"
+#define ActivityNotify_PlayerJoined						"player_joined"
+#define ActivityNotify_PlayerLeft						"player_left"
+#define ActivityNotify_PlayerDied						"activity_player_died"
+#define ActivityNotify_StateTransitionBlockerRemoved	"activity_state_transition_blocker_removed"
+#define ActivityNotify_AmbientAISpawningCanResume		"activity_ai_spawning_can_resume"
+#define ActivityNotify_MinPlayerCountReached			"activity_min_players_reached"
+#define ActivityNotify_MaxPlayerCountReached			"activity_max_players_reached"
+#define ActivityNotify_ActivityRewardCachesDoneSpawning "activity_reward_caches_done_spawning" // sent when all activity reward caches spawned via triggering an activity moment are done spawning (either in success or failure). The notify will pass along the caches that spawned successfully in its first return argument.
+
+#define ActivityAIEncounterSpawn_OnBegin		0	//The Nexus will wait until it can get approval for all 'begin' spawn requests. When an activity begins (in its "Active" state), it will automatically start spawning these requests
+#define ActivityAIEncounterSpawn_Immediately	1	//The Nexus will tell the AI Director to start spawning the encounter as soon as possible
+#define ActivityAIEncounterSpawn_WhenTold		2	//The Nexus won't do anything until told via script that it's time to start spawning this request
+
+#define ActivityAIEncounterCleanup_OnEnd		0	//The Nexus will tell the AI Director to cancel the request when it enters its 'Ended' state
+#define ActivityAIEncounterCleanup_OnDestroy	1	//The Nexus will tell the AI Director to cancel the request when it enters its 'Cleanup' state
+#define ActivityAIEncounterCleanup_Never		2	//The Nexus won't clean up the encounter and the AI may outlive the activity instance. (Eventually, they will become Ambient AI)
+
+#define NexusFunctionalityOverride_ActivityTypeRegistration								0 //Override functionality related to a new activity type being registered with the Neuxs. Parameters: [ activityType ]
+#define NexusFunctionalityOverride_SetupActivityInstance								1 //Override functionality related to setting up a newly created activity instance. Parameters: [ activityInstance, originPointOverride ]
+#define NexusFunctionalityOverride_BeginActivityInstance								2 //Override functionality related to starting up an activity as it enters its Active state. Parameters: [ activityInstance ]
+#define NexusFunctionalityOverride_EndActivityInstance									3 //Override functionality related to closing out an activity as it enters its Ended state. Parameters: [ activityInstance ]
+#define NexusFunctionalityOverride_CleanupActivityInstance								4 //Override functionality related to cleaning up an activity instance. Parameters: [ activityInstance ]
+#define NexusFunctionalityOverride_OnPlayerSpawned										5 //Override functionality related to how the Nexus should immediately respond to a Player Spawn. Parameters: [ player ]
+#define NexusFunctionalityOverride_CalculateActivityFocusScore							6 //Override functionality related to when the Nexus needs to determine a value to represent how important an activity is for a player to "focus" on. Parameters: [ player, activityInstance ]
+#define NexusFunctionalityOverride_EnableActivityJoinInteracts							7 //Override functionality related to how the Nexus "turns on" the player join interact scriptables. Parameters: [ activityInstance, listOfInteractScriptablesToEnable ]
+#define NexusFunctionalityOverride_GetActivityJoinInteracts								8 //Override functionality related to how the Nexus determines which player join interact scriptables are worth "turning on." Parameters: [ activityInstance ]
+#define NexusFunctionalityOverride_OpenLootableContainer								9 //Override functionality related to how the Nexus opens loot caches. Different game modes may use different lootcaches. Parameters: [ player, cache ]
+#define NexusFunctionalityOverride_OnItemAddedToRewardCache								10 //Override functionality related to how the Nexus responds to items being added to a reward cache. Different game modes may respond differently when an item is added (set different UI omnvars, etc.). Parameters: [ See scripts\mp\activities\reward_cache::_createStruct_func_onItemAddedArgs ]
+#define NexusFunctionalityOverride_PlayerAssimilatedToNewSquad							11 //Override functionality related to how the Nexus handles the situation when a player form one squad assimilates into a new squad. Parameters: [ playerJoiningNewSquad ]
+#define NexusFunctionalityOverride_AddDefaultSpatialZone								12 //Override functionality related to how the Nexus creates default Spatial Zones for Spatial Zone Containers. These are containers that require a Spatial Zone but did not specifically specify the size of the zone. Parameters: [spatialZoneContainer, spatialZoneName]
+#define NexusFunctionalityOverride_ApplyCustomActivityBroadcastQualificationConditions 	13 //Override functionality related to what additional qualification conditions the Nexus should apply to activity related player broadcasts. Parameters: [ qualificationConditionalContainer, activityInstance ]
+
+#define NexusManagedScriptablePartPrefix	"NEXUSMANAGEDSCRIPTABLEPART" //Uppercase string prefix used to identify if a scriptable part has state changes that should be activated by the Activity Nexus
+
+//Custom KVP values placed in struct structs which lets the Nexus know that it's a significant script struct and what it should be used for. Generally uses the 'targetname' KVP
+#define ScriptStructIdentifier_NexusActivityJoiner "activity_nexus_instance_joiner" //A script struct that may be replaced with a player join interact scriptable.
+
+//When a significant Activity Moment Occurs (ex: player leaves an activity) we want to enable/disable Activity Join interacts usage for players in case a player now qualifies/disqualifies when they didn't before.
+//We loop through relevant players to the moment and compare them to all of the active activities. This process occurs over time and these two parameters control the length of that delay.
+#define Dvar_ToggleJoinInteractsPlayersCheckDelay 	#d"activity_toggle_join_interacts_player_check_delay"		//How long we should take to iterate over all of the relevant players to begin enabling/disabling join interact usage for them	 
+#define Dvar_ToggleJoinInteractsInstancesCheckDelay #d"activity_toggle_join_interacts_instances_check_delay"	//How long we should take to iterate over all of the activity instances. We compare a single player to each instance to see if they qualify for each join interact
+
+#define Dvar_AwarenessZoneCheckDelay			 #d"activity_awareness_zone_spatial_group_update_delay"
+#define Dvar_ProximityJoinZoneCheckDelay		 #d"activity_proximity_join_zone_spatial_group_update_delay"
+#define Dvar_HibernationZoneCheckDelay			 #d"activity_hibernation_zone_spatial_group_update_delay"
+#define Dvar_AmbientAIExclusionZoneUpdateDelay	 #d"objective_location_update_delay"
+
+#define Dvar_DefaultHibernationZoneRadius #d"activity_default_hibernation_zone_radius"
+
+#define Dvar_DrawActivityNexusEnabled				 #d"activity_draw_enabled"
+#define Dvar_DrawHibernatingActivities				 #d"activity_draw_hibernating_enabled"
+#define Dvar_DrawActivityHibernationZone			#d"activity_draw_hibernation_zone_enabled"
+#define Dvar_DrawActivityAwarenessZone		 		#d"activity_draw_awareness_zone_enabled"
+#define Dvar_DrawActivityProximityJoinRadius		#d"activity_draw_proximity_join_radius_enabled"
+#define Dvar_DrawActivityAmbientExclusionRadius		 #d"activity_draw_ambient_exclusion_radius_enabled"
+#define Dvar_DrawActivityGeneralInfo				 #d"activity_draw_general_info_enabled"
+#define Dvar_DrawActivityCenter						 #d"activity_draw_center"
+#define Dvar_DrawActivityJoinInteracts				 #d"activity_draw_join_interacts_enabled"
+#define Dvar_DrawCustomSpatialZones			 		#d"activity_draw_custom_spatial_zones"
+
+#define Dvar_ActivityJoinerProximityWarningThreshold #d"activity_joiner_proximity_warnings_threshold"
+#define ActivityJoinerProximityWarningThreshold 1000
+
+#define ActivityBundleType "activitydefinition:"
+#define ActivityBundleResources #x"activityResources"
+#define ActivityCustomProperties #x"customProperties"
+#define ActivityBundleOptionalStringText "[OPTIONAL]"
+
+
+//Activity Rewards constants
+#define ActivityRewardsBundleType "activityrewards"
+
+#define ActivityRewardGroup_ActivityParticipants "ActivityParticipants"
+#define ActivityRewardGroup_FunctionOverride "FunctionOverride"
+
+#define ActivityRewardSpawnLocation_UseGameModeSetting "UseGameModeSetting"
+#define ActivityRewardSpawnLocation_FunctionOverride "FunctionOverride"

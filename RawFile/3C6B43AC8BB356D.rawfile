@@ -1,0 +1,64 @@
+#define CONST_EXFIL_INTERACT_MODEL "tag_origin"
+#define CONST_EXFIL_MINIMAP_SCRIPTABLE "cp_mp_exfil_minimap"
+#define CONST_EXFIL_DESTINATION_MODEL "cp_mp_exfil_site_xmodel"
+#define CONST_EXFIL_DESTINATION_SCRIPTABLE "cp_mp_exfil_site_entityless"
+#define CONST_EXFIL_SCRIPTABLE_PART "cp_mp_exfil_site"
+#define CONST_EXFIL_SCRIPTABLE_PART_READY "ready"
+#define CONST_EXFIL_SCRIPTABLE_PART_STANDBY "standby"
+#define CONST_EXFIL_OBJECTIVE_ICON "ui_map_icon_cp_mp_exfil"
+#define CONST_QUEST_EXFIL_OBJECTIVE_ICON "ui_map_icon_ob_quest_exfil"
+
+#define CONST_EXFIL_DEFAULT_VEHICLE_REF "veh9_palfa"
+
+#define CONST_EXFIL_USE_DEFEND_RADIUS 394
+#define CONST_EXFIL_USE_RADIUS 64
+#define CONST_EXFIL_AGENT_TEAM "team_two_hundred"
+#define CONST_EXFIL_AGENT_COUNT_BASE 35
+#define CONST_EXFIL_TOTAL_AI_ACTIVE 60
+
+//maximum number of exfil instances active in a session at a destination (doesn't apply to OB content manager, that one is handled in default_ob_modesettings_jup.cfg)
+#define CONST_EXFIL_DEFEND_MAX_INSTANCES 4
+
+//how long console players hold button for starting exfil interact
+#define CONST_EXFIL_START_USE_TIME_MS 1500
+
+#define CONST_EXFIL_START_USE_TIME_DEFEND_MS 750
+
+//used to handle how the time is calculated for the exfil
+#define CONST_EXFIL_TIMER_BASE 120
+#define CONST_EXFIL_DEFEND_TIMER_BASE 35
+#define CONST_EXFIL_DEFEND_TIMER_SHORTENED_INSIDE 5
+#define CONST_EXFIL_BASE_DIST 10000
+#define CONST_EXFIL_CLEAR_TIME 60
+#define CONST_EXFIL_DIFFICULTY_TIME 3
+#define CONST_EXFIL_MAX_TIME 600
+
+#define CONST_EXFIL_OPT_IN_DIST 5000
+#define CONST_EXFIL_OPT_IN_TIMER 10
+
+#define CONST_EXFIL_RESET_TIMER 60
+
+#define CONST_EXFIL_INTERACT_OBJ_DISTANCE 1024
+
+#define CONST_EXFIL_ENCOUNTER_RADIUS 1400
+#define CONST_EXFIL_AT_DESTINATION_DIST 1750
+#define CONST_EXFIL_AT_DESTINATION_DIST_SQ ( CONST_EXFIL_AT_DESTINATION_DIST * CONST_EXFIL_AT_DESTINATION_DIST ) //distance player/ai is considered "inside" the exfil zone
+
+//when not using a specific spline for the enter path, try and calculate a speed that gets the helicopter into play after this amount of time in seconds
+#define CONST_EXFIL_VEHICLE_ARRIVAL_TIME 50
+#define CONST_EXFIL_VEHICLE_LANDING_TIME 7
+
+#define CONST_EXFIL_AIR_VEHICLE_MINIMUM_GOAL_HEIGHT 6000
+
+//RBZ time between individual exfil spawns
+#define CONST_ZM_EXFIL_SPAWN_DELAY_MIN 0.25
+#define CONST_ZM_EXFIL_SPAWN_DELAY_MAX 1
+
+//in RBZ, how long the radio is active for
+#define CONST_ZM_EXFIL_RADIO_TIMER 120
+
+//height off the ground where vehicle will try to spawn
+#define CONST_EXFIL_VEHICLE_SPAWN_HEIGHT 1000
+
+//used to identify if a particular exfil is associated with a quest
+#define CONST_QUEST_EXFIL_IDENTIFIER "quest_exfil"

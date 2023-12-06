@@ -1,0 +1,3 @@
+// vehicle
+#define DIRT_BIKE_VEHICLE_REF "veh9_civ_lnd_dirt_bike"
+#define DIRT_BIKE_VEHICLE_TYPE "veh9_civ_lnd_dirt_bike_physics_mp" 

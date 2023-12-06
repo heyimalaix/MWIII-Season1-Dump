@@ -1,0 +1,18 @@
+// Activity Manager DVARS
+#define RESOURCE_MANAGER_ENABLED_DVAR #d"rm_enabled"
+#define RESOURCE_MANAGER_ENABLED_DEFAULT 1
+
+// Resource Types
+#define RESOURCE_TYPE_ENTITIES "entities"
+#define RESOURCE_TYPE_SCRIPTABLES "scriptables"
+#define RESOURCE_TYPE_VEHICLES "vehicles"
+
+// Resource Manager Budgets
+#define RESOURCE_TYPE_ENTITIES_BUDGET_DVAR #d"rm_entities_budget"
+#define RESOURCE_TYPE_ENTITIES_BUDGET_DEFAULT 800
+
+#define RESOURCE_TYPE_SCRIPTABLES_BUDGET_DVAR #d"rm_scriptables_budget"
+#define RESOURCE_TYPE_SCRIPTABLES_BUDGET_DEFAULT 200
+
+#define RESOURCE_TYPE_VEHICLES_BUDGET_DVAR #d"rm_vehicles_budget"
+#define RESOURCE_TYPE_VEHICLES_BUDGET_DEFAULT 60

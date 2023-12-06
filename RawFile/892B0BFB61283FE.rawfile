@@ -1,0 +1,12 @@
+//exec IW9 file
+exec default_mp.cfg
+
+// turning on gametype assets
+set #x378653010d584aa6e 1
+
+set #x3aff7f040fa04b28e br
+set #x3e65e9a96eb2ff62b br
+
+set #x3ef237da69bb64ef6	mp_jup_bigmap_wz2
+
+exec dev_proto_br_overrides.cfg

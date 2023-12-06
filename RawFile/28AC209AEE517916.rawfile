@@ -1,0 +1,62 @@
+%force_cs_anim_index_match
+
+start_forward: blendspace2d( rangex="-180,180", rangey="0,255", blend_time="200",
+coords="{-180,0},{-135,0},{-90,0},{-45,0},{0,0},{45,0},{90,0},{135,0},{180,0},{-180,25},{-135,25},{-90,25},{-45,25},{0,25},{45,25},{90,25},{135,25},{180,25},{-180,100},{-135,100},{-90,100},{-45,100},{0,100},{45,100},{90,100},{135,100},{180,100},{-180,120},{-135,118},{-90,115},{-45,130},{0,150},{45,130},{90,115},{135,118},{180,120},{-180,143},{-135,135},{-90,130},{-45,161},{0,188},{45,161},{90,130},{135,135},{180,143},{-180,250},{-136,250},{-90,250},{-45,250},{2,250},{44,250},{91,250},{136,250},{178,250}",
+edges="{21,22,30},{38,39,30},{22,31,30},{39,31,30},{39,40,31},{40,41,31},{41,31,32},{22,31,32},{22,23,32},{41,42,32},{19,20,28},{20,29,28},{20,21,29},{21,30,29},{23,32,33},{23,24,33},{24,33,34},{24,25,34},{37,29,28},{37,38,29},{38,30,29},{42,32,33},{42,43,33},{43,33,34},{12,13,4},{13,14,4},{15,16,6},{10,11,2},{15,16,25},{15,24,25},{14,15,24},{14,23,24},{13,14,23},{13,22,23},{13,21,22},{12,13,21},{11,12,20},{10,11,19},{11,19,20},{10,2,1},{11,2,3},{11,12,3},{12,4,3},{14,4,5},{15,6,5},{14,15,5},{16,6,7},{12,20,21},{25,34,35},{25,26,35},{16,25,26},{19,28,27},{19,18,27},{10,19,18},{10,18,9},{16,26,17},{1,9,0},{10,1,9},{16,7,17},{7,17,8},{34,35,44},{43,34,44},{37,28,36},{28,27,36},{36,37,45},{37,45,46},{37,38,46},{38,46,47},{38,39,47},{39,47,48},{39,40,48},{40,48,49},{40,49,50},{40,41,50},{41,42,51},{41,50,51},{42,51,52},{42,43,52},{43,52,53},{43,44,53}",
+valuex=[strafeyaw], valuey=[desiredspeed] ) nonloopsync
+{
+	sdr_com_strafe_in_place_start_2
+	sdr_com_strafe_in_place_start_3
+	sdr_com_strafe_in_place_start_6
+	sdr_com_strafe_in_place_start_9
+	sdr_com_strafe_in_place_start_8
+	sdr_com_strafe_in_place_start_7
+	sdr_com_strafe_in_place_start_4
+	sdr_com_strafe_in_place_start_1
+	sdr_com_strafe_in_place_start_2@1
+	sdr_com_strafe_shuffle_start_2
+	sdr_com_strafe_shuffle_start_3
+	sdr_com_strafe_shuffle_start_6
+	sdr_com_strafe_shuffle_start_9
+	sdr_com_strafe_shuffle_start_8
+	sdr_com_strafe_shuffle_start_7
+	sdr_com_strafe_shuffle_start_4
+	sdr_com_strafe_shuffle_start_1
+	sdr_com_strafe_shuffle_start_2@1
+	sdr_com_strafe_walk_start_2
+	sdr_com_strafe_walk_start_3
+	sdr_com_strafe_walk_start_6
+	sdr_com_strafe_walk_start_9
+	sdr_com_strafe_walk_start_8
+	sdr_com_strafe_walk_start_7
+	sdr_com_strafe_walk_start_4
+	sdr_com_strafe_walk_start_1
+	sdr_com_strafe_walk_start_2@1
+	sdr_com_strafe_jog_start_2
+	sdr_com_strafe_jog_start_3
+	sdr_com_strafe_jog_start_6
+	sdr_com_strafe_jog_start_9
+	sdr_com_strafe_jog_start_8
+	sdr_com_strafe_jog_start_7
+	sdr_com_strafe_jog_start_4
+	sdr_com_strafe_jog_start_1
+	sdr_com_strafe_jog_start_2@1
+	sdr_com_strafe_run_start_2
+	sdr_com_strafe_run_start_3
+	sdr_com_strafe_run_start_6
+	sdr_com_strafe_run_start_9
+	sdr_com_strafe_run_start_8
+	sdr_com_strafe_run_start_7
+	sdr_com_strafe_run_start_4
+	sdr_com_strafe_run_start_1
+	sdr_com_strafe_run_start_2@1
+	sdr_com_strafe_sprint_start_2
+	sdr_com_strafe_sprint_start_3
+	sdr_com_strafe_sprint_start_6
+	sdr_com_strafe_sprint_start_9
+	sdr_com_strafe_sprint_start_8
+	sdr_com_strafe_sprint_start_7
+	sdr_com_strafe_sprint_start_4
+	sdr_com_strafe_sprint_start_1
+	sdr_com_strafe_sprint_start_2@1
+}

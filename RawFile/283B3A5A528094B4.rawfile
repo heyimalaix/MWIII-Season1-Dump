@@ -1,0 +1,51 @@
+{
+  "parent": "layout_customization/widgets.json",
+  "optionsData": {
+    "HideWeaponUI": 2,
+    "ShowReloadIndicator": 2,
+    "EnableKillstreakMinimalMode": 2,
+    "EnableEquipmentMinimalMode": 2,
+    "CenterScoreboard": 2
+  },
+  "version": "1",
+  "textReference": "OPTIONS/HUD_FOCUSED",
+  "layoutData": {
+    "StreakList": {
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.5,
+        "bottomAnchor": 0.5,
+        "horizontalOffset": 50.0,
+        "verticalOffset": 0.0
+      }
+    },
+    "MatchStatusScores": {
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 47.0
+      }
+    },
+    "Minimap": {
+      "alpha": 0.75,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.5,
+        "bottomAnchor": 0.5,
+        "horizontalOffset": -200.0,
+        "verticalOffset": 150.0
+      }
+    },
+    "WeaponStatusInfo": {
+      "requiredInfo": {
+        "horizontalOffset": 217.0,
+        "verticalOffset": 47.0
+      }
+    }
+  }
+}

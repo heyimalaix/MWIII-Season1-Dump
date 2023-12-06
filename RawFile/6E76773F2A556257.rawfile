@@ -1,0 +1,189 @@
+// turning on gametype assets
+set #x378653010d584aa6e 1
+// turning on map assets
+//set #x395933efe2016fffa 1
+
+//set #x3708473a41b11b061
+set #x3708473a41b11b061 1
+
+// Juke Dvars
+set #x35b70490e1809f75f 0
+set #x39d455703b9c0967d 0
+set #x3f364308c1fe6fbae 1
+set #x3367973e8abfd929a 350
+set #x35e7d331b5c097ce 50
+set #x3dcbd1ee153530a0a 8.25
+set #x380759223ed4c2bb 10
+set #x3639db5fcbb12df28 1
+set #x3cfe1091be689c6bf 1
+set #x319024daa37b16811 1100
+set #x3e70206d4cc6c75df 0
+set #x3cfaefbcf0a6c6cb9 150
+set #x32a0105681dc1026a 0.8
+set #x38ca053d11b210614 0
+set #x31c226605b85614ba 40
+set #x3e42df08cebf6ca62 180
+set #x328e445568cff3cff 40
+set #x31c226605b85614ba 90
+set #x3a330c82e6351a3fa 70
+set #x3db0bb8c06ed3add2 250
+set #x3e63ac02a64745008 0
+set #x3eb04e3ce2c75bc90 150
+
+//HQ dvar
+set #x3b6e38e5a0db26c74 1
+
+//Gun Game Dvar
+set #x38d71d9134618047a "mp/jup_gunGameWeapons.csv"
+
+//Gun Fight Dvar
+set #x32e5cbfbbbbae7cc 1
+
+
+//movement dvars
+set #x376ce56c73e231a84 .8 //default .8 //testing was .92
+set #x3cd953fae30ca7fec .88 //default .88 //testing was .98
+
+//scales how quickly the player can sprint after throwing equipment. 1.0 = base, higher number = faster
+set #x370ca97fc8b1134be 1.45
+
+
+//dive to prone
+set #x364fedc537d838322 260//CODY was 300, decreaing based off long hold time 6/15/2022
+
+set #x3b88332ac3467f6f4 1    // default 1
+set #x323eeaf1d71b66ff 120 //default 200
+set #x38a46ec4077221fb7 360  //default 500
+set #x324facc127bd38c23 400  //default 500
+set #x3f4b381fe847f785c 400  //default 500
+set #x3b79bac3a127b8f90 .6 //default .55
+set #x3c13052a39fa7b810 .875 //default .8
+set #x3847129fe02a9362b 400          //should match no_move/no jump times
+set #x34954ba2fbcd77796 50
+
+set #x3ef0768ef5bc072f6 1//to enable the clamp
+set #x3578f77b7cd34fd4a 90/
+set #x3134d3b675657c6bb 45//to tweak the clamp
+set #x357f86177762120b6 1//to enable the lerp
+set #x3a89f933556f4f423 30//to tweak the lerp
+set #x3f9168ac176976dc4 20//to tweak the lerp
+set #x3cd64b7480b58a6f6 200//to tweak the lerp duration
+
+//slide dvars
+set #x3d45ccee55334d990 0 //block firing during slide in
+set #x3bf7fdb69f3bebc94 0 //Extends teh time firing is blocked during the gesture in state by this many milliseconds
+
+//tac pads/tactical pads dvars
+set #x32037c8364bccd37f 1.2
+set #x35e05ea0c8cf6d40 1.2
+set #x3a190ae1b7ce51eb9 1
+
+
+//direct stand->prone transition control. This transition is only accessible if the player is going fast enough (usually directly after discontinuing a sprint/super sprint)
+set #x3994c3cd3854363c 62
+
+//faster mantle when sprinting/super sprinting
+set #x399632e8c7539a7f 1
+
+//reload cancelling. Set to 0 to disable reload checkpoints, this allows reload cancelling
+set #x395b17582cb3dc34e 1
+
+
+//jump dvars
+
+set #x355033e1616a8be5e 300
+
+set #x36726b7eb3c852a14 0.6 //Scales the bob cycle speed when teh player is in air.  Effects both camera bob and the weapon animation rate
+set #x3dd287a085d599c1 1 //A speed ration is calculated agains some max speeds defined based on the player state.  During freefall the player can reach very high speed which denerate high speed raition.  This dvar is used to clamp it.
+
+
+//iw9 jump speed nerfs
+set #x39d9e070929891859 1
+
+set #x3e6a9e6f8e573c34c 0.95
+set #x3e6a9e7f8e573c57f 0.79
+set #x3e6a9e4f8e573bee6 0.77
+ 
+set #x3d9710e8c2b0b17e6 1.1
+set #x33dbdde7d28b7b481 0.92
+set #x33dbddd7d28b7b24e 0.88
+set #x33dbde07d28b7b8e7 0.83
+
+set #x3d9710e8c2b0b17e6 1.05
+set #x3560ca771341f4f9d 0.98
+
+set #x3c6cc71c7fdb6ee5f 150
+set #x35ca7d1a64ed4c48b 1
+
+set #x3dc601b7fedbb4a7a 1.2
+set #x3a98e5a1291cb3e83 0.7 //Scales the speed of ADS transitions when jumping"
+set #x3a8e88263b836e985 1.0 //"Time in msec for the jumpAdsSpeedScale to lerp in from the time the player jumps"
+set #x3c832164e32a829ee 700.0 //"Time in msec for the jumpAdsSpeedScale to lerp in from the time the player jumps"
+
+set #x37bb87864b2da410d 1.5
+set #x3fcaf3b0a55499f82 270
+
+//dropshot dvars
+set #x3e46342058851da82 0.55 //scale applied to view height when changing speed
+
+//hip spread settings
+set #x3521400c4d8818ba0 1
+set #x32fa09b11cadcceaa 4
+set #x3d7d4b598deffb6fe 230
+set #x38687dc1739247751 500
+set #x345b79ed67bcddbf3 2
+set #x31d1fcdcfed9d4e24 2
+
+//direct stand->prone transition control. This transition is only accessible if the player is going fast enough (usually directly after discontinuing a sprint/super sprint)
+set #x3994c3cd3854363c 62
+
+set #x397379f4d74176304 230  // was 200 in BETA "The time it takes to lerp the viewheight from stand to crouch or crouch to stand" 
+set #x37697bdbf4f207b9c 475  // was 475 in BETA //"The time it takes to lerp the viewheight from crouch to prone or prone to crouch" 
+
+set #x34d47607f97524d97 320 // was 300 in beta //"The time it takes to lerp the viewheight from stand to crouch or crouch to stand while in ADS" 
+set #x3d87403ffa9fc8cdf 590 // was 650 in beta  //"The time it takes to lerp the viewheight from crouch to prone or prone to crouch while in ADS"
+
+set #x377b53c2c91bd50dc 50  // time to stand from crouch( lower is slower)
+set #x34e0fd5787a87bb3e 60 //time to stand from prone ( lower is slower )
+set #x373d7fc72dc145d42 0.83 //sprint speed scale while transitioning
+
+
+//outlines
+set #x3b0555ef7f98d8aa6 0
+set #x3f6fae5d1789642cf jup_enemy_outline
+set #x3142f5cbe8ba50120 1
+
+//stalker boots perk
+set #x3968d60ab1846324c 18
+set #x3b30df564b4195ae8 20
+set #x3324605366ae19f76 16
+set #x33b113130f5448462 18
+
+//assault gloves
+set #x37872e8636ae5c6b0 1.23
+
+
+//lightweight dvars
+set #x3f00e1ef0ec244215 4
+set #x399248a4050c19dc8 4
+set #x3ba3d58ce0db99861 6
+set #x39b3e040ee92dd1c1 8
+set #x3ee3db86167a5c479 12
+set #x33cdeb421ed520514 9
+set #x3cde0c0ad8209d3c7 2
+set #x35e460019e586bb63 12
+set #x3c7abfb742c08b80 12	
+
+//downed movement dvars
+set #x32a9a0878901a614e -12
+set #x3c9cc12c56dbb4a01 15
+
+//Aim Assist
+set #x390e0d6a242bfc176 1
+
+//to combat against snaking
+set #x32eb9bee31efbe4b5 600
+set #x32019494c9544dbd3 0
+
+//setting this to 0 stops the game from automatically centering the player's view when they slide while looking down
+set #x3122ff3159248db23 0

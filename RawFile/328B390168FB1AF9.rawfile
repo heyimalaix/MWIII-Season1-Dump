@@ -1,0 +1,9 @@
+%force_cs_anim_index_match
+
+move_slopes:  blendspace1d( range="-45,45", blend_time="100", coords="-32,0,20",value=[groundslopepitch] )
+{
+	sdr_com_exposed_crouch_slope_down
+	sdr_com_exposed_crouch_slope_level
+	sdr_com_exposed_crouch_slope_up
+}
+	

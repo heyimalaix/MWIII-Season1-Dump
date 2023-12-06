@@ -1,0 +1,12 @@
+con_showchannel *
+
+//motion blur
+set #x38fef9b7e4f880571 1
+set #x3ea4c44a08cd23d5d 0.20;
+set #x3c7590c5a3289a2d 1.0;
+
+// Enable the 'new' warzone private match lobby flow. Placed here to be ccs-able in case of big troubles
+set #x377fbcb8988dd232 1
+
+exec default_statversion_mp_iw9.cfg
+exec default_statversion_sp_iw9.cfg

@@ -1,0 +1,154 @@
+// Operator
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operators" 0 "jup_mp_delta"
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operators" 1 "jup_mp_charlie"
+
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorWatch" 0
+
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "radial" 0 210000
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "radial" 1 190217
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "radial" 2 190218
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "radial" 3 190219
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "radial" 4 190220
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "radial" 5 190221
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "radial" 6 190222
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "radial" 7 190223
+
+setJupiterPublicLoadoutsPlayerData "customizationFavorites" "favoriteLoadoutIndex" 0
+
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "execution" 5058
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "execution" 5058
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "execution" 5058
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "execution" 5058
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "execution" 5058
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "execution" 5058
+
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "intro" 0
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "intro" 1
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "intro" 2
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "intro" 3
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "intro" 4
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "intro" 5
+
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "taunt" 0
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "taunt" 1
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "taunt" 2
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "taunt" 3
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "taunt" 4
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "taunt" 5
+
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "skin" 6002
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "skin" 5972
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "skin" 5999
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "skin" 5971
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "hutch_western" "skin" 5514
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gus_western" "skin" 5982
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zimo_western" "skin" 5989
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kleo_western" "skin" 6005
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "nova_eastern" "skin" 5983
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "price_western" "skin" 5987
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "farah_western" "skin" 5993
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "ghost_western" "skin" 5976
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_western_1" "skin" 5995
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_eastern_1" "skin" 5996
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "soap_western" "skin" 7966
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "oni_eastern" "skin" 8189
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gromsko_western" "skin" 11396
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "reyes_western" "skin" 11395
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "luna_western" "skin" 11402
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "roze_eastern" "skin" 11404
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zero_eastern" "skin" 11397
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "conor_eastern" "skin" 11401
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "aksel_eastern" "skin" 11403
+setJupiterPublicLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "skin" 12261
+
+// Private Loadouts
+setPrivateLoadoutsPlayerData "customizationSetup" "operators" 0 "jup_mp_delta"
+setPrivateLoadoutsPlayerData "customizationSetup" "operators" 1 "jup_mp_charlie"
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorWatch" 0
+
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 0 210000
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 1 190217
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 2 190218
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 3 190219
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 4 190220
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 5 190221
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 6 190222
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 7 190223
+
+setPrivateLoadoutsPlayerData "customizationFavorites" "favoriteLoadoutIndex" 0
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "execution" 5058
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "execution" 5058
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "intro" 31
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "intro" 32
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "taunt" 0
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "taunt" 0
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "skin" 6002
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "skin" 5972
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "skin" 5999
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "skin" 5971
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "hutch_western" "skin" 5514
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gus_western" "skin" 5982
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zimo_western" "skin" 5989
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kleo_western" "skin" 6005
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "nova_eastern" "skin" 5983
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "price_western" "skin" 5987
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "farah_western" "skin" 5993
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "ghost_western" "skin" 5976
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_western_1" "skin" 5995
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_eastern_1" "skin" 5996
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "soap_western" "skin" 7966
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "oni_eastern" "skin" 8189
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gromsko_western" "skin" 11396
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "reyes_western" "skin" 11395
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "luna_western" "skin" 11402
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "roze_eastern" "skin" 11404
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zero_eastern" "skin" 11397
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "conor_eastern" "skin" 11401
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "aksel_eastern" "skin" 11403
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "skin" 12261
+
+// DMZ Init
+// Used to mark that we haven't initialized random inventory yet.
+setJupiterPlayerData "dmzInventory" 0 "lootID" 1046
+setJupiterPlayerData "dmzInventory" 0 "quantity" 5
+setJupiterPlayerData "dmzInventory" 1 "lootID" 1036
+setJupiterPlayerData "dmzInventory" 1 "quantity" 5
+setJupiterPlayerData "dmzInventory" 2 "lootID" 1094
+setJupiterPlayerData "dmzInventory" 2 "quantity" 3
+setJupiterPlayerData "dmzInventory" 3 "lootID" 1040
+setJupiterPlayerData "dmzInventory" 3 "quantity" 5
+setJupiterPlayerData "dmzInventory" 4 "lootID" 1051
+setJupiterPlayerData "dmzInventory" 4 "quantity" 2
+setJupiterPlayerData "dmzInventory" 5 "lootID" 0
+setJupiterPlayerData "dmzInventory" 5 "quantity" 99
+setJupiterPlayerData "backpackSize" 8
+setJupiterPlayerData "brBackpackSize" 8
+setJupiterPlayerData "dmzBackpackSize" 5
+setJupiterPlayerData "dmzPlateCarrierLevel" 1
+
+setJupiterPlayerData "dmzBankedCash" 100
+setJupiterPlayerData "dmzPocketCash" 0
+
+// Init DMZ loadout
+setJupiterPlayerData "squadMembers" "loadouts" 0 "inUse" 1
+setJupiterPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 0 "weapon" "iw9_ar_kilo53"
+setJupiterPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 0 "lootItemID" 1080
+setJupiterPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 0 "variantID" 1
+setJupiterPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 1 "weapon" "iw9_pi_papa220"
+setJupiterPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 1 "lootItemID" 1104
+setJupiterPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 1 "variantID" 1
+setJupiterPlayerData "squadMembers" "loadouts" 0 "equipmentSetups" 0 "equipment" "equip_frag"
+setJupiterPlayerData "squadMembers" "loadouts" 0 "equipmentSetups" 1 "equipment" "equip_smoke"
+setJupiterPlayerData "squadMembers" "loadouts" 0 "fieldUpgrades" 0 "super_ammo_drop"
+
+// EXGM Starting Balance
+setJupiterExgmData "dollars" 4000

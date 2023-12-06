@@ -1,0 +1,26 @@
+%force_cs_anim_index_match
+	move_prone: blendspace2d( rangex="-180,180", rangey="0,50", blend_time="100",
+	coords="{135,32},{180,30},{-180,30},{-135,32},{90,34},{-90,34},{45,35},{0,35},{-45,35},{45,23},{180,13},{-180,13},{-45,30},{90,14},{-90,13},{135,19},{0,23},{-135,26}",
+	edges="{1,10,15},{2,11,17},{8,12,16},{5,12,14},{3,14,17},{5,8,12},{3,5,14},{2,3,17},{7,8,16},{6,9,16},{6,7,16},{4,9,13},{0,13,15},{4,6,9},{0,4,13},{0,1,15}",
+	valuex=[strafeyaw], valuey=[desiredspeed] ) loopsync
+	{
+		sdr_com_prone_strafe_fast_1
+		sdr_com_prone_strafe_fast_2
+		sdr_com_prone_strafe_fast_2@1
+		sdr_com_prone_strafe_fast_3
+		sdr_com_prone_strafe_fast_4
+		sdr_com_prone_strafe_fast_6
+		sdr_com_prone_strafe_fast_7
+		sdr_com_prone_strafe_fast_8
+		sdr_com_prone_strafe_fast_9
+		sdr_com_prone_strafe_inplace_7
+		sdr_com_prone_strafe_inplace_2
+		sdr_com_prone_strafe_inplace_2@1
+		sdr_com_prone_strafe_inplace_9
+		sdr_com_prone_strafe_inplace_4
+		sdr_com_prone_strafe_inplace_6
+		sdr_com_prone_strafe_inplace_1
+		sdr_com_prone_strafe_inplace_8
+		sdr_com_prone_strafe_inplace_3
+	}
+

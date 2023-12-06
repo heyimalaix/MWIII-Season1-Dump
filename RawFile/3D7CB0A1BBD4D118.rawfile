@@ -1,0 +1,217 @@
+// code will zero stats before this is run
+
+//////// general setup ////////
+setJupiterPublicLoadout "defaultSet" 1
+setJupiterPublicLoadout "inUse" 1
+
+//////// killstreaks ////////
+setJupiterPublicLoadout "killstreakSetups" 0 "killstreak" "uav"
+setJupiterPublicLoadout "killstreakSetups" 1 "killstreak" "cruise_predator"
+setJupiterPublicLoadout "killstreakSetups" 2 "killstreak" "fuel_airstrike"
+
+//////// rig ////////
+setJupiterPublicLoadout "archetype" "archetype_assault"
+setJupiterPublicLoadout "archetypePerk" "specialty_null"
+setJupiterPublicLoadout "archetypeSuper" "super_ammo_drop"
+setJupiterPublicLoadout "head" 10
+setJupiterPublicLoadout "body" 6
+
+//////// gesture ////////
+setJupiterPublicLoadout "gesture" "gesture000"
+setJupiterPublicLoadout "taunt" "iw7_taunt_rare_6"
+setJupiterPublicLoadout "taunts" 0 "iw7_taunt_rare_6"
+setJupiterPublicLoadout "taunts" 1 "iw7_taunt_rare_6"
+setJupiterPublicLoadout "taunts" 2 "iw7_taunt_rare_6"
+setJupiterPublicLoadout "taunts" 3 "iw7_taunt_rare_6"
+
+////////cp //////
+setJupiterPublicLoadout "cpLoadoutSel" 0
+
+///////CPFieldUpgrade///////
+setJupiterPublicLoadout "cpFieldUpgrade" "role_tank"
+
+/////munitions//////
+setJupiterPublicLoadout "munitionSetups" 0 "munition" "empty1"
+setJupiterPublicLoadout "munitionSetups" 1 "munition" "empty2"
+setJupiterPublicLoadout "munitionSetups" 2 "munition" "empty3"
+
+setJupiterPublicLoadout "munitionWaveModeSetups" 0 "munition" "empty1"
+setJupiterPublicLoadout "munitionWaveModeSetups" 1 "munition" "empty2"
+setJupiterPublicLoadout "munitionWaveModeSetups" 2 "munition" "empty3"
+
+//////// Free Melee ////////
+setJupiterPublicLoadout "freeMeleeSetup" "weapon" "iw9_me_fists"
+setJupiterPublicLoadout "freeMeleeSetup" "attachmentSetup" 0 "attachment" "none"
+setJupiterPublicLoadout "freeMeleeSetup" "attachmentSetup" 1 "attachment" "none"
+setJupiterPublicLoadout "freeMeleeSetup" "attachmentSetup" 2 "attachment" "none"
+setJupiterPublicLoadout "freeMeleeSetup" "attachmentSetup" 3 "attachment" "none"
+setJupiterPublicLoadout "freeMeleeSetup" "Sticker" 0 "sticker" "none"
+setJupiterPublicLoadout "freeMeleeSetup" "Sticker" 1 "sticker" "none"
+setJupiterPublicLoadout "freeMeleeSetup" "Sticker" 2 "sticker" "none"
+setJupiterPublicLoadout "freeMeleeSetup" "Sticker" 3 "sticker" "none"
+setJupiterPublicLoadout "freeMeleeSetup" "reticle" "none"
+setJupiterPublicLoadout "freeMeleeSetup" "variantID" 0
+
+//////// classes ////////
+
+// Loadout 1 
+setJupiterPublicLoadout_loc "loadouts" 0 "name" "LUA_MENU_MP/CUSTOM_LOADOUT_1"
+setJupiterPublicLoadout "loadouts" 0 "inUse" 1
+setJupiterPublicLoadout "loadouts" 0 "overkill" 0
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "weapon" "jup_jp36_ar_anov94"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "reticle" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 0 "variantID" 0
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "weapon" "jup_cp24_pi_glima21"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 4 "attachment" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "reticle" "none"
+setJupiterPublicLoadout "loadouts" 0 "weaponSetups" 1 "variantID" 0
+setJupiterPublicLoadout "loadouts" 0 "flcSlingOneEmpty" 0
+setJupiterPublicLoadout "loadouts" 0 "flcHolsterOneEmpty" 0
+setJupiterPublicLoadout "loadouts" 0 "equipmentSetups" 0 "equipment" "equip_frag"
+setJupiterPublicLoadout "loadouts" 0 "equipmentSetups" 1 "equipment" "equip_concussion"
+setJupiterPublicLoadout "loadouts" 0 "equipmentSetups" 0 "flcExtraEquipment" "false"
+setJupiterPublicLoadout "loadouts" 0 "equipmentSetups" 1 "flcExtraEquipment" "false"
+setJupiterPublicLoadout "loadouts" 0 "flcPerks" 0 "specialty_infantry_vest"			// Vest
+setJupiterPublicLoadout "loadouts" 0 "flcPerks" 1 "specialty_custom_gloves"			// Gloves
+setJupiterPublicLoadout "loadouts" 0 "flcPerks" 2 "specialty_ultra_light_boots"		// Footwear
+setJupiterPublicLoadout "loadouts" 0 "flcPerks" 3 "specialty_eod_vest"				// Gear 1
+setJupiterPublicLoadout "loadouts" 0 "flcPerks" 4 "specialty_tac_mask"				// Gear 2
+setJupiterPublicLoadout "loadouts" 0 "flcPerks" 5 "specialty_null"				
+setJupiterPublicLoadout "loadouts" 0 "flcPerks" 6 "specialty_null"			
+setJupiterPublicLoadout "loadouts" 0 "fieldUpgradeSetups" 0 "fieldUpgrades" "super_ammo_drop"
+setJupiterPublicLoadout "loadouts" 0 "fieldUpgradeSetups" 1 "fieldUpgrades" "none"
+setJupiterPublicLoadout "loadouts" 0 "fieldUpgradeUses" 0 1
+setJupiterPublicLoadout "loadouts" 0 "fieldUpgradeUses" 1 1
+setJupiterPublicLoadout "loadouts" 0 "equippedPerkPackageIndex" 0
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 0 "role_3"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 4 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 3 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 2 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 1 "deployable_cover"
+
+
+
+//////// streak preferences setup ////////
+setJupiterPublicLoadout "streakPreferences" "none" 0
+setJupiterPublicLoadout "streakPreferences" "uav" 0
+setJupiterPublicLoadout "streakPreferences" "airdrop" 0
+setJupiterPublicLoadout "streakPreferences" "dronedrop" 0
+setJupiterPublicLoadout "streakPreferences" "counter_uav" 0
+setJupiterPublicLoadout "streakPreferences" "ball_drone_backup" 0
+setJupiterPublicLoadout "streakPreferences" "sentry_shock" 0
+setJupiterPublicLoadout "streakPreferences" "orbital_deployment" 0
+setJupiterPublicLoadout "streakPreferences" "thor" 0
+setJupiterPublicLoadout "streakPreferences" "precision_airstrike" 0
+setJupiterPublicLoadout "streakPreferences" "jammer" 0
+setJupiterPublicLoadout "streakPreferences" "jackal" 0
+setJupiterPublicLoadout "streakPreferences" "minijackal" 0
+setJupiterPublicLoadout "streakPreferences" "nuke" 0
+setJupiterPublicLoadout "streakPreferences" "spiderbot" 0
+setJupiterPublicLoadout "streakPreferences" "directional_uav" 0
+setJupiterPublicLoadout "streakPreferences" "bombardment" 0
+setJupiterPublicLoadout "streakPreferences" "remote_c8" 0
+setJupiterPublicLoadout "streakPreferences" "venom" 0
+
+//////// rig preferences setup ////////
+
+// NOTE-EricG: Please try to keep the following sorted by order of CaC appearance and grouped by archetype
+
+// assault
+setJupiterPublicLoadout "archetypePreferences" 0 "archetype" "archetype_assault"
+setJupiterPublicLoadout "archetypePreferences" 0 "archetypePerk" "specialty_boom"
+setJupiterPublicLoadout "archetypePreferences" 0 "archetypeSuper" "super_pac_sentry"
+setJupiterPublicLoadout "archetypePreferences" 0 "head" "head_1"
+setJupiterPublicLoadout "archetypePreferences" 0 "body" "body_1"
+setJupiterPublicLoadout "archetypePreferences" 0 "taunt" "iw7_taunt_rare_6"
+setJupiterPublicLoadout "archetypePreferences" 0 "taunts" 0 "iw7_taunt_rare_6"
+setJupiterPublicLoadout "archetypePreferences" 0 "taunts" 1 "iw7_taunt_rare_6"
+setJupiterPublicLoadout "archetypePreferences" 0 "taunts" 2 "iw7_taunt_rare_6"
+setJupiterPublicLoadout "archetypePreferences" 0 "taunts" 3 "iw7_taunt_rare_6"
+setJupiterPublicLoadout "archetypePreferences" 0 "gesture" "gesture000"
+
+// heavy
+setJupiterPublicLoadout "archetypePreferences" 1 "archetype" "archetype_assault"
+setJupiterPublicLoadout "archetypePreferences" 1 "archetypePerk" "specialty_regenfaster"
+setJupiterPublicLoadout "archetypePreferences" 1 "archetypeSuper" "none"
+setJupiterPublicLoadout "archetypePreferences" 1 "head" "head_1"
+setJupiterPublicLoadout "archetypePreferences" 1 "body" "body_1"
+setJupiterPublicLoadout "archetypePreferences" 1 "taunt" "iw7_taunt_rare_8"
+setJupiterPublicLoadout "archetypePreferences" 1 "taunts" 0 "iw7_taunt_rare_8"
+setJupiterPublicLoadout "archetypePreferences" 1 "taunts" 1 "iw7_taunt_rare_8"
+setJupiterPublicLoadout "archetypePreferences" 1 "taunts" 2 "iw7_taunt_rare_8"
+setJupiterPublicLoadout "archetypePreferences" 1 "taunts" 3 "iw7_taunt_rare_8"
+setJupiterPublicLoadout "archetypePreferences" 1 "gesture" "gesture009"
+
+// synaptic
+setJupiterPublicLoadout "archetypePreferences" 2 "archetype" "archetype_assault"
+setJupiterPublicLoadout "archetypePreferences" 2 "archetypePerk" "specialty_rush"
+setJupiterPublicLoadout "archetypePreferences" 2 "archetypeSuper" "none"
+setJupiterPublicLoadout "archetypePreferences" 2 "head" "head_1"
+setJupiterPublicLoadout "archetypePreferences" 2 "body" "body_1"
+setJupiterPublicLoadout "archetypePreferences" 2 "taunt" "iw7_taunt_rare_10"
+setJupiterPublicLoadout "archetypePreferences" 2 "taunts" 0 "iw7_taunt_rare_10"
+setJupiterPublicLoadout "archetypePreferences" 2 "taunts" 1 "iw7_taunt_rare_10"
+setJupiterPublicLoadout "archetypePreferences" 2 "taunts" 2 "iw7_taunt_rare_10"
+setJupiterPublicLoadout "archetypePreferences" 2 "taunts" 3 "iw7_taunt_rare_10"
+setJupiterPublicLoadout "archetypePreferences" 2 "gesture" "gesture009"
+
+// ftl
+setJupiterPublicLoadout "archetypePreferences" 3 "archetype" "archetype_assault"
+setJupiterPublicLoadout "archetypePreferences" 3 "archetypePerk" "specialty_superpack"
+setJupiterPublicLoadout "archetypePreferences" 3 "archetypeSuper" "none"
+setJupiterPublicLoadout "archetypePreferences" 3 "head" "head_1"
+setJupiterPublicLoadout "archetypePreferences" 3 "body" "body_1"
+setJupiterPublicLoadout "archetypePreferences" 3 "taunt" "iw7_taunt_rare_3"
+setJupiterPublicLoadout "archetypePreferences" 3 "taunts" 0 "iw7_taunt_rare_3"
+setJupiterPublicLoadout "archetypePreferences" 3 "taunts" 1 "iw7_taunt_rare_3"
+setJupiterPublicLoadout "archetypePreferences" 3 "taunts" 2 "iw7_taunt_rare_3"
+setJupiterPublicLoadout "archetypePreferences" 3 "taunts" 3 "iw7_taunt_rare_3"
+setJupiterPublicLoadout "archetypePreferences" 3 "gesture" "gesture009"
+
+// engineer
+setJupiterPublicLoadout "archetypePreferences" 4 "archetype" "archetype_assault"
+setJupiterPublicLoadout "archetypePreferences" 4 "archetypePerk" "specialty_equipment_ping"
+setJupiterPublicLoadout "archetypePreferences" 4 "archetypeSuper" "none"
+setJupiterPublicLoadout "archetypePreferences" 4 "head" "head_1"
+setJupiterPublicLoadout "archetypePreferences" 4 "body" "body_1"
+setJupiterPublicLoadout "archetypePreferences" 4 "taunt" "iw7_taunt_rare_14"
+setJupiterPublicLoadout "archetypePreferences" 4 "taunts" 0 "iw7_taunt_rare_14"
+setJupiterPublicLoadout "archetypePreferences" 4 "taunts" 1 "iw7_taunt_rare_14"
+setJupiterPublicLoadout "archetypePreferences" 4 "taunts" 2 "iw7_taunt_rare_14"
+setJupiterPublicLoadout "archetypePreferences" 4 "taunts" 3 "iw7_taunt_rare_14"
+setJupiterPublicLoadout "archetypePreferences" 4 "gesture" "gesture009"
+
+//ghost
+setJupiterPublicLoadout "archetypePreferences" 5 "archetype" "archetype_assault"
+setJupiterPublicLoadout "archetypePreferences" 5 "archetypePerk" "specialty_mark_targets"
+setJupiterPublicLoadout "archetypePreferences" 5 "archetypeSuper" "none"
+setJupiterPublicLoadout "archetypePreferences" 5 "head" "head_1"
+setJupiterPublicLoadout "archetypePreferences" 5 "body" "body_1"
+setJupiterPublicLoadout "archetypePreferences" 5 "taunt" "iw7_taunt_rare_7"
+setJupiterPublicLoadout "archetypePreferences" 5 "taunts" 0 "iw7_taunt_rare_7"
+setJupiterPublicLoadout "archetypePreferences" 5 "taunts" 1 "iw7_taunt_rare_7"
+setJupiterPublicLoadout "archetypePreferences" 5 "taunts" 2 "iw7_taunt_rare_7"
+setJupiterPublicLoadout "archetypePreferences" 5 "taunts" 3 "iw7_taunt_rare_7"
+setJupiterPublicLoadout "archetypePreferences" 5 "gesture" "gesture009"
+
+// PMC
+setJupiterPublicLoadout "activePMCMissions" 0 "challengeID" 80027
+setJupiterPublicLoadout "activePMCMissions" 1 "challengeID" 80011
+setJupiterPublicLoadout "activePMCMissions" 2 "challengeID" 80026

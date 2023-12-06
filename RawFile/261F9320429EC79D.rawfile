@@ -1,0 +1,57 @@
+// Remove all debug output for demo playthroughs
+// If new dvars with flag DVAR_ARCHIVED are added, recommend changing their flag to DVAR_ARCHIVED_NO_DEMO to prevent them from being saved unexpectedly
+
+set #x3124f6d2f384cbae0 0
+set #x3893e98eb981706e2 0
+
+set #x3385370cea181bd2c 0
+set #x31b0cfe917cf9070a 0
+set #x3465ee43574ee9a18 0
+
+set #x3ad79979492447566 0
+set #x3ab36162dd5729fa0 0
+set #x3b89b84cbfd0b1b81 0
+set #x3a46a05fa2ac24a58 0
+set #x31b2de43a34566436 0
+set #x3e10547ab83301318 0
+set #x3775bb12ff422ca37 0
+set #x31d2176756bb69fb6 0
+set #x36286886e9b66fe38 0
+set #x3b0b21739a2b3a029 0
+set #x37cea9b3d9728e34e 0
+set #x3fde078e82c7635e6 0
+set #x3b271b3bc70f4fd07 0
+set #x3122863f6324c0135 0
+set #x3cbeb542ba38011f 0
+set #x34d990a3edd712579 0
+set #x3452c649fe0924b1d 0
+set #x3f885d6881b516865 0
+set #x3389b7258e4f016e 0
+set #x329d9eebd6a2296bd 0
+set #x3b34680d13f92784e 0
+set #x38e930c878c8c8469 0
+
+set #x3cd133f0daaf9b3e4 0
+set #x31cfacb017d3a4d53 0
+
+set #x33aa615360d1e42fa 0
+set #x35dc1e3fd0dabbd2d 0
+
+set #x32ab9092c669ef949 0 0 0 0
+set #x393e8a7a5af9ea981 0 0 0 0
+
+set #x32e0d82b243e9bd7a 0
+
+set #x37c55e049121bb8b3 0
+set #x3a228fb48f050e200 0
+
+set #x3b8e3860d6a1729ba 1
+
+set #x327941730461a4602 1
+
+// disable the exterior 100 hud debug info
+set #x32f6380dc3031a0fc 1
+
+set #x3420712e3e18f7998 0
+
+set #x3152f1c660cdcfb85 0

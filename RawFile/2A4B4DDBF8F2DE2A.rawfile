@@ -1,0 +1,14 @@
+{
+	"desc": "Focused",
+	"aspect_ratio_high": 100,
+	"aspect_ratio_low": 0,
+	"layout": "layout_customization/focused.json",
+	"children": [
+		{
+			"desc": "get in the game",
+			"aspect_ratio_high": 100,
+			"aspect_ratio_low": 0,
+			"layout": "layout_customization/focused.json"
+		}
+	]
+}

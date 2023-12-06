@@ -1,0 +1,84 @@
+{
+  "parent": "",
+  "optionsData": {   
+    "MinimapStyle" : 1, 
+    "MinimapRotation": 1,
+    "HideWeaponUI": 1,
+    "ShowReloadIndicator": 1,
+    "EnableKillstreakMinimalMode": 1,
+    "EnableEquipmentMinimalMode": 1,
+    "CenterScoreboard": 1
+  },
+  "layoutData": {
+    "StreakList": {
+      "alpha": 1.0,
+      "classID": 1.0,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 70.0,
+        "verticalOffset": -364.50,
+        "width": 64.0,
+        "height": 279.0,
+        "scalable": true,
+        "shakeable": true
+      },
+      "scale": 0.0
+    },
+     "MatchStatusScores": {
+      "alpha": 1.0,
+      "classID": 1.0,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 26.0,
+        "verticalOffset": 239.0,
+        "width": 350.0,
+        "height": 120.0,
+        "scalable": true,
+        "shakeable": true
+      },
+      "scale": 0.0
+    },
+    "Minimap": {
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 134.5,
+        "verticalOffset": 130.50,
+        "width": 217.0,
+        "height": 217.0,
+        "scalable": true,
+        "shakeable": true
+      },
+      "scale": 0.0
+    },
+    "WeaponStatusInfo": {
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 567.0,
+        "verticalOffset": -127.00,
+        "width": 450.0,
+        "height": 80.0,
+        "scalable": true,
+        "shakeable": true
+      },
+      "scale": 0.0
+    }
+  }
+}

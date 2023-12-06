@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////
+//This file is generated from the Animation Blender tool
+///////////////////////////////////////////////////////////////////////////
+% force_cs_anim_index_match
+stand_run_loop: blendspace2d( rangex="-180.000,180.000", rangey="0,255", blend_time="250.00",
+coords="{0,200},{45,200},{-45,200},{0,240},{45,240},{-45,240}",
+edges="{5,2,3},{3,2,0},{3,0,1},{4,3,1}",
+valuex=[strafeyaw], valuey=[desiredspeed] ) loopsync
+	{
+			chemist_com_strafe_run01_8
+			chemist_com_strafe_run01_7
+			chemist_com_strafe_run01_9
+			chemist_com_strafe_sprint01_8
+			chemist_com_strafe_sprint01_7
+			chemist_com_strafe_sprint01_9
+	}
+

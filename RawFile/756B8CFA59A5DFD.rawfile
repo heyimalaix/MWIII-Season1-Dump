@@ -1,0 +1,35 @@
+exec dev_vehicle_tweaks.cfg
+
+bind BUTTON_BACK	"togglescores"
+bind BUTTON_START	"togglemenu"
+
+exec default_mp_gamesettings.cfg
+
+exec start_up_core_mp.cfg
+
+// ==== all of below should be moved to code ====
+
+// PC - default server settings:
+set #x3399f13d1217738fe	1
+
+set #x3b6cd0e473479a0d0 -60 460
+
+// Code Doors
+set #x36195f1f19fc6ce4f	1
+
+// Prototype FOV blend settings for dead silence
+set #x3763e25f9a7fab105 75
+set #x3567a892ea071962b 250
+
+// Repurposing zombiearcade to blend to default over 1 second
+set #x3e0cf71ddbc647d30 65
+set #x322b3e22e63c1c89c 1000
+set #x36d31d50b483e0d5b 1
+
+// Default nameplate setting
+set #x37645e012d3bdeb5e nameplate_settings_mp_default_iw9
+set #x3b14e24a877008022 1
+set #x3b14e25a877008255 2
+set #x3b2b7e8d5920371d9 2
+
+set #x33f50b2aee47684a2 0

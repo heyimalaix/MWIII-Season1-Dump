@@ -1,0 +1,13 @@
+#define AETHER_SHROUD_1P_EFFECT "vfx/jup/ob/gameplay/zm_weapons/vfx_fld_aether_shroud_camera.vfx"
+#define AETHER_SHROUD_1P_EFFECT_LABEL "aether_shroud_1p_effect"
+#define AETHER_SHROUD_1P_EFFECT_TAG "j_head"
+
+#define AETHER_SHROUD_3P_HEAD_EFFECT "vfx/jup/ob/gameplay/zm_weapons/vfx_fld_aether_shroud_head_3p.vfx"
+#define AETHER_SHROUD_3P_HEAD_EFFECT_LABEL "aether_shroud_3p_head_effect"
+#define AETHER_SHROUD_3P_HEAD_EFFECT_TAG "j_head"
+
+#define AETHER_SHROUD_3P_TORSO_EFFECT "vfx/jup/ob/gameplay/zm_weapons/vfx_fld_aether_shroud_torso_3p.vfx"
+#define AETHER_SHROUD_3P_TORSO_EFFECT_LABEL "aether_shroud_3p_torso_effect"
+#define AETHER_SHROUD_3P_TORSO_EFFECT_TAG "j_spine4"
+
+#define CONST_AETHER_SHROUD_REF "super_aether_shroud"

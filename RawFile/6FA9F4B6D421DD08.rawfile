@@ -1,0 +1,88 @@
+
+set #x384ceb1414dfce59e 500
+
+
+//fix for how transorm "camera angles" transform works, used for SWM and bipod mount.  Issue was that when the gun and scene have different fovs, there is a misalignment between the reticle and bullet trajectory
+set #x39786b67a7086d88e 1 //turn the fix off
+set #x3705d4b33ab4b7efa 50 //the FOV that camera angles are 1:1
+set #x33bd15fdc07a0e4f7 1  //the amount that lower fov will reduce camera angles.  This keeps the gun from moving too far from screen center at lower fovs
+
+//hip reticle motion
+//set #x3fbf5dafa3095dc63 0.3 	//"The ratio of how much your crosshair's size will grow and position will center to encompass a circle that represents where your current circle of bullet spread is in relation to the center of your screen, 0 - your crosshairs will follow the bullet spread of the weapon, where it is on your screen, 1 - the crosshair will be centered and grow to envelop the radius of the bulletspread where it is on your screen.  ask nmayrose how this works if its confusing." );
+//set #x3f67ce937be880c03 0.65 		//"The ratio of how much your the center dot of your crosshair will follow the shooting origin. 0 - the center dot will stay in the center. 1 - the center dot will be at the shooting origin." );
+//set #x337bed86a591eab73 0.5        		// "The ratio of how much your crosshair will be affected by the 3-d space roll of the muzzle of the gun you are holding. 0 - not affected, 1 - full roll, 1+ - exaggerate roll." );
+//set #x37ed8dfd703a0f4c8 0.9   		//"How fast your crosshair will expand to to match new crosshair origin positions. 0.1 - slowly , 1 - not-inhibited" );
+//set #x37e4d72dea9b7008b 0.9			//"How fast your crosshair will contract to match new crosshair origin positions. 0.1 - slowly , 1 - not-inhibited" );
+//set #x3395e899579ddd6ea 15			//"inhibiting the lerp by deltaTime is DREADFULLY slow.  this value multiplies the lerp'd value so its quicker.  25 is a good value, higher and anything above 0.5 lerp values feel the same, anything lower and things above 0.5 lerp value dont feel as quick."
+
+
+//OLD AR
+set #x3fbf5dafa3095dc63 0.15 	//"The ratio of how much your crosshair's size will grow and position will center to encompass a circle that represents where your current circle of bullet spread is in relation to the center of your screen, 0 - your crosshairs will follow the bullet spread of the weapon, where it is on your screen, 1 - the crosshair will be centered and grow to envelop the radius of the bulletspread where it is on your screen.  ask nmayrose how this works if its confusing." );
+set #x3f67ce937be880c03 0.8 		//"The ratio of how much your the center dot of your crosshair will follow the shooting origin. 0 - the center dot will stay in the center. 1 - the center dot will be at the shooting origin." );
+set #x337bed86a591eab73 0.2        		// "The ratio of how much your crosshair will be affected by the 3-d space roll of the muzzle of the gun you are holding. 0 - not affected, 1 - full roll, 1+ - exaggerate roll." );
+set #x37ed8dfd703a0f4c8 0.7   		//"How fast your crosshair will expand to to match new crosshair origin positions. 0.1 - slowly , 1 - not-inhibited" );
+set #x37e4d72dea9b7008b 0.7			//"How fast your crosshair will contract to match new crosshair origin positions. 0.1 - slowly , 1 - not-inhibited" );
+set #x3395e899579ddd6ea 15			
+
+
+//TEST LMG
+//set #x3fbf5dafa3095dc63 0.6 	//"The ratio of how much your crosshair's size will grow and position will center to encompass a circle that represents where your current circle of bullet spread is in relation to the center of your screen, 0 - your crosshairs will follow the bullet spread of the weapon, where it is on your screen, 1 - the crosshair will be centered and grow to envelop the radius of the bulletspread where it is on your screen.  ask nmayrose how this works if its confusing." );
+//set #x3f67ce937be880c03 0.4 		//"The ratio of how much your the center dot of your crosshair will follow the shooting origin. 0 - the center dot will stay in the center. 1 - the center dot will be at the shooting origin." );
+//set #x337bed86a591eab73 0.2        		// "The ratio of how much your crosshair will be affected by the 3-d space roll of the muzzle of the gun you are holding. 0 - not affected, 1 - full roll, 1+ - exaggerate roll." );
+//set #x37ed8dfd703a0f4c8 0.7   		//"How fast your crosshair will expand to to match new crosshair origin positions. 0.1 - slowly , 1 - not-inhibited" );
+//set #x37e4d72dea9b7008b 0.7			//"How fast your crosshair will contract to match new crosshair origin positions. 0.1 - slowly , 1 - not-inhibited" );
+//set #x3395e899579ddd6ea 15	
+
+set #x315aedcea352b95c0 100 //time it takes to remove z offset from weapon motion after falling - prevents permenantly overlapping irons during parachute and extended falls
+set #x318dea1d9fc8310d5 100 //time it takes to remove z offset from weapon motion after falling - prevents permenantly overlapping irons during parachute and extended falls
+
+//TEST PISTOL
+//set #x3fbf5dafa3095dc63 0.3 	//"The ratio of how much your crosshair's size will grow and position will center to encompass a circle that represents where your current circle of bullet spread is in relation to the center of your screen, 0 - your crosshairs will follow the bullet spread of the weapon, where it is on your screen, 1 - the crosshair will be centered and grow to envelop the radius of the bulletspread where it is on your screen.  ask nmayrose how this works if its confusing." );
+//set #x3f67ce937be880c03 0.9 		//"The ratio of how much your the center dot of your crosshair will follow the shooting origin. 0 - the center dot will stay in the center. 1 - the center dot will be at the shooting origin." );
+//set #x337bed86a591eab73 0.2        		// "The ratio of how much your crosshair will be affected by the 3-d space roll of the muzzle of the gun you are holding. 0 - not affected, 1 - full roll, 1+ - exaggerate roll." );
+//set #x37ed8dfd703a0f4c8 0.9   		//"How fast your crosshair will expand to to match new crosshair origin positions. 0.1 - slowly , 1 - not-inhibited" );
+//set #x37e4d72dea9b7008b 0.9			//"How fast your crosshair will contract to match new crosshair origin positions. 0.1 - slowly , 1 - not-inhibited" );
+//set #x3395e899579ddd6ea 15
+
+//viewmodel movement world spring
+set #x379c46ad075e3cc54 0.5
+set #x387b14a2d59eeb451 1.0
+set #x36797dd41fc3aeb8b 0.1
+
+//fixes strafe offsets to use normalize speeds so offsets are predicatble 
+set #x3d9cb9083beb0ab6 1
+
+//sets the weapon's <ADS settings> "weapon zoom X-offset" and <CSS Cleint Offests>/static/stant/ADS offset/"offset Forward" to not move the client correction pivot points.  Leads to more stable ADS recoil and movement.
+//CODY: "1" sabalizes motion too much by moving the pivot point back into camera space.  2 will move it inline with the camera which should work a lot better
+set #x33eb94d6759cf624d 2
+
+
+//sets the curve that the sway is blended over when going from hip to ADS
+//NOTE: 3 worked best to fix this jira: https://dev.activision.com/jira/browse/IW9-439519
+//1 works best for all weapons by default
+set #x37b1f59e4196da0ef 1
+
+//set #x38e5820f61d8641be 0.6
+
+
+//idle motion when moving
+
+set #x3ff5f307b2cc19c5c 45
+set #x37fd78caefe1bb73a 0.5
+set #x31e464d6fe787181e 150
+set #x39bfa7d4a05cd386c 1
+set #x380f309db8ef6b23d 800
+set #x3ab423adb7ef716a6 400
+
+
+//cg_moveTurnCamera_enable 1
+//cg_moveTurnCamera_turnRate_min
+//cg_moveTurnCamera_turnRate_max
+//cg_moveTurnCamera_speed_min
+//cg_moveTurnCamera_speed_max
+//cg_moveTurnCamera_forceAngle => debug only
+//cg_moveTurnCamera_blendOut_rate
+//cg_moveTurnCamera_blendIn_rate
+//cg_moveTurnCamera_maxAngle
+//cg_moveTurnCamera_pivotHeight => set #x3fa188bb584287b3 0 to disable view translation
+

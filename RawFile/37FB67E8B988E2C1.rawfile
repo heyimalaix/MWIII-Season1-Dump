@@ -1,0 +1,2 @@
+// exec the project agnostic common
+exec default_common.cfg

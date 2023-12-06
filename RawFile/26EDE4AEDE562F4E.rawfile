@@ -1,0 +1,114 @@
+set #x3cbc1258340670c35 230
+set #x3ca13f65e1901014e 130
+
+//mantle on////////////////////
+
+set #x37844a125b3d574fd 1
+
+set #x32e7d4b554499bfbb 24
+set #x32e5a415544736205 58
+
+set #x32473a7bcee6d446a 0.4
+set #x32496b1bcee93a220 0.9
+
+set #x398448f9f2796a9f6 58
+set #x39867819f27bcd2e4 72
+
+set #x341231ea48d3d39db 0.9
+set #x3410014a48d16dc25 1.23
+
+set #x3abf12c978e4a84cc 0.75
+
+//need unique versions of thesee for mantle on!!!
+//set #x384cd2c66f4bb84d 0.9  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+//set #x313dc3c3b2e65a0e3 -40  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+
+// Mantle on land
+set #x3df0dea213af5d6f8 0.4  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x356e008e1532bd92e -10  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3a867d0181e07bd31 0.4  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x38246fba70fed26df -9  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x33c0b07cceca5aa5a 0.5	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x3d4109ad42979bb7c -7  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3198356b8255df312 0.5	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x3389f345fff1ad054 -6  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3881a92f33d71241f 0.6 	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x3cfa17f35dc091639 -5  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3ba8398a4ff11416d 0.75 	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x34ca04f89ee5e2d03 18  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+
+// Mantle from the swimming state
+set #x310fd14474ee63668 24
+set #x311200a474f0c6822 58
+
+set #x320ad7c5d57d6fc69 1.1
+set #x3208a6e5d57b095e7 1.6
+
+set #x3e54de22b9f44c74f 58
+set #x3e52ad02b9f1e5801 72
+
+set #x3ee9c8ee9702f9466 1.6
+set #x3eec0a0e9705836b4 1.6
+
+set #x31e42881428db8751 0.75
+
+set #x3e9197a80fc8f5001 0.4  	//Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x3cb4544abed6a68ef -10  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3c71b2112fb56192c 0.4  	//Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x330c77803246683ea -9  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3aa8e37ceb8c8570f 0.5	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x39c08bc71d8b6efe9 -9  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x34a8df7cd01257ea7 0.5	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x3ea4047bfe21d90e1 30  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3cd98b9b5a1205636 0.6 	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x330002c6d73048d30 30  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x34e7914014679a400 0.6 	//Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x33df40bfd03c69796 35  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+
+
+
+//mantle over///////////////////
+set #x376a5bd8f89adf7eb 0.5
+set #x37681d38f8985ad95 0.9
+
+//set #x384cd2c66f4bb84d 0.3  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+//set #x313dc3c3b2e65a0e3 -20  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+
+// Mantle on land
+set #x33f4cb6a84efb8283 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x379c80468f781705 -20  	    //Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3b891acf90acc24ca 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x386e565f49dfe17ac -17  	    //Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x374b0cab1621c4ef5 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x35e9871cfd9ca662b -15  	    //Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x395797b7d13b1b4ed 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x3310797e52a9dac83 -10  	    //Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3d2547f1d28d3f448 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x364b2558bdf73957e -5 	    //Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+
+// Mantle from the swimming state
+set #x3d6abdfc17ded86c0 0.5
+set #x3d688f5c17dc76f6a 0.9
+
+set #x368c5433d22e8d0e 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x33cc4544970ebc568 -20  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3ec22ba5fb06d79db 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x3b59d89ca5817cb1d -17  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x36ae945c53c808604 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x3520c5f3321356282 -15  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x3be6445e8199072ac 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x32945fe53288fd96a -10  	//Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+set #x369e455b84fcbc86d 0.2  	    //Indicates where we place the bspline control point between the start and the ledge postions.  Rangel is 0-1 where a value of 0 would have the same xy coordinates of the 
+set #x3a3440007e517cc03 -5 	    //Indicates how many units above the ledge positions we could place the bspline control point between the start and the ledge positions
+
+set #x3151bf9db9843871a 8				//indicates how many units we rise the third control point above the ledge position when mantling over.  When mantling up, the third control point is the ledge position
+set #x339d411263331b090 0.6 		//Indicates where we place the bslpine control point between the ledge and the end positons( only used for mantle over, range is 0-1, where a value of 0 would have...
+set #x3ecf30ffe4290466 0 	//Indicates how many units above the ledge position we would place the bspline control point between the ledge and the edge positions
+
+set #x3c39f1677288c012e 0.0
+
+set #x32e7feeabbc6d9aa1 -32 //indicates how tall a ledge must be in order to play ledge hang instead of overhang
+set #x3dee2615322e2a94a 0.75
+
+
+set #x399632e8c7539a7f 1 //faster mantle when sprinting, even faster when super sprinting

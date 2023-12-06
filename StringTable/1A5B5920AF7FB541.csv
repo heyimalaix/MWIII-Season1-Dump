@@ -1,0 +1,5 @@
+reqAdd,,chest,1,0
+chance,cachePoint,100,,
+chance,cache,90,,
+item,br_loot_cache,80,,
+item,br_loot_cache_lege,20,,

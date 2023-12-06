@@ -1,0 +1,600 @@
+{
+	"DisabledVisibility": {
+		"Categories": [
+			"Singleplayer",
+			"Cooperative"
+		],
+		"Conditions": [			
+			"VISIBILITY_CONDITIONS.IsOverlayActive",
+			"VISIBILITY_CONDITIONS.IsSessionInvalid",
+			"VISIBILITY_CONDITIONS.BRMatchCountdown",
+			"VISIBILITY_CONDITIONS.IsSkyDiving",
+			"VISIBILITY_CONDITIONS.PrematchPeriod",
+			"VISIBILITY_CONDITIONS.ActionCam",
+			"VISIBILITY_CONDITIONS.InLocationSelector",
+			"VISIBILITY_CONDITIONS.UsingWheelson",
+			"VISIBILITY_CONDITIONS.UsingApache",
+			"VISIBILITY_CONDITIONS.UsingMobileTurret",
+			"VISIBILITY_CONDITIONS.InPOTG",
+			"VISIBILITY_CONDITIONS.MatchCountdown",
+			"VISIBILITY_CONDITIONS.OutOfBounds",
+			"VISIBILITY_CONDITIONS.InBirdsEyeCP",
+			"VISIBILITY_CONDITIONS.UsingComputer",
+			"VISIBILITY_CONDITIONS.IsWeaponAPC",
+			"VISIBILITY_CONDITIONS.IsMediaDemo",
+			"VISIBILITY_CONDITIONS.IsTerrorist",
+			"VISIBILITY_CONDITIONS.PvpeActive",
+			"VISIBILITY_CONDITIONS.InLocationSelectorCP",
+			"VISIBILITY_CONDITIONS.ShowBink",
+			"VISIBILITY_CONDITIONS.IsInventoryOpen",
+			"VISIBILITY_CONDITIONS.IsSPPlayerDead",
+			"VISIBILITY_CONDITIONS.IsDpadPopupOpen",
+			"VISIBILITY_CONDITIONS.IsChyronOn",
+			"VISIBILITY_CONDITIONS.IsChyronOnCp",
+			"VISIBILITY_CONDITIONS.IsDevDamage",
+			"VISIBILITY_CONDITIONS.InOverwatchCP",
+			"VISIBILITY_CONDITIONS.SpectatingRemoteKillstreakCP",
+			"VISIBILITY_CONDITIONS.UsingApacheCP",
+			"VISIBILITY_CONDITIONS.UsingCruiseMissileCP",
+			"VISIBILITY_CONDITIONS.InKillstreakOverlays",
+			"VISIBILITY_CONDITIONS.UsingRCDinCP",
+			"VISIBILITY_CONDITIONS.UsingScoutDroneCP",
+			"VISIBILITY_CONDITIONS.IsEMPDroneActiveCP",
+			"VISIBILITY_CONDITIONS.UsingRemoteKillstreakCP",
+			"VISIBILITY_CONDITIONS.UsingSmartPhoneCP",
+			"VISIBILITY_CONDITIONS.UsingContactsCopyCP",
+			"VISIBILITY_CONDITIONS.UsingTabletUSB",
+			"VISIBILITY_CONDITIONS.UsingTabletScanner",
+			"VISIBILITY_CONDITIONS.UsingJuggernautCP",
+			"VISIBILITY_CONDITIONS.UsingMobileTurretCp",
+			"VISIBILITY_CONDITIONS.InJavelinCP",
+			"VISIBILITY_CONDITIONS.EnemyDetonationDevice",
+			"VISIBILITY_CONDITIONS.IsBeingRevivedCP",
+			"VISIBILITY_CONDITIONS.IsVotingCP",
+			"VISIBILITY_CONDITIONS.IsVoteSysCP",
+			"VISIBILITY_CONDITIONS.IsSpectating",
+			"VISIBILITY_CONDITIONS.IsSnakeCamActive",
+			"VISIBILITY_CONDITIONS.UsingBradleyCP",
+			"VISIBILITY_CONDITIONS.IsVehicleDriverCP",
+			"VISIBILITY_CONDITIONS.VehicleTechnicalCP",
+			"VISIBILITY_CONDITIONS.ISSkyDivingCP",
+			"VISIBILITY_CONDITIONS.Flashbanged"]
+	},
+	"CommonFields": {
+		"alpha": {
+			"type": "float",
+			"default": 0.0
+		},
+		"scale": {
+			"type": "float",
+			"default": 0.0
+		},
+		"isHidden": {
+			"type": "bool",
+			"default": false
+		},
+		"showInGameTypes": {
+			"type": "array",
+			"default": [
+				"br",
+				"mp"
+			]
+		}
+	},
+	"Modules": {
+		"MatchStatusScores": {
+			"1": {
+				"class": "MatchStatusScores",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_enemy_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"Minimap": {
+			"1": {
+				"class": "Minimap",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_enemy_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "MinimapStyle",
+						"2": "MinimapRotation"
+					}
+				}
+			},
+			"optionIdToWidgetProperty": {
+				"MinimapStyle": "_mapStyle",
+				"MinimapRotation": "_rotateStyle"
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"WeaponStatusInfo": {
+			"1": {
+				"class": "WeaponStatusInfot10",
+				"package": "ui.generated.widgets.ingame",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "HideWeaponUI"
+					}
+				}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"ReloadIndicator": {
+			"1": {
+				"class": "ReloadIndicator",
+				"package": "ui.generated.widgets.ingame",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "ShowReloadIndicator"
+					}
+				}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"StreakList": {
+			"1": {
+				"class": "StreakList",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {
+					"options": {
+						"1": "EnableKillstreakMinimalMode"
+					}
+				}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"ChatBox": {
+			"1": {
+				"class": "ChatBox",
+				"package": "ui.generated.widgets.ingame",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"ObituaryContainer": {
+			"1": {
+				"class": "ObituaryContainer",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"Objectives": {
+			"1": {
+				"class": "Objectives",
+				"package": "ui.generated.widgets",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"GameMessageHUD": {
+			"1": {
+				"class": "GameMessageHUD",
+				"package": "ui.generated.widgets.ingame",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"FFAScoreHUD": {
+			"1": {
+				"class": "FFAScoreHUD",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"CurrentObjective": {
+			"1": {
+				"class": "CurrentObjective",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"MPLowerMessage": {
+			"1": {
+				"class": "MPLowerMessage",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"PrototypeLayer": {
+			"1": {
+				"class": "PrototypeLayer",
+				"package": "ui.generated.widgets",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"TeamStatusContainer": {
+			"1": {
+				"class": "TeamStatusContainer",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"MatchStatusScores": {
+			"1": {
+				"class": "MatchStatusScores",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"TalkersList": {
+			"1": {
+				"class": "TalkersList",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		},
+		"GenericProgress": {
+			"1": {
+				"class": "GenericProgress",
+				"package": "ui.generated.widgets.ingame.mp",
+				"icon": "ui_icon_faction_nato_friendly_small",
+				"description": "",
+				"selectedIcon": 2,
+				"optionalFields": {},
+				"variantGroup": {}
+			},
+			"displayName": "LUA_MENU/MINIMAP_ERROR",
+			"visibilityCondition": [
+				"VISIBILITY_CONDITIONS.NormalGameplay",
+				"VISIBILITY_CONDITIONS.IsVehicleDriver",
+				"VISIBILITY_CONDITIONS.UsingLittleBirdMGAsGunner",
+				"VISIBILITY_CONDITIONS.UsingBradleyMP",
+				"VISIBILITY_CONDITIONS.IsVehiclePassenger",
+				"VISIBILITY_CONDITIONS.UsingCargoTruckMG",
+				"VISIBILITY_CONDITIONS.CounterUAVJammed",
+				"VISIBILITY_CONDITIONS.Flashbanged",
+				"VISIBILITY_CONDITIONS.OnSpectateScreen",
+				"VISIBILITY_CONDITIONS.Spectating",
+				"VISIBILITY_CONDITIONS.SpectatingHardcore",
+				"VISIBILITY_CONDITIONS.UsingMobileTurret",
+				"VISIBILITY_CONDITIONS.UsingJuggernaut",
+				"VISIBILITY_CONDITIONS.UsingWheelson",
+				"VISIBILITY_CONDITIONS.UsingKillstreakPhone"
+			]	
+		}
+	}
+}

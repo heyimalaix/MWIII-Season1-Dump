@@ -1,0 +1,20 @@
+#define N_FRENZIED_GUARD_TIME_LVL0 10 
+#define N_FRENZIED_GUARD_PULL_RADIUS 1000
+#define FRENZIED_GUARD_MAX_ENT_THROTTLE 2
+
+#define FRENZIED_GUARD_1P_EFFECT "vfx/jup/ob/gameplay/zm_weapons/vfx_fld_frenzied_guard_camera.vfx"
+#define FRENZIED_GUARD_1P_EFFECT_LABEL "frenzied_guard_1p_effect"
+#define FRENZIED_GUARD_1P_EFFECT_TAG "j_head"
+
+#define FRENZIED_GUARD_3P_HEAD_EFFECT "vfx/jup/ob/gameplay/zm_weapons/vfx_fld_frenzied_guard_head_3p.vfx"
+#define FRENZIED_GUARD_3P_HEAD_EFFECT_LABEL "frenzied_guard_3p_head_effect"
+#define FRENZIED_GUARD_3P_HEAD_EFFECT_TAG "j_head"
+
+#define FRENZIED_GUARD_3P_TORSO_EFFECT "vfx/jup/ob/gameplay/zm_weapons/vfx_fld_frenzied_guard_torso_3p.vfx"
+#define FRENZIED_GUARD_3P_TORSO_EFFECT_LABEL "frenzied_guard_3p_torso_effect"
+#define FRENZIED_GUARD_3P_TORSO_EFFECT_TAG "j_spine4"
+
+#define CONST_FRENZIED_GUARD_REF "super_frenzied_guard"
+
+#define N_FRENZIED_GUARD_BASE_HEAL_PERCENT 0.25
+#define N_FRENZIED_GUARD_BASE_HEAL_SCALE_VALUE 50

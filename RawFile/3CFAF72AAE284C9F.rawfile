@@ -1,0 +1,1027 @@
+(function (window) {
+    const PLATFORM = WK.getProgramType(),
+        LANGUAGE = WK.getEnvVar('language') || 'english',
+        LANGUAGE_CODE = mapLanguageToLocaleCode(LANGUAGE),
+        COUNTRY_CODE = WK.getEnvVar('location_country_code') || 'US',
+        NA_COUNTRIES = {
+            US: 'US',
+            CA: 'CA',
+            MX: 'MX',
+        },
+        EU_COUNTRIES = {
+            AT: 'AT',
+            BB: 'BB',
+            BE: 'BE',
+            BG: 'BG',
+            BY: 'BY',
+            CH: 'CH',
+            CZ: 'CZ',
+            DE: 'DE',
+            DK: 'DK',
+            EE: 'EE',
+            ES: 'ES',
+            FI: 'FI',
+            FR: 'FR',
+            GB: 'GB',
+            GE: 'GE',
+            GR: 'GR',
+            IS: 'IS',
+            IT: 'IT',
+            LU: 'LU',
+            NL: 'NL',
+            NO: 'NO',
+            PL: 'PL',
+            PT: 'PT',
+            RO: 'RO',
+            RS: 'RS',
+            RU: 'RU',
+            SI: 'SI',
+            SK: 'SK',
+            UA: 'UA',
+        },
+        IS_PS4 = PLATFORM === 'PS4',
+        isCrossConfirm = WK.isCrossConfirm(),
+        // Possible PAGE_CONTEXT values: eula, eula_software, eula_codaccount, eula_codaccount_force, eula_reaccess_software, eula_reaccess_pii, eula_reaccess_codaccount_tou, eula_reaccess_codaccount_pp
+        PAGE_CONTEXT = WK.getEnvVar('page_context') || 'eula_codaccount',
+        // PAGE_CONTEXT = "eula_reaccess",
+        IS_LOCAL = window.location.href.indexOf('/motd-t9/') >= 0 ? true : false;
+    (IS_4K = WK.getEnvVar('resolution') === '0'),
+        (SCROLL_COMPLETE = {}),
+        (ACCEPTANCES = {}),
+        (IS_KO = WK.getEnvVar('is_korean_account') || false),
+        (BUTTONS = ['decline', 'accept']),
+        (REGION_AUX_ARTIFACT_KEYS = ['pii']),
+        (ARTIFACT_TABNAME_MAP = {
+            eula: 'eula',
+            privacyPolicy: 'privacyPolicy',
+            tou: 'tou',
+        }),
+        (EULA = {}),
+        // default to 2 locally === battlenet
+        (ACCOUNT_TYPE = WK.getEnvVar('account_type') || 2);
+    //nodes
+    (ackBtn = document.getElementById('accept')),
+        (declineBtn = document.getElementById('decline')),
+        (CONTROL_BTNS = document.getElementById('controls').children),
+        (SCROLL_WINDOW = document.getElementById('acceptances-wrapper')),
+        (SCROLL_WINDOW_HEIGHT = SCROLL_WINDOW.offsetHeight),
+        (controllerHints = document.querySelectorAll('.controller-hints')),
+        (TITLE_CONTAINER = document.querySelector('.header .artifact-nav-wrapper .active-artifact-title p')),
+        (SCROLL_WARNING = document.querySelector('.controls-container .scroll-warning')),
+        (SCROLL_OVERLAY = document.querySelector('.content-container .scroll-overlay'));
+    STEP_NODES = null;
+
+    (CONTINENT = undefined),
+        (IS_SONY = PLATFORM === 'PS4' || PLATFORM === 'PS5'),
+        (callCount = 0),
+        (PAGE_CONTEXT_ARTIFACT_MAP = {
+            eula_codaccount_force: ['tou', 'privacyPolicy'],
+            eula_codaccount: ['eula', 'tou', 'privacyPolicy'],
+            eula_software: ['eula', 'pii', 'tou', 'privacyPolicy'],
+            eula_reaccess_software: ['eula'],
+            eula_reaccess_pii: ['pii'],
+            eula_reaccess_codaccount_tou: ['tou'],
+            eula_reaccess_codaccount_pp: ['privacyPolicy'],
+
+            eula_codaccount_beta: ['tou', 'privacyPolicy'],
+            eula_software_beta: ['eula'],
+            eula_reaccess_software_beta: ['eula'],
+            eula_reaccess_pii_beta: ['pii'],
+            eula_reaccess_codaccount_tou_beta: ['tou'],
+            eula_reaccess_codaccount_pp_beta: ['privacyPolicy'],
+        }),
+        (IS_REACCESS = PAGE_CONTEXT.indexOf('reaccess') >= 0);
+
+    const PC = 'PC';
+    const PS = 'PS4';
+    const XB = 'XBOXSX';
+
+    WK.printLine(`PAGE CONTEXT : ${PAGE_CONTEXT}`);
+
+    EULA.ACCEPTED_ARTIFACTS = {};
+    (EULA.CURRENT_ARTIFACT_MAP = {}),
+        (BTN_MAP = {
+            1: 'left',
+            2: 'right',
+            3: 'up',
+            4: 'down',
+            5: 'primary',
+            6: 'secondary',
+            7: 'xbX_psSquare',
+            8: 'xbY_psTriangle',
+            9: 'lb',
+            10: 'rb',
+            11: 'left_trigger',
+            12: 'right_trigger',
+            13: 'lStick_pressed',
+            14: 'rStick_pressed',
+        });
+
+    let TAB_INDEX = 0,
+        ACTIVE_BUTTON_INDEX = 1,
+        isExpanded = false,
+        TABS = [],
+        controllerType = PC,
+        scrollInterval = undefined,
+        lastInputDevice = undefined,
+        lastInputGamepad = undefined,
+        mouseDown = false,
+        IS_SCROLL_TEXT_ACTIVE = false,
+        interval = 0;
+    (isArabic = false), (mouseDown = false);
+
+    function checkLastInputs() {
+        lastInputDevice = WK.lastInputDevice();
+        lastInputGamepad = WK.lastInputGamepad();
+        WK.handleInputDevice(lastInputDevice, lastInputGamepad);
+        // WK.handleInputDevice(0, 2);
+    }
+
+    function populateCurrArtifactTitle() {
+        let currentTab = TABS[TAB_INDEX],
+            title = WK.i18n[LANGUAGE][currentTab] ? WK.i18n[LANGUAGE][currentTab] : ARTIFACT_TABNAME_MAP[currentTab];
+        TITLE_CONTAINER.textContent = title;
+    }
+
+    function setContinent(countryCode) {
+        if (IS_SONY) {
+            if (WK.getEnvVar('is_sony_na')) {
+                return 'na';
+            } else if (WK.getEnvVar('is_sony_eu')) {
+                return 'eu';
+            }
+            if (IS_LOCAL) {
+                if (NA_COUNTRIES[countryCode]) {
+                    return 'na';
+                } else if (EU_COUNTRIES[countryCode]) {
+                    return 'eu';
+                }
+            } else {
+                return;
+            }
+        }
+        if (!NA_COUNTRIES[countryCode] && !EU_COUNTRIES[countryCode]) return;
+    }
+
+    if (WK.isRtl(LANGUAGE)) {
+        isArabic = true;
+        document.body.setAttribute('dir', 'rtl');
+        document.body.classList.add('arabic');
+    }
+
+    WK.Telescope_CB_ControllerButtonEvent = (eventType, buttonType, buttonId) => {
+        //eventType 0 = release, 1 = press
+        if (!mouseDown) {
+            handleInput(BTN_MAP[eventType] || eventType, buttonType, buttonId);
+        }
+    };
+
+    function Telescope_CB_LoseFocus() {
+        handleFocus('loseFocus');
+    }
+
+    function Telescope_CB_GainFocus() {
+        handleFocus('gainFocus');
+    }
+
+    window.Telescope_CB_GainFocus = Telescope_CB_GainFocus;
+    window.Telescope_CB_LoseFocus = Telescope_CB_LoseFocus;
+    window.Telescope_CB_ControllerButtonEvent = WK.Telescope_CB_ControllerButtonEvent;
+    window.Telescope_CB_LastInputDeviceUpdated = function Telescope_CB_LastInputDeviceUpdated(device, gamepad) {
+        WK.handleInputDevice(device, gamepad);
+    };
+
+    window.Telescope_CB_TextScalingChanged = function Telescope_CB_TextScalingChanged(fontScaling) {
+        setBodyFont(fontScaling);
+    };
+
+    const setBodyFont = (fontScaling = 1) => {
+        let body = document.getElementsByTagName('body')[0];
+        body.style.fontSize = `calc(1rem * ${fontScaling})`;
+    };
+
+    function getAcceptedArtifactAndVersion(section, key) {
+        if (window.Telescope_API_GetStorageValue) {
+            return Telescope_API_GetStorageValue(section, key);
+        }
+        // placeholder for now
+        return key, 0;
+    }
+
+    function sendAcceptedArtifactAndVersion(artifact, version, allCompleted) {
+        if (allCompleted) {
+            WK.telescopeLoadComplete();
+        }
+        return Telescope_API_AcceptEULA(artifact, version, allCompleted);
+    }
+
+    function setCurrentArtifactConfig() {
+        // CURRENT_ARTIFACT_DATA is defined in the JSON data that is being called.
+        return CURRENT_ARTIFACT_DATA;
+    }
+
+    function mapLanguageToLocaleCode(language) {
+        return WK.languageToLocale[language] ? WK.languageToLocale[language] : 'en';
+    }
+
+    function playSoundForUi(soundName = 'ui_hilite') {
+        if (typeof Telescope_API_PlaySound !== 'undefined') {
+            Telescope_API_PlaySound(soundName);
+        }
+    }
+
+    const showBody = () => {
+        let body = document.getElementsByTagName('body')[0];
+        body.classList.remove('hide-body');
+    };
+
+    const loadLocaleJsonScript = (locale = 'en', platform = 'PC', successCallback) => {
+        var script = document.createElement('script');
+
+        script.src = IS_LOCAL ? `regions/${platform.toLowerCase()}/${locale}/eula.json` : `${platform.toLowerCase()}/eula.json`;
+        document.body.appendChild(script);
+
+        script.onload = () => {
+            successCallback();
+        };
+        script.onerror = (e) => {
+            if (callCount < 5) {
+                WK.printLine(`Error loading source ${script.src}. Defaulting to english`);
+                loadLocaleJsonScript('en', 'pc', successCallback);
+                callCount++;
+            } else {
+                WK.printLine(`Error loading source ${script.src}. Quitting JSON load`);
+            }
+        };
+    };
+
+    WK.handleInputDevice = (device, gamepad) => {
+        if (device === 0) {
+            controllerType = gamepad == 2 ? XB : gamepad == 3 ? PS : PC;
+            addButtonHint();
+        } else if (device == 1 || device == 2 || device == 3) {
+            controllerType = PC;
+            removeButtonHint();
+        }
+
+        if (controllerType === PS) {
+            document.body.classList.remove('is-kbm');
+            controllerHints.forEach((hint) => {
+                hint.classList.remove('is-pc');
+            });
+            setControllerHintSvg(controllerType);
+        } else if (controllerType === XB) {
+            document.body.classList.remove('is-kbm');
+            controllerHints.forEach((hint) => {
+                hint.classList.remove('is-pc');
+            });
+            setControllerHintSvg(controllerType);
+        } else {
+            document.body.classList.add('is-kbm');
+            // This is a hack to cancel mouse scroll event when device changed back to mouse.
+            SCROLL_WINDOW.style.overflow = 'hidden';
+            setTimeout(() => {
+                SCROLL_WINDOW.style.overflow = 'auto';
+            }, 16);
+
+            controllerHints.forEach((hint) => {
+                hint.classList.add('is-pc');
+            });
+        }
+    };
+
+    const addButtonHint = () => {
+        let scrollContainer = document.getElementById('acceptances-wrapper'),
+            scrollOverlay = document.getElementsByClassName('scroll-overlay');
+        scrollContainer.classList.add('is-controller');
+        scrollOverlay[0].classList.add('is-controller');
+    };
+
+    const removeButtonHint = () => {
+        let scrollContainer = document.getElementById('acceptances-wrapper'),
+            scrollOverlay = document.getElementsByClassName('scroll-overlay');
+        scrollContainer.classList.remove('is-controller');
+        scrollOverlay[0].classList.remove('is-controller');
+    };
+
+    const setFontFamily = () => {
+        const LANG_FONT_MAP = {
+            english: 'Hitmarker Text',
+            english_safe: 'Hitmarker Text',
+            french: 'Hitmarker Text',
+            german: 'Hitmarker Text',
+            italian: 'Hitmarker Text',
+            spanish: 'Hitmarker Text',
+            spanishna: 'Hitmarker Text',
+            portuguese: 'Hitmarker Text',
+            brazilianportuguese: 'Hitmarker Text',
+            czech: 'Hitmarker Text',
+            polish: 'Hitmarker Text',
+            polish_full: 'Hitmarker Text',
+            polish_partial: 'Hitmarker Text',
+            russian: 'Bio Sans Cyr C Light',
+            russian_full: 'Bio Sans Cyr C Light',
+            russian_partial: 'Bio Sans Cyr C Light',
+            arabic: 'Cairo',
+            arabic_partial: 'Cairo',
+            simplified_chinese: 'Noto Sans SC',
+            traditional_chinese: 'Noto Sans TC',
+            japanese: 'Noto Sans JP',
+            japanese_full: 'Noto Sans JP',
+            japanese_partial: 'Noto Sans JP',
+            korean: 'Noto Sans KR',
+            korean_full: 'Noto Sans KR',
+            korean_partial: 'Noto Sans KR',
+            thai: 'Pridi',
+        };
+
+        let fontFamily = 'Hitmarker Text';
+
+        if (LANG_FONT_MAP[LANGUAGE]) {
+            fontFamily = LANG_FONT_MAP[LANGUAGE];
+        }
+
+        WK.printLine(`PICK FONT: ${fontFamily} for ${LANGUAGE}`);
+        document.body.style.fontFamily = fontFamily;
+    };
+
+    const setBodyLang = (lang = 'en') => {
+        document.documentElement.setAttribute('lang', lang);
+    };
+    function throttle(cb, delay = 250) {
+        let shouldWait = false;
+
+        return (...args) => {
+            if (shouldWait) return;
+
+            cb(...args);
+            shouldWait = true;
+            setTimeout(() => {
+                shouldWait = false;
+            }, delay);
+        };
+    }
+
+    //init
+    const init = () => {
+        WK.printLine('INIT EULA LOGIC');
+        CONTINENT = setContinent(COUNTRY_CODE);
+        if (WK.is4k()) {
+            document.documentElement.classList.add('is4k');
+        }
+        loadLocaleJsonScript(LANGUAGE_CODE, PLATFORM, handleLoadSuccess);
+        let fontScalingOnInit = WK.getTextScaling();
+        setBodyFont(fontScalingOnInit);
+        setFontFamily();
+        setBodyLang(LANGUAGE_CODE);
+    };
+
+    const startEula = () => {
+        WK.printLine('STARTING EULA ');
+        setScreen();
+        setBtnId(PAGE_CONTEXT);
+        setBtnCopy('controls');
+        setFooterCopy();
+        setDisclaimerCopy();
+        clickHandlers();
+        mouseHandlers();
+        scrollHandlers();
+        if (!IS_REACCESS) {
+            toggleScrollText(true);
+        } else {
+            document.querySelector('.header').classList.add('is-reaccess');
+        }
+        checkLastInputs();
+        if (PLATFORM === 'PC') {
+            document.querySelector('.accept').classList.add('kbm');
+        }
+        populateCurrArtifactTitle();
+        setActiveStep(0, STEP_NODES);
+        if (typeof Telescope_API_LoadComplete !== 'undefined') {
+            Telescope_API_LoadComplete(true);
+            Telescope_API_SetDisplayMode(1);
+        } else {
+            WK.printLine('telescope not available');
+        }
+    };
+
+    const handleInput = (eventType, buttonType, buttonId) => {
+        let btn = BTN_MAP[buttonType];
+        if (typeof eventType === 'string') {
+            onPress(btn || eventType, buttonId);
+            return;
+        }
+        // eventType 0 = release, 1 = press
+        // passing in eventType for browser testing
+        if (eventType === 1) {
+            onPress(btn || eventType, buttonId);
+            // passing in eventType for browser testing
+        } else if (eventType === 0) {
+            onRelease(btn || eventType, buttonId);
+        }
+    };
+
+    const onPress = (btn, buttonId) => {
+        switch (btn) {
+            case 'up':
+                if (buttonId === 1103) {
+                    if (scrollInterval === undefined) {
+                        scrollInterval = setInterval(() => handleScroll(btn), 100);
+                    }
+                } else {
+                    toggleActiveBtn(ACTIVE_BUTTON_INDEX - 1, ACTIVE_BUTTON_INDEX, CONTROL_BTNS);
+                }
+                break;
+            case 'down':
+                if (buttonId === 1104) {
+                    if (scrollInterval === undefined) {
+                        scrollInterval = setInterval(() => handleScroll(btn), 100);
+                    }
+                } else {
+                    toggleActiveBtn(ACTIVE_BUTTON_INDEX + 1, ACTIVE_BUTTON_INDEX, CONTROL_BTNS);
+                }
+                break;
+            case 'left':
+                break;
+            case 'right':
+                break;
+            case 'primary':
+                if (isCrossConfirm || !IS_SONY) {
+                    clickActiveBtn('controls');
+                } else if (IS_REACCESS) {
+                    quitEula();
+                }
+                break;
+            case 'secondary':
+                if (!isCrossConfirm && IS_SONY) {
+                    clickActiveBtn('controls');
+                } else if (IS_REACCESS) {
+                    quitEula();
+                }
+                break;
+            case 'xbX_psSquare':
+                if (PLATFORM === 'PC') return;
+                if (!IS_REACCESS) quitEula();
+                break;
+            default:
+                WK.printLine('NO SUCH BTN EVENT');
+        }
+    };
+
+    const onRelease = (btn) => {
+        switch (btn) {
+            case 'up':
+                interval = 0;
+                clearInterval(scrollInterval);
+                scrollInterval = undefined;
+                break;
+            case 'down':
+                interval = 0;
+                clearInterval(scrollInterval);
+                scrollInterval = undefined;
+                break;
+            default:
+                WK.printLine('NO SUCH BTN EVENT');
+        }
+    };
+
+    const clickActiveBtn = (containerId) => {
+        let el = document.getElementById(containerId),
+            activeEl;
+
+        for (btn of el.children) {
+            if (btn.classList.contains('active') && !IS_REACCESS) {
+                activeEl = btn;
+            }
+        }
+
+        if (activeEl) {
+            activeEl.click();
+        }
+    };
+
+    const switchTabs = () => {
+        let oldTab = TABS[TAB_INDEX];
+        if (TAB_INDEX + 1 >= TABS.length) {
+            // this is only really entered for local browser testing and eula_Reaccess
+            finishSession();
+            return;
+        }
+        document.getElementById(oldTab).classList.remove('active');
+        TAB_INDEX += 1;
+        setActiveStep(TAB_INDEX, STEP_NODES);
+        let newTab = TABS[TAB_INDEX];
+        document.getElementById(newTab).classList.add('active');
+        populateCurrArtifactTitle();
+        setDisclaimerCopy();
+        setScreen();
+    };
+
+    const accept = () => {
+        let version = ackBtn.getAttribute('data-artifact-version'),
+            key = ackBtn.getAttribute('data-artifact-key'),
+            isLastArtifact = false;
+
+        if (TAB_INDEX >= TABS.length - 1) isLastArtifact = true;
+        if (SCROLL_COMPLETE[TABS[TAB_INDEX]] || IS_REACCESS) {
+            ACCEPTANCES[TABS[TAB_INDEX]] = true;
+            WK.printLine('accepted artifact');
+            playSoundForUi('ui_select_confirm');
+            //acept eula
+            if (window.Telescope_API_AcceptEULA && !IS_REACCESS) {
+                sendAcceptedArtifactAndVersion(key, version, isLastArtifact);
+                if (isLastArtifact) {
+                    Telescope_API_SetDisplayMode(0);
+                }
+            }
+            // reset interval in case where user holds down RS
+            interval = 0;
+            switchTabs();
+            setBtnCopy('controls');
+            setAcceptAttributes();
+            if (!IS_REACCESS) {
+                toggleScrollText(true);
+            } else {
+                toggleScrollText(false);
+            }
+        }
+        return;
+    };
+
+    const setBtnCopy = (containerId) => {
+        let btns = document.getElementById(containerId),
+            currTab = TABS[TAB_INDEX];
+        for (btn of btns.children) {
+            let btnCopy = btn.dataset.btnCopy,
+                id = btn.getAttribute('id'),
+                copy = document.querySelector(`#${id} .btn-copy`);
+            if (id === 'accept' && currTab === 'privacyPolicy' && btnCopy !== 'continue') {
+                copy.textContent = WK.i18n[LANGUAGE] ? WK.i18n[LANGUAGE].acknowledge : 'Acknowledge';
+            } else {
+                copy.textContent = WK.i18n[LANGUAGE] ? WK.i18n[LANGUAGE][btnCopy] : '';
+            }
+        }
+    };
+
+    const setBtnId = (pageContext) => {
+        if (pageContext.indexOf('reaccess') < 0) {
+            ackBtn.dataset.btnCopy = 'accept';
+            declineBtn.dataset.btnCopy = 'decline';
+        } else {
+            ackBtn.dataset.btnCopy = 'continue';
+            declineBtn.dataset.btnCopy = 'back';
+        }
+    };
+
+    const setFooterCopy = () => {
+        if (PLATFORM === 'PC') return;
+        if (!IS_REACCESS) {
+            let footerCopy = document.querySelector('.footer .footer-content .return');
+            footerCopy.textContent = WK.i18n[LANGUAGE] && WK.i18n[LANGUAGE].back ? WK.i18n[LANGUAGE].back : 'Back';
+        }
+    };
+
+    const setDisclaimerCopy = () => {
+        let activeTab = TABS[TAB_INDEX];
+        SCROLL_WARNING.textContent =
+            WK.i18n[LANGUAGE] && WK.i18n[LANGUAGE][`${activeTab}Disclaimer`]
+                ? WK.i18n[LANGUAGE][`${activeTab}Disclaimer`]
+                : 'PLEASE SCROLL THROUGH ALL AGREEMENT TO CONTINUE';
+    };
+
+    const setControllerHintSvg = (platform) => {
+        if (platform === PC) return;
+        let controls = document.querySelectorAll('.controller-hints .control');
+
+        controls.forEach((control) => {
+            let div = control.querySelector('.icon'),
+                buttonId = div.dataset.iconString;
+
+            if (buttonId === 'xbX_psSquare' && PLATFORM === 'PC') {
+                return;
+            }
+            let svgPath = WK.utils.getControllerButtonSvg(platform, isCrossConfirm, buttonId);
+            // need to handle the select separately since it will be seen on the on 2 places
+            if (buttonId === 'select') {
+                if (div.childElementCount > 0) {
+                    div.removeChild(div.firstChild);
+                }
+                div.append(svgPath.cloneNode(true));
+            } else if (IS_REACCESS && buttonId === 'xbX_psSquare') {
+                div.remove(svgPath);
+            } else {
+                if (div.childElementCount > 0) {
+                    div.removeChild(div.firstChild);
+                }
+                div.append(svgPath);
+            }
+        });
+    };
+
+    const setAcceptAttributes = () => {
+        let currTab = TABS[TAB_INDEX],
+            currTabEl = document.querySelector(`#acceptances-wrapper #${currTab}`),
+            currArtifactVersion = currTabEl.getAttribute('data-artifact-version'),
+            currArtifactKey = currTabEl.getAttribute('data-artifact-key');
+
+        ackBtn.dataset.artifactVersion = currArtifactVersion;
+        ackBtn.dataset.artifactKey = currArtifactKey;
+    };
+    const decline = () => {
+        ACCEPTANCES[TABS[TAB_INDEX]] = false;
+        playSoundForUi('ui_select_confirm');
+        if (IS_REACCESS) {
+            quitEula();
+            return;
+        }
+        WK.printLine('declining artifact');
+        if (!IS_SCROLL_TEXT_ACTIVE) {
+            toggleScrollText(true);
+        }
+    };
+
+    const quitEula = () => {
+        WK.printLine('quiting EULA...');
+        if (window.Telescope_API_SetDisplayMode) {
+            playSoundForUi('ui_select_back');
+            Telescope_API_SetDisplayMode(0);
+        }
+    };
+
+    const finishSession = () => {
+        for (let acceptance in ACCEPTANCES) {
+            if (!ACCEPTANCES[acceptance]) {
+                return false;
+            }
+        }
+        WK.printLine('FINISH SESSION');
+        quitEula();
+    };
+
+    const mouseUpListen = () => {
+        mouseDown = false;
+    };
+
+    const mouseDownListen = () => {
+        mouseDown = true;
+    };
+
+    const clickHandlers = () => {
+        document.getElementById('accept').addEventListener('click', (e) => {
+            if (e.target.classList.contains('disabled') || e.target.parentElement.classList.contains('disabled')) {
+                toggleScrollText(true);
+                e.target.classList.add('flash');
+                setTimeout(() => {
+                    e.target.classList.remove('flash');
+                }, 100);
+            } else {
+                accept();
+            }
+        });
+        document.getElementById('decline').addEventListener('click', (e) => {
+            decline();
+        });
+
+        document.querySelector('.header .back-button').addEventListener('click', (e) => {
+            quitEula();
+        });
+    };
+
+    const mouseMoveFocusStyleSheet = document.createElement('style');
+    document.head.appendChild(mouseMoveFocusStyleSheet);
+
+    const mouseHandlers = () => {
+        document.getElementById('accept').addEventListener('mouseover', (e) => {
+            toggleActiveBtn(0, 1, CONTROL_BTNS);
+        });
+        document.getElementById('decline').addEventListener('mouseover', (e) => {
+            toggleActiveBtn(1, 0, CONTROL_BTNS);
+        });
+
+        document.getElementById('accept').addEventListener('mouseleave', (e) => {
+            document.getElementById('accept').classList.remove('active');
+        });
+
+        document.getElementById('decline').addEventListener('mouseleave', (e) => {
+            document.getElementById('decline').classList.remove('active');
+        });
+
+        SCROLL_WINDOW.addEventListener('mousedown', mouseDownListen);
+        SCROLL_WINDOW.addEventListener('mouseup', mouseUpListen);
+    };
+
+    const toggleScrollText = (showText) => {
+        let banner = document.querySelector('.controls-container .scroll-warning');
+        let currArtifact = document.querySelector('#acceptances-wrapper .acceptance.active');
+        if (!showText) {
+            banner.classList.remove('active');
+            IS_SCROLL_TEXT_ACTIVE = false;
+        } else {
+            if (!banner.classList.contains('active')) {
+                banner.classList.add('active');
+                currArtifact.classList.add('active-banner');
+                IS_SCROLL_TEXT_ACTIVE = true;
+            }
+        }
+    };
+
+    const scrollHandlers = () => {
+        SCROLL_WINDOW.addEventListener('scroll', (e) => {
+            //scrollHeight - 1 px offset for sizes on browser
+            if (SCROLL_WINDOW.offsetHeight + 4 + SCROLL_WINDOW.scrollTop >= SCROLL_WINDOW.scrollHeight - 1) {
+                ackBtn.classList.remove('disabled');
+                if (ACTIVE_BUTTON_INDEX != 0) {
+                    ackBtn.classList.add('active');
+                }
+                ackBtn.focus();
+                toggleReadState(true);
+            }
+        });
+    };
+
+    const handleScroll = (btn) => {
+        interval++;
+        if (btn === 'up') {
+            if (interval > 35) {
+                SCROLL_WINDOW.scrollTo(0, 0);
+            } else {
+                SCROLL_WINDOW.scrollBy(0, 350 * -1);
+            }
+        } else if (btn === 'down') {
+            if (interval > 35) {
+                SCROLL_WINDOW.scrollTo(0, SCROLL_WINDOW.scrollHeight);
+            } else {
+                SCROLL_WINDOW.scrollBy(0, 350);
+            }
+        }
+    };
+
+    const toggleReadState = (isReady) => {
+        SCROLL_COMPLETE[TABS[TAB_INDEX]] = isReady;
+        toggleActiveBtn(0, 1, CONTROL_BTNS);
+        if (IS_SCROLL_TEXT_ACTIVE) {
+            toggleScrollText(false);
+        }
+    };
+
+    const setScreen = () => {
+        SCROLL_WINDOW.scrollTo(0, 0);
+        if (IS_REACCESS) {
+            return;
+        }
+        let activeArtifactContainerHeight = document.querySelector('.acceptance.active').offsetHeight;
+
+        if (!IS_REACCESS) {
+            ackBtn.classList.add('disabled');
+        } else {
+            ackBtn.classList.add('active');
+        }
+
+        if (activeArtifactContainerHeight < SCROLL_WINDOW_HEIGHT) {
+            ackBtn.classList.remove('disabled');
+            toggleReadState(false);
+        }
+    };
+
+    const getArtifactKeys = (artifacts) => {
+        return Object.keys(artifacts) || {};
+    };
+
+    const handleLoadSuccess = () => {
+        EULA.CURRENT_ARTIFACT_MAP = setCurrentArtifactConfig();
+        let artifactKeys = getArtifactKeys(EULA.CURRENT_ARTIFACT_MAP);
+        EULA.ACCEPTED_ARTIFACTS = buildConsoleAcceptedArtifactConfig(artifactKeys);
+        let artifactsList = buildArtifactList(EULA.ACCEPTED_ARTIFACTS, EULA.CURRENT_ARTIFACT_MAP);
+        WK.printLine(`List of artifacts to be shown to user ${[...artifactsList]}`);
+        if (artifactsList.length > 0) {
+            showBody();
+            let artifactData = getArtifactContents(artifactsList, EULA.CURRENT_ARTIFACT_MAP);
+            // let aggregatedData = aggregateArtifacts(artifactData);
+            if (artifactData) {
+                let articleWrapper = document.getElementById('acceptances-wrapper'),
+                    isFirst = true,
+                    index = 0;
+
+                TABS = setTabsArr(artifactData);
+                for (artifact in artifactData) {
+                    let section = createArticleEl(artifact, isFirst);
+                    index++;
+                    isFirst = false;
+                    articleWrapper.append(section);
+                }
+                populateUiEls(artifactData);
+                setAcceptAttributes();
+                if (IS_REACCESS) {
+                    document.getElementById('controls').classList.add('is-reaccess');
+                    document.querySelector('.back-button').classList.add('is-reaccess');
+                }
+                startEula();
+            }
+        } else {
+            WK.printLine('exiting EULA. All artifacts up to date');
+            if (window.Telescope_API_SetDisplayMode) {
+                sendAcceptedArtifactAndVersion('', '', true);
+                Telescope_API_SetDisplayMode(0);
+            }
+            document.body.style.background = 'transparent';
+            document.querySelectorAll('button').forEach((btn) => (btn.style.display = 'none'));
+        }
+    };
+
+    const buildConsoleAcceptedArtifactConfig = (artifacts) => {
+        let acceptedArtifacts = {};
+        artifacts.forEach((artifact) => {
+            acceptedArtifacts[artifact] = getAcceptedArtifactAndVersion('EULA', artifact);
+            WK.printLine(`THE ACCEPTED ARTIFACT ${artifact} : ${getAcceptedArtifactAndVersion('EULA', artifact)}`);
+        });
+        return acceptedArtifacts;
+    };
+
+    const buildArtifactList = (acceptedArtifacts, currentArtifacts) => {
+        let artifactsListToShow = [];
+        let filteredArtifacts = filterRegionArtifacts(currentArtifacts);
+        if (
+            PAGE_CONTEXT === 'eula_codaccount' ||
+            PAGE_CONTEXT === 'eula_codaccount_force' ||
+            PAGE_CONTEXT === 'eula_software' ||
+            IS_REACCESS
+        ) {
+            filteredArtifacts = filterPageContextArtifacts(PAGE_CONTEXT, filteredArtifacts);
+        }
+
+        for (const currentArtifact in filteredArtifacts) {
+            if (!acceptedArtifacts[currentArtifact] || PAGE_CONTEXT === 'eula_codaccount_force' || IS_REACCESS) {
+                artifactsListToShow.push(currentArtifact);
+                if (!IS_REACCESS) {
+                    document.querySelector('.artifact-nav-wrapper .artifact-step-wrapper').append(createItemStep());
+                }
+            } else {
+                if (
+                    filteredArtifacts[currentArtifact].version &&
+                    filteredArtifacts[currentArtifact].version > acceptedArtifacts[currentArtifact]
+                ) {
+                    artifactsListToShow.push(currentArtifact);
+                    document.querySelector('.artifact-nav-wrapper .artifact-step-wrapper').append(createItemStep());
+                }
+            }
+        }
+
+        STEP_NODES = document.querySelectorAll('.artifact-step-wrapper .artifact-step');
+        return artifactsListToShow;
+    };
+
+    const getArtifactContents = (artifactsList, currentArtifactMap) => {
+        let artifactDataMap = {};
+        artifactsList.forEach((artifact) => {
+            artifactDataMap[artifact] = currentArtifactMap[artifact];
+        });
+        return artifactDataMap;
+    };
+
+    const createArticleEl = (artifact, isFirst) => {
+        let section = document.createElement('section'),
+            article = document.createElement('article');
+
+        section.setAttribute('id', artifact);
+        section.setAttribute('class', 'acceptance');
+        if (isFirst) section.classList.add('active');
+        article.classList.add('acceptance-article');
+        if (LANGUAGE == 'thai') {
+            article.classList.add('is-thai');
+        }
+        section.appendChild(article);
+
+        return section;
+    };
+
+    const populateUiEls = (data) => {
+        let wrapper = document.querySelectorAll('section.acceptance');
+        wrapper.forEach((tab) => {
+            let tabId = tab.getAttribute('id');
+            let el = document.getElementById(tabId);
+            el.dataset.artifactKey = tabId;
+            el.dataset.artifactVersion = data[tabId].version;
+            let article = el.querySelector('article');
+            article.innerHTML = data[tabId].text;
+
+            if (IS_SONY && CONTINENT && tabId === 'eula' && data[tabId].sonyAddOn) {
+                article.innerHTML += data[tabId].sonyAddOn[CONTINENT];
+            }
+
+            if (tabId === 'pii' && (ACCOUNT_TYPE === 2 || ACCOUNT_TYPE === 8) && PLATFORM === 'PC') {
+                if (ACCOUNT_TYPE === 2) {
+                    article.innerHTML += data[tabId].battlenet;
+                } else {
+                    article.innerHTML += data[tabId].steam;
+                }
+            }
+        });
+    };
+
+    const toggleActiveBtn = (btnIndex, activeBtnIndex, btnSectionEls) => {
+        let oldIndex = activeBtnIndex;
+
+        ACTIVE_BUTTON_INDEX = setActiveBtnIndex(btnIndex);
+
+        if (btnIndex > btnSectionEls.length - 1) {
+            btnIndex = 1;
+        } else if (btnIndex < 0) {
+            btnIndex = 0;
+        }
+
+        playSoundForUi('ui_hilite');
+        btnSectionEls[oldIndex].classList.remove('active');
+        btnSectionEls[btnIndex].classList.add('active');
+    };
+
+    const setActiveBtnIndex = (delta) => {
+        if (delta > 0) {
+            return 1;
+        } else {
+            return 0;
+        }
+    };
+
+    const handleFocus = (i) => {
+        switch (i) {
+            case 'gainFocus':
+                setFocused(true);
+                break;
+            case 'loseFocus':
+                setFocused(false);
+                break;
+        }
+    };
+
+    const setFocused = (f) => {
+        isFocused = f;
+        let body = document.body;
+
+        if (f) {
+            if (!isExpanded) {
+                body.classList.add('focused');
+                playSoundForUi('ui_hilite');
+            }
+        } else {
+            if (!isExpanded) {
+                body.classList.remove('focused');
+                playSoundForUi('ui_hilite');
+            }
+        }
+    };
+
+    const deleteArtifactByKey = (data, key) => {
+        delete data[key];
+    };
+
+    const filterRegionArtifacts = (artifacts) => {
+        let filteredArtifacts = Object.assign({}, artifacts);
+
+        if (!IS_KO) {
+            //delete the keys
+            REGION_AUX_ARTIFACT_KEYS.forEach((key) => {
+                deleteArtifactByKey(filteredArtifacts, key);
+            });
+        }
+
+        return filteredArtifacts;
+    };
+
+    const filterPageContextArtifacts = (pageContext, artifacts) => {
+        let filteredArtifacts = {};
+        let artifactsByContext = PAGE_CONTEXT_ARTIFACT_MAP[pageContext];
+
+        artifactsByContext.forEach((artifact) => {
+            if (artifacts[artifact]) {
+                filteredArtifacts[artifact] = artifacts[artifact];
+            }
+        });
+        return filteredArtifacts;
+    };
+
+    const setTabsArr = (tabs) => {
+        let tabsArr = [];
+        let keys = Object.keys(tabs);
+        keys.forEach((key) => {
+            tabsArr.push(key);
+        });
+        return tabsArr;
+    };
+
+    const createItemStep = () => {
+        let item = document.createElement('div');
+        item.classList.add('artifact-step');
+        return item;
+    };
+
+    const setActiveStep = (index, nodes) => {
+        if (index !== 0) removeActiveStep(index - 1, nodes);
+        nodes?.[index]?.classList.add('active-step');
+    };
+
+    const removeActiveStep = (index, nodes) => {
+        nodes?.[index]?.classList.remove('active-step');
+    };
+
+    init();
+})(window);

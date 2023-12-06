@@ -1,0 +1,6 @@
+{
+	"desc": "Default",
+	"aspect_ratio_high": 100,
+	"aspect_ratio_low": 0,
+	"layout": "layout_customization/default.json"
+}

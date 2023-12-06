@@ -1,0 +1,18 @@
+exec shared_qa_automation.cfg
+
+///////////////////////////////////////////
+// Bots
+///////////////////////////////////////////
+
+// Difficulty Table
+set #x3921449ecbffc9ef3 _mgl_mp 					// Load gametype for different bot difficulty table selection.
+
+// Repulsors
+set #x310c1c5147c982164 0					// Players and bots will not come close enough to overlap (1 can cause high freq error log)
+
+///////////////////////////////////////////
+// Players & Teams
+///////////////////////////////////////////
+
+// Count
+set #x3409bdb274de67d6e 63							    // Num of bots to spawn when enter game. Has no effect in matchmaking because bots in mm are controlled by DW.

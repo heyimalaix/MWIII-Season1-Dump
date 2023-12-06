@@ -1,0 +1,35 @@
+
+
+// Unique numbers controlling movement speed for AI
+#define MOVE_PRIORITY_BASE 0
+#define MOVE_PRIORITY_SPAWN 1
+#define MOVE_PRIORITY_RESPAWN 2
+#define MOVE_PRIORITY_SPEED_UP 3
+#define MOVE_PRIORITY_TETHER 4
+
+#define MOVE_PRIORITY_CHASE_SLOWDOWN 15
+
+#define MOVE_PRIORITY_TEST 20
+#define MOVE_PRIORITY_WANDER 22
+#define MOVE_PRIORITY_INVESTIGATE 23
+#define MOVE_PRIORITY_EXFIL 24
+#define MOVE_PRIORITY_BRAINROT 25
+#define MOVE_PRIORITY_NUKE 26
+
+#define MOVE_PRIORITY_BERSERK 30
+
+// Note - this will disable wander and investigate animations, so if you use it,
+// you need to set the speed back to <undefined> if you want to disable it
+#define MOVE_PRIORITY_SCRIPTED_GOAL 1000
+
+// Melee checks
+
+#define MELEE_CHECK_RADIUS_DEFAULT 72
+
+// Target Priorities
+#define OBJECTIVE_TARGET_PRIORITY 9998 
+#define FRENZIED_GUARD_TARGET_PRIORITY 9999 
+#define DECOY_TARGET_PRIORITY 10000 
+#define MONKEY_BOMB_TARGET_PRIORITY 10001 
+
+

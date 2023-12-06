@@ -1,0 +1,48 @@
+commonOption.restrictionsOnly = 1
+
+// Weapons
+commonOption.weaponRestricted.iw9_me_riotshield = 1
+commonOption.weaponRestricted.iw9_sh_vecho = 1
+commonOption.weaponRestricted.iw9_sh_tsierra12 = 1
+commonOption.weaponRestricted.iw9_pi_golf18 = 1
+commonOption.weaponRestricted.iw9_pi_swhiskey = 1
+commonOption.weaponRestricted.iw9_la_kgolf = 1
+commonOption.weaponRestricted.iw9_la_rpapa7 = 1
+
+// Individual Perks
+commonOption.perkRestricted.specialty_overcharge_field_upgrade = 1
+
+// Attachments - Scopes
+commonOption.attachmentRestricted.holotherm01 = 1
+commonOption.attachmentRestricted.fourxtherm03 = 1
+commonOption.attachmentRestricted.fourxtherm04 = 1
+commonOption.attachmentRestricted.hybridtherm01 = 1
+commonOption.attachmentRestricted.hybridtherm02 = 1
+commonOption.attachmentRestricted.arscope_therm01 = 1
+commonOption.attachmentRestricted.holotherm01_alt = 1
+commonOption.attachmentRestricted.holotherm01_tall = 1
+commonOption.attachmentRestricted.holotherm01_tall_alt = 1
+commonOption.attachmentRestricted.fourxtherm03_tall = 1
+commonOption.attachmentRestricted.fourxtherm04_depricated = 1
+commonOption.attachmentRestricted.fourxtherm04_highzoom = 1
+commonOption.attachmentRestricted.fourxtherm04_tall = 1
+commonOption.attachmentRestricted.hybridtherm02_le = 1
+commonOption.attachmentRestricted.hybridtherm02_le_tall = 1
+commonOption.attachmentRestricted.arscope_therm01_p01 = 1
+
+//Attachments - Ammunition
+commonOption.attachmentRestricted.ammo_sh_db = 1
+commonOption.attachmentRestricted.ammo_12g_db = 1
+commonOption.attachmentRestricted.ammo_12g_db_charlie725 = 1
+commonOption.attachmentRestricted.ammo_12g_db_mbravo = 1
+commonOption.attachmentRestricted.ammo_12g_db_mike1014 = 1
+commonOption.attachmentRestricted.ammo_12g_db_mviktor = 1
+commonOption.attachmentRestricted.ammo_12g_db_tsierra12 = 1
+commonOption.attachmentRestricted.ammo_12g_db_tsierra12_burst = 1
+commonOption.attachmentRestricted.ammo_12g_db_tsierra12_semi = 1
+commonOption.attachmentRestricted.ammo_12g_db_vecho = 1
+commonOption.attachmentRestricted.ammo_dm_he = 1
+commonOption.attachmentRestricted.ammo_sn_he = 1
+commonOption.attachmentRestricted.ammo_300nm_he = 1
+commonOption.attachmentRestricted.ammo_408c_he = 1
+commonOption.attachmentRestricted.ammo_50b_he = 1

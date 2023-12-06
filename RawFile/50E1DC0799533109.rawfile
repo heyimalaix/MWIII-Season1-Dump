@@ -1,0 +1,18 @@
+///////////////////////////////////////////////////////////////////////////
+//This file is generated from the Animation Blender tool
+///////////////////////////////////////////////////////////////////////////
+% force_cs_anim_index_match
+rusher_strafe_start: blendspace1d( range="-180,180", blend_time="250.00",
+coords="-180,-135,-90,-45,0,45,90,135,180",
+value=[strafeyaw] ) nonloopsync
+{
+		rsh_com_strafe_slwalk_start_2
+		rsh_com_strafe_slwalk_start_3
+		rsh_com_strafe_slwalk_start_6
+		rsh_com_strafe_slwalk_start_9
+		rsh_com_strafe_slwalk_start_8
+		rsh_com_strafe_slwalk_start_7
+		rsh_com_strafe_slwalk_start_4
+		rsh_com_strafe_slwalk_start_1
+		rsh_com_strafe_slwalk_start_2@1
+}

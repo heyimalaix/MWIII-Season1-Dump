@@ -1,0 +1,9 @@
+inherit,mp/loot/br/resurgence_massive/lootset_root.csv,,,,
+tagReject,nocache,100,,,
+reqAdd,weapon&[2-4],1,,,# Required Weapon
+reqAdd,gear|plate_carrier|perkpack,1,,,# Chance of Killstreak
+reqAdd,plunder & [2],1,,,# Chance of Plunder
+reqAdd,,2,,,
+reqLimit,gear,1,,,
+reqLimit,plate_carrier,1,,,
+reqLimit,perkpack,1,,,

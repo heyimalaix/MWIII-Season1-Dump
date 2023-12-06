@@ -1,0 +1,241 @@
+//WK Global Object
+/**
+ * @namespace WK
+ */
+const WK = {};
+
+(function (WK) {
+    /**
+     * @memberOf WK
+     * @property {Object.<string, string>} envVars cached map of all environment variables
+     * @property {Object.<string, string>>} dVars cached map of all dVars
+     * @property {number} outStandingInstRequests amount of instrumentation requests in queue
+     * @property {Array.<function : callback>} instCallBacks list of callbacks
+     * @property {Object.<string,string>} dvarMap all testable environment variables
+     * @property {boolean} isDev Checks if url starts with dev
+     * @property {boolean} isStage Checks if url starts with stage
+     * @property {boolean} isLocal Checks if url starts with localhost
+     * @property {boolean} isTelescope Checks if Telescope_API functions are available in game
+     * @property {Object.<string,string>} alreadyLinked saved map of all link elements appended to head
+     * @property {string} telescopeBranch branch of the manifest
+     * @property {string} telescopeVersion version of the json
+     */
+    let envVars = (WK.envVars = {}),
+        dVars = {},
+        states = (WK.states = {}),
+        outstandingInstRequests = 0,
+        instCallbacks = [],
+        dvarMap = null;
+
+    WK.isDev = (window.location.host || '').startsWith('dev');
+    WK.isStage = (window.location.host || '').startsWith('stage');
+    WK.isLocal = (window.location.host || '').startsWith('local');
+    WK.isShaQA = (window.location.host || '').startsWith('shaqa');
+    WK.dwEnv = WK.isDev ? 'dev' : 'prod';
+    WK.isTelescope = typeof Telescope_API_LoadComplete !== 'undefined';
+    WK.alreadyLinked = {};
+    var urlMatched = (window.location.pathname || '').match(/^\/ts\/\w+\/code\/([^\/]+)\/([^\/]+)\/.*/) || [];
+    WK.telescopeBranch = urlMatched[1];
+    WK.telescopeVersion = urlMatched[2];
+
+    /**
+     * @parameter s {string} switches between console.log in the browser and Telescope_API_Print in-game
+     */
+
+    WK.getEnvVar = function (name, skipCache) {
+        if (!skipCache) {
+            var ret = WK.envVars[name];
+            if (ret) return ret;
+        }
+
+        if (WK.getParams(name)) {
+            ret = WK.getParams(name);
+            return ret;
+        }
+
+        if (window.Telescope_API_GetEnvVar) {
+            // caching here prevents infinite recursion
+            ret = WK.envVars[name] = Telescope_API_GetEnvVar(name);
+
+            if (name == 'device_type' && ret == 0) {
+                var programType = parseInt(WK.getEnvVar('program_type', false));
+                if (programType == 2 || programType == 3) {
+                    ret = WK.envVars[name] = 4;
+                }
+            } else if (name == 'program_type') {
+                var deviceType = parseInt(WK.getEnvVar('device_type', false));
+                if (deviceType == 0 || deviceType == 4) {
+                    ret = WK.envVars[name] = 3;
+                }
+            } else if (name == 'account_type' && ret == 0) {
+                var programType = WK.getEnvVar('program_type', false);
+                ret = WK.envVars[name] =
+                    {
+                        1: 2,
+                        2: 4,
+                        3: 4,
+                        4: 3,
+                        5: 3,
+                    }[programType] || ret;
+            }
+        } else {
+            WK.printLine(`Could not load env var '${name}'`);
+        }
+
+        return ret;
+    };
+
+    let printLine = (WK.printLine = function (s) {
+        if (window.Telescope_API_Print) {
+            if (typeof s !== 'string') {
+                if (s) s = s.toString();
+                else s = '' + s;
+            }
+            // commenting this out - it's causing a crash :(
+            //Telescope_API_Print(s);
+        } else if (window.console) {
+            console.log(s);
+        }
+    });
+    /**
+     * Function that runs after web hits ready state
+     * @callback onReadyCallback
+     */
+
+    /**
+     * Returns language of the device using getEnvVar('language')
+     * @returns {string|string|*} language
+     */
+    WK.getLanguage = function () {
+        let language;
+        language = WK.getEnvVar('language');
+        if (!language) return 'english';
+        return language;
+    };
+
+    /**
+     * Returns platform env var using getEnvVar('program_type')
+     * @returns {string} program type
+     */
+    WK.getProgramType = function () {
+        var platform = WK.getEnvVar('program_type');
+        if (platform) {
+            let platforms = {
+                0: 'unknown',
+                1: 'PC',
+                2: 'PS4',
+                3: 'PS5',
+                4: 'XBOXONE',
+                5: 'XBOXSX',
+            };
+
+            platform = platforms[platform];
+        } else {
+            platform = 'PC';
+        }
+        return platform;
+    };
+    /**
+     * Returns whether or not device has X/O for PS4 devices reversed (for asian locales only so far)
+     * @returns {boolean} is cross confirm true
+     */
+    WK.isCrossConfirm = function () {
+        let crossConfirm = parseInt(WK.getEnvVar('is_cross_confirm'));
+        //1 && -1 is cross confirm true, 0 is cross confirm false
+        if (crossConfirm == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+
+    /**
+     * Returns user’s last input device
+     * @returns {number} last input device pc or console
+     */
+    WK.lastInputDevice = function () {
+        let input = WK.getEnvVar('last_input_device', true);
+        return parseInt(input);
+    };
+
+    /**
+     * Returns users last input gamepad pc xb or ps
+     * @returns {number}
+     */
+    WK.lastInputGamepad = function () {
+        let input = WK.getEnvVar('last_input_gamepad', true);
+        return parseInt(input);
+    };
+
+    /**
+     * Uses lastInputDevice + lastInputGamepad to get a readable string of what the controller the user has connected to last
+     * @returns {string} platform user has used last
+     */
+    WK.getCurContType = function () {
+        /**
+         * Options 0: Gamepad 1: MouseMove 2: MouseClick 3: Keyboard 4: Vita
+         * @type {number}
+         */
+        let lastInput = WK.lastInputDevice();
+        /**
+         * Options: 0: Undefined 1: KeyboardMouse 2: XBOX 3: PS
+         * @type {number}
+         */
+        let lastGamepad = WK.lastInputGamepad();
+        if (lastInput === 1 || lastInput === 2 || lastInput === 3) {
+            return 'PC';
+        }
+        if (lastInput === 0) {
+            if (lastGamepad === 2) {
+                return 'XBOX';
+            }
+            if (lastGamepad == 3) {
+                return 'PS';
+            }
+        }
+        return WK.getProgramType();
+    };
+
+    /**
+     * Uses the env var ‘resolution’ to determine whether the user is on a 4k capable device + screen
+     * @returns {boolean} is resolution set to 4k mode
+     */
+    WK.is4k = function () {
+        let res = WK.getEnvVar('resolution');
+        //1 = 4k
+        //0 = 1080p
+        if (res === 1 || res === '1') {
+            return true;
+        } else {
+            return false;
+        }
+    };
+    WK.isRtl = function (language) {
+        let allRtl = ['arabic'];
+        if (allRtl.indexOf(language) !== -1) {
+            return true;
+        }
+        return false;
+    };
+    WK.telescopeLoadComplete = function (isSuccess) {
+        if (typeof Telescope_API_LoadComplete !== 'undefined') {
+            Telescope_API_LoadComplete(isSuccess);
+        } else {
+            printLine('Telescope_API_LoadComplete not defined');
+        }
+    };
+
+    WK.getParams = function (key) {
+        if (key.startsWith('#')) key = encodeURIComponent(key);
+        key = key.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        let regex = new RegExp('[\\?&]' + key + '=([^&#]*)');
+        let results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+    WK.getTextScaling = function () {
+        if (window.Telescope_API_GetTextScaling) {
+            return Telescope_API_GetTextScaling();
+        }
+    };
+})(WK);

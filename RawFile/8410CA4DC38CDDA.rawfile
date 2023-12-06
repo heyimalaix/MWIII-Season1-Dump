@@ -1,0 +1,3 @@
+// vehicle
+#define MOTORCYCLE_CRUISER_2008_VEHICLE_REF "veh9_civ_lnd_motorcycle_cruiser_2008"
+#define MOTORCYCLE_CRUISER_2008_VEHICLE_TYPE "veh9_civ_lnd_motorcycle_cruiser_2008_physics_mp"

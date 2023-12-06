@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EULA</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  </link>
+  <link rel="stylesheet" href="styles/styles.css">
+  </link>
+</head>
+
+<body class="hide-body">
+  <main id="acceptances">
+    <div class="header">
+      <div class="back-button">
+        <svg viewBox="0 0 16 32" fill="#e7e7e7" xmlns="http://www.w3.org/2000/svg" class="back-button-svg">
+          <path d="M16 32H12L0 16L12 0H16L4 16L16 32Z" fill="inherit" />
+        </svg>
+        <div class="controller-hints">
+          <div class="control" data-controller-string="back">
+            <div class="icon" data-icon-string="back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="artifact-nav-wrapper">
+        <div class="active-artifact-title">
+          <p></p>
+        </div>
+        <div class="artifact-step-wrapper"></div>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="scroll-overlay"></div>
+      <section id="acceptances-wrapper">
+      </section>
+
+    </div>
+    <section class="controls-container">
+      <p class="scroll-warning"></p>
+      <div id="controls">
+        <button class="accept" id="accept">
+          <!-- Acknowledge -->
+          <img class="lock-icon" src="assets/icon_global_lock.svg" />
+          <p class="btn-copy"></p>
+          <div class="controller-hints">
+            <div class="control" data-controller-string="select">
+              <div class="icon" data-icon-string="select"></div>
+            </div>
+          </div>
+        </button>
+        <button class="select" id="decline">
+          <p class="btn-copy"></p>
+          <div class="controller-hints">
+            <div class="control" data-controller-string="decline">
+              <div class="icon" data-icon-string="select"></div>
+            </div>
+          </div>
+          <!-- Decline -->
+        </button>
+    </section>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="controller-hints">
+          <div class="control" data-controller-string="xbX_psSquare">
+            <div class="icon" data-icon-string="xbX_psSquare"></div>
+          </div>
+          <div class="return"></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script type="text/javascript" src="scripts/webkit.js"></script>
+  <script type="text/javascript" src="scripts/i18n.js"></script>
+  <script type="text/javascript" src="scripts/langToLocale.js"></script>
+  <script type="text/javascript" src="scripts/keyboard.js"></script>
+  <script type="text/javascript" src="scripts/utils/icons-xbox.js"></script>
+  <script type="text/javascript" src="scripts/utils/icons-playstation.js"></script>
+  <script type="text/javascript" src="scripts/utils/utils.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>

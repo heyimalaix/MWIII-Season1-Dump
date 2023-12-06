@@ -1,0 +1,5 @@
+//exec IW9 file
+exec default_mp.cfg
+
+//exec JUP movement CFG
+exec jup_core_settings.cfg

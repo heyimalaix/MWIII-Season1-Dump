@@ -1,0 +1,6 @@
+inherit,mp/loot/br/resurgence_massive/lootset_root.csv,,
+reqAdd,weapon&[1-3],1,2
+reqAdd,ammo,2,2
+reqAdd,super,1,2
+reqAdd,perkpack,1,1
+reqAdd,brloot_plunder_cash_uncommon_2,1,2

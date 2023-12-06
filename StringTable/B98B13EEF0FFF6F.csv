@@ -1,0 +1,5 @@
+choose,1,,,,,
+zone,base_hotzone_05,fortress,mp/loot/br/default/strongholds/lootset_stronghold_black.csv,mp/loot/br/default/strongholds/lootset_cache_spawns_blacksite.csv,,#Zone
+choose,2,,,,,
+zone,base_hotzone_01,fortress,mp/loot/br/default/strongholds/lootset_stronghold_high.csv,mp/loot/br/default/strongholds/lootset_cache_spawns_stronghold.csv,,#Zone
+zone,base_hotzone_07,fortress,mp/loot/br/default/strongholds/lootset_stronghold_high.csv,mp/loot/br/default/strongholds/lootset_cache_spawns_stronghold.csv,,#Zone

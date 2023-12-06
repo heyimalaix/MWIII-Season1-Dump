@@ -1,0 +1,12 @@
+// reset #x3ec297f9ccd2ec8d4 dvars that might have been tweaked by script
+
+// oldschool dvars set #x3f18c30b0e1d58ffd script
+reset #x323e7c289c87ec143
+reset #x3b74221bbd420062c
+
+reset #x3a16d51f39b76a154
+reset #x33ab0313f7e723fa1
+// Removed falling damage dvar resets blocking mp falling damage testing.-JoeC 07/29/15
+//reset #x3de79e5c6b8a17221
+//reset #x318e2dda6aaf07dc3
+// end oldschool dvars set #x3f18c30b0e1d58ffd script

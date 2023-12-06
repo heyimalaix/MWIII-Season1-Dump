@@ -1,0 +1,139 @@
+// Operator
+setOutbreakLoadoutsPlayerData "customizationSetup" "operators" 0 "kilgore_eastern"
+setOutbreakLoadoutsPlayerData "customizationSetup" "operators" 1 "fender_western"
+
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorWatch" 0
+
+setOutbreakLoadoutsPlayerData "customizationSetup" "radial" 0 210000
+setOutbreakLoadoutsPlayerData "customizationSetup" "radial" 1 190217
+setOutbreakLoadoutsPlayerData "customizationSetup" "radial" 2 190218
+setOutbreakLoadoutsPlayerData "customizationSetup" "radial" 3 190219
+setOutbreakLoadoutsPlayerData "customizationSetup" "radial" 4 190220
+setOutbreakLoadoutsPlayerData "customizationSetup" "radial" 5 190221
+setOutbreakLoadoutsPlayerData "customizationSetup" "radial" 6 190222
+setOutbreakLoadoutsPlayerData "customizationSetup" "radial" 7 190223
+
+setOutbreakLoadoutsPlayerData "customizationFavorites" "favoriteLoadoutIndex" 0
+
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "execution" 5058
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "execution" 5058
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "execution" 5058
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "execution" 5058
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "execution" 5058
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "execution" 5058
+
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "intro" 0
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "intro" 1
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "intro" 2
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "intro" 3
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "intro" 4
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "intro" 5
+
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "taunt" 0
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "taunt" 1
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "taunt" 2
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "taunt" 3
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "taunt" 4
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "taunt" 5
+
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "skin" 6002
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "skin" 5972
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "skin" 5999
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "skin" 5971
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "hutch_western" "skin" 5514
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gus_western" "skin" 5982
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zimo_western" "skin" 5989
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kleo_western" "skin" 6005
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "nova_eastern" "skin" 5983
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "price_western" "skin" 5987
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "farah_western" "skin" 5993
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "ghost_western" "skin" 5976
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_western_1" "skin" 5995
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_eastern_1" "skin" 5996
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "soap_western" "skin" 7966
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "oni_eastern" "skin" 8189
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gromsko_western" "skin" 11396
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "reyes_western" "skin" 11395
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "luna_western" "skin" 11402
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "roze_eastern" "skin" 11404
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zero_eastern" "skin" 11397
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "conor_eastern" "skin" 11401
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "aksel_eastern" "skin" 11403
+setOutbreakLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "skin" 12261
+
+// Private Loadouts
+setPrivateLoadoutsPlayerData "customizationSetup" "operators" 0 "kilgore_eastern"
+setPrivateLoadoutsPlayerData "customizationSetup" "operators" 1 "fender_western"
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorWatch" 0
+
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 0 210000
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 1 190217
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 2 190218
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 3 190219
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 4 190220
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 5 190221
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 6 190222
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 7 190223
+
+setPrivateLoadoutsPlayerData "customizationFavorites" "favoriteLoadoutIndex" 0
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "execution" 5058
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "execution" 5058
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "intro" 31
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "intro" 32
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "taunt" 0
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "taunt" 0
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "skin" 6002
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "skin" 5972
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "skin" 5999
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "skin" 5971
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "hutch_western" "skin" 5514
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gus_western" "skin" 5982
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zimo_western" "skin" 5989
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kleo_western" "skin" 6005
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "nova_eastern" "skin" 5983
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "price_western" "skin" 5987
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "farah_western" "skin" 5993
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "ghost_western" "skin" 5976
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_western_1" "skin" 5995
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_eastern_1" "skin" 5996
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "soap_western" "skin" 7966
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "oni_eastern" "skin" 8189
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gromsko_western" "skin" 11396
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "reyes_western" "skin" 11395
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "luna_western" "skin" 11402
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "roze_eastern" "skin" 11404
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zero_eastern" "skin" 11397
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "conor_eastern" "skin" 11401
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "aksel_eastern" "skin" 11403
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "skin" 12261
+
+// DMZ Init
+// Used to mark that we haven't initialized random inventory yet.
+setOutbreakPlayerData "dmzInventory" 0 "lootID" 1046
+setOutbreakPlayerData "dmzInventory" 0 "quantity" 5
+setOutbreakPlayerData "dmzInventory" 1 "lootID" 1036
+setOutbreakPlayerData "dmzInventory" 1 "quantity" 5
+setOutbreakPlayerData "dmzInventory" 2 "lootID" 1094
+setOutbreakPlayerData "dmzInventory" 2 "quantity" 3
+setOutbreakPlayerData "dmzInventory" 3 "lootID" 1040
+setOutbreakPlayerData "dmzInventory" 3 "quantity" 5
+setOutbreakPlayerData "dmzInventory" 4 "lootID" 1051
+setOutbreakPlayerData "dmzInventory" 4 "quantity" 2
+setOutbreakPlayerData "dmzInventory" 5 "lootID" 0
+setOutbreakPlayerData "dmzInventory" 5 "quantity" 99
+setOutbreakPlayerData "backpackSize" 8
+setOutbreakPlayerData "brBackpackSize" 8
+setOutbreakPlayerData "dmzBackpackSize" 5
+setOutbreakPlayerData "dmzPlateCarrierLevel" 1
+
+setOutbreakPlayerData "dmzBankedCash" 100
+setOutbreakPlayerData "dmzPocketCash" 0

@@ -1,0 +1,6 @@
+bind BUTTON_BACK	"togglescores"
+bind BUTTON_START	"togglemenu"
+
+bind BUTTON_VITA_TOUCHPAD	"togglescores"
+
+set #x3a1a8e9e7e55fe8c3	0

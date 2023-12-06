@@ -1,0 +1,10 @@
+reb_com_veh8_techo_fl_door_open
+
+// temp fix CORE-33181 - move from vehicle_techo_common -> mp_vehicles_always_loaded.  Subtree should be loaded from the above line '%include_optional vehicle_techo_common' but its failing due to recent changes.  Real fix underway.
+//reb_com_veh8_techo_fl_door_close
+reb_com_veh8_techo_fr_door_open
+reb_com_veh8_techo_fr_door_close
+reb_com_veh8_techo_bl_door_open
+reb_com_veh8_techo_bl_door_close
+reb_com_veh8_techo_br_door_open
+reb_com_veh8_techo_br_door_close

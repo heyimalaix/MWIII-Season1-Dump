@@ -1,0 +1,20 @@
+#define CONST_HEALING_AURA_SFX_ACTIVATE "eqp_fug_healingaura_activate" //Oneshot played on the player entity for ALL players
+#define CONST_HEALING_AURA_SFX_LOOP "eqp_fug_healingaura_loop" //Loopsound played on the player entity for ALL players
+#define CONST_HEALING_AURA_SFX_DEACTIVATE "eqp_fug_healingaura_deactivate" //oneshot played on the player entity for ALL players
+#define CONST_HEALING_AURA_SFX_BEAM_START "eqp_fug_healingaura_beam_3d_start" //beam start on entity
+#define CONST_HEALING_AURA_SFX_BEAM_LOOP "eqp_fug_healingaura_beam_3d_loop" //beam looop on entity
+#define CONST_HEALING_AURA_SFX_BEAM_END "eqp_fug_healingaura_beam_3d_end" //beam end on entity
+
+#define CONST_HEALING_AURA_BEAM_EFFECT_LABEL "field_upgrade_healing_aura_beam"
+#define CONST_HEALING_AURA_HEAL_FIRST_PERSON_LABEL "field_upgrade_healing_aura_heal_first_person"//base heal effect
+#define CONST_HEALING_AURA_HEAL_FIRST_PERSON_ARM_LE_LABEL "field_upgrade_healing_aura_heal_first_person_arm_le"//base heal effect
+#define CONST_HEALING_AURA_HEAL_FIRST_PERSON_ARM_RI_LABEL "field_upgrade_healing_aura_heal_first_person_arm_ri"//base heal effect
+#define CONST_HEALING_AURA_HEAL_THIRD_PERSON_LABEL "field_upgrade_healing_aura_heal_third_person"//base heal effect
+
+#define CONST_HEALING_AURA_FIRST_PERSON_EFFECT_TAG "j_head"
+#define CONST_HEALING_AURA_FIRST_PERSON_ARM_LE_EFFECT_TAG "j_elbow_le"
+#define CONST_HEALING_AURA_FIRST_PERSON_ARM_RI_EFFECT_TAG "j_elbow_ri"
+#define CONST_HEALING_AURA_THIRD_PERSON_EFFECT_TAG "j_spine4"
+
+#define CONST_HEALING_AURA_REF "super_healing_aura"
+

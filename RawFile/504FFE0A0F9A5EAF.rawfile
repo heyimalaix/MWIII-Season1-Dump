@@ -1,0 +1,10 @@
+%force_cs_anim_index_match
+
+alert_stairs_up : blendspace1d( range="-90,90", blend_time="100",
+	coords="-90,0,90",
+	value=[leanyaw] ) loopsync parse_cull(disable)
+{
+	reb_stl_alert_stairs_forward_up_l
+	reb_stl_alert_stairs_forward_up
+	reb_stl_alert_stairs_forward_up_r
+}

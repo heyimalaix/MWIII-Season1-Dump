@@ -1,0 +1,19 @@
+//Global Callbacks
+#define CALLBACK_CURRENCY_ADD "currency_add" 
+#define CALLBACK_CURRENCY_SUB "currency_sub" 
+#define CALLBACK_CURRENCY_SET "currency_set" 
+
+//Zombies Currencies
+#define CONST_CURRENCY_TYPE_ESSENCE "essence" 
+#define CONST_CURRENCY_TYPE_SALVAGE "salvage" 
+#define CONST_CURRENCY_TYPE_RARE_SALVAGE "rare_salvage" 
+
+//RB Zombies Starting Values
+#define CONST_RB_CURRENCY_STARTING_ESSENCE 500
+#define CONST_RB_CURRENCY_STARTING_SALVAGE 0
+#define CONST_RB_CURRENCY_STARTING_RARE_SALVAGE 0
+
+//Currency Script Bundle
+#define SINGLE_CURRENCY_SCRIPT_BUNDLE_TYPE "currency:"
+#define MULTI_CURRENCY_SCRIPT_BUNDLE_TYPE "currencylist:"
+

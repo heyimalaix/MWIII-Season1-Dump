@@ -1,0 +1,11 @@
+//exec IW9 file
+exec default_mp.cfg
+
+//exec JUP movement CFG
+exec jup_core_settings.cfg
+
+// GL Compass Tuning - specialty_acousticSensor perk
+set #x31f092a42cfb505e8 	1.01f
+set #x357f85f8ba44ec639				1.76f
+set #x36e7f8adca37c5feb		5001
+

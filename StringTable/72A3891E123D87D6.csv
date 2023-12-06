@@ -1,0 +1,8 @@
+inherit,mp/loot/br/default/lootset_root.csv,,
+reqAdd,plunder,3,3
+reqAdd,brloot_super_reinforcement_flare|brloot_munition_jup_switchblade_drone|brloot_equip_gasmask_durable,1,1
+reqAdd,brloot_super_emppulse,1,1
+reqAdd,super&!brloot_super_reinforcement_flare&!brloot_super_emppulse,2,2
+reqAdd,gear|plate_carrier|perkpack,1,2
+reqLimit,perkpack,1,
+reqLimit,gear,1,

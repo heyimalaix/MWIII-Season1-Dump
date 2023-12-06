@@ -1,0 +1,102 @@
+
+////////////DIVE////////////////////
+////////////////////////////////////
+
+
+//dive version
+//set #x3fa5c6de16957595f 0
+//set #x3a8eb5e0473214d78 1
+//set #x364fedc537d838322 110
+
+//both version
+set #x3fa5c6de16957595f 1
+set #x3a8eb5e0473214d78 1
+//set #x364fedc537d838322 300//CODY was 250, increasing based off misfire feedback 6/8/2022
+set #x364fedc537d838322 260//CODY was 300, decreaing based off long hold time 6/15/2022
+
+set #x3b88332ac3467f6f4 1
+set #x323eeaf1d71b66ff 120
+set #x38a46ec4077221fb7 360
+set #x324facc127bd38c23 400 
+set #x3f4b381fe847f785c 400
+set #x3847129fe02a9362b 400          //should match no_move/no jump times
+
+set #x3b79bac3a127b8f90 0.6
+set #x3c13052a39fa7b810 .875 //default .8
+
+set #x34954ba2fbcd77796 50
+
+set #x3ef0768ef5bc072f6 1//to enable the clamp
+set #x3578f77b7cd34fd4a 90/
+set #x3134d3b675657c6bb 45//to tweak the clamp
+set #x357f86177762120b6 1//to enable the lerp
+set #x3a89f933556f4f423 30//to tweak the lerp
+set #x3f9168ac176976dc4 20//to tweak the lerp
+set #x3cd64b7480b58a6f6 200//to tweak the lerp duration
+
+
+////////////SLIDE////////////////////
+////////////////////////////////////
+//set #x378b9e5606a7aff8e 325 //minimun time to allow a player to hold stance change to go prone from a slide
+//set #x39769596a85410253  0.6 //sin of the angle of the slope.  the slide will altomatically triger if the slope is in{slide angle1, slideangle 2}
+
+//set #x38ec40768df80b109 4 //ease mode for camera blend 0:linear, 2:quadratic, 3:quadratic acceleration, 4:sinussoidal
+//set #x3cee93e5e1595df8 15 //Yaw offset from full parallel (at 0.0 ) to place the player camera when autopitch
+//set #x3e3adb4c044267419  1100 //Time to rotate to view to look at the right height
+
+//set #x36aa4fab917e43fe4 30 //the threshold of the amount of right or left movement must overcome for it to be applied
+
+//set #x34088c0764d7cd89e 0//Time the player must wait vefore starting another slide
+
+//set #x3b19fb3a6e034ed1 1 //Allow the player to adjust their velocity to the left/right while sliding
+
+//set #x327f7705df1c1c338 750 //the amount of time over which friction will be added back in.
+//set #x33c30d3252ecbd848 10 //Side view movement friction applied to restore the view angle
+
+//set #x3f45f99b4bebfea0f 0 //time required to hold the slide button in air to trigger a slide when landing
+//set #x3ca61520a094ffa7e 110 // Duration in ms a player must hold the stance change buttom to trigger a slide
+
+//set #x3f12bea11f3a727dc 300 //Amount of time after sliding the player has to trigger a slide jump
+
+//set #x3e7e77fe3766ae5ae 20 //Maximum height allowed above ground before we cancel slide
+
+//set #x353fb26bfc4698ed2 50 //Required speed a player must slide to continue sliding
+//set #x3bf1261db5e0c75ec 150 //Required speed a player must be moving in air to trigger a slide
+//set #x3486658e46bda8996 140 //Required speed a player must be moving to trigger a slide
+
+//set #x3575ba9f866335098 200 //Minimum time a plater must be sprinting to slide
+
+//set #x39a3536c5bfce0fed 1.4 //Speed scaler for the speicatly_fastlide perk
+
+//set #x31268c47052a343fd 180 //Required angle player must be facing from the direction of their velocity to trigger a slide
+//set #x3f48c865f2c1bcfd0 0.15 //Percent the slide speed should be scaled down by per subsequent slide
+//set #x34bc54c04a6c929fb 1000 // time in ms if in which a player starts another slide, their speed will be reduced
+//set #x3e87d32d0ba59f7fe 0.9 //scales of the duration of the friction exit time when heading back to a sprint from a slide
+//set #x3b3d718a2c8029099 0.7 //The minimum forward stick push needed to transition into the sprint from slide
+
+//set #x3a352838f7b7e4e67 25 //the width of the under geo capsule trace
+//set #x33961cc5a6e98a625 0 //the width of the under geo capsule trace??
+//set #x3711f6fb231b011ef 10 //z offset of the player capsule trace
+//set #x3aa1fdf6d869e9d0a 10 //The width of the slide clearance trace
+//set #x38a504ea35657be34 15 //The height of the slide clearance trace
+
+set #x3fff07bb5be99e772 1 //Sliding consumes sprint meter up to the minimum sprint time
+//set #x38351fa7433e9a10e -3 0 -1 // the pitch yaw and roll applied to the weapon during slide - YAW UNUSED!
+//set #x31cfb1c908ec09062 250 //The time in ms it takes for the slide angles to transition in
+//set #x3e795bc408403e08e 0 0 0 //The pitch yaw and roll applied to the weapon during slide - YAW UNUSED!
+//set #x3eab713b8cc06ebe7 300 //The time in ms it takes for the slide bounce angles to complete a full bounce
+//set #x364543fd6f9e08477 sine ease in/out //the interpolation type used for the slide view angles 0:linear 1:sine ease in/out. 2:smoother step ease on/out, 3: cubic ease in, 4:cubic ease out, 5:quartic ease in, 6:quartic ease out
+
+set #x3d45ccee55334d990 0 //block firing during slide in
+set #x3bf7fdb69f3bebc94 0 //Extends teh time firing is blocked during the gesture in state by this many milliseconds
+
+
+//tac pads/tactical pads dvars
+set #x32037c8364bccd37f 1.2
+set #x35e05ea0c8cf6d40 1.2
+set #x3a190ae1b7ce51eb9 1
+
+
+//setting this to 0 stops the game from automatically centering the player's view when they slide while looking down
+set #x3122ff3159248db23 0
+

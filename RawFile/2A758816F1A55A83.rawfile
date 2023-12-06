@@ -1,0 +1,114 @@
+
+//ADS prone crawl
+set #x3bdff8efe9c663f83 1
+set #x3c5bab18b81031683 0.33
+set #x3d32e3db1a9d082a2 0.75
+set #x3db6e8bc6c9be4a6b 0.08
+
+
+//removing viewbob for animated camera.  
+///SP IS SETTING THESE SAVED DVARS IN SCRIPT - scripts\sp\player::initPlayerDvars();  keep them in sync!!
+set #x320cdadef9bfb3007				0.00  
+set #x3ca95c34a7decbfe1			0.008
+set #x34e588381420b3a93				0.00
+
+set #x3ca5be20ac939d8c5						2000
+set #x32b689fa83d3efa5d                    800
+set #x3d9c2918d169d7740                   1500
+
+set #x3e9c41c84e0dfa7ab 2.38
+
+set #x3c5d8c1bad5802428 1.0
+set #x34216f571298f1933 -1.5
+
+set #x35eab27a923f69f27 0.6
+set #x3ddde99a97ff7d564 1.0
+set #x38d9f7bb30cfc157e 2.3
+set #x31f864a450aef1947 1.5
+
+/////////////////////////////////////////////////////////////////
+
+//view bob
+//set #x3ca95c34a7decbfe1 0.008
+set #x37b56aa2ff21f0db8 0.0
+set #x3c2bb6fffb6846332 0.0
+set #x3df12f5728774b815 0.0
+
+
+set #x35eab27a923f69f27 0.3
+set #x3ddde99a97ff7d564 1.0
+set #x38d9f7bb30cfc157e 2.3
+set #x31f864a450aef1947 1.5
+
+//THESE WERE BROKEN AND NOT CONFIGURABLE WHEN FIRST ADDED:
+//TRY THESE VALUES, BUT RETUNE GUNBOB
+//////////////////////////////////////////////////////
+
+//set #x3c593021c09caf8f = 1
+//set #x3bb20e77e1ff47a7d = -0.02
+//set #x3ce54b456cdc1df39 = -0.02
+//
+////additional offset on top of bob lag
+//set #x3b75e902bcb5205b8 = 0.0
+//set #x35dc5b2ed82c47d1f = 0.0
+//
+//set #x3ff5e1dadbfc0c41e = -0.75
+//set #x38a0928e19047b530 = -0.9
+
+//set #x3e9c41c84e0dfa7ab 2.7
+
+
+////Stride offsets
+//https://www.desmos.com/calculator/akosqkp925
+//
+
+
+//unused, leave 0
+set #x3bfb201594551b3c 0.0   		// "Maximum view offset when moving up or down at hip." )
+set #x3bf826b8752434bbd 0.0  		// "Maximum gun offset when moving up or down at hip." )
+set #x3879e53ae5173a171 0.0 		// "Maximum view offset when moving up or down in ADS." )
+set #x3af1a78cf750c2b6c 0.0   		// "Maximum gun offset when moving up or down in ADS." )
+
+
+set #x310f659f12d1115e3 80.0    		//"Maximum speed used to normalize the stride motion when at hip." )
+set #x39586dbf18ef8f458 40.0 			//"Maximum speed used to normalize the stride motion when in ADS." )
+
+set #x327e48192e034f73a 1.0 			//amount of "double" forward/back directional motion per stride vs single motion per stide
+set #x3d9d78cca57e59e9a 1.0 	//amount of "double" forward/back directional motion per stride vs single motion per stide
+
+bg_weaponmotion_stride_phase_gun -1.5
+bg_weaponmotion_stride_phase_view 0.3
+
+set #x3cf870a915f6f0ed0 1.0  				// "Phase shift from the main view bob when moving left." )
+set #x3a562539a88cd1725 1.0  				// "Phase shift from the main view bob when moving right." )
+set #x313855743ea98d09a 1.0  			// "Phase shift from the main view bob when moving forward." )
+set #x318708c32c232d9a4 1.0 			// "Phase shift from the main view bob when moving backward." )
+set #x3daf12e615690c620 1.0  					// "Phase shift from the main view bob when moving up." )
+set #x36641abd922e8c675 1.0 				// "Phase shift from the main view bob when moving down." )
+
+set #x347f18c9895215a12 0.02  		// "Maximum view offset when moving left or right at hip." )
+set #x387cbf850bb463866 0.02 	//"Maximum view offset when moving forward or backward at hip." )
+set #x364789d578d28aa47 0.06 		// "Maximum view offset when moving left or right in ADS." )
+set #x36ecc3030e92e8411 0.06  	// "Maximum view offset when moving forward or backward in ADS." )
+
+set #x3dce684c77c4491b -0.05 		// "Maximum gun offset when moving left or right at hip." )
+set #x36c00bf386ff2665d -0.05 	// "Maximum gun offset when moving forward or backward at hip." )
+set #x36106a711879089e2 0.003		// "Maximum gun offset when moving left or right in ADS." )
+set #x3ae4f4693de4de856 0.006 	//"Maximum gun offset when moving forward or backward in ADS." )
+
+//set #x31490639f0eaf3cb4 5.0 		// "Shoulder IK fraction for the gun procedural motion." )
+set #x31490639f0eaf3cb4 0.0  //CODY: should move to weapon, set #x3fa188bb584287b3 5
+
+set #x3db92cd441bb4e40a 3.0 		// "Stride direction diff track (smoothing) rate." )
+set #x3357efe9d07e05752 10.0 	//"Stride magnitude diff track (smoothing) rate." )
+
+///idle motion scale from movement
+set #x3ff5f307b2cc19c5c 90
+set #x37fd78caefe1bb73a 1
+set #x31e464d6fe787181e 100
+set #x39bfa7d4a05cd386c 1
+set #x380f309db8ef6b23d 800
+set #x3ab423adb7ef716a6 400
+
+
+

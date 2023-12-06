@@ -1,0 +1,17 @@
+#define ABOM_HEAD_LE	0
+#define ABOM_HEAD_MID	1
+#define ABOM_HEAD_RI	2
+
+// Useful to prepend strings with
+#define ABOM_STR_HEAD_LE	"head_le"
+#define ABOM_STR_HEAD_MID	"head_mid"
+#define ABOM_STR_HEAD_RI	"head_ri"
+
+#define ABOM_HEAD_STATE_DISABLED 0
+#define ABOM_HEAD_STATE_CLOSED 1
+#define ABOM_HEAD_STATE_OPEN 2
+
+#define ABOM_SPAWN_REVEAL_TIME 2
+#define ABOM_HEAD_ATTACH_DELAY 1
+
+#define ABOM_WEAK_POINT_UPDATE_INTERVAL 5

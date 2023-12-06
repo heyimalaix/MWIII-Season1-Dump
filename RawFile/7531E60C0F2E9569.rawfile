@@ -1,0 +1,2 @@
+#define LIVERAGDOLL_FLAG "in_liveragdoll" 
+#define LIVERAGDOLL_IN_STATE "liveragdoll_in" 

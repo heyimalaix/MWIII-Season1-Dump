@@ -1,0 +1,15 @@
+
+exec br_core.cfg
+set #x3faf1db5754891b2d 1
+set #x3c163d5db19834c48 1
+set #x318b7464a93050781 0
+set #x370bf831e0968bcdd 1 
+set #x3add02e4fff48882f mp/loot/br/tutorial/loot_item_zones_tutorial.csv
+set #x34ec62b4599196026 0.0
+set #x390b976de573aecf2 super plunder
+set #x3e022fd0199a95f84 0
+set #x3f6f24e020168ade8 nothing
+set #x3f8e5c3daa6c01012 ""
+set #x3f29fa998fb70c4d5 "mp/brmission_rewards.csv"
+set #x385ba512aed5ce540 "mp/brmission_reward_groups.csv"
+set #x3a5ab8ed6cc1b486a 3

@@ -1,0 +1,54 @@
+
+//handheldCameraDebug 3 to debug
+
+set #x318b8e321f23ee25f 0
+set #x33e133b40d1492c0f 500
+set #x3e8d216c284c7cfb7 2 //Exponential
+set #x38797c7d43d507d0c 1
+set #x39840bad4d2243205 0.7
+set #x3ef17ebca45e0ba43 13
+set #x3e25c9c5e1c483856 0.3
+set #x372edb94f317f502c 1
+
+set #x332f0dbf6953904a8 120
+set #x3d82a52e215b763ce 650
+set #x31cef65637dc0e0fe 2 //Explonential
+set #x34b2122dfe33978e9 1
+set #x35d98daca44d81107 1  // was 3, but adsing from jog made bad shakes on gun
+set #x3f5cd4f31ceb58c91 1  //was 13, but adsing from sprint made really bad shakes on the gun
+set #x3812b556e6653c268 0.005
+set #x32b62b4ccd5793702 1
+set #x3987d9f1bb1718ef3 0.02
+set #x36edb521bfc757bc5 1.0
+
+set #x3e9287eb540471aa0 0
+set #x32f79c173f8f90b6 600
+set #x3264db5d0f99abb26 1 //linear
+set #x3111a6de7e9607c91 1
+set #x351d4b623014e09ab 500
+set #x3fe8598d6b01fed80 0.13
+set #x3dbcac72025fea46a 1
+set #x3760d42cb82460b6b 0.13
+set #x366acfe7e3c6265cd 1
+
+set #x350af8c1c219a5c69 30
+set #x3becdd8796cce4369 450
+set #x38929e4dee640b565 1 //linear
+set #x3cec110bc1e33f04e 1
+set #x364938d2acd723f78 1.0
+set #x375477076d20fd6ac 0.8
+set #x3490b22332416b05f 0.35
+set #x3c2995ee1021c97d2 0.11
+set #x38728857242c4c2cf 1
+set #x3e36a2288d48ef0f9 1
+set #x32efdcea2e196d2c4 1
+set #x39034db5b3bec5146 1
+
+set #x38c53474c2556b4e7 60
+set #x336fcb6b506fe9107 800
+set #x3665c53b82a2eecaf 2 //Exponential
+set #x3f4323410ebdd01c4 1
+set #x35dee4955f5c22ccd 0.75
+set #x3a089d2c0c959803b 6
+set #x3425244f27d64ad5e 0.3
+set #x3223c175ca27d2b44 1

@@ -1,0 +1,404 @@
+// code will zero stats before this is run
+
+//////// general setup ////////
+setJupiterPrivateLoadout "defaultSet" 1
+setJupiterPrivateLoadout "inUse" 1
+
+//////// killstreaks ////////
+setJupiterPrivateLoadout "killstreakSetups" 0 "killstreak" "uav"
+setJupiterPrivateLoadout "killstreakSetups" 1 "killstreak" "cruise_predator"
+setJupiterPrivateLoadout "killstreakSetups" 2 "killstreak" "fuel_airstrike"
+
+//////// rig ////////
+setJupiterPrivateLoadout "archetype" "archetype_assault"
+setJupiterPrivateLoadout "archetypePerk" "specialty_null"
+setJupiterPrivateLoadout "archetypeSuper" "super_ammo_drop"
+setJupiterPrivateLoadout "head" 10
+setJupiterPrivateLoadout "body" 6
+
+//////// gesture ////////
+setJupiterPrivateLoadout "gesture" "gesture000"
+setJupiterPrivateLoadout "taunt" "iw7_taunt_rare_6"
+setJupiterPrivateLoadout "taunts" 0 "iw7_taunt_rare_6"
+setJupiterPrivateLoadout "taunts" 1 "iw7_taunt_rare_6"
+setJupiterPrivateLoadout "taunts" 2 "iw7_taunt_rare_6"
+setJupiterPrivateLoadout "taunts" 3 "iw7_taunt_rare_6"
+
+////////cp //////
+setJupiterPrivateLoadout "cpLoadoutSel" 0
+
+///////CPFieldUpgrade///////
+setJupiterPrivateLoadout "cpFieldUpgrade" "role_tank"
+
+/////munitions//////
+setJupiterPrivateLoadout "munitionSetups" 0 "munition" "empty1"
+setJupiterPrivateLoadout "munitionSetups" 1 "munition" "empty2"
+setJupiterPrivateLoadout "munitionSetups" 2 "munition" "empty3"
+
+setJupiterPrivateLoadout "munitionWaveModeSetups" 0 "munition" "empty1"
+setJupiterPrivateLoadout "munitionWaveModeSetups" 1 "munition" "empty2"
+setJupiterPrivateLoadout "munitionWaveModeSetups" 2 "munition" "empty3"
+//////// classes ////////
+
+// Loadout 1 - Balanced Assault
+setJupiterPrivateLoadout_loc "loadouts" 0 "name" "LUA_MENU_MP/CUSTOM_LOADOUT_1"
+setJupiterPrivateLoadout "loadouts" 0 "inUse" 1
+setJupiterPrivateLoadout "loadouts" 0 "overkill" 0
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "weapon" "jup_jp36_ar_anov94"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 0 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "weapon" "jup_cp24_pi_glima21"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 0 "weaponSetups" 1 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 0 "flcSlingOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 0 "flcHolsterOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 0 "equipmentSetups" 0 "equipment" "equip_frag"
+setJupiterPrivateLoadout "loadouts" 0 "equipmentSetups" 1 "equipment" "equip_concussion"
+setJupiterPrivateLoadout "loadouts" 0 "equipmentSetups" 0 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 0 "equipmentSetups" 1 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 0 "flcPerks" 0 "specialty_infantry_vest"			// Vest
+setJupiterPrivateLoadout "loadouts" 0 "flcPerks" 1 "specialty_custom_gloves"			// Gloves
+setJupiterPrivateLoadout "loadouts" 0 "flcPerks" 2 "specialty_ultra_light_boots"		// Footwear
+setJupiterPrivateLoadout "loadouts" 0 "flcPerks" 3 "specialty_eod_vest"				// Gear 1
+setJupiterPrivateLoadout "loadouts" 0 "flcPerks" 4 "specialty_tac_mask"				// Gear 2
+setJupiterPrivateLoadout "loadouts" 0 "flcPerks" 5 "specialty_null"				
+setJupiterPrivateLoadout "loadouts" 0 "flcPerks" 6 "specialty_null"			
+setJupiterPrivateLoadout "loadouts" 0 "fieldUpgradeSetups" 0 "fieldUpgrades" "super_ammo_drop"
+setJupiterPrivateLoadout "loadouts" 0 "fieldUpgradeSetups" 1 "fieldUpgrades" "none"
+setJupiterPrivateLoadout "loadouts" 0 "fieldUpgradeUses" 0 1
+setJupiterPrivateLoadout "loadouts" 0 "fieldUpgradeUses" 1 1
+setJupiterPrivateLoadout "loadouts" 0 "equippedPerkPackageIndex" 0
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 0 "role_3"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 4 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 3 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 2 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 1 "deployable_cover"
+
+
+// Loadout 2 - Rusher
+setJupiterPrivateLoadout_loc "loadouts" 1 "name" "LUA_MENU_MP/CUSTOM_LOADOUT_2"
+setJupiterPrivateLoadout "loadouts" 1 "inUse" 0
+setJupiterPrivateLoadout "loadouts" 1 "overkill" 0
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "weapon" "jup_jp02_ar_bromeo805"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 0 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "weapon" "jup_jp12_pi_mike93"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 1 "weaponSetups" 1 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 1 "flcSlingOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 1 "flcHolsterOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 1 "equipmentSetups" 0 "equipment" "equip_frag"
+setJupiterPrivateLoadout "loadouts" 1 "equipmentSetups" 1 "equipment" "equip_flash"
+setJupiterPrivateLoadout "loadouts" 1 "equipmentSetups" 0 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 1 "equipmentSetups" 1 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 1 "flcPerks" 0 "specialty_infantry_vest"			// Vest
+setJupiterPrivateLoadout "loadouts" 1 "flcPerks" 1 "specialty_custom_gloves"			// Gloves
+setJupiterPrivateLoadout "loadouts" 1 "flcPerks" 2 "specialty_ultra_light_boots"		// Footwear
+setJupiterPrivateLoadout "loadouts" 1 "flcPerks" 3 "specialty_eod_vest"				// Gear 1
+setJupiterPrivateLoadout "loadouts" 1 "flcPerks" 4 "specialty_hardline"				// Gear 2
+setJupiterPrivateLoadout "loadouts" 1 "flcPerks" 5 "specialty_null"				
+setJupiterPrivateLoadout "loadouts" 1 "flcPerks" 6 "specialty_null"			
+setJupiterPrivateLoadout "loadouts" 1 "fieldUpgradeSetups" 0 "fieldUpgrades" "super_ammo_drop"
+setJupiterPrivateLoadout "loadouts" 1 "fieldUpgradeSetups" 1 "fieldUpgrades" "none"
+setJupiterPrivateLoadout "loadouts" 1 "fieldUpgradeUses" 0 1
+setJupiterPrivateLoadout "loadouts" 1 "fieldUpgradeUses" 1 1
+setJupiterPrivateLoadout "loadouts" 1 "equippedPerkPackageIndex" 0
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 0 "role_2"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 4 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 3 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 2 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 1 "adrenaline"
+
+
+// Loadout 3 - Overkill
+setJupiterPrivateLoadout_loc "loadouts" 2 "name" "LUA_MENU_MP/CUSTOM_LOADOUT_3"
+setJupiterPrivateLoadout "loadouts" 2 "inUse" 0
+setJupiterPrivateLoadout "loadouts" 2 "overkill" 0
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "weapon" "jup_jp02_ar_bromeo805"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 0 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "weapon" "jup_jp12_pi_mike93"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 2 "weaponSetups" 1 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 2 "flcSlingOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 2 "flcHolsterOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 2 "equipmentSetups" 0 "equipment" "equip_frag"
+setJupiterPrivateLoadout "loadouts" 2 "equipmentSetups" 1 "equipment" "equip_flash"
+setJupiterPrivateLoadout "loadouts" 2 "equipmentSetups" 0 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 2 "equipmentSetups" 1 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 2 "flcPerks" 0 "specialty_infantry_vest"			// Vest
+setJupiterPrivateLoadout "loadouts" 2 "flcPerks" 1 "specialty_custom_gloves"			// Gloves
+setJupiterPrivateLoadout "loadouts" 2 "flcPerks" 2 "specialty_ultra_light_boots"		// Footwear
+setJupiterPrivateLoadout "loadouts" 2 "flcPerks" 3 "specialty_eod_vest"				// Gear 1
+setJupiterPrivateLoadout "loadouts" 2 "flcPerks" 4 "specialty_hardline"				// Gear 2
+setJupiterPrivateLoadout "loadouts" 2 "flcPerks" 5 "specialty_null"				
+setJupiterPrivateLoadout "loadouts" 2 "flcPerks" 6 "specialty_null"			
+setJupiterPrivateLoadout "loadouts" 2 "fieldUpgradeSetups" 0 "fieldUpgrades" "super_ammo_drop"
+setJupiterPrivateLoadout "loadouts" 2 "fieldUpgradeSetups" 1 "fieldUpgrades" "none"
+setJupiterPrivateLoadout "loadouts" 2 "fieldUpgradeUses" 0 1
+setJupiterPrivateLoadout "loadouts" 2 "fieldUpgradeUses" 1 1
+setJupiterPrivateLoadout "loadouts" 2 "equippedPerkPackageIndex" 0
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 0 "role_3"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 4 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 3 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 2 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 1 "deployable_cover"
+
+
+// Loadout 4 - Sniper
+setJupiterPrivateLoadout_loc "loadouts" 3 "name" "LUA_MENU_MP/CUSTOM_LOADOUT_4"
+setJupiterPrivateLoadout "loadouts" 3 "inUse" 0
+setJupiterPrivateLoadout "loadouts" 3 "overkill" 0
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "weapon" "jup_jp02_ar_bromeo805"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 0 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "weapon" "jup_jp12_pi_mike93"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 3 "weaponSetups" 1 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 3 "flcSlingOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 3 "flcHolsterOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 3 "equipmentSetups" 0 "equipment" "equip_frag"
+setJupiterPrivateLoadout "loadouts" 3 "equipmentSetups" 1 "equipment" "equip_flash"
+setJupiterPrivateLoadout "loadouts" 3 "equipmentSetups" 0 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 3 "equipmentSetups" 1 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 3 "flcPerks" 0 "specialty_infantry_vest"			// Vest
+setJupiterPrivateLoadout "loadouts" 3 "flcPerks" 1 "specialty_custom_gloves"			// Gloves
+setJupiterPrivateLoadout "loadouts" 3 "flcPerks" 2 "specialty_ultra_light_boots"		// Footwear
+setJupiterPrivateLoadout "loadouts" 3 "flcPerks" 3 "specialty_eod_vest"				// Gear 1
+setJupiterPrivateLoadout "loadouts" 3 "flcPerks" 4 "specialty_hardline"				// Gear 2
+setJupiterPrivateLoadout "loadouts" 3 "flcPerks" 5 "specialty_null"				
+setJupiterPrivateLoadout "loadouts" 3 "flcPerks" 6 "specialty_null"			
+setJupiterPrivateLoadout "loadouts" 3 "fieldUpgradeSetups" 0 "fieldUpgrades" "super_ammo_drop"
+setJupiterPrivateLoadout "loadouts" 3 "fieldUpgradeSetups" 1 "fieldUpgrades" "none"
+setJupiterPrivateLoadout "loadouts" 3 "fieldUpgradeUses" 0 1
+setJupiterPrivateLoadout "loadouts" 3 "fieldUpgradeUses" 1 1
+setJupiterPrivateLoadout "loadouts" 3 "equippedPerkPackageIndex" 0
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 0 "role_4"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 4 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 3 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 2 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 1 "manual_turret"
+
+
+// Loadout 5 - Stealth/Assassin
+setJupiterPrivateLoadout_loc "loadouts" 4 "name" "LUA_MENU_MP/CUSTOM_LOADOUT_5"
+setJupiterPrivateLoadout "loadouts" 4 "inUse" 0
+setJupiterPrivateLoadout "loadouts" 4 "overkill" 0
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "weapon" "jup_jp02_ar_bromeo805"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 0 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "weapon" "jup_jp12_pi_mike93"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "reticle" "none"
+setJupiterPrivateLoadout "loadouts" 4 "weaponSetups" 1 "variantID" 0
+setJupiterPrivateLoadout "loadouts" 4 "flcSlingOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 4 "flcHolsterOneEmpty" 0
+setJupiterPrivateLoadout "loadouts" 4 "equipmentSetups" 0 "equipment" "equip_frag"
+setJupiterPrivateLoadout "loadouts" 4 "equipmentSetups" 1 "equipment" "equip_flash"
+setJupiterPrivateLoadout "loadouts" 4 "equipmentSetups" 0 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 4 "equipmentSetups" 1 "flcExtraEquipment" "false"
+setJupiterPrivateLoadout "loadouts" 4 "flcPerks" 0 "specialty_infantry_vest"			// Vest
+setJupiterPrivateLoadout "loadouts" 4 "flcPerks" 1 "specialty_custom_gloves"			// Gloves
+setJupiterPrivateLoadout "loadouts" 4 "flcPerks" 2 "specialty_ultra_light_boots"		// Footwear
+setJupiterPrivateLoadout "loadouts" 4 "flcPerks" 3 "specialty_eod_vest"				// Gear 1
+setJupiterPrivateLoadout "loadouts" 4 "flcPerks" 4 "specialty_hardline"				// Gear 2
+setJupiterPrivateLoadout "loadouts" 4 "flcPerks" 5 "specialty_null"				
+setJupiterPrivateLoadout "loadouts" 4 "flcPerks" 6 "specialty_null"			
+setJupiterPrivateLoadout "loadouts" 4 "fieldUpgradeSetups" 0 "fieldUpgrades" "super_ammo_drop"
+setJupiterPrivateLoadout "loadouts" 4 "fieldUpgradeSetups" 1 "fieldUpgrades" "none"
+setJupiterPrivateLoadout "loadouts" 4 "fieldUpgradeUses" 0 1
+setJupiterPrivateLoadout "loadouts" 4 "fieldUpgradeUses" 1 1
+setJupiterPrivateLoadout "loadouts" 4 "equippedPerkPackageIndex" 0
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 0 "role_5"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 4 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 3 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 2 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 1 "grenade_launcher"
+
+
+//////// streak preferences setup ////////
+setJupiterPrivateLoadout "streakPreferences" "none" 0
+setJupiterPrivateLoadout "streakPreferences" "uav" 0
+setJupiterPrivateLoadout "streakPreferences" "airdrop" 0
+setJupiterPrivateLoadout "streakPreferences" "dronedrop" 0
+setJupiterPrivateLoadout "streakPreferences" "counter_uav" 0
+setJupiterPrivateLoadout "streakPreferences" "ball_drone_backup" 0
+setJupiterPrivateLoadout "streakPreferences" "sentry_shock" 0
+setJupiterPrivateLoadout "streakPreferences" "orbital_deployment" 0
+setJupiterPrivateLoadout "streakPreferences" "thor" 0
+setJupiterPrivateLoadout "streakPreferences" "precision_airstrike" 0
+setJupiterPrivateLoadout "streakPreferences" "jammer" 0
+setJupiterPrivateLoadout "streakPreferences" "jackal" 0
+setJupiterPrivateLoadout "streakPreferences" "minijackal" 0
+setJupiterPrivateLoadout "streakPreferences" "nuke" 0
+setJupiterPrivateLoadout "streakPreferences" "spiderbot" 0
+setJupiterPrivateLoadout "streakPreferences" "directional_uav" 0
+setJupiterPrivateLoadout "streakPreferences" "bombardment" 0
+setJupiterPrivateLoadout "streakPreferences" "remote_c8" 0
+setJupiterPrivateLoadout "streakPreferences" "venom" 0
+
+//////// rig preferences setup ////////
+
+// NOTE-EricG: Please try to keep the following sorted by order of CaC appearance and grouped by archetype
+
+// assault
+setJupiterPrivateLoadout "archetypePreferences" 0 "archetype" "archetype_assault"
+setJupiterPrivateLoadout "archetypePreferences" 0 "archetypePerk" "specialty_boom"
+setJupiterPrivateLoadout "archetypePreferences" 0 "archetypeSuper" "super_pac_sentry"
+setJupiterPrivateLoadout "archetypePreferences" 0 "head" "head_1"
+setJupiterPrivateLoadout "archetypePreferences" 0 "body" "body_1"
+setJupiterPrivateLoadout "archetypePreferences" 0 "taunt" "iw7_taunt_rare_6"
+setJupiterPrivateLoadout "archetypePreferences" 0 "taunts" 0 "iw7_taunt_rare_6"
+setJupiterPrivateLoadout "archetypePreferences" 0 "taunts" 1 "iw7_taunt_rare_6"
+setJupiterPrivateLoadout "archetypePreferences" 0 "taunts" 2 "iw7_taunt_rare_6"
+setJupiterPrivateLoadout "archetypePreferences" 0 "taunts" 3 "iw7_taunt_rare_6"
+setJupiterPrivateLoadout "archetypePreferences" 0 "gesture" "gesture000"
+
+// heavy
+setJupiterPrivateLoadout "archetypePreferences" 1 "archetype" "archetype_assault"
+setJupiterPrivateLoadout "archetypePreferences" 1 "archetypePerk" "specialty_regenfaster"
+setJupiterPrivateLoadout "archetypePreferences" 1 "archetypeSuper" "none"
+setJupiterPrivateLoadout "archetypePreferences" 1 "head" "head_1"
+setJupiterPrivateLoadout "archetypePreferences" 1 "body" "body_1"
+setJupiterPrivateLoadout "archetypePreferences" 1 "taunt" "iw7_taunt_rare_8"
+setJupiterPrivateLoadout "archetypePreferences" 1 "taunts" 0 "iw7_taunt_rare_8"
+setJupiterPrivateLoadout "archetypePreferences" 1 "taunts" 1 "iw7_taunt_rare_8"
+setJupiterPrivateLoadout "archetypePreferences" 1 "taunts" 2 "iw7_taunt_rare_8"
+setJupiterPrivateLoadout "archetypePreferences" 1 "taunts" 3 "iw7_taunt_rare_8"
+setJupiterPrivateLoadout "archetypePreferences" 1 "gesture" "gesture009"
+
+// synaptic
+setJupiterPrivateLoadout "archetypePreferences" 2 "archetype" "archetype_assault"
+setJupiterPrivateLoadout "archetypePreferences" 2 "archetypePerk" "specialty_rush"
+setJupiterPrivateLoadout "archetypePreferences" 2 "archetypeSuper" "none"
+setJupiterPrivateLoadout "archetypePreferences" 2 "head" "head_1"
+setJupiterPrivateLoadout "archetypePreferences" 2 "body" "body_1"
+setJupiterPrivateLoadout "archetypePreferences" 2 "taunt" "iw7_taunt_rare_10"
+setJupiterPrivateLoadout "archetypePreferences" 2 "taunts" 0 "iw7_taunt_rare_10"
+setJupiterPrivateLoadout "archetypePreferences" 2 "taunts" 1 "iw7_taunt_rare_10"
+setJupiterPrivateLoadout "archetypePreferences" 2 "taunts" 2 "iw7_taunt_rare_10"
+setJupiterPrivateLoadout "archetypePreferences" 2 "taunts" 3 "iw7_taunt_rare_10"
+setJupiterPrivateLoadout "archetypePreferences" 2 "gesture" "gesture009"
+
+// ftl
+setJupiterPrivateLoadout "archetypePreferences" 3 "archetype" "archetype_assault"
+setJupiterPrivateLoadout "archetypePreferences" 3 "archetypePerk" "specialty_superpack"
+setJupiterPrivateLoadout "archetypePreferences" 3 "archetypeSuper" "none"
+setJupiterPrivateLoadout "archetypePreferences" 3 "head" "head_1"
+setJupiterPrivateLoadout "archetypePreferences" 3 "body" "body_1"
+setJupiterPrivateLoadout "archetypePreferences" 3 "taunt" "iw7_taunt_rare_3"
+setJupiterPrivateLoadout "archetypePreferences" 3 "taunts" 0 "iw7_taunt_rare_3"
+setJupiterPrivateLoadout "archetypePreferences" 3 "taunts" 1 "iw7_taunt_rare_3"
+setJupiterPrivateLoadout "archetypePreferences" 3 "taunts" 2 "iw7_taunt_rare_3"
+setJupiterPrivateLoadout "archetypePreferences" 3 "taunts" 3 "iw7_taunt_rare_3"
+setJupiterPrivateLoadout "archetypePreferences" 3 "gesture" "gesture009"
+
+// engineer
+setJupiterPrivateLoadout "archetypePreferences" 4 "archetype" "archetype_assault"
+setJupiterPrivateLoadout "archetypePreferences" 4 "archetypePerk" "specialty_equipment_ping"
+setJupiterPrivateLoadout "archetypePreferences" 4 "archetypeSuper" "none"
+setJupiterPrivateLoadout "archetypePreferences" 4 "head" "head_1"
+setJupiterPrivateLoadout "archetypePreferences" 4 "body" "body_1"
+setJupiterPrivateLoadout "archetypePreferences" 4 "taunt" "iw7_taunt_rare_14"
+setJupiterPrivateLoadout "archetypePreferences" 4 "taunts" 0 "iw7_taunt_rare_14"
+setJupiterPrivateLoadout "archetypePreferences" 4 "taunts" 1 "iw7_taunt_rare_14"
+setJupiterPrivateLoadout "archetypePreferences" 4 "taunts" 2 "iw7_taunt_rare_14"
+setJupiterPrivateLoadout "archetypePreferences" 4 "taunts" 3 "iw7_taunt_rare_14"
+setJupiterPrivateLoadout "archetypePreferences" 4 "gesture" "gesture009"
+
+//ghost
+setJupiterPrivateLoadout "archetypePreferences" 5 "archetype" "archetype_assault"
+setJupiterPrivateLoadout "archetypePreferences" 5 "archetypePerk" "specialty_mark_targets"
+setJupiterPrivateLoadout "archetypePreferences" 5 "archetypeSuper" "none"
+setJupiterPrivateLoadout "archetypePreferences" 5 "head" "head_1"
+setJupiterPrivateLoadout "archetypePreferences" 5 "body" "body_1"
+setJupiterPrivateLoadout "archetypePreferences" 5 "taunt" "iw7_taunt_rare_7"
+setJupiterPrivateLoadout "archetypePreferences" 5 "taunts" 0 "iw7_taunt_rare_7"
+setJupiterPrivateLoadout "archetypePreferences" 5 "taunts" 1 "iw7_taunt_rare_7"
+setJupiterPrivateLoadout "archetypePreferences" 5 "taunts" 2 "iw7_taunt_rare_7"
+setJupiterPrivateLoadout "archetypePreferences" 5 "taunts" 3 "iw7_taunt_rare_7"
+setJupiterPrivateLoadout "archetypePreferences" 5 "gesture" "gesture009"
+
+// PMC
+setJupiterPrivateLoadout "activePMCMissions" 0 "challengeID" 80027
+setJupiterPrivateLoadout "activePMCMissions" 1 "challengeID" 80011
+setJupiterPrivateLoadout "activePMCMissions" 2 "challengeID" 80026

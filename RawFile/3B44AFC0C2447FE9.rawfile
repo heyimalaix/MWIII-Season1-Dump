@@ -1,0 +1,60 @@
+WK.utils = WK.utils || {};
+
+WK.utils.platformCategories = {
+    PS4: 'ps',
+    PS5: 'ps',
+    PS: 'ps',
+    XBOXONE: 'xbox',
+    XBOXSX: 'xbox',
+    XBOX: 'xbox',
+    PC: 'pc',
+};
+
+/**
+ * Takes in 3 parameters and automatically grabs the svg element from icons-{platform}.js
+ * @param {string} platformId can use getCurContType to get this
+ * @param {boolean} isCrossConfirm can use WK.isCrossConfirm
+ * @param {string} buttonId name of the button you are trying to render
+ * @returns {SVGElement}
+ */
+WK.utils.getControllerButtonSvg = function (platformId, isCrossConfirm, buttonId) {
+    //LOGS
+    //WK.printLine(`TELESCOPE SVG LOG: platform: ${platformId}, crossconfirm: ${isCrossConfirm}, buttonId: ${buttonId}`)
+    if (!platformId || platformId === 'PC' || platformId === 'unknown') {
+        return '';
+    }
+    if ((platformId === 'PS4' || platformId === 'PS5') && !isCrossConfirm && (buttonId == 'select' || buttonId == 'back')) {
+        return WK.utils.controllerMap.ps.alt[buttonId];
+    } else {
+        platformId = WK.utils.platformCategories[platformId];
+        return WK.utils.controllerMap[platformId].default[buttonId];
+    }
+};
+// controller button mapping
+WK.utils.controllerMap = {};
+
+WK.utils.controllerMap.ps = {
+    default: {
+        select: WK.utils.svg.psIcons.x(),
+        back: WK.utils.svg.psIcons.circle(),
+        xbY_psTriangle: WK.utils.svg.psIcons.triangle(),
+        xbX_psSquare: WK.utils.svg.psIcons.square(),
+        rightStickLeft: WK.utils.svg.psIcons.circleL(),
+        rightStickRight: WK.utils.svg.psIcons.circleR(),
+    },
+    alt: {
+        select: WK.utils.svg.psIcons.circle(),
+        back: WK.utils.svg.psIcons.x(),
+    },
+};
+
+WK.utils.controllerMap.xbox = {
+    default: {
+        select: WK.utils.svg.xboxIcons.A(),
+        back: WK.utils.svg.xboxIcons.B(),
+        xbY_psTriangle: WK.utils.svg.xboxIcons.Y(),
+        xbX_psSquare: WK.utils.svg.xboxIcons.X(),
+        rightStickLeft: WK.utils.svg.xboxIcons.circleL(),
+        rightStickRight: WK.utils.svg.xboxIcons.circleR(),
+    },
+};

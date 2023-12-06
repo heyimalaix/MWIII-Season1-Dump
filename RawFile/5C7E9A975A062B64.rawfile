@@ -1,0 +1,4 @@
+// This file needs to go, but is referenced in com_configs.cpp.  That file really should point to default_cp.cfg instead
+// DO NOT PUT ANYTHING IN THIS FILE, use DEFAULT_CP.CFG instead!!!
+
+

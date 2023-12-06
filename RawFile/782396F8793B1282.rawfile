@@ -1,0 +1,17 @@
+favorites_hasbeenread = 1
+favoritesPC.0 = input_method
+favoritesPC.1 = mouse_horz_sens
+favoritesPC.2 = look_horz_sens
+favoritesPC.3 = look_vert_sens
+favoritesPC.4 = fov
+favoritesPC.5 = brightness_button
+favoritesPC.6 = display_mode
+favoritesPC.7 = volume
+favoritesConsole.0 = input_method
+favoritesConsole.1 = mouse_horz_sens
+favoritesConsole.2 = edit_button_layout
+favoritesConsole.3 = stick_layout
+favoritesConsole.4 = look_horz_sens
+favoritesConsole.5 = look_vert_sens
+favoritesConsole.6 = brightness_button
+favoritesConsole.7 = volume

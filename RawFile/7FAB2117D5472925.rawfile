@@ -1,0 +1,7 @@
+#define VO_PRIORITY_NONE 0 
+#define VO_PRIORITY_LOW 1 
+#define VO_PRIORITY_MED 2 
+#define VO_PRIORITY_HIGH 3 
+#define VO_PRIORITY_DEATH 4 
+
+#define FLAG_PLAYING_VO "playing_vo" 

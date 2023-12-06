@@ -1,0 +1,49 @@
+///////////////////////////////////////////
+// Bots
+///////////////////////////////////////////
+
+// Automation
+set #x33ba88ee1b012ae7 1                    // enable mgl bots for automation
+
+// Movement
+set #x31614f35af6dfc932 3000						// Time to notify the script when the bot is off navmesh
+set #x379feaedacffbb608 1                 // Disable bot choke point group for doors
+set #x356349a3ba7e84747 1                   // Set the block flag as mask all for obstacles created by opened doors
+set #x3a4149c16169203e5 1				// If true, bots will be allowed to function without pathnodes in the map. Note: has no effect in ship build.
+set #x36e1b4fdefc92b569 0				    // Enable non-linear aiming for bots
+
+// Performance
+set #x347f2d6789f27b7af 1				// Allow bot C++ think multithreaded to save frame time
+set #x35afda1e82a99a74 1					// Limit the time of Bot_CreateCmd() to a certain range per frame according to the ratio of bots to all players. As a result, only part of bots will create input cmds and then start C++ thinking. The priority of bots is decided by the distance to the closest human player and the frames since last time to create a cmd.
+
+// Stance
+set #x31df52d259f1e5a1e 0.1					// The chance that the bot will crouch in combat.
+set #x35f2af3cd95f15001 15						// Bot will be allowed to dive when first see enemy.(Each bit corresponds to each difficulty level)
+
+// Development
+set #x3a9b5b99aac228000 0
+
+// Mind Combat
+set #x3484a3169a5caef10 1                 // Whether bots can set #x3dbcb6f18b9400c5c as combat target
+set #x3d118fed8f0c59f4d 1			// Enable bot grenade throw check in gsc. Delete this line and uncomment two lines below once the new dvars are integrated from iw9
+
+// Difficulty
+set #x360ae0d4490076046 3		// Proportion of recruit difficulty Bot
+set #x355ccab727e144f34 5		// Proportion of regular difficulty Bot
+set #x3b3f66372fb38fccb 2	// Proportion of hardened difficulty Bot
+set #x3ff9490c8b80cf74f 0		// Proportion of veteran difficulty Bot
+
+set #x38b89c88ebbde4299 1                 // The Row Count of scr_skill_based_bot_difficulties_config
+set #x36a4d5836f765b9 "1,70,30,0,0"       // Columns: "performance max range, Recruit proportion, Regular proportion, Hardened proportion, Veteran proportionl"
+
+// Mind Personality
+set #x3dfd0051082e1f237 0	// Proportion of mind personality of "default"
+set #x38a746ee0f068d111 0 	// Proportion of mind personality of "sniper"
+set #x3a30827606766b1a5 1 // Proportion of mind personality of "automation"
+
+///////////////////////////////////////////
+// Players & Teams
+///////////////////////////////////////////
+
+// Count
+set #x3818c699a5caaee4f 100                            // Default max players

@@ -1,0 +1,318 @@
+//set #x3ee9ead8952950996 mp/doubleJumpSettingsMP.csv
+//set #x36ac9cad3f5238506 mp/slideSettingsMP.csv
+//set #x33f06e77bc513d50f mp/miscJumpSettingsMP.csv
+//set #x347155ac9954663a2 mp/wallRunSettingsMP.csv
+//set #x314efe5ebcfb33cb4 mp/dodgeSettingsMP.csv
+
+set #x360feb5eea5e607fe		16
+
+set #x39e7bc885a6c0ab17 1
+
+addlbexclude 0
+
+// Outline Settings: Post mode Unified
+set #x35cf3f05f68436622 6
+set #x379a0c60ce3306d67 0.000 0.000 0.000 0.000 // color 0 - no outline
+set #x379a0c50ce3306b34 0.882 0.882 0.882 1.000 // color 1 - white
+set #x379a0c80ce33071cd 0.804 0.157 0.157 1.000 // color 2 - red
+set #x379a0c70ce3306f9a 0.431 0.745 0.235 1.000 // color 3 - green
+set #x379a0c20ce330649b 0.157 0.784 0.784 1.000 // color 4 - cyan
+set #x379a0c10ce3306268 0.784 0.490 0.157 1.000 // color 5 - orange
+set #x379a0c40ce3306901 0.804 0.804 0.035 1.000 // color 6 - yellow
+set #x379a0c30ce33066ce 0.000 0.000 0.000 0.000 // color 7 - unused
+set #x379a0be0ce3305bcf 0.804 0.157 0.157 1.000 // color 8 - MLG enemy
+set #x379a0bd0ce330599c 0.157 0.784 0.784 1.000 // color 9 - MLG friend
+set #x3acfc5f57a37b59cc 0.157 0.784 0.784 1.000 // color 10 - MLG team0
+set #x3acfc6057a37b5bff 0.804 0.157 0.157 1.000 // color 11 - MLG team1
+
+// Outline Settings: no fill for non occluded geo
+set #x34569f157ef7f2410 0 0 0 0
+set #x34569f257ef7f2643 0 0 0 0
+
+set #x37cec8a27173f7e7f 100
+
+// Rendering
+set #x3383a1df841f0a521 0.25
+set #x3478c91c9c350cd6d 0
+set #x31dde331a8e0153d8 4
+set #x3884ae2ef9303556b 4
+
+// networking
+set #x39f75993ae4a4d8ed 1
+
+// movement
+set #x335b5e05624d78823 15
+set #x31be6253f330e5975 600
+set #x3fba6b9c6ecd6b071 18
+set #x3b7f4a6f57d65396d 0
+set #x3fbe112da1a61d668 30
+
+
+set #x36a0375d33fc78dba 1
+
+// Melee
+set #x35bf99b34984d4d30 0.2
+set #x36c326257f3d446e8 0.2
+
+// Nameplates
+set #x3be592ecdf891b261 30000
+set #x3b2ff60f1a4be8c0 10000
+
+
+// UI
+// Play of the Game / Kill Cam
+set #x38606ee05fd13fa87	7000
+set #x38629fc05fd3a6109	2000
+set #x354872a63f6b7a88a		1500
+set #x31354f825daa8fdd3			0		// ***** REMOVE BEFORE SHIP ***** On by default to help track how much the POTG archive buffer is actually holding.
+set #x3ffd4a481b33d985a 			0		// ***** REMOVE BEFORE SHIP ***** On by default to help track POTG issues.
+set #x381e3c31a787ce483		420
+
+// OBJECTIVE MARKERS
+set #x3f7fd890fe210edec 	0 // 0 means start fading immediately if fadeEnd is > 0. Matching fadeEnd means no fade, it will just alpha 0.
+set #x3c65e749258a1fab5 		0 // 0 means always draw at any dist, never fade to 0 alpha.
+
+// validate
+set #x358bbcc3e1ff538d1 1
+set #x349f347129c31c40c 1
+set #x393c750a2b4a79e93 1
+
+// Perks - note that these settings largely do NOT need code updates to function in Ship
+set #x3edf5ce7bc53763b3	0.0
+set #x3efe12003ddfaa46e						0
+set #x3fdc1e088cb180fc					0.65
+set #x3171bcebcaa849d95					0.8
+set #x3323beb481f9f3500				0.65
+set #x3580844a0ede1b0f3				0.66
+set #x3866b111bc429eecb					500
+set #x38e7c2be7678f7efc						2
+set #x36f08a22fd52e004c				0.5
+set #x377d5a9878cbf3172				8.0
+set #x354bdba56629eb6d4		2.5
+set #x33e533d050b224320		1.0
+set #x3b34c06108f97c58a						2.5
+set #x38e73d2f48eed714c				750
+set #x328e84932a9fb43fd			1.66
+set #x39bcdf0887b3696ad			0.25
+set #x3db82bf037e180634			2.0
+set #x3b22bb1a48299003b                1.8
+set #x3f1b36a05bc8c07af        0.3
+set #x3e9cbdb751424e4ab			2.0
+set #x36a6e4f9ae2a2a1				1000
+set #x326ab663a769726a9            5000
+set #x31641bba59e207f8e        22000
+set #x36a381b8385734e4e            8.0
+set #x3eb1e94069d5150f2                0
+set #x37a7f2a2e15e3dfe0              0.8
+set #x3f40f24cb42ab7857           1.3
+set #x363e5bf45bb095235				1.0
+set #x3cc974404ebd01d11					0.3
+set #x3f57bd90c342b5fc2             1750
+set #x3423b0fbeb5f130c5             1
+
+set #x36d486569aefc1e91		2.5 // May not be used currently
+
+// player
+set #x3ca2da6515921ebc4					0
+set #x3dfc97948abf22f64 		0
+set #x3215eb9aef94dd47e 			0
+set #x3abaf5d00a7e2c800				0
+set #x3b1d561f9a9241e09 				100
+set #x3a4d532f42d919827 				0 // pairs with scr_player_spawnArmor and scr_game_use_squad_ui
+set #x3d75d5638785f3b09 				0 // 0 is none on spawn, even if scr_player_allowArmor is on
+set #x3a6a3fd965485d4bc 		0 
+set #x38a2622170456e2c3				0 // pairs with scr_player_allowArmor in game options, enables script armor logic
+set #x3f76f731732459f67		0
+set #x32922210021914dd7 			5
+set #x35d64cd3b24cf883a 			1
+set #x3a881f1ebdab09002					1
+set #x3e723cc761de7b161				0
+set #x3984461a4d8ff9473			50
+set #x3555967257cd98a4a	30
+set #x3546d8a10bb4e83de			0
+set #x3e89b9c15abbfb1ad		5
+set #x3429478ea05ec5f08		1
+set #x3812e42c73d4bd8d0 	1
+set #x3e0f04861824e8440 0.5
+set #x3c47411f597dae120		0
+set #x3ab99ad42c8f9d6fd 			iw9_me_fists_mp_ls
+set #x3e95b38cbb4d2f83c 	1.35
+set #x3a8543004b97470b5			40
+set #x3af65c14c83826cfa			3
+set #x3e47f7f1502e4292e		0
+
+// spawns
+set #x3db79f8163bfa1586			1
+set #x3cfcb6d591ffe3c80	1
+set #x3f055530a90c953bc			0.8
+set #x3ba77e8f37223f218			0.899
+set #x3d7358339b14a448f			1
+
+// gameplay
+set #x3769d7362e31fdf55				1 // 0 = final-kill killcam, 1 = Play of the Game, 2 = Off
+set #x3399f13d1217738fe				1
+set #x3e37a87a327aa48ac					1
+set #x3eaf0d9c00f9805b6			1
+set #x329a0f7140921aa26			1
+set #x33aff5631b3f222a9		1
+set #x330e6d371dab88960			1
+set #x3c3a18965db644b6b				1
+set #x3a69e3d30bf0c5ff6			0
+set #x3614165a37ac2db61			0
+set #x3c85a7135dce00903				0
+set #x39072002890a9a121			5
+set #x3fbde2817a4a94998					3
+set #x3a54edeed7c5b587f 				0
+set #x3cd8fc3bf8aba4931 			0
+set #x31ef34a7cbafda853 			0
+set #x3e8121d056bde22a3 			1
+set #x37d44bfc04e9b62b9    	1
+set #x3913a338c84e2f2f6		    	1
+set #x32a4effcaf5954d38				1
+set #x336d4f05a3801af7b				2
+set #x39498c88902801ed5			0
+set #x3cc12cd6acff9b720			0
+set #x3df992051d6fe8149				1
+set #x346055360c134e4f6				2
+set #x3fefb52725e4ab1f7						10
+set #x3431bf4306d6a675f					0
+set #x3c6492f4edd9202d3 						1
+set #x368cba91a675a2f76 						0
+set #x32748b78a2910ca11						0
+set #x3433ce15d514ef091			0
+set #x3127490a7577f169f				0
+set #x3aa96b1e9c9809b8  	1
+set #x329e6b70603680941					0
+set #x37194076ab4888f2b					0
+set #x3ac849f1ec300d19c				1.75
+set #x3336f868b4d4b223			12
+set #x3b5e336c86438398c					0
+set #x33672666b944c115				0
+set #x35fb9811d17b52a04				0
+set #x3b8a0aa5681c2aa39 		0
+set #x394af58bec500b3b9 			0
+set #x3d7c8c17cb33a48f7			0
+set #x38d99f31dd75fcf9c				0
+set #x3148266ea4825c4b0				0
+set #x3ba25fabade697401					0
+set #x3f333ce2bff54a849							0
+set #x32932f62f9e03e846								0
+set #x3ce882ca282c2f85e				0
+set #x3cf6378092db0d69c		0
+set #x3ec8cd89141ead8d9		0
+set #x3caaa48448a7f3558		1
+set #x3c031ba1736951fae			0
+
+set #x372fe29aa713ea21e			0
+set #x34e33f79a5437aa5c			0
+
+set #x334df621525811b4a			0
+
+// allows input device swapping
+set #x3330ea57ea86fcb72					1
+
+set #x313e2677c39d41283				185 // not used anymore
+
+// heartbeat sensor common
+set #x332d207f294606946 0.6
+set #x33fb35ac28b6db13a 1
+
+// heartbeat sensor tablet
+set #x322462f35bc973d09 1000
+set #x3974a085aef245781 1200
+set #x38ede4f96be62ffdc 80
+set #x3fc19be2d4d495d58 3000
+set #x3a794a89c1d866a44 1000
+
+// heartbeat sensor EMP
+set #x32696eb38810e836b 5500
+set #x3d051e918420d0e0f 6000
+set #x3bcafde0ff6e2fb1a 44
+set #x374d7317cbf47bb16 2000
+set #x38de73c63e86506a6 1000
+
+// All MP Gamemode Settings go in here
+exec default_mp_modesettings.cfg
+
+// IW8 Multiplayer Tuning Changes
+
+set #x31eb32d180bc7cff8				0.5
+
+// vehicles
+set #x341996733c94a11a6	1
+
+// teams
+set #x3e5a33d679c26221f						0
+set #x3e2a50a97a4bb5fd4				0
+set #x315ee15c57c8bc94c 		20
+set #x3464a53889ef82ba0 			0
+
+// Supers
+set #x3e1d7f49648b75f36 				4.0
+set #x364156ad0392158e4				0
+set #x3e6b46e30e5c938e3 				0
+set #x3ed9a51db36904e30  0.1
+set #x35618605abd25ff99     0.1
+set #x364483ec1fd3d3c77       0.1
+set #x3b82bd719c6e7913			1
+
+// super lottery
+//set #x3eba0ef12e9c9260b			1
+//set #x3350b9a835c1f30b8			1
+
+// big map
+set #x3f77b78837563fb9a						0
+set #x3cb2d56d085e5a9b9 		2
+set #x3faf1db5754891b2d				 		2
+
+// prestige 
+set #x35e054b52d21039a6					30
+set #x3c102092dfae94893			3
+
+// misc
+set #x3690fab6ee98f9bfa					5
+
+set #x3f9511aeb46157a2				0
+
+set #x3e59751be097fe830				1	
+
+set #x33bfe19e3234d5dff 0
+
+// Infils
+set #x3bafe5b24255dff94 				0
+
+// shipment spawn fix test
+set #x3cd080f6abb5dbe06   0 
+
+// games of summer
+set #x3750e151e9a3727e7			0
+set #x3c8724ebc0f08ec3e				1
+set #x371c708ca0182656b		3
+set #x3ce8358082dfab9e9		0
+
+// UI pinned feature enable
+set #x3141de4492226006e 1
+
+// killswitches for CDL
+set #x3e28d12be72c578ed			1
+
+// for development oob
+set #x38b72c037221c4fbb	0
+
+set #x3cba7d6083c9553b8 2
+
+// killswitch for custom rule dynamic map elements
+set #x3f06ae50014e12fe5 1
+
+// Killswitch for inappropriate battlechatter events
+set #x31d35b53bfda45635 1
+
+// ------------------------- //
+// DELETE (CLEAN UP)
+// ------------------------- //
+
+// suit dvar
+set #x336d0baf9da4aba89 					1
+
+//flagshader
+r_flagShaderEntityVelocity_minSpeed 400

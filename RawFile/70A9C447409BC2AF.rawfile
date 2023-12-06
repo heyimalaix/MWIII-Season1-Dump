@@ -1,0 +1,83 @@
+
+#define CONST_DEFAULT_ENTER_REGION_SPLASH_COOLDOWN_MS		30000
+
+#define REGION_DIFFICULTY_LVL1								"difficulty_easy"
+#define REGION_DIFFICULTY_LVL2								"difficulty_normal"
+#define REGION_DIFFICULTY_LVL3								"difficulty_hard"
+#define REGION_DIFFICULTY_LVL4								"difficulty_darkaether"
+#define REGION_DIFFICULTY_UNDEFINED							"difficulty_undefined"
+
+#define OB_PLAYER_REGION_DIFFICULTY_CHANGE_CALLBACK			"player_region_difficulty_change"
+
+#define OB_REGION_DIFFICULTY_LVL1_DVAR						#d"ob_region_difficulty_lvl1"
+#define OB_REGION_DIFFICULTY_LVL1_DEFAULT					3
+
+#define OB_REGION_DIFFICULTY_LVL2_DVAR						#d"ob_region_difficulty_lvl2"
+#define OB_REGION_DIFFICULTY_LVL2_DEFAULT					20
+
+#define OB_REGION_DIFFICULTY_LVL3_DVAR						#d"ob_region_difficulty_lvl3"
+#define OB_REGION_DIFFICULTY_LVL3_DEFAULT					35
+
+#define OB_REGION_DIFFICULTY_LVL4_DVAR						#d"ob_region_difficulty_lvl4"
+#define OB_REGION_DIFFICULTY_LVL4_DEFAULT					55
+
+#define OB_REGION_DIFFICULTY_UNDEFINED_DVAR					#d"ob_region_difficulty_undefined"
+#define OB_REGION_DIFFICULTY_UNDEFINED_DEFAULT				1
+
+
+#define OB_SPRINT_SPEED_CHANCE_LVL1							25
+#define OB_SPRINT_SPEED_CHANCE_LVL2							60
+#define OB_SPRINT_SPEED_CHANCE_LVL3							90
+#define OB_SPRINT_SPEED_CHANCE_LVL4							100
+
+#define OB_REGION_SPRINT_LVL1_DVAR							#d"ob_region_sprint_lvl1"
+#define OB_REGION_SPRINT_LVL1_DEFAULT						25
+
+#define OB_REGION_SPRINT_LVL2_DVAR							#d"ob_region_sprint_lvl2"
+#define OB_REGION_SPRINT_LVL2_DEFAULT						60
+
+#define OB_REGION_SPRINT_LVL3_DVAR							#d"ob_region_sprint_lvl3"
+#define OB_REGION_SPRINT_LVL3_DEFAULT						100
+
+#define OB_REGION_SPRINT_LVL4_DVAR							#d"ob_region_sprint_lvl4"
+#define OB_REGION_SPRINT_LVL4_DEFAULT						100
+
+
+#define OB_REGION_SUPER_SPRINT_LVL1_DVAR					#d"ob_region_super_sprint_lvl1"
+#define OB_REGION_SUPER_SPRINT_LVL1_DEFAULT					0
+
+#define OB_REGION_SUPER_SPRINT_LVL2_DVAR					#d"ob_region_super_sprint_lvl2"
+#define OB_REGION_SUPER_SPRINT_LVL2_DEFAULT					5
+
+#define OB_REGION_SUPER_SPRINT_LVL3_DVAR					#d"ob_region_super_sprint_lvl3"
+#define OB_REGION_SUPER_SPRINT_LVL3_DEFAULT					30
+
+#define OB_REGION_SUPER_SPRINT_LVL4_DVAR					#d"ob_region_super_sprint_lvl4"
+#define OB_REGION_SUPER_SPRINT_LVL4_DEFAULT					30
+
+
+#define OB_DAMAGE_SCALING_RANK_1							1
+#define OB_DAMAGE_SCALING_RANK_2							1.666
+#define OB_DAMAGE_SCALING_RANK_3							2.5
+#define OB_DAMAGE_SCALING_RANK_4							3
+
+#define OB_REGION_VEHICLE_DAMAGE_SCALE_EASY_DVAR			#d"ob_region_damage_scale_easy"
+#define OB_REGION_VEHICLE_DAMAGE_SCALE_EASY					1.0
+
+#define OB_REGION_VEHICLE_DAMAGE_SCALE_NORMAL_DVAR			#d"ob_region_damage_scale_normal"
+#define OB_REGION_VEHICLE_DAMAGE_SCALE_NORMAL				2
+
+#define OB_REGION_VEHICLE_DAMAGE_SCALE_HARD_DVAR			#d"ob_region_damage_scale_hard"
+#define OB_REGION_VEHICLE_DAMAGE_SCALE_HARD					5
+
+#define OB_REGION_VEHICLE_DAMAGE_SCALE_DARK_AETHER_DVAR		#d"ob_region_damage_scale_aether"
+#define OB_REGION_VEHICLE_DAMAGE_SCALE_DARK_AETHER			10
+
+#define OB_REGION_VEHICLE_DAMAGE_BASE_VEHICLE_HEALTH_DVAR	#d"ob_region_base_vehicle_health"
+#define OB_REGION_VEHICLE_DAMAGE_BASE_VEHICLE_HEALTH		1850.0
+
+#define OB_REGION_VEHICLE_DAMAGE_ZOMBIE_KILLS_DVAR			#d"ob_region_zombie_kills"
+#define	OB_REGION_VEHICLE_DAMAGE_ZOMBIE_KILLS				45.0
+
+#define OB_REGION_VEHICLE_DAMAGE_SCALE_NON_NORMAL			5
+

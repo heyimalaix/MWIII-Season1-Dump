@@ -1,0 +1,32 @@
+%force_cs_anim_index_match
+
+aimnode : aim_9pt( aim_active=[aim_active], aim_yaw=[aim_yaw], aim_pitch=[aim_pitch], aim_state=[aim_state], degrees="-180,-135,-90,-45,0,45,90,135,180",
+	aim_anims="4,7,6,5,3,0,1,2,4", animclass=[animclass], animstate=[animstate], animentry=[animentry] ) fullrestart unnormalized
+{
+	reb_vh_techo_lowCrouch_9pt_aim_1
+	reb_vh_techo_lowCrouch_9pt_aim_2
+	reb_vh_techo_lowCrouch_9pt_aim_3
+	reb_vh_techo_lowCrouch_9pt_aim_4
+	reb_vh_techo_lowCrouch_9pt_aim_6
+	reb_vh_techo_lowCrouch_9pt_aim_7
+	reb_vh_techo_lowCrouch_9pt_aim_8
+	reb_vh_techo_lowCrouch_9pt_aim_9
+	
+	reb_vh_techo_highCrouch_9pt_aim_1
+	reb_vh_techo_highCrouch_9pt_aim_2
+	reb_vh_techo_highCrouch_9pt_aim_3
+	reb_vh_techo_highCrouch_9pt_aim_4
+	reb_vh_techo_highCrouch_9pt_aim_6
+	reb_vh_techo_highCrouch_9pt_aim_7
+	reb_vh_techo_highCrouch_9pt_aim_8
+	reb_vh_techo_highCrouch_9pt_aim_9
+	
+	reb_vh_techo_stand_9pt_aim_1
+	reb_vh_techo_stand_9pt_aim_2
+	reb_vh_techo_stand_9pt_aim_3
+	reb_vh_techo_stand_9pt_aim_4
+	reb_vh_techo_stand_9pt_aim_6
+	reb_vh_techo_stand_9pt_aim_7
+	reb_vh_techo_stand_9pt_aim_8
+	reb_vh_techo_stand_9pt_aim_9
+}

@@ -1,0 +1,38 @@
+set #x397379f4d74176304 230  // was 200 in BETA "The time it takes to lerp the viewheight from stand to crouch or crouch to stand" 
+set #x37697bdbf4f207b9c 475  // was 475 in BETA //"The time it takes to lerp the viewheight from crouch to prone or prone to crouch" 
+
+set #x34d47607f97524d97 320 // was 300 in beta //"The time it takes to lerp the viewheight from stand to crouch or crouch to stand while in ADS" 
+set #x3d87403ffa9fc8cdf 590 // was 650 in beta  //"The time it takes to lerp the viewheight from crouch to prone or prone to crouch while in ADS"
+
+set #x377b53c2c91bd50dc 50  // time to stand from crouch( lower is slower)
+set #x34e0fd5787a87bb3e 60 //time to stand from prone ( lower is slower )
+set #x373d7fc72dc145d42 0.83 //sprint speed scale while transitioning
+
+////
+set #x31c8188de090906e 200 //"Time in msec to fully use the change stance idle motion scale" )
+set #x35d9eb604c793e00f 200 //"Time in msec to fully stop using the change stance idle motion scale" )
+
+set #x353c3693fdebdc606 100
+set #x3d6cda576c54f3967 600
+
+set #x38d0a0a7fa4656154 250
+set #x33cb156b64c8db4c1 300
+
+////
+//going crouch is the default 1, jump and prone have additional scaling to their movement factor to increase it.
+set #x3d65ec2f2b0b74684 1.1
+set #x31439fe324524b916 2
+
+set #x3e46342058851da82 0.55 //scale applied to view height when changing speed
+
+//hip spread settings
+set #x3521400c4d8818ba0 1
+set #x32fa09b11cadcceaa 4
+set #x3d7d4b598deffb6fe 230
+set #x38687dc1739247751 500
+set #x345b79ed67bcddbf3 2
+set #x31d1fcdcfed9d4e24 2
+
+
+//direct stand->prone transition control. This transition is only accessible if the player is going fast enough (usually directly after discontinuing a sprint/super sprint)
+set #x3994c3cd3854363c 62

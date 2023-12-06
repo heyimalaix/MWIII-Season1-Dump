@@ -1,0 +1,85 @@
+{
+	"version": "30.0",
+    "list": {
+		"default_auto": {
+			"file": "mgl_default_auto_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 1
+        },
+        "default": {
+            "file": "default_layout_config",
+            "usingLayoutConfig": true
+        },
+		"default_manual": {
+			"file": "mgl_default_manual_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 2
+		},
+		"enhanced_auto": {
+			"file": "mgl_auto_plus_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 3
+		},
+		"pro": {
+			"file": "mgl_pro_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 4
+		},
+		"toggle_weapons": {
+			"file": "mgl_one_weapon_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 5
+		},
+		"classic": {
+			"file": "mgl_codm_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 6
+		},
+		"popular": {
+			"file": "mgl_pubgm_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 7
+		},
+		"inf001": {
+			"file": "mgl_inf001_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 9
+		},
+		"inf002": {
+			"file": "mgl_inf002_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 10
+		},
+		"inf003": {
+			"file": "mgl_inf003_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 11
+		},
+		"inf004": {
+			"file": "mgl_inf004_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 12
+		},
+		"inf005": {
+			"file": "mgl_inf005_layout_config",
+			"usingLayoutConfig": true,
+			"sortIndex": 8
+		},
+          "left_hand_mode": {
+              "file": "left_hand_mode_layout_config",
+              "usingLayoutConfig": true
+          },
+          "hudless": {
+              "file": "hudless_layout_config",
+              "usingLayoutConfig": true
+          },
+          "classic": {
+              "file": "classic_layout_config",
+              "usingLayoutConfig": true
+          },
+          "focused": {
+              "file": "focused_layout_config",
+              "usingLayoutConfig": true
+         }
+	}
+}

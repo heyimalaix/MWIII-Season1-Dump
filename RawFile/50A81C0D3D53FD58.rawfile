@@ -1,0 +1,182 @@
+{
+	"parent": "layout_customization/mgl_widgets.json",
+	"textReference": "LUA_MENU_MOBILE/UXP_MAGELLAN_INF001",
+	"optionsData": {
+		"AutoPickupItemsMobile": 2,
+		"AutoDeployParachuteMobile": 3,
+		"WeaponAmmoCounterTypeMobile": 1,
+		"WeaponAmmoCounterTypeMobileMP": 1,
+		"IsJoystickEnableDirectionZoneMobile": 2,
+		"AutoFireMobile": 3,
+		"AutoSprintMobile": 2,
+		"AutoMantleMobile": 1,
+		"AutomationMobile": 2,
+		"AutoGrabWeaponsMobile": 2,
+		"AutoGrabWeaponsFirstFilterMobile": 2,
+		"AutoGrabWeaponsSecondFilterMobile": 1,
+		"AutoStairsMobile": 1,
+		"AutoCrouchMobile": 1,
+		"AutoTurnCornersMobile": 1,
+		"BRMinimapStyleMobile": 1,
+		"MinimapStyleMobile": 2,
+		"TouchClusterReleaseToUseMobile": 1,
+		"SlideTriggerMobile": 1
+	},
+	"layoutData": {
+		"BRInteractiveLootCard": {
+			"requiredInfo": {
+				"verticalOffset": 615.428467,
+				"horizontalOffset": 1436.607178
+			}
+		},
+		"ExitVehicleButton": {
+			"requiredInfo": {
+				"verticalOffset": 330.0
+			}
+		},
+		"VehicleFlares": {
+			"requiredInfo": {
+				"horizontalOffset": 443.0,
+				"verticalOffset": 51.0
+			}
+		},
+		"KillstreakButton": {
+			"requiredInfo": {
+				"verticalOffset": 159.428528,
+				"horizontalOffset": 27.964417
+			}
+		},
+		"JumpButton": {
+			"requiredInfo": {
+				"verticalOffset": 222.749908,
+				"horizontalOffset": 346.07135
+			}
+		},
+		"MeleeButton": {
+			"requiredInfo": {
+				"verticalOffset": 575.106934,
+				"horizontalOffset": 558.85675
+			}
+		},
+		"FieldUpgradeButton": {
+			"requiredInfo": {
+				"verticalOffset": 336.571594,
+				"horizontalOffset": 44.356567
+			}
+		},
+		"FieldUpgradeButtonMP": {
+			"requiredInfo": {
+				"verticalOffset": 336.571594,
+				"horizontalOffset": 44.356567
+			}
+		},
+		"RightJoystick": {
+			"scale": 0.343468,
+			"alpha": 1,
+			"requiredInfo": {
+				"verticalOffset": 410.071106,
+				"horizontalOffset": 383.321167
+			}
+		},
+		"PickupOnUseHint": {
+			"requiredInfo": {
+				"horizontalOffset": 560.0,
+				"verticalOffset": 720.0
+			}
+		},
+		"Joystick": {
+			"isHidden": false,
+			"requiredInfo": {
+				"horizontalOffset": 254.535904,
+				"verticalOffset": 138.464325
+			},
+			"alpha": 0.312537
+		},
+		"ReloadButton": {
+			"requiredInfo": {
+				"verticalOffset": 311.607025,
+				"horizontalOffset": 576.750366
+			}
+		},
+		"ThrowBackButton": {
+			"requiredInfo": {
+				"verticalOffset": 373.107147,
+				"horizontalOffset": 599.78595
+			}
+		},
+		"BRParachuteWidget": {
+			"requiredInfo": {
+				"horizontalOffset": 1475.428345,
+				"verticalOffset": 348.178406
+			}
+		},
+		"ADSHoldBreathButton": {
+			"requiredInfo": {
+				"horizontalOffset": 166.428528,
+				"verticalOffset": 583.714294
+			}
+		},
+		"ADSZoomButton": {
+			"requiredInfo": {
+				"horizontalOffset": 259.750183,
+				"verticalOffset": 790.892822
+			}
+		},
+		"HipFireButton": {
+			"scale": -0.017053,
+			"alpha": 0.657132,
+			"requiredInfo": {
+				"verticalOffset": 604.607117,
+				"horizontalOffset": 1961.962036
+			}
+		},
+		"SelfReviveIcon": {
+			"requiredInfo": {
+				"leftAnchor": 0.5,
+				"rightAnchor": 0.5,
+				"topAnchor": 1.0,
+				"bottomAnchor": 0.0
+			}
+		},
+		"EquipmentArea": {
+			"classID": 1,
+			"requiredInfo": {
+				"verticalOffset": 73.714233,
+				"horizontalOffset": -50.999634
+			}
+		},
+		"EquipmentAreaMP": {
+			"classID": 1,
+			"requiredInfo": {
+				"verticalOffset": 73.714233,
+				"horizontalOffset": -50.999634
+			}
+		},
+		"GrenadeArea": {
+			"requiredInfo": {
+				"verticalOffset": 68.892883,
+				"horizontalOffset": 375.03595
+			}
+		},
+		"GrenadeAreaMP": {
+			"requiredInfo": {
+				"verticalOffset": 68.892883,
+				"horizontalOffset": 375.03595
+			}
+		},
+		"ADSButton": {
+			"requiredInfo": {
+				"verticalOffset": 873.214294,
+				"horizontalOffset": 1642.536011
+			},
+			"isHidden": true
+		},
+		"SquatButton": {
+			"scale": 0.295687,
+			"requiredInfo": {
+				"verticalOffset": 43.142883,
+				"horizontalOffset": 146.642151
+			}
+		}
+	}
+}

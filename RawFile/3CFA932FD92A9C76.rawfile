@@ -1,0 +1,41 @@
+//RHIB TWEAKS
+//set #x3b6539eb120e673cc			575 			//450			//How much force is used for the engine forward. Will use this to brake when going reverse too.
+//set #x378d3fd6ce915002a	400				//350			//How much force is used to reverse. Will use this to brake when going forward too.
+//set #x3aa45715aa9ef3574		-145 0 -100		//-145 0 -52	//Offset from the origin where the engine force is applied.
+//set #x3e40e7369a53d5e07				84 40 32		//80 35 32		//Size used to compute where the buoyancy approximation spheres are located.
+//set #x37cd54f1e4dc0e58d		8				//8				//Number of approximation spheres for the simplified buoyancy model, must be even.
+//set #x382c4665b749e46b2	24.5			//28			//Radius of each of the spheres for the simplified buoyancy model.
+//set #x378d08f495d156290				6				//4.5			//How much steering yaw speed is increase per second when going fullspeed. This is scaled depending on bg_vehZoscarSteeringSpeedQuad and bg_vehZoscarSteeringSpeedOOB.
+//set #x3c7972dab42fbe9dc			15				//20			//How fast the lateral movement is reduced. The default value is big enough to remove all lateral drifting.
+//set #x341a28d8e08517810				4				//6				//How much it'll reduce the yaw speed of the zodiac (when steering is released or after a collision)
+//set #x3282bcf6991e95b56				1.5				//1.5			//How much it'll reduce the roll speed of the zodiac (when steering is released)
+//set #x3a54cb3104f6ab867			5500			//900			//This density is directly proportional to the force that is applied up for submerged spheres (kg/m^3)
+//set #x32f969192a517ddc7				4				//11			//This is a gravity accel is directly proportional to the force that is applied up for submerged spheres (m/s^2)
+//set #x385ab56754c358f97				3500			//800			//This is directly proportional to the damping of each of the submerged spheres. This is used to remove bounciness on the water.
+//set #x336ec19c9e419db1b			1.2				//1.2			//The yaw speed of the zodiac is clamped to this (rad/s)
+//set #x3ed381b5987e3fbcd			2				//1.2			//This roll speed of the zodiac is clamped to this (rad/s)
+//set #x34c6b38d776937a1				-800			//-400			//Extra gravity force applied linearly down the zodiac, to try keep it as much as possible on the surface.
+//set #x3312472952ffa160a			0.5 2 1			//0.8 2 0.5		//Noise parameters that affect to the buoyancy spheres radius. Frequency, Amplitude, Amplitude damping
+//set #x335951713dd4e32fc		0 1 0.01 0.3	//0 1 0.01 0.3	//Will define the steering curve (linear) ranges/domains, depending on the speed and multiplied by the bg_vehZoscarSteering. 
+//set #x3c3d91cb1c9868e91		0 0				//0 0			//Out of domain multipliers
+//set #x378472af19184f84b			1.5				//1.5			//Roll speed added when steering.
+
+
+set #x3171cb4f2c4f2d09 2
+
+set #x3a9386838a077a91e 1	//MP 1	//SP 0
+set #x3b2b4f1e1cf04437f 1	//MP 1	//SP 0
+set #x3b2d74f479e0bfe2b 1			//MP 0	//SP 0
+
+set #x38bd78d36d644bdc1 1		//MP 0	//SP 0
+set #x3afda187e7c7ee005 1		//MP 0	//SP 0
+set #x3e5eac3e95bca617d 1		//MP 0	//SP 0
+
+//set #x3841628148b872592 1
+//set #x3e22f067bfbc96f1a 1
+//set #x35b708180f06f471c 0.5 0 0.5
+//set #x3608daf154a26da64 1
+//set #x39cf7c117fad46e83 0.0175
+//set #x3dca7f39750ddddb0 0.75
+
+//set #x327090abeb039c6ab 0 //FIX JKU this is only here bc of a bug with camera returning

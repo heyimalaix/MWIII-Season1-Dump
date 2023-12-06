@@ -1,0 +1,34 @@
+
+#define PERK_JUGGERNOG "specialty_juggernog"
+#define PERK_QUICK_REVIVE "specialty_quickrevive"
+#define PERK_SPEEDCOLA "specialty_speedcola" 
+#define PERK_STAMINUP "specialty_staminup"
+#define PERK_DEADSHOT "specialty_deadshot"
+#define PERK_DEATH_PERCEPTION "specialty_death_perception"
+#define PERK_ELEMENTAL_POP "specialty_elemental_pop"
+#define PERK_PHD_FLOPPER "specialty_phd_flopper"
+#define PERK_TOMBSTONE "specialty_tombstone"
+#define PERK_M_MOD "specialty_m_mod"
+
+#define STR_SOUND_DEATH_PERCEPTION "mus_perk_deathperception"
+#define STR_SOUND_DEADSHOT "mus_perk_deadshot"
+#define STR_SOUND_ELEMENTAL_POP "mus_perk_elementalpop"
+#define STR_SOUND_JUGGERNOG "mus_perk_juggernog"
+#define STR_SOUND_QUICK_REVIVE "mus_perk_revive"
+#define STR_SOUND_SPEEDCOLA "mus_perk_speed"
+#define STR_SOUND_STAMINUP "mus_perk_staminup"
+#define STR_SOUND_TOMBSTONE "mus_perk_tombstone"
+
+#define CONST_PERK_RADIUS		32
+#define CONST_MAX_PERK_DECAY	3
+#define CONST_MAX_PERK_COUNT	100
+
+#define CONST_ACTIVE_PERK_OMNVAR_1 "ui_active_perks_1"
+#define CONST_ACTIVE_PERK_OMNVAR_2 "ui_active_perks_2"
+#define CONST_ACTIVE_PERK_OMNVAR_3 "ui_active_perks_3"
+#define CONST_MAX_OMNVAR_BIT_SIZE 30
+#define CONST_PERK_BIT_SIZE 5
+#define CONST_PERK_MAX_DECIMAL 31
+#define CONST_MAX_PERKS_PER_OMNVAR 6
+
+#define CONST_KILLED_BY_PHD_FLOPPER "phd_flopper_killed"

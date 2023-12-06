@@ -1,0 +1,21 @@
+#define ACTIVITY_NEXUS_LOG_PREFIX "ACTIVITY NEXUS LOG "
+
+//These DVARs apply to all Logging. Whether the game is being played locally or on a dedicated server for a playtest
+#define DVAR_ACTIVITYNEXUS_LOGGING_DISABLED				 #d"activity_logging_disabled" //When turned on, all logging is ignored regardless of the state of the other logging dvars
+
+#define DVAR_ACTIVITYNEXUS_LOGGING_FOCUS		 		 #d"activity_player_focus_logging_enabled"			//Enabling this dvar will log events related to player focus in activities
+#define DVAR_ACTIVITYNEXUS_LOGGING_PARTICIPATION		 #d"activity_participation_logging_enabled"			//Enabling this dvar will log events related to player participation in activities
+#define DVAR_ACTIVITYNEXUS_LOGGING_INSTANCE				 #d"activity_instance_logging_enabled"				//Enabling this dvar will log events related to the lifecycle of an Activity Instance
+#define DVAR_ACTIVITYNEXUS_LOGGING_PROGRESSTRACKER		 #d"activity_progress_tracking_logging_enabled"		//Enabling this dvar will log events related to the progress trackers stored on Activity Instances. When they are updated and when they are completed.
+#define DVAR_ACTIVITYNEXUS_LOGGING_OBJECTIVEMARKER		 #d"activity_objective_marker_logging_enabled"		//Enabling this dvar will log events related to the objective markers being managed by Activity Instances. When they are managed and which players are masked to see them.
+#define DVAR_ACTIVITYNEXUS_LOGGING_PLAYERBROADCASTING	 #d"activity_player_broadcasting_logging_enabled"	//Enabling this dvar will log events related to the Player Broadcasts sent out by Activity Instances. What types of broadcasts, when they are sent out and which players receive them.
+#define DVAR_ACTIVITYNEXUS_LOGGING_GENERAL				 #d"activity_general_logging_enabled"				//Enabling this dvar will log general Activity Nexus events that don't specifically fall into a category. This is the default logging dvar so you may expect to see all sorts of things logged here.
+
+//These DVARs apply only to Playtest Server Logs
+#define DVAR_ACTIVITYNEXUS_PLAYTEST_LOGGING_ENABLED				 #d"activity_playtest_logging_enabled"			//When enabled, Activity Nexus Logs will be active during playtests and not just locally or in debug environments
+#define DVAR_ACTIVITYNEXUS_PLAYTEST_LOGGING_INFO				 #d"activity_playtest_log_info"					//When enabled, Activity Nexus Logs marked with the "Info" severity (which is the default) will be logged during playtest builds
+#define DVAR_ACTIVITYNEXUS_PLAYTEST_LOGGING_WARNINGS			 #d"activity_playtest_log_warnings"				//When enabled, Activity Nexus Logs marked with the "Warnings" severity will be logged during playtest builds
+#define DVAR_ACTIVITYNEXUS_PLAYTEST_LOGGING_ERRORS				 #d"activity_playtest_log_errors"				//When enabled, Activity Nexus Logs marked with the "Errors" severity will be logged during playtest builds
+#define DVAR_ACTIVITYNEXUS_PLAYTEST_LOGGING_ASSERTS				 #d"activity_playtest_log_asserts"				//When enabled, Activity Nexus Logs marked with the "Asserts" severity will be logged during playtest builds
+#define DVAR_ACTIVITYNEXUS_PLAYTEST_LOGGING_ALL					 #d"activity_playtest_log_all"					//When enabled, Any Activity Nexus Log regardless of severity will be logged during playtest builds
+#define DVAR_ACTIVITYNEXUS_PLAYTEST_LOGGING_ERRORSASASSERTS	     #d"activity_playtest_log_errors_as_asserts"	//When enabled, Activity Nexus logs marked wit the "Errors" severity are elevated to the "Assert" severity in playtest builds. This logs the error as well as throws an assert

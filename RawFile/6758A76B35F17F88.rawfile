@@ -1,0 +1,22 @@
+#define BroadcastDestination_Individual 				"Individual"
+#define BroadcastDestination_Group      				"Group"
+#define BroadcastDestination_Instance   				"Instance"
+#define BroadcastDestination_Squad      				"Squad"
+#define BroadcastDestination_Distance   				"Distance"
+#define BroadcastDestination_Zone       				"Zone"
+#define BroadcastDestination_Server     				"Server"
+	
+#define BroadcastMessageFormat_X_Complete 				"X_Complete"
+#define BroadcastMessageFormat_X_Remaining 				"X_Remaining"
+#define BroadcastMessageFormat_X_Out_Of_Y 				"X_Out_Of_Y"
+#define BroadcastMessageFormat_X_Percentage_Complete 	"X_Percentage_Complete"
+#define BroadcastMessageFormat_X_Percentage_Remaining 	"X_Percentage_Remaining"
+#define BroadcastMessageFormat_XX_YY_Clock 				"XX_YY_Clock"
+
+#define BroadcastDataObjectType_StringReferenceText		"Types_Activity_StringReferenceText"
+#define BroadcastDataObjectType_SplashReferenceData		"Types_Activity_SplashReferenceData"
+#define BroadcastDataObjectType_MusicReferenceData		"Types_Activity_MusicReferenceData"
+#define BroadcastDataObjectType_OverlordReferenceData	"Types_Activity_OverlordReferenceData"
+#define BroadcastDataObjectType_OmnvarData				"Types_Activity_OmnvarData"
+
+#define ActivityPlayerBroadcast_ScriptBundleAssetType 	"activityplayerbroadcast"

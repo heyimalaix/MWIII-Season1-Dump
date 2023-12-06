@@ -1,0 +1,27 @@
+
+// Keep in sync with enum BsmState in code (code_source\src\game_iw9\game\ai\ai_scripted.h)
+#define STATE_IDLE 0 
+#define STATE_INVESTIGATE 1 
+#define STATE_HUNT 2 
+#define STATE_COMBAT 3 
+#define STATE_UNSET 4 
+
+// Keep in sync with enum AIStealthThreatSightFlags in code (code_source\src\game_iw9\game\ai\ai_scripted.h)
+#define AI_STEALTH_THREAT_SIGHTED ( 1 << 0 ) 
+#define AI_STEALTH_THREAT_SIGHT_WAIT_LOST ( 1 << 1 ) 
+#define AI_STEALTH_THREAT_SIGHT_LOST ( 1 << 2 ) 
+#define AI_STEALTH_THREAT_SIGHT_FORCE_VISIBLE ( 1 << 3 ) 
+
+#define EVENTTYPE_NONE 0 
+#define EVENTTYPE_INVESTIGATE 1 
+#define EVENTTYPE_COVERBLOWN 2 
+#define EVENTTYPE_HUNT 3 
+#define EVENTTYPE_COMBAT 4 
+
+// Stealth Event Severity - Is there a way to have variable declares across files?
+#define SE_CURIOUS "curious" 
+#define SE_INVESTIGATE "investigate" 
+#define SE_COVER_BLOWN "cover_blown" 
+#define SE_COMBAT "combat" 
+
+

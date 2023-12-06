@@ -1,0 +1,7 @@
+// this gets run when you run with a fresh profile and when you reset #x38c95068c1f418e19
+// code will zero stats before this is run
+
+//////// general setup ////////
+
+//////// Loadouts ////////
+exec mp\stats_init_leagueplay_loadouts

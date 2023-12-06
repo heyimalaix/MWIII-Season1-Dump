@@ -1,0 +1,27 @@
+exec br_core.cfg
+set #x3faf1db5754891b2d 1
+set #x3c163d5db19834c48 0
+set #x370bf831e0968bcdd 1 
+set #x397ab1e3e328ddff9 3
+set #x37713e10380b6cb97 1
+set #x37a1447160ba151fe 0
+set #x3bc59a62d95ed2dcb 48
+set #x39dc1ce1ec530f73f 48
+set #x360feb5eea5e607fe 48
+set #x3e38e16d9fbf3fc43 mp/loot/br/default/loot_item_defs.csv
+set #x3add02e4fff48882f mp/loot/br/tutorial/loot_item_zones_tutorial.csv
+set #x3e4fa721677f03de0 0
+set #x3922702c14f5a008 3
+set #x31141fea0c6ef428f 1
+set #x318b7464a93050781 0
+set #x3f8e5c3daa6c01012 ""
+set #x3f6f24e020168ade8 pistolarmordropbagtime
+set #x3f29fa998fb70c4d5 "mp/brmission_rewards.csv"
+set #x385ba512aed5ce540 "mp/brmission_reward_groups.csv"
+set #x390b976de573aecf2 brloot_vip_tablet brloot_quest_tablet brloot_timedrun_tablet brloot_plunder_extract
+set #x398ad200418c78f99 0
+set #x3a5ab8ed6cc1b486a 3
+set #x3538da4cbdf728ccc 0
+set #x33f2fc4611b11d303 ""
+set #x3c0dba6a7250aad33 0
+set #x3b3366fb6bbcd6dab -1

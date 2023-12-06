@@ -1,0 +1,73 @@
+// this should only house ONLINE specific settings
+
+set #x39995278b4b4099ae				0
+
+set #x315115ef896ca26f2 				1
+
+// TODO IWH-44558 - pull this logic before ship
+set #x3b66208719c6bae6a 				0
+set #x3e32ebdbb97a1ec4e				0
+
+// shared gametype defaults
+
+// gameplay
+set #x3c653d32c30815d2b			15 // ensure we have this online, this is the client connect grace period
+set #x3704afe6f6c582ee0			15 // ensure we have this online, this is the prematch period countdown
+set #x3b8a0aa5681c2aa39 	0
+set #x394af58bec500b3b9 		0
+set #x3dfc97948abf22f64 	0
+set #x3215eb9aef94dd47e 		0
+set #x3269d1797b0db249b				0
+set #x38613ee8086b0e0f6 1	// Prevent negative boosters from suiciding to tank their ranking
+set #x36e73595f4ce7501e		0
+set #x3e723cc761de7b161 			0
+
+set #x3f77b78837563fb9a					0
+set #x3cb2d56d085e5a9b9 	2
+set #x3f77e28ac6e17a8c6          0 
+
+set #x3935090d3ed8df5f2 0
+
+// All Gamemode Settings go in here
+exec default_mp_modesettings.cfg
+
+// br loot
+set #x3e38e16d9fbf3fc43 	""
+set #x3c163d5db19834c48 0
+
+//temporary values for playtest. not for release
+set #x3b328f87e7c1ded21								0
+set #x347054e98093819a9						0
+set #x3dbe4b78ae44499c8						0
+
+// reset #x3a2dd8a031a68eed5 reserved scriptable base since it is modified on the playlist
+set #x3fc0d7859620c5fdc 	800
+set #x3e3343e09fcc88109 3200
+
+// playtest values were compass pips are hidden, minimap is on by default, and enemy shots don't show on minimap
+//set #x3508dce078992bdb8			1
+//set #x3bc802deb1ff2a842				1
+
+
+set #x35505c9eaa3f9538e 0
+set #x354954e5718ed66c1 0.9
+set #x3ca3b760fff9ca796 0.75
+
+set #x3330ea57ea86fcb72 1
+set #x3c46136d9db78c0b3 0
+
+// reset #x3456a0e8bef54835c game mode overrides
+set #x3f333ce2bff54a849	0
+set #x32932f62f9e03e846		0
+
+//flagshader
+r_flagShaderEntityVelocity_minSpeed 400
+
+// !!!NEVER CHANGE THIS POST LAUNCH - FOR INTERNAL RELEASE TESTING ONLY!!!
+set #x3739bbd49f9779978 0
+
+set #x310c1c5147c982164 0
+
+// Disable weapon/hands streaming gate when spectating players
+set #x3c23516dd70102aa8 0
+set #x34f7e433ce6eacbe8 0

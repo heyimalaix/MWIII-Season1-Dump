@@ -1,0 +1,511 @@
+//exec JUP movement CFG
+exec jup_core_settings.cfg
+
+// devmap server
+set #x360feb5eea5e607fe		48
+
+// ob (survival)
+set #x315115ef896ca26f2 3
+set #x3818c699a5caaee4f 24
+set #x367e537056ee477e0 0
+set #x37a1447160ba151fe 1
+set #x3aea3ac32a07685ba "allies"
+set #x3c7eeced4234b1158 0
+set #x325ad2925d6075c8f 1
+set #x35cb1a62baf307905 0 //holdover from non-zombies modes that shouldn't be needed in OB
+set #x3e0a808f0c05b7ec2 0
+set #x362aef0bf73b3a0f 1
+set #x3cdb81cb78e09b027 0
+set #x36595c001520e3eec 0 //if set #x3fa188bb584287b3 1, try and keep fireteams/lobby squads together in scripts\cp_mp\squads::setSquad (possibly todo, based on comments in that function)
+set #x3330ea57ea86fcb72 1
+
+// Server
+set #x3e664609932770fb9 -1
+set #x3ca480c2570e0d4b 48
+
+// Prematch
+set #x3994190a80328096d 0
+set #x3c653d32c30815d2b 60 //matches dmz
+
+// Bots
+set #x3a4149c16169203e5 1
+
+// AFK and Forfeit
+set #x3b66208719c6bae6a 1
+set #x39b383028dfd6542d 1
+set #x3783f25d038fa2819 1
+set #x3739bbd49f9779978 1
+
+//exfil
+set #x3ab8956c864b4d3a4 1 //use vehicle that players can go inside of
+set #x3348544f95be5e424 1 //get in vehicle and holdout while enemies are still active, instead of having to kill all enemies and then get in the vehicle
+set #x346e4f95ef8ccb491 1 //determines if AI are able to navigate onto exfil vehicle using script_brushmodel + nav_island + script spawned traversals
+set #x3ee51e09f87ec1371 0
+
+// Infil
+set #x32fe0283b419ff08a 0
+set #x3190041121abcc349 1
+set #x33e740cc0955d7614 1
+set #x37061556e5a6fcbc7 15 //add extra time to hold before IGC to account for loading video
+set #x333dc02542068fcd7 5 //extra time to look around after the infil before getting full control
+set #x345ce1e830caba62a 0 //if needed, adds slight delay after infil video does its fade out so that it doesn't hide too much of the in-game scene
+
+//Armor
+set #x395e3cdfa6f3b12a1     1
+set #x3fde1113ce9981d91 1
+
+//laststand/respawn Outbreak settings
+set #x3e723cc761de7b161 1
+set #x3f477e59410bec785 1
+set #x35ba57f036e2705b3 2 //time to hold button for suicide
+set #x3109dfc31da6b2e40 1 //scale for how fast revive progress decays after letting go of button
+set #x32c3222a73adb30fd "iw9_me_fists_mp" //default weapon to give in last stand. can also be overridden via functions in script
+set #x36e73595f4ce7501e 0 //when enabled, doesn't go into spectator mode on bleedout and instead uses spawn selection points that may exist in the map
+set #x3894c0b1c4e700989 jup_ob,jup_ob_green,jup_ob_yellow,jup_ob_orange,jup_ob_red //allow for buy station inventory and prices to pull from the various jup_ob region definitions
+set #x3f8e5c3daa6c01012 jup_ob
+
+// Zombie AI
+set #x31f20a2c29dbb1fe9 0
+set #x36ceade79bca44544 60
+
+// AI Executions
+set #x3ecf8ccf59868962e 0
+
+// Soldier AI
+set #x3bd36e8a44f02ed52  0 // these checks are causing huge perf spikes on big maps
+
+// Outbreak Activity Manager tuning
+// Contract type tuning
+set #x359964ef1c791d75 1
+set #x3f34754829a800f2b 800
+set #x3c26f0b1bde70c6a7 0.01
+set #x36d952f9392183dc7 -1
+set #x3be59abe7cc76700d 100
+set #x3f5406904f611288c 6
+set #x3f8ab9f6819b1fb3c 240
+set #x3f65dd2801f18d75e 2
+set #x39d1a920c2281b872 35
+set #x31a75e7465fcfc58b 25
+set #x37a338719f18757a9 5
+set #x32311fc2dd7c1b7ae 5
+
+// Objective type tuning
+set #x3518c5fc43793f7f7 0
+set #x31447b7e8e7970001 60
+
+// Activity type tuning
+set #x3f93a8a045bc7e924 800
+set #x3b1fa0de302595018 0.1
+set #x3680f1af6409a4038 -1
+set #x3e42b57d2ac63dd5a 100
+set #x3ca8a22d818b39375 1800
+set #x341da36be0e4ed673 6
+set #x3752a6ff2b62915c3 900
+set #x388f0c949ec07d51 3
+set #x353c9a1a1c614027d 100
+set #x399881cbd79454b84 100
+set #x3363b3aa9ae6a7cee 100
+set #x31a0bf67f1cb7f801 100
+
+// Global type tuning
+set #x3614a05058bc0c9c6 800
+set #x3d21d7ea47c9c3022 1
+set #x3f4d97c63d921a742 -1
+set #x3ac5e75115275c758 30
+set #x345da916f714d5379 6
+set #x37d2399bfabf6bd09 240
+set #x3b3481a51ac3f7e83 3
+
+// Startup type tuning
+set #x3a2d1ee7ee8554842 800
+set #x3a2d1ee7ee8554842 0
+set #x338f24ab4a79699e 0.1
+set #x35aea87fe94ad113e -1
+set #x399765e2a06e82474 40
+set #x347131777cbe1e073 4
+set #x3f1e3aed0efc8fe3 60
+set #x39c6c44fd172c05b 1
+set #x3cc2ed9061b0151 1
+set #x3aee53a467a6c50cd 2
+
+// Outbreak Content Manager tuning
+// Purchase Kiosk Content tuning
+set #x33f1de542feb76a80 40
+set #x3ad050c91512e9719 3
+set #x317f85eeafae0a806 15000
+
+// Pack a Punch Content tuning
+set #x3923d6ea553200216 10
+set #x3fb9ce66531214b9f 1
+set #x3dc80f3ed90315fe3 6
+set #x3e0622270a806e530 3
+set #x368d6a4182987478e 1
+set #x37ab967ad73c87def 1
+set #x31a6b71aa41f3dccc 15000
+
+// Perk Machine Content tuning
+set #x385c90e95a7d3f4e5 15
+set #x33fb2d88adfe6885e 1
+set #x35d3da7744995af32 9
+set #x3bafcbcc1b42aeca3 6
+set #x3db992223281bb5fd 0
+set #x37295fa75759b47ce 0
+set #x3d6e5fc6ee3d142ff 8000
+
+// Magicbox Content tuning
+set #x3725ffc79f72b3e3d 100
+set #x3d23d16cf4feff296 1
+set #x36c30ee097545800a 6
+set #x3b0c085991ac866ab 2
+set #x33e10041b2ad89965 1
+set #x37ec42c7db5619046 1
+set #x3900ca4aff03c9cb7 10000
+
+// Ammo station Content tuning
+set #x3652e4623aa9ffa8e 1
+set #x3b71946585fa2dd49 25
+set #x3d8d43ba1907c335a 99
+set #x3ec9afe1ada229e5f 5000
+set #x3d2b88b5ac40363ee 1
+
+// Wallbuy Content tuning
+set #x3604a60823bad2073 100
+set #x353a592a2f606ecfa 8
+set #x366680651646b357e 30
+set #x3e24aad505e929d4d 15
+set #x3c643e7560b3a1fbb 5
+set #x3895a1171d8b1738a 5
+set #x3e624a7891b670249 1000
+
+// Vehicle Content tuning
+set #x3f75ba8a97c2f2847 65
+set #x3a735cef72083ac3e 5
+set #x3e98d3010c810a485 5000
+set #x3e70605bdd7aa1e98 0
+set #x3771650cbeeca1ab2 2
+
+// Essence Vial Content tuning
+set #x33b79c67f1c070615 50
+set #x34509f0e51e56fe90 12
+set #x373bbc4be93b4d273 1500
+
+// All Crystals
+set #x33f9da19597f5e1ba 1
+
+// Green Zone Crystals Content tuning
+// set #x3a7a3db047e5be56d 20
+set #x3a7a3db047e5be56d 0
+set #x386f8787ecf8a20a0 2
+set #x37870f478a604a1cf 5000
+
+// Yellow Zone Crystals Content tuning
+// set #x3865753adef66a514 40
+set #x3865753adef66a514 0
+set #x370ee0103fddcac43 6
+set #x34ff57c39ae8f41e6 3000
+
+// Orange Zone Crystals Content tuning
+// set #x3f63a7a995678089e 50
+set #x3f63a7a995678089e 0
+set #x34117764450a3bc75 12
+set #x34ceb4e6676ddabc0 1000
+
+// Red Zone Crystals Content tuning
+// set #x336db3f13d10c255d 100
+set #x336db3f13d10c255d 0
+set #x3f7c602d2748371ef 100
+
+// Exfil Location Content tuning
+set #x3d74ba37ba5c227b0 120
+set #x3cacb25e035bc8e07 4
+set #x3cf2966d7fcf0b6a6 1
+set #x375e3e4ce102425a2 3
+set #x38bf3758117d650b5 1
+set #x3583f5b7f5ae50a6f 0
+set #x3df804d58e5d5fd96 0
+set #x3689abca81d18bd49 30000
+
+// AI Spawn Director
+set #x32e4907ccd20a8761							1
+set #x325de39eff9804a88									0
+set #x3279375a0bfb2862f									400
+set #x3320c4db6af00b215 										0
+set #x3c0ffa292ef675dbe 					70
+set #x37cea12faaeb9d47 							7500
+set #x3f1f518497502aea8				0
+set #x3f1d095735ac37f33			1
+set #x3864075b5940f8423					1
+set #x33b1977ba8fc8f581					52
+set #x325c7c924ab0d2b50					52
+set #x32f3e35c3ad3a0cf7							0
+set #x31b40412ca99bff38				0
+set #x3692361d51eb88bd3				0.8
+set #x388575482d4198e91				0.4
+set #x35d0a9522d76f4202			0.8
+set #x36742f4acb8195e40			0.5
+set #x37c737ee391e3ebab			0.83
+set #x3d34d55d1edccdf49			0.33
+set #x3cbefcdd62cf51be1					40
+set #x348b2acc7a12a9a5b								1
+set #x3d6e20e735fd1f936						10
+set #x35a0486172d3af40d	200
+
+// HUD
+//Prevents vehicle icons clamping to edge of minimap (does not affect Exfil and Objectives)
+set #x365f4934b67638c21 0
+set #x3cc440c2ebb6d6241 1
+set #x39a70e6e01d1021d9 0.5
+set #x34681924dc7217c53 0
+set #x3cbab232c64e4b13c 1
+set #x37144d1f72918d1e3 1
+set #x33d50ea8ca3e90469 60
+set #x381e9c33ddb944ae 60
+set #x3367a9748af80f8d2 0
+set #x31e22a81189dff8d7 1
+set #x38da4a5e690432cd0 0
+set #x3b352d5109b2e07e7 1
+set #x34c63bafb0a532dce 0
+
+// Currency
+set #x366d046d1cfe3ecc9 0
+
+// Vehicle
+set #x353e8929882e78ac6 1
+set #x3e4fa721677f03de0 1
+set #x3a52e5af795cf4d4f 0
+set #x3624627087d2fbc07 0
+set #x38fdbbb498db9480a 1
+set #x336374c04e23480b6 60
+set #x36f41bda368c6075f 1
+set #x3b5ed2429667c9012 1
+set #x3548a5a7dcb6bde02 1
+set #x3e33f3513a88f530c 1
+
+// Battlechatter
+set #x3ab3249fe50b0f590 1
+
+//Scoreevents
+set #x3a3a1cab75dca6cc6		0
+
+//Aim Assist
+set #x390e0d6a242bfc176 0
+
+//Turn on 3 panel hint screen
+set #x3568a7f53b08bfcca 1
+
+//C4 allow alt detonation
+set #x378d40bc744ba9f00 1
+
+// UAV Tower
+set #x321c230525b7cf2be 0
+set #x325af310c5bc4bc7c 15
+set #x34704cc015db60ad2 15
+
+// Faction Missions
+set #x35a8c71e376f35349 1
+set #x35fe27d3efac4a807 1
+
+// Instance Inventory
+set #x3f074cac8d485e1c8 0
+set #x3a31e837c3d3a9c9 1
+set #x3effdf75f46ecb806 1
+set #x321490214e104e768 1
+set #x31b1ec093041f3814 0
+set #x3eb99be1539a07c71 0.25
+set #x3b0b8d806784726d0 0 //disabled until supported on the online side
+set #x3618c3ca8c4897d2c 3600
+set #x3618c3fa8c48983c5 7200
+set #x3618c3ea8c4898192 10800
+set #x35c869b8df5b17357 90
+
+// Item System
+set #x3d60163b9839fa08 0
+
+// Tac Map
+set #x3c76df61f5903d176 0
+set #x31832d6e1e51d3b2d -1
+
+// Gas Stations
+set #x348bb9b301ddec6d5 1
+set #x318e99507526e4c5d 1
+
+// Buy Stations
+set #x3c19417012bec72a9 1
+
+// POI
+set #x357b012f2c429bcb9 0
+set #x3af96cbe00f226832 0
+set #x3a9f6d0e41ea4bc32 1
+
+// AI Tuning
+set #x3801a4981ce836d30 3
+
+// AI Corpse count
+set #x31851db151f127033 15
+//One Handed Armor
+set #x3d48a0404793bfcfe 1
+
+// Quests
+set #x3bb56255b931f8adb 0
+
+// Aether Storm
+set #x3bd3120ea0bb6d372 1
+set #x32c8d1de173cbb153 1
+set #x3a80863b2558da960 "difficulty_hard"
+
+// Armor
+set #x3a4d532f42d919827 1
+set #x3ce882ca282c2f85e 1
+set #x3d75d5638785f3b09 50
+set #x3a6a3fd965485d4bc 2
+
+// Scriptables
+set #x3c62e2762566139e5 1
+set #x3e3343e09fcc88109 8500
+set #x3b79b4054c678f062 28672
+set #x3e30b2652321795e0 28672
+set #x3e29ca64585d1a018 0
+set #x37066d5ef4d85e63e 0
+set #x3fc0d7859620c5fdc 2048
+
+// Skydiving/Parachute
+set #x3eef93545e965ee07 1
+set #x348705a5906c0200d 1
+set #x3ff604c5295c4e36c 1
+set #x35f25fd4c8fc1a759 1
+
+//overlord VO
+set #x3ec5ffe1a34b9c8a3 1
+
+// VOIP
+set #x36947fd5221a2c73d 1
+set #x3a4df7ac7190349ba 1
+set #x3a85ba82ffd9faefe 1
+set #x32c9195a6f431585d 1
+set #x3c5d765aefb9658bd 10
+
+// Telemetry
+set #x39361b1490151da6f 4
+
+// Squads
+set #x3af509ac21ec3bd6a 1
+set #x38a2622170456e2c3 1
+set #x3c9dacb3ade650dff 1
+
+// UI
+set #x3568a7f53b08bfcca 1
+set #x3b027da96d52f5c1e 1
+set #x34d01ecfd3bd9f351 1
+set #x3e443feae087e76a2 1
+set #x3c0713abbed01477c 1
+set #x328984baac59c1d9d 0
+set #x329135aeef2847865 0
+set #x3628bfd7867d35885 1
+
+// Lootcard
+set #x3cbb1ab6ea4484203 1
+set #x327bf99091ca716ab 5
+set #x3b7ae778224ae9034 5
+set #x3a51b2866600a0be5 30
+set #x34f5db955e1b6ee9a 5
+set #x3479863b4738da210 40
+set #x37e6a95da070b8c4c -240
+set #x32907a908439b8d91 1
+set #x321b4530fe8e59e9b 1
+set #x347f350ee22cdd193 15
+set #x3b3f6a1a08afe923 2
+set #x37b5549fcfa5138bc 50
+set #x3e558e83e94ca916b 0
+set #x3ce6497c23a1af5da 1
+
+// Ascenders
+set #x3eb0811ead28c4f53 1
+
+// Zip Doors
+set #x3dffbbb2b70b78aee 1
+set #x3b7734f303b1ee759 1
+
+//Easter Egg
+set #x3b0de5de525b2f8c6 1
+set #x36ffd9adb060c50c9 1
+
+// Weapon
+set #x3765526110378fb79 1
+set #x395b17582cb3dc34e 1
+
+// Mercs
+set #x398874c4025ebe46d 0
+
+// Challenges
+set #x35a8c71e376f35349 1
+set #x3c997b57cacd6832a 1
+
+// Outlines
+set #x3ce0f18cf521df1ef 0
+
+// Out of Bounds
+set #x3b773758221a0c100 10
+// Puzzle Quest
+set #x3abc1d9ea495ec189 1
+set #x367e441ba61ff128a 0
+set #x33b2a312a55f42bcd 0
+
+// S2 Puzzle Quest
+set #x33bc6c006bffbf8b 0
+set #x324df0a85fff6ee6b 0
+set #x39a36e5985ae07814 0
+
+// Ping
+set #x38fa862672ae1781b 1
+set #x37c74d4814e0665d5 120
+set #x3f2b483d963525879 120
+set #x3d25a3e0be5e90c21 60
+set #x34710528047b1660d 30
+set #x34da39a287b93388c 30
+set #x3dcab804f9c532b7f 9
+set #x3abe00a149eb51fc0 15
+set #x31b5c12366249c5ed 5
+scr calloutmarkerping_track_player_time 3
+set #x3c368219ba5712e18 120
+set #x3c9cbfc3f0d483c62 1
+
+// Plea for help
+set #x3b682a9c77af06b57 1
+
+//Seasonal Content
+set #x3abc1d9ea495ec189 1
+set #x33b2a312a55f42bcd 1
+set #x3c5b7e4fbc3c4ae1a 1
+
+// Spread add_agents_to_game over multiple frames
+set #x33c453eaf21ea4a86 100
+
+// Updated XP tuning using MW2 Shipment Tech
+set #x33a668a7111aae2d5 1
+set #x398d158d007b1e18c 22000
+set #x3d521ba27d6741e71 27500
+set #x32274843fc1c312bb 0.65
+set #x38328853355a66458 0.15
+set #x39ac9f3e06971452e 2500
+
+// Dragon's Breath
+set #x3666ee7d4e70b4c1c 1
+set #x3e43390f73e10b90c 2
+set #x3c8df47ac901b11d7 0.01
+set #x36236ca9688ad6f2a 1
+set #x39ff8020dd5f23959 1
+set #x3c4ccc540649a56f0 1
+
+// Snowball
+set #x3f0056cf75f3c0553 1
+set #x3e1806d78ca2e43d4 1
+set #x3d682622db30f1dde 40
+set #x34c359bab18336dde 0
+
+//setting these dvars to 0, they combat snaking by limiting how quickly the player can go from prone -> stand etc, we don't need that in OB
+set #x32eb9bee31efbe4b5 0
+set #x32019494c9544dbd3 0
+
+
+// Sentry Gun
+set #x360159c88e0599409 0

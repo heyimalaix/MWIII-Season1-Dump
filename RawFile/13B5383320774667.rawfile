@@ -1,0 +1,17 @@
+%force_cs_anim_index_match
+
+slopes_blendspace_2d: blendspace2d( rangex="-45,45", rangey="-45,45", blend_time="250",
+coords="{-40,-40},{0,-40},{40,-40},{-40,0},{0,0},{40,0},{-40,40},{0,40},{40,40}",
+edges="{0,1,3},{1,3,4},{1,4,5},{1,2,5},{4,5,7},{5,7,8},{3,4,7},{3,6,7}",
+valuex=[groundsloperoll], valuey=[groundslopepitch] ) 
+{
+	sdr_com_slope_strafe_add_9
+	sdr_com_slope_strafe_add_8
+	sdr_com_slope_strafe_add_7
+	sdr_com_slope_strafe_add_6
+	sdr_com_slope_strafe_add_5
+	sdr_com_slope_strafe_add_4
+	sdr_com_slope_strafe_add_3
+	sdr_com_slope_strafe_add_2
+	sdr_com_slope_strafe_add_1
+}

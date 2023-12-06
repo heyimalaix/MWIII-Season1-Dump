@@ -1,0 +1,34 @@
+#define BroadcastType_Debug					"Debug"
+#define BroadcastType_PlainText				"PlainText"
+#define BroadcastType_TitleSplash			"TitleSplash"
+#define BroadcastType_Music					"Music"
+#define BroadcastType_Overlord				"Overlord"
+#define BroadcastType_Omnvar				"Omnvar"
+#define BroadcastType_StringReference		"StringReference"
+
+#define BroadcastCommand_Add 	0
+#define BroadcastCommand_Update 1
+#define BroadcastCommand_Remove 2
+	
+#define BroadcastPriority_Highest		"Highest"
+#define BroadcastPriority_High			"High"
+#define BroadcastPriority_Medium		"Medium"
+#define BroadcastPriority_Low			"Low"
+#define BroadcastPriority_Lowest		"Lowest"
+
+#define BroadcastStyle_None											"None"
+#define BroadcastStyle_StringMessagingUtil_Splash					"StringMessagingUtil_Splash"
+#define BroadcastStyle_StringMessagingUtil_MinimapWidget			"StringMessagingUtil_MinimapWidget"
+#define BroadcastStyle_StringMessagingUtil_Dialog					"StringMessagingUtil_Dialog"
+
+#define BroadcastOmnvarType_Integer	"int"
+#define BroadcastOmnvarType_Boolean	"bool"
+#define BroadcastOmnvarType_Float	"float"
+#define BroadcastOmnvarType_String	"string"
+#define BroadcastOmnvarType_Dynamic	"dynamic"
+
+#define BroadcastConflictResolutionOption_None 		"None"
+#define BroadcastConflictResolutionOption_Ignore	"Ignore"
+#define BroadcastConflictResolutionOption_Delay		"Delay"
+
+#define BroadcastConflictResolution_DefaultMaximumDelayTimeInSeconds 10

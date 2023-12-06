@@ -1,0 +1,21 @@
+//exec IW9 file
+exec default_mp.cfg
+
+exec default_ob_modesettings_jup.cfg
+
+set #x3aff7f040fa04b28e ob
+set #x3e65e9a96eb2ff62b			ob
+set #x3ef237da69bb64ef6	        mp_jup_bigmap
+set #x34cac112cbf03cc2d	1000
+
+set #x3c62e2762566139e5 1
+set #x3ebd98e5eecc1322b 0 // TEMP HACK - silence error popups for smoother playtest
+set #x3f074cac8d485e1c8 0
+
+set #x3d60163b9839fa08 0
+set #x3e38e16d9fbf3fc43     ""
+set #x3add02e4fff48882f    ""
+
+set #x37b5549fcfa5138bc 30
+set #x3b3f6a1a08afe923 10
+set #x347f350ee22cdd193 15

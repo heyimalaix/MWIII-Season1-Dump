@@ -1,0 +1,34 @@
+set #x336d0baf9da4aba89 1
+
+// heartbeat sensor tablet
+set #x3de669dcc10d79a5f 2500
+set #x33c63d7ac4a762a33 3000
+set #x3309533e949774826 1
+
+//friend name brightness
+r_ui_scale_range_min 1
+r_ui_scale_scene_range 0.5 0.5
+//
+
+//func glass
+set #x3eb1c12a66d6f4906 				0.3 0.9 0.0 30.0
+set #x3f46ed989149525b1 			175.0 1.0
+set #x3ab36c0250ff46a5f 				480.0
+set #x37b47ca50a075cdbe 				235.0 400.0 0.0 10000.0
+set #x374210ca0e62948f0 			28.0
+
+// Audio occlusion modes we only want to enable for IW9
+set #x3a427048e86d1fade		1
+set #x3f3fdb95a5be10b8		2
+
+// Moving to standard game settings to it will be run on a ship build...
+exec dev_proto_global.cfg
+
+// override the one in dev_proto_global.cfg.  SP & CP should match.
+set #x3ef7063cb2b2d2fc6 0.85 //The starting temperature scale of corpses upon moment of death, as a fraction of the expected temperature of a body. Affects both player and agent corpses.
+set #x3beed2ab6bbb0a2de 10000 // The length of time, in Ms, over which a corpse will lose all its 'heat' (thermal temp becomes zero). Zero means the corpse doesn't lose heat. Affects both player and agent corpses.
+
+set #x3ea195c4e2a186f73 0
+
+//Disabling reactive camos as this system isnt being used anymore - JUP-248785 - 
+set #x35c9303075003946 1

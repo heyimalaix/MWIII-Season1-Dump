@@ -1,0 +1,4 @@
+// Start up with base configs
+exec default_systemlink.cfg
+
+set #x33f3eb7b5794fcb5f					20

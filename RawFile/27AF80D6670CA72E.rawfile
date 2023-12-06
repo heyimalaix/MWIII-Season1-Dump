@@ -1,0 +1,63 @@
+exec standard_mp.cfg
+
+set #x3922702c14f5a008 3
+
+set #x3ac4e3613786f9447 1
+
+set #x3e65e9a96eb2ff62b 				br_trios
+set #x38fe3271cd74f65a2 					br_trios
+set #x3e38e16d9fbf3fc43 mp/loot/br/default/loot_item_defs.csv
+set #x3add02e4fff48882f mp/loot/br/plunder/loot_table_zones.csv
+set #x367863d417b067d24 				0
+set #x3e664609932770fb9 		-1
+set #x3cb2d56d085e5a9b9 6
+set #x3faf1db5754891b2d 				6
+set #x3e022fd0199a95f84 			1200
+set #x3e432209cc5fbc970 	18000
+set #x3f77b78837563fb9a 				1
+set #x31a7a6d4ee3338761 		1
+set #x3d507d3832769e0d7 			1
+set #x3a07d25d87bb595de 			1000
+set #x3d541be8ce632eac6 				1
+set #x3c567928926183d31					10
+set #x396c1cdc24f5c05ae			1
+set #x333b1cb6fd6a90efd		120
+set #x34806b7415b66c1b5 			999 // * 100 in gsc
+set #x39126054077cbefac 		1
+set #x325741495f8eabdbe	1
+set #x3f7fd890fe210edec 15000
+set #x3c65e749258a1fab5 15800
+set #x3d7a5882fe16d92e3 1
+set #x312027360b079c1db 1.5
+set #x38d9ad523f40be455 12000
+set #x37b5f99d862e0fd13 3
+set #x3a811b4c67a77ce31 12
+set #x3d043ee66392f7b83 5
+set #x37144d1f72918d1e3 1
+
+set #x34ec62b4599196026 0.1
+set #x396db0b0e9378ad40 5
+set #x3eaacc4689dd5d721 1
+set #x323f4eae3aeebefd3 3
+set #x3e4fa721677f03de0 0
+
+
+// loot
+set #x3f8e5c3daa6c01012 dmz
+set #x3f29fa998fb70c4d5 mp/brmission_rewards_dmz.csv
+set #x385ba512aed5ce540 mp/brmission_reward_groups_dmz.csv
+
+//Just storing this here to remember it for testing so we can use less kits/bots to test squad features
+//set #x315115ef896ca26f2 4
+set #x3c62e2762566139e5 1
+set #x3a4149c16169203e5 1
+
+//Helper commands
+//bind \ map_restart
+//bind u ufo
+//bind l kill
+//bind x scr_plunder_airdrop_crate_spawn 1
+//bind c scr_plunder_airdrop_spawn 1
+//bind v scr_plunder_lc_spawn 1
+//bind b scr_plunder_plunder_extract_spawn 1
+//bind / forceMatchStart

@@ -1,0 +1,4 @@
+inherit,mp/loot/br/resurgence_massive/lootset_root.csv,,,,
+tagReject,nocache,100,,,
+reqAdd,support,2,2,,# Required Stim
+reqLimit,brloot_health_adrenaline,1,1,,

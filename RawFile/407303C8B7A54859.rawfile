@@ -1,0 +1,332 @@
+// gameplay settings in here only.
+// no controller or keyboard bindings.
+// nothing platform specific.
+
+// do not change dev_dvars (i.e. dvars used by code) in this file, or they may not work in ship.
+// set #x396253cd314c4fea8 in autoexec_*.cfg instead
+// (if you are changing dvars used only by script, carry on!)
+
+reset #x3650f534f8936e53d 
+reset #x323e7c289c87ec143
+reset #x3b74221bbd420062c
+reset #x3a16d51f39b76a154
+reset #x33ab0313f7e723fa1
+// Removed falling damage dvar resets blocking mp falling damage testing.-JoeC 07/29/15
+//reset #x3de79e5c6b8a17221
+//reset #x318e2dda6aaf07dc3
+reset #x31c7d4165269ed633
+
+set #x32502bf419d6a81a8 				0
+
+// UI defaults
+set #x3aff7f040fa04b28e				war
+set #x3e65e9a96eb2ff62b						war
+set #x3ef237da69bb64ef6						mp_jup_invasion
+set #x33f3eb7b5794fcb5f					20
+set #x379ed3172b6afd962		1
+
+set #x356dfb4f435263764		0.3
+set #x3e6e55586a2edb6e4		0.025
+set #x3c8acb20fd046d934			15
+set #x3889267ea67475f5d			15
+set #x3e668fb9a78b1773e			20
+set #x34c7d3632cc701fc3			20
+set #x37645e012d3bdeb5e  	nameplate_settings_mp_default_iw9
+set	#x3a0e96ad6f96e50f1 	0
+
+set #x3a90795557c444acc        0
+set #x324d7dc1cc026a63b		1
+set #x3ecd162ffa953cac1			15
+set #x3269d1797b0db249b				0
+reset #x3994195e4fec26c8f
+
+// shared CP/MP
+set #x3279375a0bfb2862f			120
+set #x3cbf39f90e127b469 75
+set #x3b61b9b3c4596870				15
+set #x3e88a4c14cc1c7521				15
+set #x351609cd6a328face			12.45
+set #x31d95d46514c30853			12.45
+set #x357f85f8ba44ec639		1.75
+set #x3fc0d7859620c5fdc 	400
+set #x3e3343e09fcc88109 1600
+
+set #x366c38b5b61297ac1					0
+set #x316dfdfed11dd4d72 1
+
+set #x3f16ba8db72f34fc3				0
+set #x3c653d32c30815d2b			15
+
+set #x3715685dae50de688	0
+
+// These are const and set #x3f18c30b0e1d58ffd code to these values.
+// set #x33b242aa7a4aa5946  		100000.0
+// set #x3be936fba5cfc4a2f  	200.0
+// set #x3bcfc585a11c47de4 				0.7
+// set #x3f918ce5dd27dc8d 0.3
+
+// -------------------- //
+// PERK DVARS Shared CP/MP - note that these settings largely do NOT need code updates to function in Ship
+
+set #x31fb769d7483e29e1 	0.9
+set #x379b300d4df509992        0
+set #x3923eecb6e8de167e		3.0
+set #x312af9e7625425add		3.0
+// Hold Breath Adjusted to not assert: IWH-200663. Total of these values must stay below 65
+//set #x3d4673b611c1095e2 4.5 // Set in code
+set #x3b3890aef543e8fa5 58
+set #x32cc6f20f1222a771 1
+//set #x362023672e2f85ee4 1  // Set in code
+// -------------------- //
+
+
+// IW8-EricG: all vehicles sharing the same config right now, not all should be able to toggle #x3b248b5f026ed3acc unhooking for now
+// vehicle 3rd person camera toggle
+//bind BUTTON_RSTICK +togglevehcam
+set #x3e25dca4cee1ca41c 0
+
+// sun shadow culling
+set #x39e7bc885a6c0ab17 			1
+
+// spot shadows for mp cp bigmap
+set #x3633e1a62bb5ceeb2		1
+set #x31fc47d6f68e1faf			1
+
+//func glass
+set #x3eb1c12a66d6f4906 				0.3 0.9 0.0 30.0
+set #x3f46ed989149525b1 			175.0 1.0
+set #x3ab36c0250ff46a5f 				475.0
+set #x37b47ca50a075cdbe 				262.0 400.0 0.0 10000.0
+set #x374210ca0e62948f0 			28.0
+
+// Game Type: Blood Money
+set #x36bcaa107055e7a7f 				.75
+set #x3f28eeaada0889d3a				250
+set #x3de5cf9b63e5508db				1500
+set #x33fed2bee9823c2be				20
+set #x37fd9b532b02bcf1e		20000
+set #x388ca7322cb6bc51a		30
+
+// killstreaks
+set #x3136bc991d846f1cd		25
+
+set #x393921bac59b50618 					0					
+set #x3bb4e86926f7db48f 			0
+set #x33a9a76ce997f682b 			1000
+set #x35c31e35b791afd24		0
+set #x352ee5211cdef7fe4			50
+set #x395e758249d8faaa0 	150	
+set #x31dd0c19edb1951fc			1
+
+set #x385f59e138cf2cfc0 		1 // dvar that controls the vehicle minimap visibility masking by client
+set #x369f3694e54ac7d64 							500 // Temp, remember to remove this once changelist 5071029 is integrated
+
+set #x35e49d5f329db4555 50;
+
+set #x37134bb48e844228		1
+
+// player
+set #x3b62eac49cca8c84b		2
+
+// br loot
+set #x3e38e16d9fbf3fc43 					""
+
+// outline 
+set #x35f5c12c95c44f093							1
+set #x33bb847d049003050							2
+set #x39114f61ddde3b6a5 			1
+set #x34203844076de309d 				2.5		
+set #x33f43e95743d6ed7f	1 // DMZ shimmer alpha up close
+		 	
+//set #x379a0c10ce3306268			0.9		0.8		0.45	0.5  // Sets "orange" default outline to a different color for VR Scope
+
+// NVG Blind Settings
+set #x3807925d98f63f18a	 	500
+set #x33302580377dac97e	3000
+
+// IW8 Multiplayer Tuning Changes
+
+// Gunsmith
+set #x3cd53a377e59519b		1
+set #x39604647b6e963b1a	1
+
+// UI Killswitches
+set #x3ca8046c0e587d254			0
+set #x366b57e9471e84a37			0
+set #x3d3ec0c79b3227b44 1
+set #x38dd1d0af528859be				1
+
+// Select Fire
+ set #x3b603b62e216f20f1					1
+ 
+ // Buddy Boost
+set #x385b75e3043a1350e					1
+ 
+ // Execution
+ set #x329e13d2b6fded76e 						1
+ 
+// Concussion Grenade
+set #x335877611dd87a107          1
+
+// VFX IWH-322354 - fixes hardpoint chevrons, can be turned on for warzone playlists with train
+set #x3d0f1294f544507f4 		0 
+
+// ------------------------- //
+// DVARS MOVING TO CODE!!!
+// ------------------------- //
+
+// UI-Code // IWH-113320
+
+// UI Nameplates
+
+//Global game tuning config - not in autoexec like SP since the DCONSTS dont get set #x3778ed6f2743aae2b a dedi
+exec dev_proto_global.cfg
+
+////unset global cfg setting specifically for MP
+//set #x3f3f4556449d659f1 0
+
+
+// Misc - Not sure if needed but were set #x3f18c30b0e1d58ffd cfg
+set #x3c2894710b26efef8	1.75	// Not sure if this is still used. Only know it's different than code.
+set #x381e9c33ddb944ae				1.5
+set #x3e6e55586a2edb6e4				0.025
+set #x34698f57cb62c8648		20
+
+// Game-Code // IWH-43706
+
+// Client Predicted Damage
+set #x3cc4a29fb86a591a8			0
+
+// Vehicle Damage
+set #x3c629df0c64a1592f				2
+set #x3550fb79b5d00a114				50
+
+// Technical
+set #x3d1cbbfd0a92e45eb 60
+//set #x38cefa783d3b4c391 30
+
+// Light Tank
+set #x35505c9eaa3f9538e				0
+set #x354954e5718ed66c1		0.9
+set #x3ca3b760fff9ca796		0.75
+set #x3aca6853601284bc9				0.9
+
+// APC Russian
+set #x35321ac8f8dd7a684		-8
+set #x3e5aabdeeccb97bcb			35
+set #x3e6ab8b8260f4b05			-15
+set #x3e6acab8260f729b			-15
+
+// Cruise Missile
+set #x34269c7c64778966e 	0.2 1.2 0.35
+set #x3ea483070a19643bd 		38 1.1 84
+set #x3dce1b839127d9b27 					65
+set #x3c0e5dbbcbe1af47f 		1000 5000
+set #x35cced6d09490966e 		-20 90
+set #x3af3fe72f4b502f3 		60			// For Gamepad
+set #x325abadf25a94a6da 			50			// For Gamepad
+
+// Wheelson
+set #x3b91a85ffeca0e7f1					1
+set #x396eeec16dc9937fa   	0
+set #x3408ce69ca8159429			40000
+set #x358ec8e77f6777d0			1
+set #x3ce7e2cefc287706f				0.8
+set #x34de2daaab088903				15
+
+// Compass tuning
+set #x3b3e635e26d6c63ea 1 1 1 1
+
+set #x348df5c37d2f7b7f2 0
+set #x3304af91c9a4bc23f 12000
+set #x3448996ecc2989777 0
+
+// Friendly Player Collision
+set #x3e90cfa3a7861f48b 1.25	// Friendly player collision still feels too strong. Bumping down from 1.5 to 1.25 to test in playtests.
+
+// Depth of Field - [[ MP Specific settings ]]
+set #x3135e427c8d1d769c			0				// FOV shift feels bad when tracking targets
+set #x3fff592809fcaf430		12 8 0.1 16		// Kept the far to near very fast to emulate the player's eye actually focusing. Let the near to far be a bit slower as it doesn't affect gameplay.
+
+// ---------------------------------------- //
+// DVARS MOVING TO CODE FOR JUST GL BUILD!!!
+// ---------------------------------------- //
+
+// Forcing the orbit camera 2 defaults since CP modified the defaults
+// set #x3f379bd15031567e7 300 450 850 1600 // cg_orbitCam Dvars not used anymore. Use camera assets instead.
+// set #x328439b52d9bfdd0e 0 0 0 0 // cg_orbitCam Dvars not used anymore. Use camera assets instead.
+
+// ---------------------------------------- //
+
+// Uncomment for in house weapon playtest
+// set #x39fdeab749d8f74a1 0
+
+// Uncomment for User Testing
+//set #x38dd1d0af528859be			0
+//set #x3b603b62e216f20f1			0
+//set #x385b75e3043a1350e			0
+
+// Pain vision set #x31507975f60e06441 - Yenal is already moving this to code
+set #x3e42b132626b5992b 5
+
+// Reset the FoV scale factor to unlock the FoV
+reset #x3456c1f5511b48a19
+
+// Validate that attachments put on weapons are valid for that weapon's progression
+set #x3464624f0183de3d0 1
+
+// Audio occlusion modes we only want to enable for IW9
+set #x3a427048e86d1fade		1
+set #x3f3fdb95a5be10b8		2
+
+//Automantle dvars
+set #x3dc2721c53cea4abc 1
+set #x3e24b207878f41e2a 20
+set #x37c455c28750ae9e0 20
+
+set #x3e1cea8fb022d97cf -40.0
+set #x36155935be6acbbc7 0.0
+set #x3b03f3b9ea52b3701 -3.0
+
+set #x3dbbfbc9896c58a96 -40.0
+set #x3979a569e4ced40a4 0.0
+set #x3fda3c7648feaef22 -3.0
+
+set #x36b9a0e9d48fc8750 -40.0
+set #x3ba5c4c5fa4e956d6 0.0
+set #x35e2549e4502eb9d0 -3.0
+
+set #x31ce9dcdd8475b3b1 -40.0
+set #x39ae870be3a25d831 0.0
+set #x3cc86023b275179df -3.0
+
+
+// Mobile Loot outline dvars
+
+set #x375413145bd8b8ba5 1
+set #x310766254b9f9252c "outline_nodepth_loot_default_touch"
+set #x3d42034debf932c86 1
+set #x3b1bf182b6254c303 "outline_depth_loot_inuse_touch"
+
+
+//Automelee config
+set #x3a5a1c6d10dbba33e 150
+set #x3556566abf8f5d105 1000
+set #x3db211ead69029ba2 1
+
+//Simple controls prototype - Additional camera feedback when standing/crouching is not possible for mobile
+set #x3886069d09565aeba 0
+set #x3a7c5c9f9cc531c38 5
+set #x3dc28e79a598c5b86 -5
+set #x3c0969ad926a4e9c3 "prj_shotgun_plr"
+set #x39367e1ee7f5c1239 "prj_bullet_small_plr"
+set #x33622c1f354b5a065 50
+set #x3d178b870ff91a1b7 50
+set #x3f8742d756d203a33 50
+set #x3ba6cff0565abb3a9 50
+
+// Disable weapon/hands streaming gate when spectating players
+set #x3c23516dd70102aa8 0
+set #x34f7e433ce6eacbe8 0
+
+set #x3ea195c4e2a186f73 1

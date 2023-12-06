@@ -1,0 +1,92 @@
+// Activity Manager Defines
+#define WORLD_REGION "WORLD_REGION"
+
+// Activity Manager Classes
+#define ACTIVITY_CLASS_GLOBAL "global"
+#define ACTIVITY_CLASS_OBJECTIVE "objective"
+#define ACTIVITY_CLASS_ACTIVITY "activity"
+#define ACTIVITY_CLASS_CONTRACT "contract"
+#define ACTIVITY_CLASS_STARTUP "startup"
+
+// Activity Manager DVARS
+#define ACTIVITY_MANAGER_ENABLED_DVAR #d"am_enabled"
+#define ACTIVITY_MANAGER_ENABLED_DEFAULT 1
+
+// How fast the activity manager will try to find a new activity
+#define ACTIVITY_MANAGER_UPDATE_RATE_DVAR #d"am_rate"
+// Rate in seconds
+#define ACTIVITY_MANAGER_UPDATE_RATE_DEFAULT 10
+
+#define ACTIVITY_MANAGER_ACTIVITY_REGION_SPREAD_DVAR #d"am_activity_region_spread"
+#define ACTIVITY_MANAGER_ACTIVITY_REGION_SPREAD_DEFAULT 0
+
+#define ACTIVITY_MANAGER_MAX_ACTIVITIES_DVAR #d"am_max_activities"
+#define ACTIVITY_MANAGER_MAX_ACTIVITIES_DEFAULT - 1
+
+#define ACTIVITY_MANAGER_MIN_ACTIVITIES_DVAR #d"am_min_activities"
+#define ACTIVITY_MANAGER_MIN_ACTIVITIES_DEFAULT 6
+
+// How far an activity has to be away from living players to spawn in
+#define ACTIVITY_MANAGER_SPAWN_DISTANCE_FROM_PLAYERS_DVAR #d"am_spawn_distance_from_players"
+#define ACTIVITY_MANAGER_SPAWN_DISTANCE_FROM_PLAYERS_DEFAULT 0
+
+#define ACTIVITY_MANAGER_MAX_ACTIVITIES_PER_REGION_DVAR #d"am_max_activities_per_region"
+#define ACTIVITY_MANAGER_MAX_ACTIVITIES_PER_REGION_DEFAULT 3
+
+#define ACTIVITY_MANAGER_MAX_IN_GREEN_REGION_DVAR #d"am_max_in_green_region"
+#define ACTIVITY_MANAGER_MAX_IN_GREEN_REGION_DEFAULT 100
+
+#define ACTIVITY_MANAGER_MAX_IN_YELLOW_REGION_DVAR #d"am_max_in_yellow_region"
+#define ACTIVITY_MANAGER_MAX_IN_YELLOW_REGION_DEFAULT 100
+
+#define ACTIVITY_MANAGER_MAX_IN_ORANGE_REGION_DVAR #d"am_max_in_orange_region"
+#define ACTIVITY_MANAGER_MAX_IN_ORANGE_REGION_DEFAULT 100
+
+#define ACTIVITY_MANAGER_MAX_IN_RED_REGION_DVAR #d"am_max_in_red_region"
+#define ACTIVITY_MANAGER_MAX_IN_RED_REGION_DEFAULT 100
+
+// Activities will choose a random number between the Max and Min number of repeats upon registration
+// Max number of times the same activity can be repeated within a server instance
+#define ACTIVITY_MANAGER_MAX_ACTIVITY_REPEATS_DVAR #d"am_max_activity_repeats"
+#define ACTIVITY_MANAGER_MAX_ACTIVITY_REPEATS_DEFAULT 10000000
+
+// Minimum number of times the same activity can be repeated within a server instance
+#define ACTIVITY_MANAGER_MIN_ACTIVITY_REPEATS_DVAR #d"am_min_activity_repeats"
+#define ACTIVITY_MANAGER_MIN_ACTIVITY_REPEATS_DEFAULT 10000000
+
+#define ACTIVITY_MANAGER_INITIALIZE_CREATE_SCRIPT_STRUCTS_ON_START_DVAR #d"am_initialize_create_script_structs_on_start"
+
+#define ACTIVITY_MANAGER_MAX_ACTIVITY_DUPES_PER_REGION_DVAR #d"am_max_activity_dupes_per_region"
+#define ACTIVITY_MANAGER_MAX_ACTIVITY_DUPES_PER_REGION_DEFAULT 1
+
+// Default distance an activity takes up
+#define ACTIVITY_MANAGER_ACTIVITY_DEFAULT_RADIUS_DVAR #d"am_activity_default_radius"
+#define ACTIVITY_MANAGER_ACTIVITY_DEFAULT_RADIUS_DEFAULT 1000
+
+// Extra distance added to the activity's size to prevent overlapping activities from being enabled
+#define ACTIVITY_MANAGER_ACTIVITY_SPATIAL_DISTANCE_DVAR #d"am_activity_spatial_distance"
+#define ACTIVITY_MANAGER_ACTIVITY_SPATIAL_DISTANCE_DEFAULT 1800
+
+// Cooldown time before the activity can be selected again
+#define ACTIVITY_MANAGER_ACTIVITY_COOLDOWN_DVAR #d"am_activity_cooldown"
+// Time in seconds
+#define ACTIVITY_MANAGER_ACTIVITY_COOLDOWN_DEFAULT 120
+
+// Enables/Disables all activities by default, inidividual activities or instances can override
+#define ACTIVITY_MANAGER_ACTIVITY_ENABLED_DVAR #d"am_activity_enabled"
+#define ACTIVITY_MANAGER_ACTIVITY_ENABLED_DEFAULT 1
+
+// Prefix to limit max activity count
+#define ACTIVITY_MANAGER_ACTIVITY_MAX_PREFIX_DVAR #d"am_activity_max_"
+
+// Prefix to enable/disable specific activity types
+#define ACTIVITY_MANAGER_ACTIVITY_PREFIX_DVAR #d"am_activity_"
+
+// Prefix to enable/disable specific activity instances
+#define ACTIVITY_MANAGER_INSTANCE_PREFIX_DVAR #d"am_instance_"
+
+// Prefix to force start specific activity instances
+#define ACTIVITY_MANAGER_FORCED_ACTIVITY_INSTANCE_DVAR #d"am_forced_activity"
+
+// Prefix to force start all activities within a certain class
+#define ACTIVITY_MANAGER_FORCE_ALL_ACTIVITIES_DVAR #d"am_force_all_activities"

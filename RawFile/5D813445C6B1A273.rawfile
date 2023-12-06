@@ -1,0 +1,44 @@
+// targetnames for MRP structs
+#define MRP_CHALLENGE "mrp_challenge"
+#define MRP_RESPECT_CHALLENGE "mrp_respect_challenge"
+
+
+// script_noteworthys for MRP structs
+#define MRP_POOL_CHALLENGE "mrp_pool_challenge"
+#define MRP_CRANE_SCARE_CHALLENGE "mrp_crane_scare_challenge"
+#define MRP_FREEBIRD_CHALLENGE "mrp_freebird_challenge"
+#define MRP_NUCLEAR_PRECISION_CHALLENGE "mrp_nuclear_precision_challenge"
+#define MRP_CARDIO_CHALLENGE "mrp_cardio_challenge"
+#define MRP_SPEEDWAY_CHALLENGE "mrp_speedway_challenge"
+#define MRP_HHG_CHALLENGE "mrp_hhg_challenge"
+#define MRP_BONFIRE_CHALLENGE "mrp_bonfire_challenge"
+
+
+// MRP Challenge rewards
+#define MRP_RESPECT_CHALLENGE_REWARD_CRYSTAL "ob_jup_respects_crystal_"
+#define MRP_RESPECT_CHALLENGE_REWARD_TOOL "ob_jup_respects_tool_"
+#define MRP_RESPECT_CHALLENGE_REWARD_AMMOMOD "ob_jup_respects_mod_"
+#define MRP_RESPECT_DEFAULT_REWARDS "ob_jup_respects_consolation"
+#define MRP_POOL_CHALLENGE_REWARDS "ob_jup_items_activity_mrp_pool"
+#define MRP_JUMP_SCARE_REWARDS "ob_jup_items_activity_mrp_crane"
+#define MRP_FREEBIRD_REWARDS "ob_jup_items_activity_mrp_freebird"
+#define MRP_NUCLEAR_PRECISION_REWARDS "ob_jup_items_activity_mrp_nuclear_precision"
+#define MRP_CARDIO_REWARDS "ob_jup_items_activity_mrp_cardio"
+#define MRP_SPEEDWAY_REWARDS "ob_jup_items_activity_mrp_speedway"
+#define MRP_HHG_REWARDS "ob_jup_items_activity_mrp_hhg"
+#define MRP_BONFIRE_REWARDS "ob_jup_items_activity_mrp_bonfire"
+
+// Max type of challenges we can spawn
+#define MRP_MAX_CHALLENGES 4
+
+// Misc
+#define MRP_GRAVE_PART "body"
+#define MRP_BACKUP_WEAPON_FISTS "iw9_me_fists_mp"
+
+//Crane Scare
+#define MRP_CRANE_SCARE_MAX_DIST 10000
+#define MRP_CRANE_SCARE_MAX_DIST_SQ MRP_CRANE_SCARE_MAX_DIST * MRP_CRANE_SCARE_MAX_DIST
+#define MRP_CRANE_SCARE_MIN_DIST 400 //400 units
+#define MRP_CRANE_SCARE_MIN_DIST_SQ MRP_CRANE_SCARE_MIN_DIST * MRP_CRANE_SCARE_MIN_DIST
+#define MRP_CRANE_SCARE_TIME_MS 2000 //2 sec
+

@@ -1,0 +1,172 @@
+// code will zero stats before this is run
+
+//////// general setup ////////
+setOutbreakLoadout "defaultSet" 1
+setOutbreakLoadout "inUse" 1
+
+//////// rig ////////
+setOutbreakLoadout "archetype" "archetype_assault"
+setOutbreakLoadout "archetypePerk" "specialty_null"
+setOutbreakLoadout "archetypeSuper" "super_frost_blast"
+setOutbreakLoadout "head" 10
+setOutbreakLoadout "body" 6
+
+//////// gesture ////////
+setOutbreakLoadout "gesture" "gesture000"
+setOutbreakLoadout "taunt" "iw7_taunt_rare_6"
+setOutbreakLoadout "taunts" 0 "iw7_taunt_rare_6"
+setOutbreakLoadout "taunts" 1 "iw7_taunt_rare_6"
+setOutbreakLoadout "taunts" 2 "iw7_taunt_rare_6"
+setOutbreakLoadout "taunts" 3 "iw7_taunt_rare_6"
+
+////////cp //////
+setOutbreakLoadout "cpLoadoutSel" 0
+
+///////CPFieldUpgrade///////
+setOutbreakLoadout "cpFieldUpgrade" "role_tank"
+
+/////munitions//////
+setOutbreakLoadout "munitionSetups" 0 "munition" "empty1"
+setOutbreakLoadout "munitionSetups" 1 "munition" "empty2"
+setOutbreakLoadout "munitionSetups" 2 "munition" "empty3"
+
+setOutbreakLoadout "munitionWaveModeSetups" 0 "munition" "empty1"
+setOutbreakLoadout "munitionWaveModeSetups" 1 "munition" "empty2"
+setOutbreakLoadout "munitionWaveModeSetups" 2 "munition" "empty3"
+//////// classes ////////
+
+// Loadout 1 - AR
+setOutbreakLoadout_loc "loadouts" 0 "name" "LUA_MENU_MP/LOADOUT_1"
+setOutbreakLoadout "loadouts" 0 "inUse" 1
+setOutbreakLoadout "loadouts" 0 "overkill" 0
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "weapon" "iw9_ar_mike4"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "reticle" "none"
+setOutbreakLoadout "loadouts" 0 "weaponSetups" 0 "variantID" 0
+setOutbreakLoadout "loadouts" 0 "equipmentSetups" 0 "equipment" "equip_frag"
+setOutbreakLoadout "loadouts" 0 "equipmentSetups" 1 "equipment" "equip_concussion"
+setOutbreakLoadout "loadouts" 0 "loadoutPerks" 0 "specialty_hustle"
+setOutbreakLoadout "loadouts" 0 "extraPerks" 0 "specialty_guerrilla"
+setOutbreakLoadout "loadouts" 0 "fieldUpgrades" 0 "super_frost_blast"
+setOutbreakLoadout "loadouts" 0 "fieldUpgrades" 1 "none"
+setOutbreakLoadout "loadouts" 0 "equippedPerkPackageIndex" 0
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 0 "role_3"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 4 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 3 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 2 "none"
+setCoopPlayerData "zombiePlayerLoadout" "zombie_consumables" 1 "deployable_cover"
+
+//////// streak preferences setup ////////
+setOutbreakLoadout "streakPreferences" "none" 0
+setOutbreakLoadout "streakPreferences" "uav" 0
+setOutbreakLoadout "streakPreferences" "airdrop" 0
+setOutbreakLoadout "streakPreferences" "dronedrop" 0
+setOutbreakLoadout "streakPreferences" "counter_uav" 0
+setOutbreakLoadout "streakPreferences" "ball_drone_backup" 0
+setOutbreakLoadout "streakPreferences" "sentry_shock" 0
+setOutbreakLoadout "streakPreferences" "orbital_deployment" 0
+setOutbreakLoadout "streakPreferences" "thor" 0
+setOutbreakLoadout "streakPreferences" "precision_airstrike" 0
+setOutbreakLoadout "streakPreferences" "jammer" 0
+setOutbreakLoadout "streakPreferences" "jackal" 0
+setOutbreakLoadout "streakPreferences" "minijackal" 0
+setOutbreakLoadout "streakPreferences" "nuke" 0
+setOutbreakLoadout "streakPreferences" "spiderbot" 0
+setOutbreakLoadout "streakPreferences" "directional_uav" 0
+setOutbreakLoadout "streakPreferences" "bombardment" 0
+setOutbreakLoadout "streakPreferences" "remote_c8" 0
+setOutbreakLoadout "streakPreferences" "venom" 0
+
+//////// rig preferences setup ////////
+
+// NOTE-EricG: Please try to keep the following sorted by order of CaC appearance and grouped by archetype
+
+// assault
+setOutbreakLoadout "archetypePreferences" 0 "archetype" "archetype_assault"
+setOutbreakLoadout "archetypePreferences" 0 "archetypePerk" "specialty_boom"
+setOutbreakLoadout "archetypePreferences" 0 "archetypeSuper" "super_pac_sentry"
+setOutbreakLoadout "archetypePreferences" 0 "head" "head_1"
+setOutbreakLoadout "archetypePreferences" 0 "body" "body_1"
+setOutbreakLoadout "archetypePreferences" 0 "taunt" "iw7_taunt_rare_6"
+setOutbreakLoadout "archetypePreferences" 0 "taunts" 0 "iw7_taunt_rare_6"
+setOutbreakLoadout "archetypePreferences" 0 "taunts" 1 "iw7_taunt_rare_6"
+setOutbreakLoadout "archetypePreferences" 0 "taunts" 2 "iw7_taunt_rare_6"
+setOutbreakLoadout "archetypePreferences" 0 "taunts" 3 "iw7_taunt_rare_6"
+setOutbreakLoadout "archetypePreferences" 0 "gesture" "gesture000"
+
+// heavy
+setOutbreakLoadout "archetypePreferences" 1 "archetype" "archetype_assault"
+setOutbreakLoadout "archetypePreferences" 1 "archetypePerk" "specialty_regenfaster"
+setOutbreakLoadout "archetypePreferences" 1 "archetypeSuper" "none"
+setOutbreakLoadout "archetypePreferences" 1 "head" "head_1"
+setOutbreakLoadout "archetypePreferences" 1 "body" "body_1"
+setOutbreakLoadout "archetypePreferences" 1 "taunt" "iw7_taunt_rare_8"
+setOutbreakLoadout "archetypePreferences" 1 "taunts" 0 "iw7_taunt_rare_8"
+setOutbreakLoadout "archetypePreferences" 1 "taunts" 1 "iw7_taunt_rare_8"
+setOutbreakLoadout "archetypePreferences" 1 "taunts" 2 "iw7_taunt_rare_8"
+setOutbreakLoadout "archetypePreferences" 1 "taunts" 3 "iw7_taunt_rare_8"
+setOutbreakLoadout "archetypePreferences" 1 "gesture" "gesture009"
+
+// synaptic
+setOutbreakLoadout "archetypePreferences" 2 "archetype" "archetype_assault"
+setOutbreakLoadout "archetypePreferences" 2 "archetypePerk" "specialty_rush"
+setOutbreakLoadout "archetypePreferences" 2 "archetypeSuper" "none"
+setOutbreakLoadout "archetypePreferences" 2 "head" "head_1"
+setOutbreakLoadout "archetypePreferences" 2 "body" "body_1"
+setOutbreakLoadout "archetypePreferences" 2 "taunt" "iw7_taunt_rare_10"
+setOutbreakLoadout "archetypePreferences" 2 "taunts" 0 "iw7_taunt_rare_10"
+setOutbreakLoadout "archetypePreferences" 2 "taunts" 1 "iw7_taunt_rare_10"
+setOutbreakLoadout "archetypePreferences" 2 "taunts" 2 "iw7_taunt_rare_10"
+setOutbreakLoadout "archetypePreferences" 2 "taunts" 3 "iw7_taunt_rare_10"
+setOutbreakLoadout "archetypePreferences" 2 "gesture" "gesture009"
+
+// ftl
+setOutbreakLoadout "archetypePreferences" 3 "archetype" "archetype_assault"
+setOutbreakLoadout "archetypePreferences" 3 "archetypePerk" "specialty_superpack"
+setOutbreakLoadout "archetypePreferences" 3 "archetypeSuper" "none"
+setOutbreakLoadout "archetypePreferences" 3 "head" "head_1"
+setOutbreakLoadout "archetypePreferences" 3 "body" "body_1"
+setOutbreakLoadout "archetypePreferences" 3 "taunt" "iw7_taunt_rare_3"
+setOutbreakLoadout "archetypePreferences" 3 "taunts" 0 "iw7_taunt_rare_3"
+setOutbreakLoadout "archetypePreferences" 3 "taunts" 1 "iw7_taunt_rare_3"
+setOutbreakLoadout "archetypePreferences" 3 "taunts" 2 "iw7_taunt_rare_3"
+setOutbreakLoadout "archetypePreferences" 3 "taunts" 3 "iw7_taunt_rare_3"
+setOutbreakLoadout "archetypePreferences" 3 "gesture" "gesture009"
+
+// engineer
+setOutbreakLoadout "archetypePreferences" 4 "archetype" "archetype_assault"
+setOutbreakLoadout "archetypePreferences" 4 "archetypePerk" "specialty_equipment_ping"
+setOutbreakLoadout "archetypePreferences" 4 "archetypeSuper" "none"
+setOutbreakLoadout "archetypePreferences" 4 "head" "head_1"
+setOutbreakLoadout "archetypePreferences" 4 "body" "body_1"
+setOutbreakLoadout "archetypePreferences" 4 "taunt" "iw7_taunt_rare_14"
+setOutbreakLoadout "archetypePreferences" 4 "taunts" 0 "iw7_taunt_rare_14"
+setOutbreakLoadout "archetypePreferences" 4 "taunts" 1 "iw7_taunt_rare_14"
+setOutbreakLoadout "archetypePreferences" 4 "taunts" 2 "iw7_taunt_rare_14"
+setOutbreakLoadout "archetypePreferences" 4 "taunts" 3 "iw7_taunt_rare_14"
+setOutbreakLoadout "archetypePreferences" 4 "gesture" "gesture009"
+
+//ghost
+setOutbreakLoadout "archetypePreferences" 5 "archetype" "archetype_assault"
+setOutbreakLoadout "archetypePreferences" 5 "archetypePerk" "specialty_mark_targets"
+setOutbreakLoadout "archetypePreferences" 5 "archetypeSuper" "none"
+setOutbreakLoadout "archetypePreferences" 5 "head" "head_1"
+setOutbreakLoadout "archetypePreferences" 5 "body" "body_1"
+setOutbreakLoadout "archetypePreferences" 5 "taunt" "iw7_taunt_rare_7"
+setOutbreakLoadout "archetypePreferences" 5 "taunts" 0 "iw7_taunt_rare_7"
+setOutbreakLoadout "archetypePreferences" 5 "taunts" 1 "iw7_taunt_rare_7"
+setOutbreakLoadout "archetypePreferences" 5 "taunts" 2 "iw7_taunt_rare_7"
+setOutbreakLoadout "archetypePreferences" 5 "taunts" 3 "iw7_taunt_rare_7"
+setOutbreakLoadout "archetypePreferences" 5 "gesture" "gesture009"
+
+// PMC
+setOutbreakLoadout "activePMCMissions" 0 "challengeID" 80027
+setOutbreakLoadout "activePMCMissions" 1 "challengeID" 80011
+setOutbreakLoadout "activePMCMissions" 2 "challengeID" 80026

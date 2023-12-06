@@ -1,0 +1,25 @@
+//old iw8 flinch
+
+set #x38f7a0d38acc7c4bc 	10
+set #x38bdb8203c835be33       	10
+set #x3a3e537fa8d8c5b96 	90
+set #x38bff9803c85e694d 		 	90
+set #x367907f86c62aa0d6 	0.2
+set #x338a08ef0f1752e8d		0.2
+set #x3629a33f0d17af666		0.4
+set #x3c9c53a742d5feacb	0.44
+
+set #x3d9619d28a951b44 0.0  //setting this to zero in iw9. too strong on vereran, not noticable on normal
+
+//NEW IW9 Flinch settings
+
+set #x36c770c8464c5c226 1.0 	//"Final pitch global scale"
+set #x3c8e2d792e9aa12b3 1.0 	//"Final roll global scale"
+set #x3682e0e6439501447 0.5 			//"Flinch ads scaling" 
+set #x3afaf59929f5f8e3 200 		//"Time for flinch to reach maximum" 
+set #x3bec580fcc40bc6d6 180     //"Min time for flinch to return to 0" 
+set #x3ab3404b61bfc6b18 600 	// "Max time for flinch to return to 0" 
+set #x3181ea1310efdc0e3 0		// "Minimum time between each flinch" 
+set #x3b990bbacf46284a9 0.5		// "How much the next flinch will reset #x34ed460caf56bde56 0" 
+set #x3bfb073d2f049d75f 10.0			// "Max flinch pitch angle" 
+set #x3262b9cdfc54a19bc 10.0			//"Max flinch roll angle" 

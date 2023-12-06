@@ -1,0 +1,44 @@
+//set #x35facb505058db5e 0
+//set #x3daf8e45effd1c9d2 0
+
+//set #x3cfd0055d99cc7cc0 1
+//set #x37e6861cb7238dc0f 2
+//set #x335e89cb1a9754f51 10
+set #x360dc0576bbd23751 -0 -0 0
+set #x3d085fdebb09d5f40 0 0 0
+//set #x3b1fba24e87a0ed86 1
+//set #x3501bac0b65aa6c3f 0.899
+//set #x39a0b38a8a91ad303 0.9
+//set #x3abbfe4195f9a3491 7
+// Weapons and Attachments now have a force first person ADS setting. Removing global set
+#x334edb259be891da bg_thirdperson_force_first_person_ads 0
+//set #x38b5f7fc3d64e2cf5 0.8
+//set #x3dee55613908428a 300
+//set #x34f036ac71b97a64 1500
+//set #x3532294b417c7e253 90
+//set #x313188a11a9d8b804 90
+//set #x3bf804a09c0510376 1
+//set #x3a5d6dbeb318bc0de 0
+//set #x3bfe6c452c8d77dc2 36
+
+set #x35ca1830a519505ef 0 8 -7
+set #x35f72d0c7e5fe4447 0 8 -9
+set #x3d1b22c8fe026a6c1 0 10 -5
+set #x39bf29d0281ca2952 0
+set #x355a6e53d95e91c99 -85 -16.6 10
+set #x3cf81049b119fc365 0.75
+
+
+set #x331f818870138cd26 0 // must always be set #x3fa188bb584287b3 0. do not remove.
+//set #x3c00e244ea59d530e 0
+//set #x39b9d21781c594d88 1
+//set #x3f1114db072467761 0
+//set #x33526d8902fa1c6cd 1
+//set #x355a6e53d95e91c99 -120 -10 14
+//set #x36acb4c8fa9de5d95 -60 -20 4
+set #x33d2edf1b325e5601 -50 -18 9.3
+//set #x3c97c48af8e8b7c26 0.3
+//set #x3634cf15c161d454d 0.6
+set #x3216b2694a9981da3 0.56
+//set #x3b1c6f00ea4664b03 -40 -20 14
+//set #x33c4d884dd96b5755 -40 -20 14

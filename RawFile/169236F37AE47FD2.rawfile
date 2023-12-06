@@ -1,0 +1,14 @@
+{
+	"desc": "Left_Hand_Mode",
+	"aspect_ratio_high": 100,
+	"aspect_ratio_low": 0,
+	"layout": "layout_customization/left_hand_mode.json",
+	"children": [
+		{
+			"desc": "LeftV2",
+			"aspect_ratio_high": 100,
+			"aspect_ratio_low": 0,
+			"layout": "layout_customization/left_hand_mode_v2.json"
+		}
+	]
+}

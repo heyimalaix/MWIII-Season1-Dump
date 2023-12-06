@@ -1,0 +1,11 @@
+exec br_core.cfg
+
+set #x3e65e9a96eb2ff62b br_dev_tile_map
+set #x38fe3271cd74f65a2 br_dev_tile_map
+
+set #x33939d9bfb2b1103e 1
+set #x389be1a979c1ec008 0
+set #x356d4c1121bffcdf1 0
+set #x318afe7a288a4b1e4 1
+set #x3c4a4576c5ca4960 1
+set #x398f4cdf3fa51a9d0 1

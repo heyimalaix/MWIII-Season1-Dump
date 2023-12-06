@@ -1,0 +1,8 @@
+// force anim indexes to match between server and client in MP/CP. Only remove leaf nodes when the xanim asset is not present in the current level. Keep all anim blend/custom nodes even if they are empty.
+%force_cs_anim_index_match
+
+//particle_dynamics : public clientauth particle_dynamics (stiffness=[ai_vehicle_stiffness], damping=[ai_vehicle_damping], skeletonconstraints=[ai_vehicle_skeleton_constraints], rootbonename="j_mainroot", bonenames="j_spineupper,j_spine4,j_neck,j_head,j_shoulder_le,j_elbow_le,j_shoulder_ri,j_elbow_ri,j_knee_le,j_knee_ri")
+particle_dynamics : public clientauth particle_dynamics (stiffness=[ai_vehicle_stiffness], damping=[ai_vehicle_damping], skeletonconstraints=[ai_vehicle_skeleton_constraints], rootbonename="j_mainroot", bonenames="j_spineupper,j_spine4,j_neck,j_head")
+{
+}
+

@@ -1,0 +1,20 @@
+// exec the project agnostic common
+exec default_common.cfg
+
+set #x395933efe2016fffa 1
+
+// this is temporary while transitioning over to a full project/gamemode setup.  do not use for new code or script.  will be removed.
+set #x3708473a41b11b061 1
+
+//exec JUP movement CFG
+exec jup_core_settings.cfg
+
+exec default_statversion_mp_jup.cfg
+exec default_statversion_sp_jup.cfg
+
+// Disable LFP in JUP until season 2
+set #x3593d59b8660e995 0
+
+// Avoid Sony API problem in https://dev.activision.com/jira/browse/JUP-249323
+set #x3fd8db28e164f9ddf 15000
+

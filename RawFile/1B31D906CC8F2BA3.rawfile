@@ -1,0 +1,77 @@
+#define DIST_TO_GRAB_EMERGE					160
+#define DIST_TO_GRAB_ATTACK					130
+#define DIST_EMERGE_SPRINT_THRESHHOLD		200
+#define DIST_TO_EMERGE_KNOCKBACK			200
+#define EMERGE_KNOCKBACK_MAGNITUDE			400
+#define MIMIC_EMERGE_GRAB_IN_ANIM			"emerge_attack"
+#define MIMIC_EMERGE_GRAB_HIT_ANIM			"emerge_attack_hit"
+#define MIMIC_EMERGE_GRAB_MISS_ANIM			"emerge_attack_miss"
+#define MIMIC_EMERGE_QUICK_ANIM				"emerge"
+#define MIMIC_EMERGE_QUICK_TO_SPRINT_ANIM	"emerge_sprint"
+#define MIMIC_TURNED_MELEE_FORCE			6000
+
+#define MIMIC_GRAB_ATTACK_COOLDOWN_MS		5000
+#define MIMIC_GRAB_ATTACK_DAMAGE			72
+#define MIMIC_STANDING_GRAB_TENTACLE_DIST	202
+#define MIMIC_EMERGE_GRAB_HALF_YAW			30
+#define MIMIC_EMERGE_GRAB_HIT_PLAYER_ANIM		"ai_jup_zm_mimic_com_emerge_prop_atk_bite_f_01_hit_player"
+#define MIMIC_STANDING_GRAB_HIT_PLAYER_ANIM		"ai_jup_zm_mimic_com_stn_atk_grab_01_hit_player"
+
+#define MIMIC_UNREACHABLE_TIME_ATTACK_MIN	2000
+#define MIMIC_UNREACHABLE_TIME_ATTACK_MAX	2000
+
+#define PLAYER_GRABBED_BY_MIMIC_FX				"player_grabbed_by_mimic_fx"
+#define PLAYER_BITTEN_BY_MIMIC_FX				"player_bitten_by_mimic_fx"
+#define PLAYER_BODY_BITTEN_BY_MIMIC_FX			"player_body_bitten_by_mimic_fx"
+#define PLAYER_HIT_BY_MIMIC_RANGED_ATTACK_FX	"player_hit_by_mimic_ranged_attack_fx"
+#define PLAYER_GRABBED_LAND_KNOCKDOWN_DIST		64
+
+// MIMIC PROP
+#define DEFAULT_PROP_MODEL		"decor_barrel_metal_rusty_01"
+#define DEFAULT_PROP_LIST		"mimicproplist:mimic_prop_list_default"
+#define PROP_SPAWN_VARIANTNAME	"mimic_spawn_point"
+
+#define MIMIC_PROXIMITY_TELL_SHAKE_LEN_SEC		0.75	//how long the promixity shake sequence lasts
+#define MIMIC_PROXIMITY_TELL_SHAKE_FREQUENCY	0.05	//how quicky the prop rotates to angle
+#define MIMIC_PROXIMITY_TELL_SHAKE_ANGLE		2		//how much the prop rotates
+#define MIMIC_PROXIMITY_TELL_SHAKE_SPACING		2		//how many seconds to wait between shakes
+
+
+#define ACTIVATION_TELL_SHAKE_LEN_SEC		0.35	//how long the prop shakes before the mimic emerges
+#define ACTIVATION_TELL_SHAKE_FREQUENCY		0.05	//how quickly the prop rotates to angle
+#define ACTIVATION_TELL_SHAKE_ANGLE			8		//how much the prop rotates
+
+#define MAX_PROPS			20					//max the number of prop in the map
+#define DIST_TO_ACTIVATE	400					//the disstance that player would reveal the hide mimic
+
+#define PROP_SPAWN_MIN_DIST_TO_OTHER	32		//min distance when spawn prop that make sure prop that prop wouldn't be too close to other props
+#define PROP_SPAWN_MIN_DIST_TO_PLAYER	300		//min distance when spawn prop that make sure prop that prop wouldn't be too close to player
+#define PROP_SPAWN_MIN_PROPS			3		//min the number of prop which every mimic would spawn
+#define PROP_SPAWN_MAX_PROPS			5		//max the number of prop which every mimic would spawn
+#define PROP_SPAWN_MAX_RADIUS			1000	//the radius that mimic spawn the prop
+#define PROP_FORWARD_NAVMESH_DIST		8		//use prop facing to ensure nav position is in front of solid prop, not behind it
+
+#define PROP_DAMAGE_TIMER_SEC 3					//duration time that player damage trap prop to reveal it
+#define PROP_DAMAGE_THRESHOLD 100				//damage amount that player need to reveal trap prop
+#define OB_MIMIC_PROP_SPAWN_DIST 3000 // for OB ambient props
+
+#define LURE_PROP_TYPE_STRUCT		0
+#define LURE_PROP_TYPE_INTERACT		1
+#define LURE_PROP_TYPE_LOOT			2
+#define LURE_PROP_TYPE_VEHICLE		3
+
+#define MIMIC_PROP_EMERGE_FX    	"mimic_prop_emerge_fx"
+#define MIMIC_PROP_SPAWN_IN_FX    	"mimic_prop_spawn_in_fx"
+#define MIMIC_PROP_SPAWN_OUT_FX 	"mimic_prop_spawn_out_fx"
+#define MIMIC_PROP_RATTLE_FX		"mimic_prop_rattle_fx"
+#define MIMIC_WEAKSPOT_IMPACT_FX	"mimic_weakspot_impact_fx"
+
+#define MIMIC_RANGED_ATTACK_MULTIPLE_DIST_MAX_SQ	2000000
+#define MIMIC_RANGED_ATTACK_MULTIPLE_DIST_MIN_SQ	90000
+#define MIMIC_RANGED_ATTACK_MULTIPLE_COOLDOWN_MS	10000
+#define MIMIC_RANGED_ATTACK_MULTIPLE_YAW_OFFSET		15
+#define MIMIC_RANGED_ATTACK_MULTIPLE_PITCH_OFFSET	50
+#define MIMIC_RANGED_ATTACK_MULTIPLE_CONE_ANGLE		60
+#define MIMIC_RANGED_ATTACK_MULTIPLE_QUERY_DIST		500
+
+#define MIMIC_KILLED_MEDAL_SCORE_EVENT		#x"mimic_swindled"

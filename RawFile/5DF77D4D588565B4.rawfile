@@ -1,0 +1,19 @@
+#define CONST_TESLA_STORM_RANGE_AI_NEAR_BEAM 25 //how close ai have to be to the beam to be damaged by tesla storm
+
+#define CONST_TESLA_STORM_MAX_ENT_THROTTLE 2
+
+#define CONST_TESLA_STORM_HEAD_GIB_CHANCE 50 //out of 100, used with percent_chance function
+
+//how often AI can be damaged by tesla storm
+#define CONST_TESLA_STORM_DAMAGE_TICK_RATE 1 //how often damage is applied to zombie AI
+#define CONST_TESLA_STORM_DAMAGE_TICK_RATE_SOLDIER 0.2 //how often damage is applied to soldier AI. needs a faster tick rate to trigger shocked pain anims correctly
+
+#define CONST_TESLA_STORM_BEAM_EFFECT "vfx/jup/ob/gameplay/zm_weapons/vfx_fld_tesla_storm_beam_trail_test.vfx"
+#define CONST_TESLA_STORM_BEAM_EFFECT_LABEL "tesla_storm_beam_effect"
+#define CONST_TESLA_STORM_BEAM_EFFECT_TAG "j_spineupper"
+
+#define CONST_TESLA_STORM_BEAM_AI_EFFECT "vfx/jup/ob/gameplay/zm_ai/vfx_fld_tesla_storm_beam_elec.vfx"
+#define CONST_TESLA_STORM_BEAM_AI_EFFECT_LABEL "tesla_storm_beam_ai_effect"
+#define CONST_TESLA_STORM_BEAM_AI_EFFECT_TAG "j_spineupper"
+
+#define CONST_TESLA_STORM_REF "super_tesla_storm"

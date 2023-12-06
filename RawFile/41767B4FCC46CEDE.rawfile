@@ -1,0 +1,16 @@
+// All teams for OB – also used to define global threatbias groups
+#define TEAM_PLAYERS "team_players"
+#define TEAM_ALLIES "allies"
+#define TEAM_AXIS "axis"
+#define TEAM_CIVILIANS "civilian"
+#define TEAM_OMEGA "team_hundred_ninety"
+#define TEAM_ZOMBIES "team_two_hundred"
+
+#define IGNORED_BY_ZOMBIES "ignored_by_zombies"
+#define RUSHING_OMEGA_AGENTS "rushing_omega_agents"
+
+// Used for zombie health scaling. Fixes it so that it scales as if 3 players are attacking said object instead of looking at global player count
+#define OB_SCALING_HEALTH_FIXED_PLAYER_SIZE	3
+
+//Callback Name for when a player uses an OB Zip Door. 
+#define ZIP_DOOR_TELEPORT_CALLBACK "zip_teleport_player"

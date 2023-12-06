@@ -1,0 +1,11 @@
+#define CONTENT_DESTINATION "content_destination" 
+#define CONTENT_LOCATION "content_location" 
+#define CONTENT_INSTANCE "content_instance" 
+#define CONTENT_STRUCT "content_struct" 
+
+#define CONTENT_INTERACT_OFFSET ( 0, 0, 0 ) 
+#define CONTENT_INTERACT_SCRIPTABLE_PART_NAME "content_interact" 
+#define CONTENT_INTERACT_SCRIPTABLE_VISIBLE_STATE "visible" 
+#define CONTENT_INTERACT_SCRIPTABLE_HIDDEN_STATE "hidden" 
+#define CONTENT_INTERACT_SCRIPTABLE_INACTIVE_STATE "inactive" 
+

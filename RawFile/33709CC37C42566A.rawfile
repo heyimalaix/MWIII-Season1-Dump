@@ -1,0 +1,65 @@
+//script based damage feedback
+set #x3a3a1cab75dca6cc6 0
+
+set #x3b61c9c6a24b5671e 7
+set #x3e42b132626b5992b 5
+
+set #x3ec3d659e89997d28 15
+set #x3396137f0de06587b 120
+
+//use armor color hit indcator 
+set #x37f2643e72b57a0f1 0
+
+
+//UI code based hit markers
+set #x37c131ece8edf8fa 0 //use this to enable/disable the worldspace system
+set #x317197d6ddb88ad4c 0
+set #x3fb9ec6997bb94d55 0
+
+set #x3c02fb4933de34a3f 6000
+set #x31d8479073f4040f2 128
+set #x397e7068a5eb7b4ad 64
+set #x3a5f9604a479703a1 128
+
+//for explosive damage
+set #x3fb6401a356677890 0
+set #x38c44d6f37d3ca18c 190
+set #x3f3329cdf46871075 380
+set #x3b96827c444fbc41a 900
+
+//visionset pulse
+set #x39079b031bd754a93 0.05
+set #x3e4f1a7105abf10a 0.05
+set #x356d862eebecba4fa 0.05
+set #x3e3a0efee6aa6a1bf 0.05
+set #x38b80fbe344ed47a9 0.05
+set #x3bf8f40701b943084 0.05
+set #x34709be40735dc550 0.05
+set #x3d35673401eafd289 0.05
+set #x3cf99c10d72888483 0.05
+set #x3830861428850083b 0.05
+set #x36fa3cdd52221637b 0.05
+
+set #x3501f536bd85b052c 0.05
+set #x3ceee1c0ee826b8fb 1.5
+set #x3887d2b34d23d0b5 1.5
+set #x37bbefdb3a1483598 1.5
+set #x33610bfb7a6becc94 0.15
+set #x3b8732de72ab2ec73 1.2
+set #x38cbb57acf8eee0dd 0.3
+set #x3192b22aca4676630 0.25
+set #x3be1d9737146f4478 0.35
+set #x3e48c48f11b4d2352 0.3
+set #x312e1d5a677bdfa0 0.25
+
+set #x3a01f3a5aac37b352 0.3
+set #x369ba92b3d579f6fd 1.0
+set #x314a02b678f77e59b 0.75
+set #x3a0dabe673ab56ab2 0.75
+set #x3466f13d82c6c3682 0.2
+set #x3aa36933c7944ee4d 0.75
+set #x3bee5c43a1cd8a04b 0.75
+set #x34bae9739c8b43702 0.75
+set #x3537775d3f37e98a 1.0
+set #x3de21b614df57ddc0 0.75
+set #x38eeaa9055ef5647e 0.45

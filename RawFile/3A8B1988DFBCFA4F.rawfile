@@ -1,0 +1,10 @@
+%force_cs_anim_index_match
+
+rsh_stairs_down : blendspace1d( range="-45,45", blend_time="100",
+	coords="-45,0,45",
+	value=[leanyaw] ) loopsync parse_cull(disable)
+{
+	rsh_com_stairs_down_l
+	rsh_com_stairs_down
+	rsh_com_stairs_down_r
+}

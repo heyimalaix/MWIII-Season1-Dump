@@ -1,0 +1,4 @@
+// For now start with whatever default_sp.cfg is doing
+exec default_sp.cfg
+
+exec jup_core_settings.cfg

@@ -1,0 +1,104 @@
+exec shared_qa_automation.cfg
+
+///////////////////////////////////////////
+// Bots
+///////////////////////////////////////////
+
+// Difficulty Table
+set #x3921449ecbffc9ef3 _jup_br 					// Load gametype for different bot difficulty table selection.
+
+// Grenade Throw
+set #x37fc4f004028aa76 1     // Silimar with scr_bot_mind_br_combat_extra_grenade_throw, but take effect in sniper_combat behavior
+
+// UI Bots
+set #x3b7fcb658021d7931	1 				// Enable UI bots system
+set #x3f3a6b99340f5a95f 60				// Maximum ui bot count
+set #x3417e3b8c61f58e03	1		// Bool to switch on/off respawn recycle
+set #x3de394b7049bf2445 20				// Delay time before normal recycling. Avoid UI bots immediately get recycled after being deployed
+set #x3d0dc9e305f43690 12000	// Active Bot will be recycled to Dormant bot out of the range
+set #x381156fddeb6b5508 12000	// Active Bot will be recycled to Dormant bot out of the range when landing	
+set #x38f312094be1c23b0	10000	// Timer to recycle active bot when it's inactive
+set #x3e0ec70c334cf532a 30		// How often a random fight among UI bots will happen if no player dies during this time
+set #x33b0dbf95a91a8233 5000	// Timer to convert dormant bot to UI bot
+set #x3358164e65d640280 4000	// In which range of a human player to spawn UI bots. The Default unit is INCH according to IW Doc.
+set #x3e32340e297efbbdd	25000	// Timer to check how long a human player has been unengaged
+set #x39be4e2fbbfe8d9c5 0	// [0 - 1000) Increment time (ms) per second for engaging time for idle human players, set #x3e2867524740cec5c to disable this feature.
+set #x3e4a177febf5c5689 0.3			// Chance to deploy ui bot in air before gulag closed. Must be a value in range of [0, 1]
+set #x3b7f8b4b89ea6ced1 15	// During activation UIBot is invincible to MOD_TRIGGER_HURT, this dvar control max wait time before invincibility flag is cleared. 0 means disable this feature.
+set #x34f22ec718d3c74f6 1            // prevent the GameType settings from overriding the config.
+
+// Survival Curve
+set #x379500dabf3e1a102 1
+
+// Loadout
+set #x3b18793f70e0f6b34 10			// After landing, wait this delay and give bots loadout.
+set #x33da4efd986f095de 900		// Active bot will be given loadout far away from any human player.
+
+// Mind Combat
+set #x3b1dfabb180ed75b1 1080
+set #x35057e020d534d5ee 14   // Until the seconds of "max_input", player are expected to get kills of "max_output"; otherwise, bots will tend to care this player.
+
+// Damage Modification
+set #x319b1deee03b39dce 1.5             		// Modify damage bot did to bot
+set #x372dce163d860183a 0.7 // Modify damage bot did to bot that has any human teammate
+set #x327c78d2661500e49 0.25	// Modify ratio factor of damage bot did to human(bot difficulty: recruit)
+set #x31ab2939c54efab3f 0.35	// Modify ratio factor of damage bot did to human(bot difficulty: regular)
+set #x33fe6928216982556 0.4	// Modify ratio factor of damage bot did to human(bot difficulty: hardened)
+set #x39ee861df3ee7281c 0.3	// Modify ratio factor of damage bot did to human(bot difficulty: veteran)
+set #x3c6db8f289a513376 0.15	// Modify ratio addend of damage bot did to human(bot difficulty: recruit)
+set #x371720d5fda9ada04 0.15	// Modify ratio addend of damage bot did to human(bot difficulty: regular)
+set #x3d3f0c08b944e8c3b 0.4	// Modify ratio addend of damage bot did to human(bot difficulty: hardened)
+set #x3cc3a6aab020970df 0.65	// Modify ratio addend of damage bot did to human(bot difficulty: veteran)
+// skill based damage ratio bot to human is used by default unless the human player performance is not retrievable (i.e. none matchmaking)
+set #x3eff52385b9663477 7 // match the count of configs below
+set #x36fd48f5759ad1fab "-0.5,0.22,0.1"  // Columns: "performance max range, damage factor, damage addend"
+set #x36fd4905759ad21de "-0.35,0.24,0.11"
+set #x36fd4915759ad2411 "-0.1,0.25,0.13"
+set #x36fd4925759ad2644 "0,0.25,0.15"
+set #x36fd4935759ad2877 "0.2,0.3,0.15"
+set #x36fd4945759ad2aaa "0.5,0.35,0.15"
+set #x36fd4955759ad2cdd "1,0.3,0.2"
+
+// Mind Personality
+set #x3dfd0051082e1f237 1	 // Proportion of mind personality of "default"
+set #x38a746ee0f068d111 0 	 // Proportion of mind personality of "sniper"
+set #x3a30827606766b1a5 0 // Proportion of mind personality of "automation"
+
+///////////////////////////////////////////
+// Players & Teams
+///////////////////////////////////////////
+
+// Count
+set #x3116700c9b39c1eba 49							    // Num of bots to spawn when enter game. Has no effect in matchmaking because bots in mm are controlled by DW.
+set #x3a9691c347e9bb21c 1                  // (scr_br_bot_num * ratio) bots will join infil. Others will be deacticated at the beginning
+set #x3e82992eec48cf830 60  // total human player + active bot count in prematch 
+
+// Match-making - dev_mgl_shared.cfg
+//set #x3d356a7876f773136 0   // If true, bot and human will not in the same team. Has no effect in matchmaking because teams in mm are controlled by DW.
+//set #x31bc373211683e0b6 1         // Enable the mp clientmatchdata reads and writes.
+
+// Match-making - bots overrides, dev only
+//set #x367eb507032b0225d 0        // Tells the matchmaker to add the number of bots automatically, they cannot be replaced by humans
+//set #x38e4af80d8aebb8d3 0  // Tells the matchmaker to add the number of bots automatically, they can be replaced by humans
+//set #x3691358ba713f911c 1         // Specify the difficulty of the bot to be added. Must value in range [0, 3]
+
+// Match-making - dev_mgl_shared_br.cfg
+//set #x3e075df729417c9 0   // If true, ignore team and squad from DW, force human into different teams evenly. Only valid when flag mix_bots_players_in_fill_first_teams is set #x3f18c30b0e1d58ffd playlist.
+//set #x3e32af42702e52428 0      // Delay allowing the start of the game while players are in the may connect state
+//set #x36ef3783f07957a9b 30                   // set #x326aab1c644707f05 waiting time in lobby when player count is less than lowPopMinPlayers
+//set #x3f79cd84983250eda 30                      // set #x326aab1c644707f05 waiting time in lobby
+//set #x3cb2d56d085e5a9b9 150             // During the grace period, start the match if enough clients active in the game.
+//set #x3faf1db5754891b2d 10                            // BR playlists wait for min players to become active. use it when scr_live_lobby is 0
+
+// Bot-related for MM
+set #x32211e02a9b24b4fa 1                     // Replace bot name from DW
+set #x3a540c6958867cedf 1
+
+///////////////////////////////////////////
+// Bots Behavior Analyzer Log
+///////////////////////////////////////////
+
+set #x398397926ff200d49 0	// If true, print log for Bots Behavior Analyzer.
+set #x3cdd059b09c8bb733 5     	// The interval to print player position log for Bots Behavior Analyzer.
+set #x3a82ad583b7f8f41a 10   	// The interval to print circle update log for Bots Behavior Analyzer.
+set #x3e594acb63958e3d9 0				// enable print debug log in BBA

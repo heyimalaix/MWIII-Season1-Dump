@@ -1,0 +1,67 @@
+#idle
+
+body
+{
+	scenes
+	{
+		#script_bundle_anim_slot
+	}
+}
+
+head : overlay toggle( index=[facialindex], blendcurve="ease_inout_quad", blendtime="0.2", restart="false")
+{
+	facial_idle: random( blendtime=".2", restart="false", seed=[animtime] ) clientauth
+	{
+		#idle_anims
+	}
+	facial_aim: randomloop( blendtime=".2", restart="false", norepeat="false", seed=[animtime] ) clientauth
+	{
+		#aim_anims
+	}
+	facial_run: random( blendtime=".2", restart="false", seed=[animtime] ) clientauth
+	{
+		//We add a dummy duplicate anim to this state to preserve facial index order
+		ai_jup_zm_mangler_face_generic_idle_01@1
+	}
+	facial_pain: random( blendtime=".2", restart="false", seed=[animtime] ) clientauth
+	{
+		#pain_anims
+	}
+	facial_death: random( blendtime=".2", restart="false", seed=[animtime] ) clientauth
+	{
+		#death_anims
+	}
+}
+
+animscripted_node
+{
+    #animscripted
+}
+
+locomotion : loopsync
+{
+	move_loops
+	{
+		#move_loop
+	}
+}
+
+#move_stop
+#move_exit
+
+#death_generic
+
+#melee
+
+#traversal
+
+#simple
+
+server_ragdoll : public server_ragdoll( xanim_server_ragdoll_root_origin = [xanim_server_ragdoll_root_origin],
+										xanim_server_ragdoll_root_angles = [xanim_server_ragdoll_root_angles])
+{
+}
+
+ragdoll : public clientauth overlay ragdoll (ragdoll_handle=[entity_ragdoll_handle])
+{
+}

@@ -1,0 +1,220 @@
+// this gets run when you run with a fresh profile and when you reset #x38c95068c1f418e19
+// code will zero stats before this is run
+
+//////// general setup ////////
+
+//////// Loadouts ////////
+exec mp\stats_init_ranked_loadouts
+exec mp\stats_init_new_loadouts
+
+// Operator
+setRankedLoadoutsPlayerData "customizationSetup" "operators" 0 "milsim_western_1"
+setRankedLoadoutsPlayerData "customizationSetup" "operators" 1 "milsim_eastern_1"
+
+setRankedLoadoutsPlayerData "customizationSetup" "operatorWatch" 0
+
+setRankedLoadoutsPlayerData "customizationSetup" "radial" 0 210000
+setRankedLoadoutsPlayerData "customizationSetup" "radial" 1 190217
+setRankedLoadoutsPlayerData "customizationSetup" "radial" 2 190218
+setRankedLoadoutsPlayerData "customizationSetup" "radial" 3 190219
+setRankedLoadoutsPlayerData "customizationSetup" "radial" 4 190220
+setRankedLoadoutsPlayerData "customizationSetup" "radial" 5 190221
+setRankedLoadoutsPlayerData "customizationSetup" "radial" 6 190222
+setRankedLoadoutsPlayerData "customizationSetup" "radial" 7 190223
+
+setRankedLoadoutsPlayerData "customizationFavorites" "favoriteLoadoutIndex" 0
+
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "intro" 0
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "intro" 1
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "intro" 2
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "intro" 3
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "intro" 4
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "intro" 5
+
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "taunt" 0
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "taunt" 1
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "taunt" 2
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "taunt" 3
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "taunt" 4
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "taunt" 5
+
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "skin" 6002
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "skin" 5972
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "skin" 5999
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "skin" 5971
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "hutch_western" "skin" 5514
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gus_western" "skin" 5982
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zimo_western" "skin" 5989
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kleo_western" "skin" 6005
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "nova_eastern" "skin" 5983
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "price_western" "skin" 5987
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "farah_western" "skin" 5993
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "ghost_western" "skin" 5976
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_western_1" "skin" 5995
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_eastern_1" "skin" 5996
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "soap_western" "skin" 7966
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "oni_eastern" "skin" 8189
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gromsko_western" "skin" 11396
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "reyes_western" "skin" 11395
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "luna_western" "skin" 11402
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "roze_eastern" "skin" 11404
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zero_eastern" "skin" 11397
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "conor_eastern" "skin" 11401
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "aksel_eastern" "skin" 11403
+setRankedLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "skin" 12261
+
+// Private Loadouts
+setPrivateLoadoutsPlayerData "customizationSetup" "operators" 0 "milsim_western_1"
+setPrivateLoadoutsPlayerData "customizationSetup" "operators" 1 "milsim_eastern_1"
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "skin" 6002
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "skin" 5972
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "skin" 5999
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "skin" 5971
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "hutch_western" "skin" 5514
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gus_western" "skin" 5982
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zimo_western" "skin" 5989
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kleo_western" "skin" 6005
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "nova_eastern" "skin" 5983
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "price_western" "skin" 5987
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "farah_western" "skin" 5993
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "ghost_western" "skin" 5976
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" "skin" 5980
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_western_1" "skin" 5995
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_eastern_1" "skin" 5996
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "soap_western" "skin" 7966
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "oni_eastern" "skin" 8189
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gromsko_western" "skin" 11396
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "reyes_western" "skin" 11395
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "luna_western" "skin" 11402
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "roze_eastern" "skin" 11404
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zero_eastern" "skin" 11397
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "conor_eastern" "skin" 11401
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "aksel_eastern" "skin" 11403
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "skin" 12261
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorWatch" 0
+
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 0 210000
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 1 190217
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 2 190218
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 3 190219
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 4 190220
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 5 190221
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 6 190222
+setPrivateLoadoutsPlayerData "customizationSetup" "radial" 7 190223
+
+setPrivateLoadoutsPlayerData "customizationFavorites" "favoriteLoadoutIndex" 0
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "intro" 31
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "intro" 32
+
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "taunt" 0
+setPrivateLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "taunt" 0
+
+
+// DMZ Init
+// Used to mark that we haven't initialized random inventory yet.
+setRankedPlayerData "dmzInventory" 0 "lootID" 11338 // iw9_sm_mpapa5
+setRankedPlayerData "dmzInventory" 0 "quantity" 5
+setRankedPlayerData "dmzInventory" 1 "lootID" 11356 // iw9_sh_mbravo
+setRankedPlayerData "dmzInventory" 1 "quantity" 3
+setRankedPlayerData "dmzInventory" 2 "lootID" 11352 // iw9_pi_papa220
+setRankedPlayerData "dmzInventory" 2 "quantity" 5
+setRankedPlayerData "dmzInventory" 3 "lootID" 11355 // iw9_me_knife
+setRankedPlayerData "dmzInventory" 3 "quantity" 2
+setRankedPlayerData "dmzInventory" 4 "lootID" 0
+setRankedPlayerData "dmzInventory" 4 "quantity" 99
+setRankedPlayerData "backpackSize" 8
+setRankedPlayerData "brBackpackSize" 8
+setRankedPlayerData "dmzBackpackSize" 5
+setRankedPlayerData "dmzPlateCarrierLevel" 1
+setRankedPlayerData "dmzExtractStreak" 0
+
+setRankedPlayerData "dmzBankedCash" 100
+setRankedPlayerData "dmzPocketCash" 0
+
+// Init DMZ loadout
+setRankedPlayerData "squadMembers" "loadouts" 0 "inUse" 1
+setRankedPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 0 "weapon" "iw9_ar_kilo53"
+setRankedPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 0 "lootItemID" 8137
+setRankedPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 0 "variantID" 0
+setRankedPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 1 "weapon" "iw9_pi_papa220"
+setRankedPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 1 "lootItemID" 8054
+setRankedPlayerData "squadMembers" "loadouts" 0 "weaponSetups" 1 "variantID" 0
+setRankedPlayerData "squadMembers" "loadouts" 0 "equipmentSetups" 0 "equipment" "equip_frag"
+setRankedPlayerData "squadMembers" "loadouts" 0 "equipmentSetups" 1 "equipment" "equip_smoke"
+setRankedPlayerData "squadMembers" "loadouts" 0 "fieldUpgrades" 0 "super_ammo_drop"
+
+// Init crossplay
+setNonGamePlayerData "cross_play_enabled" 1
+
+// Init Customization
+setNonGamePlayerData "customization_background" 0 35606
+setNonGamePlayerData "customization_patch" 0 37351
+
+
+//CP loadouts
+setCoopLoadoutsPlayerData "customizationSetup" "operators" 0 "milsim_western_1"
+setCoopLoadoutsPlayerData "customizationSetup" "operators" 1 "milsim_eastern_1"
+
+setCoopLoadoutsPlayerData "customizationSetup" "operatorWatch" 0
+
+setCoopLoadoutsPlayerData "customizationSetup" "radial" 0 210000
+setCoopLoadoutsPlayerData "customizationSetup" "radial" 1 190217
+setCoopLoadoutsPlayerData "customizationSetup" "radial" 2 190218
+setCoopLoadoutsPlayerData "customizationSetup" "radial" 3 190219
+setCoopLoadoutsPlayerData "customizationSetup" "radial" 4 190220
+setCoopLoadoutsPlayerData "customizationSetup" "radial" 5 190221
+setCoopLoadoutsPlayerData "customizationSetup" "radial" 6 190222
+setCoopLoadoutsPlayerData "customizationSetup" "radial" 7 190223
+
+setCoopLoadoutsPlayerData "customizationFavorites" "favoriteLoadoutIndex" 0
+
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "intro" 0
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "intro" 1
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "intro" 2
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "intro" 3
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "intro" 4
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "intro" 5
+
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" "taunt" 0
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" "taunt" 1
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gunnar_western" "taunt" 2
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" "taunt" 3
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" "taunt" 4
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" "taunt" 5
+
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" 0
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kilgore_eastern" 1
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "calisto_eastern" 2
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "chili_western" 3
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "hutch_western" 4
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" 5
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gus_western" 6
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zimo_western" 7
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kleo_western" 8
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "nova_eastern" 9
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "price_western" 10
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "farah_western" 11
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "ghost_western" 12
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "kpop_eastern" 13
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_western_1" 14
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "milsim_eastern_1" 18
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "soap_western" 22
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "oni_eastern" 23
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "gromsko_western" 24
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "reyes_western" 25
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "luna_western" 26
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "roze_eastern" 27
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "zero_eastern" 28
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "conor_eastern" 29
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "aksel_eastern" 30
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "conor_eastern" 31
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "fender_western" 32
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "hutch_western" 33
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "reyes_western" 34
+setCoopLoadoutsPlayerData "customizationSetup" "operatorCustomization" "stiletto_eastern" 35

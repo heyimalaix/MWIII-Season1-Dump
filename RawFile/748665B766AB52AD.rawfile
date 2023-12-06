@@ -1,0 +1,49 @@
+(function (WK) {
+    WK.utils = WK.utils || {};
+    WK.utils.svg = WK.utils.svg || {};
+    WK.utils.svg.psIcons = WK.utils.svg.psIcons || {};
+    var ps = WK.utils.svg.psIcons;
+
+
+    ps.circle = function () {
+        var svgStr =
+            '<svg class="ps-circle-svg" width="106" height="106" viewBox="0 0 106 106" fill="#141313" xmlns="http://www.w3.org/2000/svg"><path class="svg-fill-path default-white" d="M53 0C23.7 0 0 23.7 0 53C0 82.3 23.7 106 53 106C82.3 106 106 82.3 106 53C106 23.7 82.3 0 53 0ZM53 90.9C32.1 90.9 15.1 73.9 15.1 53C15.1 32.1 32.1 15.1 53 15.1C73.9 15.1 90.9 32.1 90.9 53C90.9 73.9 73.9 90.9 53 90.9Z" /><path class="svg-fill-path default-white" d="M53 25C37.5 25 25 37.5 25 53C25 68.5 37.5 81 53 81C68.5 81 81 68.5 81 53C81 37.5 68.5 25 53 25Z" /></svg>';
+        svg = new DOMParser().parseFromString(svgStr, 'application/xml');
+        return svg.documentElement;
+    };
+
+    ps.circleL = function () {
+        var svgStr =
+                '<svg class="ps-circle-L-svg" width="129" height="128" viewBox="0 0 24 39" fill="#141313" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g opacity="0.7"><rect y="7" width="24" height="24" fill="url(#pattern0)"/></g><path d="M12 0L15.4641 4.5H8.5359L12 0Z" fill="#C4C4C4"/><path d="M12 39L15.4641 34.5H8.5359L12 39Z" fill="#C4C4C4"/><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0_3_257" transform="scale(0.015625)"/></pattern><image id="image0_3_257" width="64" height="64" xlink:href="data:image/png;base64,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"/></defs></svg>',                
+            svg = new DOMParser().parseFromString(svgStr, 'application/xml');
+        return svg.documentElement;
+    };
+
+    ps.square = function () {
+        var svgStr =
+                '<svg class="ps-square-svg" width="106" height="106" viewBox="0 0 106 106" fill="#141313" xmlns="http://www.w3.org/2000/svg"><path class="svg-fill-path default-white" d="M32.2771 32.2205L32.124 73.7205L73.624 73.8736L73.7771 32.3736L32.2771 32.2205Z" /><path class="svg-fill-path default-white" d="M53.2003 0.000316625C23.9003 -0.0996834 0.100317 23.5003 0.000316625 52.8003C-0.0996834 82.1003 23.5003 105.9 52.8003 106C82.1003 106.1 105.9 82.5003 106 53.2003C106.1 23.9003 82.5003 0.100317 53.2003 0.000316625ZM82.8003 82.0003V83.0003L23.0003 82.8003L23.2003 23.0003L83.0003 23.2003L82.8003 82.0003Z" /></svg>',
+            svg = new DOMParser().parseFromString(svgStr, 'application/xml');
+        return svg.documentElement;
+    };
+
+    ps.triangle = function () {
+        var svgStr =
+                '<svg class="ps-triangle-svg" width="106" height="106" viewBox="0 0 106 106" fill="#141313" xmlns="http://www.w3.org/2000/svg"><path class="svg-fill-path default-white" d="M52.9999 31.3L31.2 70H74.7L52.9999 31.3Z" /><path class="svg-fill-path default-white" d="M53 0C23.7 0 0 23.7 0 53C0 82.3 23.7 106 53 106C82.3 106 106 82.3 106 53C106 23.7 82.3 0 53 0ZM14.3 79.2L52 12.6H54L91.8 79.2H14.3Z" /></svg>',
+            svg = new DOMParser().parseFromString(svgStr, 'application/xml');
+        return svg.documentElement;
+    };
+    
+    ps.x = function () {
+        var svgStr =
+                '<svg class="ps-x-svg" width="106" height="106" viewBox="0 0 106 106" fill="#141313" xmlns="http://www.w3.org/2000/svg"><path class="svg-fill-path default-white" d="M53 0C23.7 0 0 23.7 0 53C0 82.3 23.7 106 53 106C82.3 106 106 82.3 106 53C106 23.7 82.3 0 53 0ZM75.1 82.5L53 60.4L30.9 82.5L23.6 75.2L45.6 53L23.5 30.9L30.9 23.5L53 45.6L75.1 23.5L82.4 30.8L60.4 53L82.5 75.1L75.1 82.5Z" /></svg>',
+            svg = new DOMParser().parseFromString(svgStr, 'application/xml');
+        return svg.documentElement;
+    };
+
+    ps.circleR = function () {
+        var svgStr =
+                '<svg class="ps-circle-R-svg" width="128" height="128" viewBox="0 0 128 128" fill="#141313" xmlns="http://www.w3.org/2000/svg"><path class="svg-fill-path default-white" d="M65.3 48.7002H55.7V60.0002H65.4C67.3 60.0002 68.7 59.6002 69.8 58.7002C70.9 57.9002 71.4 56.4002 71.4 54.2002C71.4 52.2002 70.9 50.8002 69.8 49.9002C68.8 49.1002 67.3 48.7002 65.3 48.7002Z" /><path class="svg-fill-path default-white" d="M64 19C39.1 19 19 39.1 19 64C19 88.9 39.1 109 64 109C88.9 109 109 88.9 109 64C109 39.1 88.8 19 64 19ZM72.6 81.9C72.1 80.7 71.7 78.4 71.5 75C71.2 71.4 70.5 69.1 69.5 68C68.5 66.9 66.8 66.3 64.6 66.3H55.8V81.9H46.9V41.9H68.5C71.9 41.9 74.7 42.9 76.9 45C79.1 47.1 80.2 49.7 80.2 52.9C80.2 57.9 78.1 61.2 73.9 62.9V63C75.3 63.4 76.4 64.1 77.2 65C78 65.9 78.6 67.1 79 68.3C79.4 69.6 79.7001 71.6 79.8 74.4C79.9 78.1 80.5 80.5 81.4 81.7H72.6V81.9Z" /><path class="svg-fill-path default-white" d="M63.7 11C68.8 11 73.7 11.7 78.3 13.1L64.2 0L50.5 12.7C54.7 11.5 59.1 11 63.7 11Z" /><path class="svg-fill-path default-white" d="M63.7 117C68.8 117 73.7 116.3 78.3 114.9L64.2 128L50.5 115.3C54.7 116.4 59.1 117 63.7 117Z" /></svg>',
+            svg = new DOMParser().parseFromString(svgStr, 'application/xml');
+        return svg.documentElement;
+    };
+})(WK);

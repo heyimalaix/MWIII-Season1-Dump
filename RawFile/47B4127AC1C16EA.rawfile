@@ -1,0 +1,174 @@
+To display the in-game debugger, enter "scriptdebugger" or "sd" in the command console (or map it to a hot-key)
+
+
+Window Layout
+-------------
+
+The work area is divided into 4 windows:  The source window and three utility windows (Misc 1, 2, and 3).  
+Any of the available windows can be displayed in any of the Misc window areas.  The contents of that window are
+selected by holding down the specified Mod key while pressing one of the window keys.
+Note that the source window cannot be remapped.
+
+The Windows:
+
+   Source      |   Misc 3
+               |   Mod: Shift
+--------------------------------
+   Misc 1      |   Misc 2
+   Mod: None   |   Mod: Ctrl
+
+Pressing the indicated Mod key while pressing one of the window select keys will map that window into that display area
+and simultaneously select it for focus.  Pressing '1' or 'Escape' will reset the focus to the source window 
+
+	1		Select the source window  (modifiers have no effect)
+	2		Watch Window
+	3		Callstack Window
+	4		Breakpoint Window
+	5		Profile Window
+	6		Available Files Window
+	7		Recent Files Window
+	8		Output Window
+	9		Find Results Window
+
+If a selected window is already present in another misc window area, then the requested window will be swapped into the desired misc window area.
+
+Keyboard input is generally global - however some inputs require a specific window to have the input focus.  The window with input focus is denoted with the title bar.
+Blue indicates the focus window, black indicates non-focused.
+
+
+Global Keys
+------
+	F1								Open Help in Source Window
+
+	Display Controls
+	----------------
+		Escape							Select Source Window 
+		1								Select Source Window 
+
+		2								Select Watch Window into Misc 1
+		3								Select Callstack Window into Misc 1
+		4								Select Breakpoints Window into Misc 1
+		5								Select Profile Window into Misc 1
+		6								Select Available Files Window into Misc 1
+		7								Select Recent Files Window into Misc 1
+		8								Select Output Window into Misc 1
+		9								Select Find Results Window into Misc 1
+	
+		ctrl+2							Select Watch Window into Misc 2
+		ctrl+3							Select Callstack Window into Misc 2
+		ctrl+4							Select Breakpoints Window into Misc 2
+		ctrl+5							Select Profile Window into Misc 2
+		ctrl+6							Select Available Files Window into Misc 2
+		ctrl+7							Select Recent Files Window into Misc 2
+		ctrl+8							Select Output Window into Misc 2
+		ctrl+9							Select Find Results Window into Misc 2
+
+		shift+2							Select Watch Window into Misc 3
+		shift+3							Select Callstack Window into Misc 3
+		shift+4							Select Breakpoints Window into Misc 3
+		shift+5							Select Profile Window into Misc 3
+		shift+6							Select Available Files Window into Misc 3
+		shift+7							Select Recent Files Window into Misc 3
+		shift+8							Select Output Window into Misc 3
+		shift+9							Select Find Results Window into Misc 3
+
+		ctrl+TAB			Select next item in recent files selection - swap to the indicated file upon release of ctrl (tab multiple times to continue to advance selection)
+		ctrl+shift+TAB		Select previous item in recent files selection - swap to the indicated file upon release of shift (tab multiple times to continue to advance selection)
+
+	Debugger Controls
+	-----------------
+		F5				Run (exit debugger)
+		F9				Toggle breakpoint on selected line in source
+		shift+F9		Toggle enable for breakpoint on selected line in source
+		F10				Step Over
+		F11				Step Into
+		shift+F11		Step Out
+
+
+	Search Controls
+	---------------	
+		ctrl+F			Find keyword in current source file
+		alt+F			Find keyword across all available files
+		F3				Next Find Result
+		shift+F3		Previous Find Result
+
+	Misc Controls
+	-------------
+		Up Arrow					Move selection up
+		Down Arrow					Move selection down
+		ctrl+Up Arrow				Scroll one line up
+		ctrl+Down Arrow				Scroll one line down
+		Mouse Left Button			Select indicated line
+		Mouse Wheel					Scroll Window contents up/down 3 lines
+		` (GRAVE)					Open command console
+		shift+`	(GRAVE)				Open command console and console output window				
+		ctrl+O						Open file.  Switches to Available files window and presents filter
+		ctrl+G						Goto line in Source window
+		ctrl+shift+F5				map_restart
+
+
+When windows that have the input focus they support these additional inputs:
+
+
+Source Window
+-------------
+	Mouse Left Button			Toggle Breakpoint on/off
+	ctrl+Mouse Button 			Disable/Enable Breakpoint
+
+
+Watch Window
+------------
+	Right Arrow					Expand selected item (if possible)
+	Left Arrow					Collapse selected item (if possible)
+	Enter						Toggle Expand/Collapse selected item (if possible)
+	Mouse Dbl Click				Toggle Expand/Collapse selected item (if possible)
+	Insert						Add new watch item
+	Del							Remove watch item (if user created)
+	F2							Edit selected watch
+	Mouse Right Button			Edit selected watch
+	B							Create Data Modified Breakpoint for highlighted item
+
+
+Breakpoint Window
+-----------------
+	Enter						Enable/Disable selected Breakpoint
+	ctrl+Mouse Left Button		Enable/Disable selected Breakpoint
+	Del							Delete selected Breakpoint
+	C							Modify condition associated with selected Breakpoint
+	N							Create new Notify Breakpoint
+	A							Create new API Breakpoint
+	D							Create new Data modified Breakpoint
+
+
+Callstack Window
+----------------
+	Enter						Display file and line
+
+
+Profile Window
+--------------
+
+
+Available Files
+---------------
+	Enter						Open selected file into Source Window
+	Mouse Dbl Click				Open selected file into Source Window
+
+
+Recent Files
+------------
+	Enter						Open selected file in Source Window
+	Mouse Dbl Click				Open selected file in Source Window
+
+
+
+
+The watch window support special syntax for watch expressions
+-------------------------------------------------------------
+
+$t		thread
+$e		entity
+$h		hudelem
+$p		pathnode
+$v		vehiclenode
+

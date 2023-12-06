@@ -1,0 +1,192 @@
+// code will zero stats before this is run
+
+//////// general setup ////////
+setPrivateWZLoadout "defaultSet" 1
+setPrivateWZLoadout "inUse" 1
+
+//////// killstreaks ////////
+setPrivateWZLoadout "killstreakSetups" 0 "killstreak" "uav"
+setPrivateWZLoadout "killstreakSetups" 1 "killstreak" "cruise_predator"
+setPrivateWZLoadout "killstreakSetups" 2 "killstreak" "chopper_gunner"
+
+//////// rig ////////
+setPrivateWZLoadout "archetype" "archetype_assault"
+setPrivateWZLoadout "archetypePerk" "specialty_null"
+setPrivateWZLoadout "archetypeSuper" "super_ammo_drop"
+setPrivateWZLoadout "head" 10
+setPrivateWZLoadout "body" 6
+
+//////// gesture ////////
+setPrivateWZLoadout "gesture" "gesture000"
+setPrivateWZLoadout "taunt" "iw7_taunt_rare_6"
+setPrivateWZLoadout "taunts" 0 "iw7_taunt_rare_6"
+setPrivateWZLoadout "taunts" 1 "iw7_taunt_rare_6"
+setPrivateWZLoadout "taunts" 2 "iw7_taunt_rare_6"
+setPrivateWZLoadout "taunts" 3 "iw7_taunt_rare_6"
+
+////////cp //////
+setPrivateWZLoadout "cpLoadoutSel" 0
+
+///////CPFieldUpgrade///////
+setPrivateWZLoadout "cpFieldUpgrade" "role_tank"
+
+/////munitions//////
+setPrivateWZLoadout "munitionSetups" 0 "munition" "empty1"
+setPrivateWZLoadout "munitionSetups" 1 "munition" "empty2"
+setPrivateWZLoadout "munitionSetups" 2 "munition" "empty3"
+
+setPrivateWZLoadout "munitionWaveModeSetups" 0 "munition" "empty1"
+setPrivateWZLoadout "munitionWaveModeSetups" 1 "munition" "empty2"
+setPrivateWZLoadout "munitionWaveModeSetups" 2 "munition" "empty3"
+//////// classes ////////
+
+// Loadout 1 - Balanced Assault
+setPrivateWZLoadout_loc "loadouts" 0 "name" "LUA_MENU_MP/CUSTOM_LOADOUT_1"
+setPrivateWZLoadout "loadouts" 0 "inUse" 1
+setPrivateWZLoadout "loadouts" 0 "overkill" 1
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "weapon" "jup_jp36_ar_anov94"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 0 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 1 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 2 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 3 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "attachmentSetup" 4 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 0 "sticker" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 1 "sticker" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 2 "sticker" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "Sticker" 3 "sticker" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "reticle" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 0 "variantID" 0
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "weapon" "jup_cp24_pi_glima21"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 0 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 1 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 2 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 3 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "attachmentSetup" 4 "attachment" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 0 "sticker" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 1 "sticker" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 2 "sticker" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "Sticker" 3 "sticker" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "reticle" "none"
+setPrivateWZLoadout "loadouts" 0 "weaponSetups" 1 "variantID" 0
+setPrivateWZLoadout "loadouts" 0 "flcSlingOneEmpty" 0
+setPrivateWZLoadout "loadouts" 0 "flcHolsterOneEmpty" 0
+setPrivateWZLoadout "loadouts" 0 "equipmentSetups" 0 "equipment" "equip_frag"
+setPrivateWZLoadout "loadouts" 0 "equipmentSetups" 1 "equipment" "equip_concussion"
+setPrivateWZLoadout "loadouts" 0 "loadoutPerks" 0 "specialty_running_sneakers"
+setPrivateWZLoadout "loadouts" 0 "loadoutPerks" 1 "specialty_focus"
+setPrivateWZLoadout "loadouts" 0 "loadoutPerks" 2 "specialty_tac_gloves"
+setPrivateWZLoadout "loadouts" 0 "extraPerks" 0 "specialty_lightweight_br"
+setPrivateWZLoadout "loadouts" 0 "fieldUpgrades" 0 "super_ammo_drop"
+setPrivateWZLoadout "loadouts" 0 "fieldUpgrades" 1 "none"
+setPrivateWZLoadout "loadouts" 0 "fieldUpgradeUses" 0 1
+setPrivateWZLoadout "loadouts" 0 "fieldUpgradeUses" 1 1
+setPrivateWZLoadout "loadouts" 0 "equippedPerkPackageIndex" 5
+
+
+//////// streak preferences setup ////////
+setPrivateWZLoadout "streakPreferences" "none" 0
+setPrivateWZLoadout "streakPreferences" "uav" 0
+setPrivateWZLoadout "streakPreferences" "airdrop" 0
+setPrivateWZLoadout "streakPreferences" "dronedrop" 0
+setPrivateWZLoadout "streakPreferences" "counter_uav" 0
+setPrivateWZLoadout "streakPreferences" "ball_drone_backup" 0
+setPrivateWZLoadout "streakPreferences" "sentry_shock" 0
+setPrivateWZLoadout "streakPreferences" "orbital_deployment" 0
+setPrivateWZLoadout "streakPreferences" "thor" 0
+setPrivateWZLoadout "streakPreferences" "precision_airstrike" 0
+setPrivateWZLoadout "streakPreferences" "jammer" 0
+setPrivateWZLoadout "streakPreferences" "jackal" 0
+setPrivateWZLoadout "streakPreferences" "minijackal" 0
+setPrivateWZLoadout "streakPreferences" "nuke" 0
+setPrivateWZLoadout "streakPreferences" "spiderbot" 0
+setPrivateWZLoadout "streakPreferences" "directional_uav" 0
+setPrivateWZLoadout "streakPreferences" "bombardment" 0
+setPrivateWZLoadout "streakPreferences" "remote_c8" 0
+setPrivateWZLoadout "streakPreferences" "venom" 0
+
+//////// rig preferences setup ////////
+
+// NOTE-EricG: Please try to keep the following sorted by order of CaC appearance and grouped by archetype
+
+// assault
+setPrivateWZLoadout "archetypePreferences" 0 "archetype" "archetype_assault"
+setPrivateWZLoadout "archetypePreferences" 0 "archetypePerk" "specialty_boom"
+setPrivateWZLoadout "archetypePreferences" 0 "archetypeSuper" "none"
+setPrivateWZLoadout "archetypePreferences" 0 "head" "head_1"
+setPrivateWZLoadout "archetypePreferences" 0 "body" "body_1"
+setPrivateWZLoadout "archetypePreferences" 0 "taunt" "iw7_taunt_rare_6"
+setPrivateWZLoadout "archetypePreferences" 0 "taunts" 0 "iw7_taunt_rare_6"
+setPrivateWZLoadout "archetypePreferences" 0 "taunts" 1 "iw7_taunt_rare_6"
+setPrivateWZLoadout "archetypePreferences" 0 "taunts" 2 "iw7_taunt_rare_6"
+setPrivateWZLoadout "archetypePreferences" 0 "taunts" 3 "iw7_taunt_rare_6"
+setPrivateWZLoadout "archetypePreferences" 0 "gesture" "gesture000"
+
+// heavy
+setPrivateWZLoadout "archetypePreferences" 1 "archetype" "archetype_assault"
+setPrivateWZLoadout "archetypePreferences" 1 "archetypePerk" "specialty_regenfaster"
+setPrivateWZLoadout "archetypePreferences" 1 "archetypeSuper" "none"
+setPrivateWZLoadout "archetypePreferences" 1 "head" "head_1"
+setPrivateWZLoadout "archetypePreferences" 1 "body" "body_1"
+setPrivateWZLoadout "archetypePreferences" 1 "taunt" "iw7_taunt_rare_8"
+setPrivateWZLoadout "archetypePreferences" 1 "taunts" 0 "iw7_taunt_rare_8"
+setPrivateWZLoadout "archetypePreferences" 1 "taunts" 1 "iw7_taunt_rare_8"
+setPrivateWZLoadout "archetypePreferences" 1 "taunts" 2 "iw7_taunt_rare_8"
+setPrivateWZLoadout "archetypePreferences" 1 "taunts" 3 "iw7_taunt_rare_8"
+setPrivateWZLoadout "archetypePreferences" 1 "gesture" "gesture009"
+
+// synaptic
+setPrivateWZLoadout "archetypePreferences" 2 "archetype" "archetype_assault"
+setPrivateWZLoadout "archetypePreferences" 2 "archetypePerk" "specialty_rush"
+setPrivateWZLoadout "archetypePreferences" 2 "archetypeSuper" "none"
+setPrivateWZLoadout "archetypePreferences" 2 "head" "head_1"
+setPrivateWZLoadout "archetypePreferences" 2 "body" "body_1"
+setPrivateWZLoadout "archetypePreferences" 2 "taunt" "iw7_taunt_rare_10"
+setPrivateWZLoadout "archetypePreferences" 2 "taunts" 0 "iw7_taunt_rare_10"
+setPrivateWZLoadout "archetypePreferences" 2 "taunts" 1 "iw7_taunt_rare_10"
+setPrivateWZLoadout "archetypePreferences" 2 "taunts" 2 "iw7_taunt_rare_10"
+setPrivateWZLoadout "archetypePreferences" 2 "taunts" 3 "iw7_taunt_rare_10"
+setPrivateWZLoadout "archetypePreferences" 2 "gesture" "gesture009"
+
+// ftl
+setPrivateWZLoadout "archetypePreferences" 3 "archetype" "archetype_assault"
+setPrivateWZLoadout "archetypePreferences" 3 "archetypePerk" "specialty_superpack"
+setPrivateWZLoadout "archetypePreferences" 3 "archetypeSuper" "none"
+setPrivateWZLoadout "archetypePreferences" 3 "head" "head_1"
+setPrivateWZLoadout "archetypePreferences" 3 "body" "body_1"
+setPrivateWZLoadout "archetypePreferences" 3 "taunt" "iw7_taunt_rare_3"
+setPrivateWZLoadout "archetypePreferences" 3 "taunts" 0 "iw7_taunt_rare_3"
+setPrivateWZLoadout "archetypePreferences" 3 "taunts" 1 "iw7_taunt_rare_3"
+setPrivateWZLoadout "archetypePreferences" 3 "taunts" 2 "iw7_taunt_rare_3"
+setPrivateWZLoadout "archetypePreferences" 3 "taunts" 3 "iw7_taunt_rare_3"
+setPrivateWZLoadout "archetypePreferences" 3 "gesture" "gesture009"
+
+// engineer
+setPrivateWZLoadout "archetypePreferences" 4 "archetype" "archetype_assault"
+setPrivateWZLoadout "archetypePreferences" 4 "archetypePerk" "specialty_equipment_ping"
+setPrivateWZLoadout "archetypePreferences" 4 "archetypeSuper" "none"
+setPrivateWZLoadout "archetypePreferences" 4 "head" "head_1"
+setPrivateWZLoadout "archetypePreferences" 4 "body" "body_1"
+setPrivateWZLoadout "archetypePreferences" 4 "taunt" "iw7_taunt_rare_14"
+setPrivateWZLoadout "archetypePreferences" 4 "taunts" 0 "iw7_taunt_rare_14"
+setPrivateWZLoadout "archetypePreferences" 4 "taunts" 1 "iw7_taunt_rare_14"
+setPrivateWZLoadout "archetypePreferences" 4 "taunts" 2 "iw7_taunt_rare_14"
+setPrivateWZLoadout "archetypePreferences" 4 "taunts" 3 "iw7_taunt_rare_14"
+setPrivateWZLoadout "archetypePreferences" 4 "gesture" "gesture009"
+
+//ghost
+setPrivateWZLoadout "archetypePreferences" 5 "archetype" "archetype_assault"
+setPrivateWZLoadout "archetypePreferences" 5 "archetypePerk" "specialty_mark_targets"
+setPrivateWZLoadout "archetypePreferences" 5 "archetypeSuper" "none"
+setPrivateWZLoadout "archetypePreferences" 5 "head" "head_1"
+setPrivateWZLoadout "archetypePreferences" 5 "body" "body_1"
+setPrivateWZLoadout "archetypePreferences" 5 "taunt" "iw7_taunt_rare_7"
+setPrivateWZLoadout "archetypePreferences" 5 "taunts" 0 "iw7_taunt_rare_7"
+setPrivateWZLoadout "archetypePreferences" 5 "taunts" 1 "iw7_taunt_rare_7"
+setPrivateWZLoadout "archetypePreferences" 5 "taunts" 2 "iw7_taunt_rare_7"
+setPrivateWZLoadout "archetypePreferences" 5 "taunts" 3 "iw7_taunt_rare_7"
+setPrivateWZLoadout "archetypePreferences" 5 "gesture" "gesture009"
+
+// PMC
+setPrivateWZLoadout "activePMCMissions" 0 "challengeID" 80027
+setPrivateWZLoadout "activePMCMissions" 1 "challengeID" 80011
+setPrivateWZLoadout "activePMCMissions" 2 "challengeID" 80026

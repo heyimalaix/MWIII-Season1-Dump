@@ -1,0 +1,31 @@
+// this gets run when you reset #x38c95068c1f418e19 and when you prestige
+// code will zero stats before this is run
+
+// Coop Stats init
+setCoopPlayerData "coopCareerStats" "currency" 0
+setCoopPlayerData "coopCareerStats" "spendingCurrency" 0
+setCoopPlayerData "coopCareerStats" "totalCurrencyEarned" 0
+
+setCoopPlayerData "inventorySlots" "slot1" "ammo_crate"
+setCoopPlayerData "inventorySlots" "slot2" "armor"
+setCoopPlayerData "inventorySlots" "slot3" "scout_drone"
+setCoopPlayerData "inventorySlots" "slot4" "grenade_crate"
+setCoopPlayerData "inventorySlots" "activeSlot" "1"
+setCoopPlayerData "inventorySlots" "totalSlots" "1"
+
+
+setCoopPlayerData "explosive_kills" 0
+
+setCoopPlayerData "tacOpsAchievements" "3starbadsit" 0
+setCoopPlayerData "tacOpsAchievements" "3starvehesc" 0
+setCoopPlayerData "tacOpsAchievements" "3starobservatory" 0
+setCoopPlayerData "tacOpsAchievements" "1starcp" 0
+setCoopPlayerData "tacOpsAchievements" "noalarmbadsit" 0
+setCoopPlayerData "tacOpsAchievements" "fullsse" 0
+
+setCoopPlayerData "dmzInventory" 0 "lootID" 0
+setCoopPlayerData "dmzInventory" 0 "quantity" 99
+setCoopPlayerData "backpackSize" 8
+
+setCoopPlayerData "dmzBankedCash" 100
+setCoopPlayerData "dmzPocketCash" 0

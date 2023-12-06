@@ -1,0 +1,24 @@
+// This should only contain PRIVATE MATCH specific settings
+// reset #x3a2dd8a031a68eed5 reserved scriptable base since it is modified on the playlist
+set #x3fc0d7859620c5fdc 	800
+set #x3e3343e09fcc88109 3200
+ 
+set #x3818c699a5caaee4f 32
+
+// Make sure the no sight filtering feature is not active in private matches only
+// since it impact minimap codcaster map drawing.
+set #x38ddcdb1d265e8d53	0
+
+// Playlist can set #x3963722d314d902d6 to a new value, ensure the server and client have matching values
+set #x348dcdfd4369aecd5 1
+set #x3cbf39f90e127b469 75
+set #x3279375a0bfb2862f 0
+
+// These are for perf optimization, private matches don't have enough stuff going on (e.g. large
+// player count players, vehicles) for the overhead of multi-threaded physics to be worthwhile
+set #x39506a65b9802f906 0
+set #x3ea6ad96ed733a7c9 1
+set #x3ffb6544d26ac841a 0
+
+//logprint dvar used to track codcaster stat between round
+set #x3b0b065fcee59b58d 1

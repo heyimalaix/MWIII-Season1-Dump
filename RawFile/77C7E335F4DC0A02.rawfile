@@ -1,0 +1,11 @@
+%force_cs_anim_index_match
+
+dirt_bike_aim_yaw: scrub1d( timerange="-180, 180", timevalue=[aim_yaw], alwayson="true", childindex="1" ) //complete
+{
+	dirt_bike_aim_pitch : blendspace1d( range="-90,90", blend_time="0", coords="-55,0,55", value=[aim_pitch] ) //complete
+	{
+		iw9_overland_seat_0_pistol_scrub_up
+		iw9_overland_seat_0_pistol_scrub_neutral
+		iw9_overland_seat_0_pistol_scrub_down
+	}
+}

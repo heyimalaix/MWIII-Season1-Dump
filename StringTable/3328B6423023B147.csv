@@ -1,0 +1,274 @@
+include,omnvars/mp/omnvars_scorestreaks_br.csv,,,,,,,,,,,,,
+include,omnvars/mp/omnvars_hardpoint.csv,,,,,,,,,,,,,
+include,omnvars/mp/omnvars_br_common.csv,,,,,,,,,,,,,
+include,omnvars/mp/omnvars_grindtags.csv,,,,,,,,,,,,,
+include,omnvars/mp/omnvars_loot_container.csv,,,,,,,,,,,,,
+gametype,base,,,,,,,,,,,,,
+gametype,extract,,,,,,,,,,,,,
+gametype,evac,,,,,,,,,,,,,
+gametype,dmz,,,,,,,,,,,,,
+gametype,exgm,,,,,,,,,,,,,
+gametype,sandbox,,,,,,,,,,,,,
+gametype,prop,,,,,,,,,,,,,
+gametype,jugg,,,,,,,,,,,,,
+gametype,risk,,,,,,,,,,,,,
+gametype,kingslayer,,,,,,,,,,,,,
+gametype,mini,,,,,,,,,,,,,
+gametype,mini_mgl,,,,,,,,,,,,,
+gametype,plunder,,,,,,,,,,,,,
+gametype,gunroyale,,,,,,,,,,,,,
+gametype,truckwar,,,,,,,,,,,,,
+gametype,zxp,,,,,,,,,,,,,
+gametype,resurgence,,,,,,,,,,,,,
+gametype,resurgence_mgl,,,,,,,,,,,,,
+gametype,champion,,,,,,,,,,,,,
+gametype,vanilla,,,,,,,,,,,,,
+gametype,aladdin,,,,,,,,,,,,,
+gametype,zonecontrol,,,,,,,,,,,,,
+gametype,burn,,,,,,,,,,,,,
+gametype,rumble_mgl,,,,,,,,,,,,,
+ui_br_end_game_splash_type,1,,c,i,-1,-1,20,,,,,,,
+ui_br_sv_extract_successful,1,,c,i,0,0,2,,,,,1,,#0=none, 1=player, 2=team
+ui_br_altimeter_horizontal_speed,1,,c,i,0,0,999,,,,,,,
+ui_br_altimeter_vertical_speed,1,,c,i,0,0,999,,,,,,,
+ui_br_altimeter_height,1,,c,f,0,0,1,,,,,,,
+ui_br_altimeter_state,1,,c,i,0,0,2,,,,,,,
+ui_br_smallarms_ammo,1,,c,i,0,0,999,,,,,,,
+ui_br_shotgun_ammo,1,,c,i,0,0,999,,,,,,,
+ui_br_assault_ammo,1,,c,i,0,0,2000,,,,,,,
+ui_br_sniper_ammo,1,,c,i,0,0,999,,,,,,,
+ui_br_rocket_ammo,1,,c,i,0,0,999,,,,,,,
+ui_br_players_left_in_plane,1,,g,i,0,0,250,,,,,,,
+ui_br_active_spectators,1,,c,i,0,0,250,,,,,1,,
+ui_br_c130_path_start_x,1,,g,i,0,-327670,327670,,,,,,,
+ui_br_c130_path_start_y,1,,g,i,0,-327670,327670,,,,,,,
+ui_br_c130_path_end_x,1,,g,i,0,-327670,327670,,,,,,,
+ui_br_c130_path_end_y,1,,g,i,0,-327670,327670,,,,,,,
+ui_gulag_timer,1,,g,t,0,,,,,,,,,
+ui_gulag_state,1,,g,i,0,0,1,,,,,,,
+ui_gulag,1,,c,b,0,0,1,,,,,1,,
+ui_br_gulag_players_1,1,,c,a,0,,,,,,,1,,
+ui_br_gulag_queue_position,1,,c,i,0,0,64,,,,,1,,
+ui_br_gulag_data,1,,c,i,0,0,16777215,,,,,1,,
+ui_br_gulag_match_state,1,,c,i,0,0,7,,,,,1,,
+ui_br_gulag_match_end_time,1,,c,t,0,,,,,,,1,,
+ui_overtime_timer,1,,c,f,0,0,1,,,,,1,,
+ui_overtime_timer_show,1,,c,b,0,0,1,,,,,1,,
+ui_publicevent_timer,1,,g,f,0,0,1,,,,,,,
+ui_publicevent_timer_type,1,,g,i,0,0,14,,,,,,,
+ui_publicevent_minimap_pulse,1,,g,b,0,0,1,,,,,,,
+ui_publicevent_auavscan_spotted,1,,c,i,0,-1,1,,,,,,,
+ui_publicevent_fullscreen_atlas_type,1,,c,i,0,0,2,,,,,,,
+ui_publicevent_heavyarmor_active,1,,g,i,0,0,1,,,,,,,
+ui_br_objective_index,1,,c,i,0,0,250,,,,,1,,# 0=Hide or #=the object index to show
+ui_br_objective_reward_tier,1,,c,i,0,0,250,,,,,1,,
+ui_br_objective_param,1,,c,i,0,0,99999,,,,,1,,
+ui_br_objective_extraParam,1,,c,i,0,0,99999,,,,,1,,
+ui_br_objective_countdown_timer,1,,c,t,0,,,1,,,,1,,
+ui_br_objective_loot_id,1,,c,i,-1,-1,10000000,,,,,1,,#max is set to be above current highest loot id. May need to increase as we add more lootids
+ui_br_assassination_target,1,,c,i,0,0,2047,,,,,1,,
+ui_br_assassination_target_timer,1,,c,t,0,,,1,,,,1,,
+ui_br_bink_overlay_state,1,,c,i,0,0,15,,,,,0,,#0=off/cleanup, 1=gulag, 2=gulag with prompt, 3=infil, 4=onboarding, 5=kill bink but show black, 6=fade out black, 7=fade in black, 8=event1, 9=reveal trailer, 10=gulag outro without chyron
+ui_br_expanded_obit_message,1,,c,a,0,0,4294967295,,,,,,,#see obituary.lua to see how this data needs to be packed( param2( 20 bits ); param1( 8 bits ); state( 4 bits ) )
+ui_gasmask_damage,1,1,c,f,1,0,1,,,,,,,
+ui_head_equip_class,1,1,c,i,0,0,4,,,,,,,
+ui_br_transition_type,1,,c,i,0,0,6,,,,,,,
+ui_br_display_perk_info,1,,c,i,0,0,1,,,,,1,,# toggle to notify UI to display perk info after a class change
+ui_hide_nameplate_strings,0,,c,b,0,0,1,,,,,,,
+ui_hide_redeploy_timer,0,,g,i,0,0,1,,,,,,,
+ui_nuke_countdown_active,1,,g,i,0,-1,1,,,,,,,
+ui_nuke_timer_type,1,,g,i,0,0,3,,,,,,,
+ui_nuke_timer_time,1,,g,i,30,0,255,,,,,,,
+ui_nuke_player_id,1,,g,i,-1,-1,200,,,,,,,
+ui_br_objective_types,1,,g,a,0,,,,,,,,,#bit field of missions enabled in current match. Indexes from brmissions.csv
+ui_br_squad_leader_can_pass,1,,c,b,0,0,1,,,,,1,,
+ui_br_ftue_popup,1,,g,i,0,0,3,,,,,,,#Opens a popup for the gameflow after the br tutorial
+ui_br_eliminated,1,,c,i,0,0,64,,,,,1,,#packed: 4 bits, each bit is a flag of whether or not the corresponding squad member is fully eliminated
+ui_br_squad_revive_status,1,,c,a,0,,,,,,,1,,#packed: 1 bit, 4 bits, 1 bit, 4 bits, 1 bit, 4 bits, 1 bit, 4 bits
+ui_gulag_show_closing_state,1,,g,i,0,0,3,,,,,,,
+ui_br_extended_load_screen,1,,c,i,0,0,1,,,,,,,
+ui_br_match_stats,1,,g,i,0,0,16777215,,,,,,,#packed: 8 bits (alive player count); 8 bits (active team count); 8 bits (active zombie count)
+ui_br_danger_warning,1,,c,i,0,0,15,,,,,,,#1=cluster, 2=airstrike, 3=gulagClose, 4=cashDeployClose, 5=respawnDisabled, 6=bunkerbuster, 7=incoming missiles
+ui_br_ai_gulag_score,1,,c,i,-1,-1,100,,,,,,,#limited to 100 as it reflects points gotten in the gulag_ai
+ui_br_events,1,,c,i,0,0,15,,,,,1,,#4 flags; could be increased to for more flags or data types
+ui_br_last_droppable_weapon,1,,c,i,-1,-1,65535,,,,,,,#weapon index for the last droppable weapon
+ui_br_has_extract_bag,1,,c,b,0,0,1,,,,,1,,
+ui_br_attraction_data,1,,c,i,0,0,67108863,,,,,1,,#packed: 8 bits type, 8 bits location, 8 bits state, 2 bits extra
+ui_br_attraction_best_data,1,,c,i,0,0,255,,,,,1,,#packed: 8 bits best player
+ui_br_attraction_best_time,1,,c,a,0,,,,,,,1,,
+br_archived_flags,1,1,c,i,0,0,1,,,,,,,#bitfield of archived flags for br
+ui_tablet_code,1,,c,a,0,0,,,,,,,,#4x4 bits, 0-3 code 1,  4-7 code 2, 8-11 code 3, 12-15 code 4
+ui_tablet_usb,1,,c,i,0,0,16,,,,,,,
+ui_assimilation_clientnum,1,,c,i,-1,-1,199,,,,,,,#Max should match MAX_CLIENTS_MP
+ui_assimilation_join_on_target,1,,c,b,0,0,1,,,,,,,
+ui_playerdata_weapon_ammo,1,,c,i,0,0,1023,,,,,,,#Max should match MAX_AMMO_BITS
+ui_poi_star_rating,1,,c,i,-1,-1,8,,,,,,,
+ui_match_start_countdown_not_reach_minplayer,1,,g,i,0,0,65535,,,,,,,#Match start countdown when number of players not reach the minimum
+ui_br_loot_index_picked_up,1,,c,i,-1,-1,500,,,,,,,
+ui_br_kiosk_hide_discount,1,,g,b,0,0,1,,,,,,,
+ui_dmz_uav_tower_screen,1,,c,i,0,0,1,,,,,,,#0=off, 1=on
+ui_dmz_hide_inventory,1,,c,b,0,0,1,,,,,,,
+ui_dmz_radiation_spreading,1,,g,i,0,0,1,,,,,,,
+ui_dmz_poi_name,1,,c,i,0,0,40,,,,,,,#0=Hydro,1=Oilfield
+ui_dmz_activity_starter_poi_name,1,,c,i,0,0,40,,,,,,,#POI of the activity for this activity starter. See BR.DMZ_POI_NAME_MAP
+ui_br_hacker_phone_state,1,,c,i,0,0,3,,,,,,,#When Hacker Phone has been picked up and players can hack other contracts 0 = inactive, 1 = hacked but inactive, 2 = hacked and active, 3 = active
+ui_br_hacked_phones_data1,1,,c,a,0,,,,,,,,,#Activity starter index of hacked contracts for the client, 32 bits packed, 16 bits each hacked phone. Data 1
+ui_br_hacked_phones_data2,1,,c,a,0,,,,,,,,,#Activity starter index of hacked contracts for the client, 32 bits packed, 16 bits each hacked phone. Data 2
+ui_br_hacker_phone_remaining_payments,1,,c,i,0,0,63,,,,,,,#Remaining payments displayed in lootsplash.lua
+ui_br_hacker_phone_potential_cash_value,1,,c,i,0,0,99999,,,,,,,#Hacked contracts count
+ui_dmz_activity_starter_activity_type,1,,c,i,0,0,20,,,,,,,#Type of the nearby activity starter's activity
+ui_br_stronghold_mission,1,,c,i,0,0,2048,,,,,,,#stronghold mission data, First 4 bits from right side is Mission Type (BR.StrongholdMissions.MissionTypes), Next 8 bits is Boss Health out of 100
+ui_br_stronghold_mission_timer,1,,c,i,0,0,67108863,,,,,,,#stronghold mission timer
+ui_br_stronghold_mission_progress,1,,c,i,0,0,255,,,,,,,#stronghold mission progress
+ui_br_stronghold_has_blacksite_key,1,,c,b,0,0,1,,,,,1,,
+ui_br_stronghold_mission_loadout_crate,1,,c,i,0,0,255,,,,,,,#Stronghold Annihilation Loadout Crate Icon State
+ui_br_stronghold_mission_status,1,,c,i,0,0,3,,,,,,,#stronghold mission status
+ui_br_ai_gulag_end_score,1,,c,i,-1,-1,67108863,,,,,1,,#gulag ai score with accuracy, time and kills
+ui_br_ai_gulag_end_score_best,1,,c,i,-1,-1,67108863,,,,,1,,#gulag ai score with total score, stars and best score bool
+ui_br_ai_gulag_player_state,1,,c,i,0,0,255,,,,,1,,#gulag player state packed: 4 bits secondPlayerStatus, 4 bits firstPlayerStatus
+ui_br_twotwo_gulag_player_state,1,,c,i,-1,-1,511,,,,,1,,#twotwogulag player state packed: enumPlayer ally in your 2v2 team
+ui_br_gulag_named_arena,1,,c,i,0,0,15,,,,,1,,#index of named arena in gulagnamedaernas scriptbundle
+ui_br_gulag_event,1,,c,i,0,0,15,,,,,1,,#index of gulag event in the gulagevents scriptbundle
+ui_br_special_item_acquired,1,,c,i,0,0,255,,,,,1,,#use this omnvar to tell UI that a special item was picked up. 0 = no special item
+ui_br_multi_circle_player_count,1,,g,a,0,,,,,,,,,#packed: ( ( 8 bits player count ) * 4 circles )
+ui_br_multi_circle_player_data,1,,c,i,0,0,15,,,,,1,,#packed: 4 bits, each bit is a flag for a player being inside a multi-circle
+ui_br_multi_circle_team_count,1,,g,a,0,,,,,,,,,#packed: ( ( 8 bits team count ) * 4 circles )
+ui_br_interrogation_signal_valid,1,,c,i,1,0,1,,,,,,,#interrogation signal valid
+ui_br_elite_arrow_mission_data,1,,c,a,0,0,131071,,,,,1,,#Operation Broken Arrow's status: active, contract state, bombsite state and timer
+ui_br_elite_arrow_element_data,1,,c,a,0,0,134217727,,,,,1,,#Operation Broken Arrow's element status: number of elements, each element state, and squad ally index
+ui_br_elite_arrow_mission_players,1,,c,a,0,0,4294967295,,,,,1,,#Operation Broken Arrow's players: ID's of the players currently holding each element
+ui_br_elite_quest_chain_progress,1,,c,i,0,0,255,,,,,1,,#Broken Arrow quest chain progress
+ui_geigercounter_meter,1,1,c,f,0,0,1,1,,,,,,
+ui_geigercounter_type,1,1,c,i,0,0,5,,,,,,,
+ui_vault_code_known_digits,1,,c,a,0,,,,,,,,,#bit field of exgm vault code digits 4 bits per digit [0-9 plus 10 represents character # for unknowns ]; 4 bit for objective ID
+ui_backpack_small,1,,c,b,1,0,1,,,,,,,
+ui_br_pe_meter_data,1,,g,i,0,0,262143,,,,,,,#18 bits packed: (8 current value, 8 max value, 2 states)
+ui_br_twotwo_gulag_players,1,,c,a,0,,,,,,,1,,#32 bits - entNums of players in gulag | +1 ent num
+ui_br_twotwo_gulag_players_state,1,,c,i,-1,-1,67108863,,,,,1,,#28 bits - player states in gulag
+ui_br_twotwo_gulag_jailer_health,1,,c,i,100,0,100,,,,,1,,#twotwogulag jailer health ratio with normal health + armor (percent from 0 to 100)
+ui_assimilation_disabled,1,,c,b,0,0,1,,,,,,,
+ui_br_using_killstreak,1,,c,b,0,0,1,,,,,,,
+ui_br_has_been_interrogated,1,,c,b,0,0,1,,,,,1,,
+ui_br_interrogate_tracking_other_team,1,,c,b,0,0,1,,,,,1,,
+ui_br_interrogate_team_is_being_tracked,1,,c,b,0,0,1,,,,,1,,
+ui_br_timed_feature_end_time,1,,c,t,0,,,,,,,,,
+ui_plea_for_help_data,1,,c,a,0,0,,,,,,,,#0-1 bits: Status 2-9:Num Nearby Squads
+ui_br_resurgence_respawn_enabled,1,,g,i,0,0,1,,,,,,,#0=off, 1=on
+ui_br_resurgence_respawn_type,1,,c,i,0,0,1,,,,,,,#0=multi, 1=solo
+ui_br_resurgence_tracked_teams,1,,c,i,0,0,2147483647,,,,,,,#32bits packed: 8bits team 0, 8bits team 1, 8bits team 2, 8bits team 3
+ui_br_contract_cancellation_state,1,,c,i,0,0,63,,,,,1,,
+ui_br_resurgence_will_disable,1,,c,b,0,0,1,,,,,,,
+ui_br_elite_arrow_aar_state,1,,c,i,0,0,2,,,,,,,
+ui_dmz_biolab_show_countdown,1,,c,b,0,0,1,,,,,,,#0=off, 1=on
+ui_dmz_biolab_countdown,1,,c,i,0,-1,80,,,,,,,#Biolab countdown
+ui_dmz_biolab_countdown_desc_index,1,,c,i,0,0,3,,,,,,,#0=off, 1=on
+ui_mp_billboards_advertisement_data,1,0,g,a,0,0,,,,,,,,#Billboard Advertisement Data 0-1 bits: Advertisement Type  2-6 Advertisement Set Index  3-11 Advertisement Index
+ui_hard_drive_taken,1,,c,b,0,0,1,,,,,1,,
+ui_league_play_br_leave_penalty_timer,1,,c,i,-1,-1,300000,,,,,,,#TODO: This may need to move to a league play specific file. The amount of time required to wait after death before a player can leave a ranked match without a penalty.
+ui_league_play_br_can_leave_with_party,1,,c,b,1,0,1,,,,,,,#TODO: This may need to move to a league play specific file. Whether a party leader can leave with the whole party in a ranked play game.
+ui_leagueplay_allow_quit,1,,c,i,0,0,3,,,,,,,
+ui_br_skillrank_widget_data,1,,c,a,-1,-1,134217727,,,,,,,#27 bits packed - 10 bits: SR Gained this Match; 1 bit: Match SR sign;  8 bits: Points to Add; 1 bit: Add SR sign; 4 bits: Placement Tier;  3 bits: SR Type 
+ui_br_skillrank_widget_hidden,1,,c,b,0,0,1,,,,,,,
+vortex_wind_centerX,1,,g,f,0,-131072,131072,,,,,,,#this is set by code
+vortex_wind_centerY,1,,g,f,0,-131072,131072,,,,,,,#this is set by code
+vortex_wind_centerZ,1,,g,f,0,-131072,131072,,,,,,,#this is set by code
+vortex_wind_inner_radius,1,,g,f,2000,0,5000,,,,,,,#this is set by code
+vortex_wind_outer_radius,1,,g,f,5000,0,5000,,,,,,,#this is set by code
+vortex_wind_min_height,1,,g,f,0,-50000,50000,,,,,,,#this is set by code
+vortex_wind_max_height,1,,g,f,4000,-50000,50000,,,,,,,#this is set by code
+vortex_wind_min_strength,1,,g,f,0,0,10000,,,,,,,#this is set by code
+vortex_wind_max_strength,1,,g,f,0,0,10000,,,,,,,#this is set by code
+vortex_wind_min_strength_vertical,1,,g,f,0.35,0,10000,,,,,,,#this is set by code
+vortex_wind_max_strength_vertical,1,,g,f,1,0,10000,,,,,,,#this is set by code
+ui_dmz_poi_difficulty_rating,1,,c,i,1,0,4,,,,,,,#set in script to tell UI what POI difficulty splash to play #0 - inactive #1 - easy #2 - medium #3 - hard - #4 - active combat zone
+plunder_model_updated,1,,g,b,0,0,1,,,,,,,
+ui_br_roguesignal_progress,1,,c,i,0,0,67108863,,,,,1,,
+ui_br_roguesignal_progress_enemy1,1,,c,i,0,0,67108863,,,,,1,,
+ui_br_roguesignal_progress_enemy2,1,,c,i,0,0,67108863,,,,,1,,
+ui_br_roguesignal_position,1,,c,i,0,0,155,,,,,1,,
+ui_br_roguesignal_active,1,,c,i,0,0,5,,,,,1,,# 0 - inactive, 1 - Plunder, 2 - Kills, 3 - Damage, 4 - Looting, 5 - Powerup
+ui_br_sv_game1,1,,g,i,0,0,2147483647,,,,,,#31 bits packed: bits 0-1: enabled / bits 1-2: achievable / bits 2-3: kioskVisible / bits 3-4: kioskEnabled / bits 4-14: kioskCost / bits 14-19: kioskCount / bits 19-23: exfilsMax / bits 23-27: exfilsAttempted / bits 27-31: exfilsSuccessful,
+ui_br_sv_game2,1,,g,a,0,0,,,,,,,,
+ui_br_sv_game3,1,,g,a,0,0,,,,,,,,
+ui_br_sv_client1,1,,c,i,0,0,31,,,,,,#5 bits packed: bits 0-5: endingSequenceIndex,
+ui_br_sv_client2,1,,c,a,0,0,,,,,,,,
+ui_br_sv_client3,1,,c,a,0,0,,,,,,,,
+ui_resurgenceRespawnTimer,1,,c,a,0,0,2147483647,,,,,,,#32 bits packed: ( 1 penalty, 1 force )
+ui_resurgence_action_feedback,1,,c,a,0,0,,,,,,,,#14 bits packed: 3 bits for squad member's id,  11 bits for eventId
+ui_dmz_map_to_map_prompt_visible,1,,c,i,1,0,1,,,,,,,#Are map to map transition prompts visible to this player
+ui_dmz_dog_tag,1,,c,i,0,-1,3,,,,,,,# -1 if you're missing your tag, 0 if you have bronze, 1 for silver, 2 for gold, 3 for damascus
+ui_immovable_note,1,,c,i,0,0,32,,,,,,,#ID for immovable note text.
+ui_allies_team_size,1,,g,i,0,-1,200,,,,,,,
+ui_axis_team_size,1,,g,i,0,-1,200,,,,,,,
+ui_mgl_tac_camera_state,1,,c,i,0,0,2,,,,,,,
+brloot_drone_part_a_jup,0,,c,a,0,0,2,,,,,,,#Used to notfiy the puzzle drone if the part has been repaired (0 - not repaired, 1 - repaired,  2- all parts have been repaired)
+brloot_drone_part_b_jup,0,,c,a,0,0,1,,,,,,,#Used to notfiy the puzzle drone if the part has been repaired (0 - not repaired, 1 - repaired)
+brloot_drone_part_c_jup,0,,c,a,0,0,1,,,,,,,#Used to notfiy the puzzle drone if the part has been repaired (0 - not repaired, 1 - repaired)
+brloot_drone_part_d_jup,0,,c,a,0,0,1,,,,,,,#Used to notfiy the puzzle drone if the part has been repaired (0 - not repaired, 1 - repaired)
+brloot_drone_part_e_jup,0,,c,a,0,0,1,,,,,,,#Used to notfiy the puzzle drone if the part has been repaired (0 - not repaired, 1 - repaired)
+ui_powerup_splash_notify,1,,c,n,,,,,,,,,,
+ui_powerup_splash,1,,c,i,0,0,16,,,,,,,
+ui_combat_report_num_attackers,1,,c,i,0,0,7,,,,,,,
+ui_combat_report_attacker_0,1,,c,e,,,,,,,,,,
+ui_combat_report_weapon_lootid_0,1,,c,i,0,0,2147483647,,,,,,,
+ui_combat_report_multi_weapon_0,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_0,1,,c,i,0,0,1023,,,,,,,
+ui_combat_report_hits_0,1,,c,i,0,0,255,,,,,,,
+ui_combat_report_downedby_0,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_killedby_0,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_friendly_0,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_type_override_0,1,,c,i,0,0,15,,,,,,,
+ui_combat_report_attacker_1,1,,c,e,,,,,,,,,,
+ui_combat_report_weapon_lootid_1,1,,c,i,0,0,2147483647,,,,,,,
+ui_combat_report_multi_weapon_1,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_1,1,,c,i,0,0,1023,,,,,,,
+ui_combat_report_hits_1,1,,c,i,0,0,255,,,,,,,
+ui_combat_report_downedby_1,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_killedby_1,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_friendly_1,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_type_override_1,1,,c,i,0,0,15,,,,,,,
+ui_combat_report_attacker_2,1,,c,e,,,,,,,,,,
+ui_combat_report_weapon_lootid_2,1,,c,i,0,0,2147483647,,,,,,,
+ui_combat_report_multi_weapon_2,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_2,1,,c,i,0,0,1023,,,,,,,
+ui_combat_report_hits_2,1,,c,i,0,0,255,,,,,,,
+ui_combat_report_downedby_2,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_killedby_2,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_friendly_2,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_type_override_2,1,,c,i,0,0,15,,,,,,,
+ui_combat_report_attacker_3,1,,c,e,,,,,,,,,,
+ui_combat_report_weapon_lootid_3,1,,c,i,0,0,2147483647,,,,,,,
+ui_combat_report_multi_weapon_3,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_3,1,,c,i,0,0,1023,,,,,,,
+ui_combat_report_hits_3,1,,c,i,0,0,255,,,,,,,
+ui_combat_report_downedby_3,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_killedby_3,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_friendly_3,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_type_override_3,1,,c,i,0,0,15,,,,,,,
+ui_combat_report_attacker_4,1,,c,e,,,,,,,,,,
+ui_combat_report_weapon_lootid_4,1,,c,i,0,0,2147483647,,,,,,,
+ui_combat_report_multi_weapon_4,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_4,1,,c,i,0,0,1023,,,,,,,
+ui_combat_report_hits_4,1,,c,i,0,0,255,,,,,,,
+ui_combat_report_downedby_4,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_killedby_4,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_friendly_4,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_type_override_4,1,,c,i,0,0,15,,,,,,,
+ui_combat_report_attacker_5,1,,c,e,,,,,,,,,,
+ui_combat_report_weapon_lootid_5,1,,c,i,0,0,2147483647,,,,,,,
+ui_combat_report_multi_weapon_5,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_5,1,,c,i,0,0,1023,,,,,,,
+ui_combat_report_hits_5,1,,c,i,0,0,255,,,,,,,
+ui_combat_report_downedby_5,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_killedby_5,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_friendly_5,1,,c,b,0,0,1,,,,,,,
+ui_combat_report_damage_type_override_5,1,,c,i,0,0,15,,,,,,,
+ui_armored_truck_status,1,,c,i,0,0,8191,,,,,1,,
+ui_br_contract_plunder_mod,1,,c,f,1,0,,,,,,1,# Used to pass the contract plunder reward modifier calculated in script,
+mgl_seasonal_event_data,1,,c,a,0,0,,,,,,, #0-8 bit : item destroyed count,
+ui_br_self_revive_type,1,,c,i,0,0,1,,,,,,#0 - Normal, #1 - Battle Rage,
+ui_disguise_awareness_state,1,,c,i,-1,-1,2,,,,,,#State of how aware the AI is of the player when they are in disguise,
+ui_armored_truck_health,1,,c,f,0,0,1,,,,,1,,
+ui_armored_truck_fuel,1,,c,f,0,0,1,,,,,1,,
+ui_truckwar_trucks_remaining,1,,g,i,0,0,40,,,,,,,
+ui_afk_warning,1,,c,b,0,0,1,,,,,,,

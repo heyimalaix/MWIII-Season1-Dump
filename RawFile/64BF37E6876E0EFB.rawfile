@@ -1,0 +1,83 @@
+exec dev_vehicle_tweaks.cfg
+
+bind BUTTON_BACK "togglescores"
+bind BUTTON_START "togglemenu"
+
+exec default_mp_gamesettings.cfg
+
+exec start_up_core_cp.cfg
+
+set #x36a8b3934fe63c89d 1
+set #x3f55a2434b3e1fe62 1
+set #x388e213738a43d195 1
+
+set #x3fc0d7859620c5fdc 800 
+set #x3e3343e09fcc88109 3200 
+
+// cp_specops
+set #x3d65bbe57937d7c39 48
+
+// br loot
+set #x3e38e16d9fbf3fc43 "cp/loot/default/loot_item_defs.csv"
+set #x3add02e4fff48882f "cp/loot/default/loot_table_zones.csv"
+set #x35fcbce13ef8d5f 8
+set #x319fae1aad58e8c50 0
+set #x3a6a9b41b654afd1d 1
+
+set #x37645e012d3bdeb5e nameplate_settings_cp_default
+
+//Ping System
+set #x3e8512e1508afefe8 1
+
+//Allowing to choose all different game modes within CP in customgame
+set #x338bddf43cab9bdd6 1
+
+// ==== all of below should be moved to code ====
+
+// PC - default server settings:
+set #x3399f13d1217738fe 1
+
+set #x3b6cd0e473479a0d0 -60 460
+
+// set #x3f379bd15031567e7 300 450 300 1600 // cg_orbitCam Dvars not used anymore. Use camera assets instead.
+// set #x328439b52d9bfdd0e 0 0 90 0 // cg_orbitCam Dvars not used anymore. Use camera assets instead.
+
+//Claymore hack times
+set #x3b22bb1a48299003b 1.8
+set #x3f1b36a05bc8c07af 0.3
+
+set #x3330ea57ea86fcb72 1
+
+set #x3ce882ca282c2f85e 1
+
+set #x3935090d3ed8df5f2 1
+set #x3279375a0bfb2862f 48
+
+lui_lootCard_shortInteractDistance 128
+lui_lootCard_mediumInteractDistance 256
+
+set #x37b5549fcfa5138bc 10
+set #x3b3f6a1a08afe923 10
+set #x347f350ee22cdd193 10
+
+//set #x3b3a2cb7830cc296c 50 // allowing players to crouch below the water, TEMP IW9-81162
+
+//armor tweaks
+set #x39c790ecb6ccef79a 360
+set #x3ea4fd87f53ec4456 120
+set #x3a4d532f42d919827 1
+set #x3d75d5638785f3b09 360
+set #x3e6d511d33e0fe486 0
+
+//operator battlechatter
+//	0:	"Radio only for squad lines not played to team",
+//	1:	"Radio to squad",
+//	2:	"Radio to squad and team",
+//	3:	"Open air only",r
+set #x3ec7472251167b9ae 2
+
+//hard mode revives
+set #x3aae8e9a472853241 3
+
+set #x33f50b2aee47684a2 0
+

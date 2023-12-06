@@ -1,0 +1,9 @@
+%force_cs_anim_index_match
+
+vehicle_decho_turret_aim : blendspace1d( range="-25,25", blend_time="50", coords="-25,0,25", value=[aim_pitch] )
+{
+		reb_com_veh8_decho_turret_aim_8
+		reb_com_veh8_decho_turret_aim_5
+		reb_com_veh8_decho_turret_aim_2
+
+}

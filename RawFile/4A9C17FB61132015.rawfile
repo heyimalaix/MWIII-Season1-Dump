@@ -1,0 +1,290 @@
+set #x32a4f08bc79265550 0
+set #x3490c69bf1996a7b0 1
+set #x3f8a42f7dd5995645 0
+
+set #x33962e8621c072705 30
+
+//set #x31caebb0c408faa83 0.1736//angle you need to look down while sprinting to dive.  90 + angleToLookDown.  if angleToLookDown = 20, then type in google "cos( 110 degrees )" and that is your answer
+
+//set #x3863a2044d629615 24
+//set #x3cd51894770580416 5
+set #x3cd51894770580416 6
+
+set #x3f4df146ea18e8d6 1.0
+
+//controls low ready when above water
+set #x33503e8cadc094b37 10
+
+
+///CURRENTS
+
+set #x3db4887dcbf82e56a 0.5
+
+
+///JUMPING////////////////////
+
+set #x385e6777dec316973 20
+set #x3296d998891dfd3e3 150
+
+
+//WALKING SLOWDOWN ENTER/EXIT/////////
+set #x325fd1d18d38c336a 51
+set #x3e4ae146d39bf934a 49
+set #x3b3a2cb7830cc296c 35
+set #x35f095107f03ae114 35
+set #x3a99f3b597a11b0b1 32
+
+set #x33b4fb87dbf22519d 5
+set #x31a2dd4b64d798d6b 35
+set #x3b2307841d2d4f9c0 0.77
+set #x3759776d56acd39ef 5
+set #x3110e0ab598d765d9 46
+set #x3a6058bb58972c04a 0.62
+
+//ACCELLERATION//////////////////////////
+
+set #x35bba267974e64437 0.35
+set #x36277b0162a2d1466 105
+
+//surface only
+set #x33684730e12dd3702 280
+set #x363829404c351d707 280
+
+set #x3747883b65d6437ad 390
+set #x32bf4cf9ddcc80460 130
+
+set #x3d85d19a9d996b1fe 0.55
+set #x3aa66fa0f1a898db9 0.55
+
+//underwater
+set #x3757ffbf4656131e5 350
+set #x3fcf68ad3c214e7ae 210
+set #x3c95a441c630f45a 350
+set #x3945c562036f7ef9f 350
+set #x3445abac3d2dd9ca2 350
+set #x3f67bfc0042b93495 300
+
+
+set #x3521238970c261b92 400
+set #x3295ca7de956b95e5 200
+set #x347918a9da43cfc45 390
+set #x39659e67824959a38 130
+set #x3816fcd2074cce0b9 100
+set #x31e0a97537881a5a 100
+
+
+/////////////diving/surfacing///////////////
+set #x39f909b09c54724b2 500
+set #x3d49e5e1f1e813347 100
+
+set #x32c25adb312ebd57f 600
+set #x38c56a32e6227ea5c 100
+set #x346715bbe52c2ac65 13
+
+set #x3aa03a4308185838f 150
+set #x39ee73450558f2989 425
+set #x3b38ae2ee266f0f93 10
+set #x3b3adf8ee269587ad 10
+
+set #x32741ffee0009db08 425
+set #x3117953d800128a9a 700
+set #x3b2a9bc99a2b695f0 3
+set #x3b286b299a290383a 3
+
+set #x3836b32ea4a8d1ac8 425
+set #x3ec8bd708a068e6c6 300
+
+set #x399cc8a48556add3e 500
+
+
+//////////////////MANTLING////////////////
+
+//seems to be surface height - 8.  Keep these 2 in sync
+set #x3d6f2507432632215 50
+// commenting this out for now - https://dev.activision.com/jira/browse/CORE-12045
+//  set #x32c1c319a0616da19 0.001
+
+set #x379ac12e8f72dd04c  -10
+set #x34199ee015e0e8ef0 1
+
+//////////////////MOVING////////////////
+
+//MOVING MIN SPEED
+set #x3ce345ce783ac94bb 0
+set #x3355f336323348751 0
+set #x35ecbbd05d6b7679c 0
+
+//MOVING MAX SPEED
+set #x35c2aa97382022afd 100
+set #x363b620d7863f66a7 100
+set #x3282c9bc18a83466 100
+
+//MOVING MIN DRAG
+set #x33f0bfde7f1d08aaf 2.5
+set #x36de4b91858cddc65 2.2
+set #x3ca91688527bfe464 7
+
+//MOVING MAX DRAG
+set #x33ee8ebe7f1aa1b61 2.5
+set #x36e08c31858f66d1b 2.2
+set #x3cab4768527e64ae6 7
+
+//////////////////STOPPING////////////////
+
+//STOPPING MIN SPEED
+set #x3dcd103ab33ae355d 0
+set #x389110acae19bf043 0
+set #x345f1c2c266a0dd22 0
+
+//STOPPING MAX SPEED
+set #x382180995f12ae67b 65
+set #x39d9ab19d0f30a335 65
+set #x33b4e8dc1194d1ca0 65
+
+//STOPPING MIN DRAG
+set #x330216abb151c5481 15
+set #x343316d9640f4ea27 20
+set #x333fe0cf5de3dc9f2 20
+
+//STOPPING MAX DRAG
+set #x330445cbb15427d6f 4
+set #x343545b96411b0a49 6
+set #x333db16f5de179838 6
+
+
+//BOB ANIMS
+
+// Sprint
+
+// Above
+set #x3c8152ea234ee4a0c 0.51
+
+set #x37334e29e873f965d 20
+set #x3acd36caf961d3dbf 60
+set #x38189a2dc9efa6788 60  //raise this to increase the idle anim rate
+set #x3e381ece70ebf5f22 90 //raise this to increase the moving anim rate 
+
+// Below
+set #x33320004d374d3db8 0.51
+
+set #x365161b1e9aa179f6 5
+set #x3824668b3854824c4 60
+set #x3e68e78afb1c916fb 60 //raise this to increase the idle anim rate
+set #x3ef2148fe8b86e289 90 //raise this to increase the moving anim rate 
+
+//Above
+//hip viewbob
+set #x3ad9bc9372eae967 0.042  
+
+set #x3c7a020a53d519123 0.04
+set #x373afa8a84d0ad5fb 0.0
+
+set #x3ba50ad35c5be4ac 1.088
+set #x313274181c3b5886e 1.36
+
+set #x38b2bad6ed0790f59 20
+set #x3ce6b1427800cef73 60
+set #x32a21882c7c594de4 60  //raise this to increase the idle anim rate
+set #x3252f162cbc272536 90 //raise this to increase the moving anim rate 
+
+//Below
+//This on value should be zero until viewbob frequency matches stride
+set #x351c803cdae028056 1.0
+
+set #x3611b936df78b4eb0 0.04
+set #x377e1b7bc7a70de6 0.0
+
+set #x3f434dc73bbbead58 0.816
+set #x3c626e1ae1316c09a 1.02
+
+set #x36faff98ff4e851c6 5
+set #x320dc517af9fa8dd4 60
+set #x315dc25033a2ad82b 60 //raise this to increase the idle anim rate
+set #x3be17f54b938d0479 90 //raise this to increase the moving anim rate 
+
+/////view bob swimming procedural animation controls///////////////////////////////
+//https://iwjira.activision.com/browse/IW9-14549
+//https://www.desmos.com/calculator/a9vb8y5aoh
+//amount of second bob in the vertical viewbob( 0 means 1 vertcial bob per cycle, increasing it increases the amount of a second vertical bob )
+//mapped to s in desmos graph
+set #x3773825a6e1f0ab0a 0.4   
+set #x33d3bf354d5bf7a77 0.18 
+
+//how offset the second vertical bobs phase is relative to main vertical bob
+//mapped to k in desmos graph
+set #x344916a603e912d42 0.5    
+set #x37e28c6b1b5bc0261 0.5 
+
+//amplitude of horizontal bob
+//mapped to h in desmos graph
+set #x3891b977d8c2cc3f7 0.6
+set #x3e003a5e08c46f4d4 0.2
+
+//horizontal bob offset
+//mapped to o in desmos graph
+set #x36496892b7c0b9ee1 0.3    //mapped to horizontalOffset
+set #x3c2d196e446b30e70 0.3    //mapped to horizontalOffset
+
+//time to lerp between bob cycles when changing states
+set #x3ca5be20ac939d8c5 500    
+set #x3cd7d0c68121e5d57 -0.02
+set #x3da1581d61806c07 -0.02
+///////////////////////////////////////////////////////
+
+
+//global swim scale settings.  This is the only way to change the amount the viewbob relative to the gun.
+set #x3cde87dea8ab2dd9c 0.5
+set #x3fe56fa3914161f4b 0.25
+
+
+//not working!
+set #x36448f7ebc4d7121d 1
+set #x3aecc4c6cb1eb212c 1
+
+
+///unused
+set #x361f23ede70a79293 26
+set #x3f04181e681c07dfb 26
+
+
+//test currents
+set #x3282960e01f69705 0.8 -0.8 0
+set #x3282930e01f6906c 2 -2 0
+set #x3282940e01f6929f 8 -8 0
+set #x3282910e01f68c06 16 -16 0
+
+
+set #x38dd3b864409234e3 1.8// "Phase shift from the main view bob when moving left." )
+set #x3cd1228941b8c24ec 1.5// "Phase shift from the main view bob when moving right." )
+set #x3d7525e9ff8a2616b 2.2// "Phase shift from the main view bob when moving forward." )
+set #x3c471735e156297a3 3.5// "Phase shift from the main view bob when moving backward." )
+set #x3ed760e9e08760cdb 1.9// "Phase shift from the main view bob when moving up." )
+set #x386a715a95e4a3a2e 3.0// "Phase shift from the main view bob when moving down." )
+
+set #x316474267325e9f45 10.0f// "Maximum view offset when moving left or right at hip." )
+set #x390d3b011147b174b 10.0// "Maximum view offset when moving forward or backward at hip." )
+set #x3d14fee95a78bfc3b 10.0// "Maximum view offset when moving up or down at hip." )
+set #x3f5982c1d766d0518 4.0// "Maximum view offset when moving left or right in ADS." )
+set #x3440ccd8b29e04b08 4.0//  "Maximum view offset when moving forward or backward in ADS." )
+set #x36b1f70a0f1b45516 4.0// "Maximum view offset when moving up or down in ADS." )
+
+set #x37d0f821b480be77e 0.5// "Maximum gun offset when moving left or right at hip." )
+set #x33b6d4901b10beeba 0.5// "Maximum gun offset when moving forward or backward at hip." )
+set #x3602e8007723977c0 0.5f// "Maximum gun offset when moving up or down at hip." )
+set #x32489c88d0650cb4b 0.2// "Maximum gun offset when moving left or right in ADS." )
+set #x3d6cdd9569ee919ed 0.2// "Maximum gun offset when moving forward or backward in ADS." )
+set #x347c4d5856356250d 0.2// "Maximum gun offset when moving up or down in ADS." )
+
+set #x3d05badc5cf57cc3b 1.0// "Shoulder IK fraction for the gun procedural motion." )
+
+set #x3e894dbd214af56d3 2// "Swim locomotion direction diff track (smoothing) rate." )
+set #x3c26e750513c6ecb 10// "Swim locomotion magnitude diff track (smoothing) rate." )
+
+
+
+
+
+
+
+
+

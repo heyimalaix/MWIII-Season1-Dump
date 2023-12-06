@@ -1,0 +1,137 @@
+%lod_distances ( 
+	400,	// fingers, facial anims
+	600,	// IK, antislide
+	1000,	// procedural/dynamic
+)
+
+// JUP Vortex
+#vortex
+
+// Zombie Base Idles
+#idle
+
+body
+{
+	scenes
+	{
+		#script_bundle_anim_slot
+	}
+}
+
+animscripted_node
+{
+    #animscripted
+}
+#react
+
+locomotion : loopsync
+{
+	// T10 Base Locomotion
+	move_loops
+	{
+		#move_loop
+	}
+
+	// T10 Base Locomotion Pain Loops
+	pain_loops
+	{
+		#pain_moving_loop
+	}
+}
+
+#pain_no_loop
+
+// Zombie Base Unaware
+#shuffle
+
+// Zombie Base Attacks
+#melee
+#ranged_attack
+
+// Zombie Base Deaths
+#death
+
+// Zombie Base Stuns
+#stun
+
+// Zombie Base knockdowns
+#knockdown
+
+// Zombie Base Despawns
+#despawn
+
+#simple
+#crawl_anims
+
+// Zombie Base Turns
+#move_turn
+
+#wander_scripted
+
+// Zombie Base Arrival
+#move_stop
+
+//Zombie Base Traversals
+#traversal
+
+//Zombie Base Execution Victim
+#execution
+
+//Zombie Base Emergence Spawning Death
+#emerge
+
+server_ragdoll : public server_ragdoll( xanim_server_ragdoll_root_origin = [xanim_server_ragdoll_root_origin],
+										xanim_server_ragdoll_root_angles = [xanim_server_ragdoll_root_angles])
+{
+}
+
+ragdoll : public clientauth overlay ragdoll (ragdoll_handle=[entity_ragdoll_handle])
+{
+}
+
+ragdoll_recovery
+{
+    #ragdoll_recovery
+}
+
+live_ragdoll_knockdown
+{
+    #live_ragdoll
+}
+
+ik_terrain : ik_terrain (entityspeed=[speed], turn_scrub_value=[turn_scrub_value], platform_origin=[platform_origin], platform_angles=[platform_angles], platform_id=[platform_id]) lod_cull(1)
+{
+}
+
+ik_node : ik_node () lod_cull(1)
+{		
+}
+
+proc_node : public proc_node () lod_cull(2)
+{
+}
+
+head : overlay toggle( index=[facialindex], blendcurve="ease_inout_quad", blendtime="0.2", restart="false")
+{
+    facial_idle: random( blendtime=".2", restart="false", seed=[animtime] ) clientauth
+    {
+        #idle_anims
+    }
+    facial_attack: randomloop( blendtime=".2", restart="false", norepeat="false", seed=[animtime] ) clientauth
+    {
+        #attack_anims
+    }
+    facial_run: random( blendtime=".2", restart="false", seed=[animtime] ) clientauth
+    {  
+        //We add a dummy duplicate anim to this state to preserve facial index order
+        ai_jup_zm_zombie_base_face_generic_idle_01@1
+    }
+    facial_pain: random( blendtime=".2", restart="false", seed=[animtime] ) clientauth
+    {
+        #pain_anims
+    }
+    facial_death: random( blendtime=".2", restart="false", seed=[animtime] ) clientauth
+    {
+        #death_anims
+    }
+}

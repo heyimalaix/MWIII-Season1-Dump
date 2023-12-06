@@ -1,0 +1,124 @@
+{
+	"t9": {
+		"live": [
+			{
+				"manifest_url": "https://telescope.callofduty.com/ts/t9/code/main/manifest.json",
+				"manifest_entry_base": "https://telescope.callofduty.com"
+			}
+		],
+		"default": [
+			{
+				"manifest_url": "https://dev-ts-bookkeeper.kube.activision.com/ts/t9/code/main/manifest.json",
+				"manifest_entry_base": "https://dev-ts-bookkeeper.kube.activision.com"
+			}
+		]
+	},
+	"iw8": {
+		"live": [
+			{
+				"manifest_url": "https://telescope.callofduty.com/ts/iw8/code/main/manifest.json",
+				"manifest_entry_base": "https://telescope.callofduty.com"
+			}
+		],
+		"default": [
+			{
+				"manifest_url": "https://dev-ts-bookkeeper.kube.activision.com/ts/iw8/code/main/manifest.json",
+				"manifest_entry_base": "https://dev-ts-bookkeeper.kube.activision.com"
+			}
+		]
+	},
+	"iw9": {
+		"live": [
+			{
+				"manifest_url": "https://telescope.callofduty.com/ts/codp/code/main/manifest.json",
+				"manifest_entry_base": "https://telescope.callofduty.com"
+			},
+			{
+				"manifest_url": "https://prod.cdni.callofduty.com/codp/main/manifest.json",
+				"manifest_entry_base": "https://prod.cdni.callofduty.com",
+				"allow_failure": true
+			}
+		],
+		"cert": [
+			{
+				"manifest_url": "https://telescope-cert.callofduty.com/ts/codp/code/main/manifest.json",
+				"manifest_entry_base": "https://telescope-cert.callofduty.com"
+			}
+		],
+		"default": [
+			{
+				"manifest_url": "https://dev-ts-bookkeeper.kube.activision.com/ts/codp/code/main/manifest.json",
+				"manifest_entry_base": "https://dev-ts-bookkeeper.kube.activision.com"
+			},
+			{
+				"manifest_url": "https://dev.cdni.callofduty.com/codp/main/manifest.json",
+				"manifest_entry_base": "https://dev.cdni.callofduty.com",
+				"allow_failure": true
+			}
+		]
+	},
+	"s4": {
+		"live": [
+			{
+				"manifest_url": "https://telescope.callofduty.com/ts/s4/code/main/manifest.json",
+				"manifest_entry_base": "https://telescope.callofduty.com"
+			}
+		],
+		"default": [
+			{
+				"manifest_url": "https://dev-ts-bookkeeper.kube.activision.com/ts/s4/code/main/manifest.json",
+				"manifest_entry_base": "https://dev-ts-bookkeeper.kube.activision.com"
+			}
+		]
+	},
+	"codp": {
+		"live": [
+			{
+				"manifest_url": "https://telescope.callofduty.com/ts/codp/code/main/manifest.json",
+				"manifest_entry_base": "https://telescope.callofduty.com"
+			}
+		],
+		"cert": [
+			{
+				"manifest_url": "https://telescope-cert.callofduty.com/ts/codp/code/main/manifest.json",
+				"manifest_entry_base": "https://telescope-cert.callofduty.com"
+			}
+		],
+		"default": [
+			{
+				"manifest_url": "https://dev-ts-bookkeeper.kube.activision.com/ts/codp/code/main/manifest.json",
+				"manifest_entry_base": "https://dev-ts-bookkeeper.kube.activision.com"
+			}
+		]
+	},
+	"jup": {
+		"live": [
+			{
+				"manifest_url": "https://telescope.callofduty.com/ts/codp/code/main/manifest.json",
+				"manifest_entry_base": "https://telescope.callofduty.com"
+			},
+			{
+				"manifest_url": "https://prod.cdni.callofduty.com/codp/main/manifest.json",
+				"manifest_entry_base": "https://prod.cdni.callofduty.com",
+				"allow_failure": true
+			}
+		],
+		"cert": [
+			{
+				"manifest_url": "https://telescope-cert.callofduty.com/ts/codp/code/main/manifest.json",
+				"manifest_entry_base": "https://telescope-cert.callofduty.com"
+			}
+		],
+		"default": [
+			{
+				"manifest_url": "https://dev-ts-bookkeeper.kube.activision.com/ts/codp/code/main/manifest.json",
+				"manifest_entry_base": "https://dev-ts-bookkeeper.kube.activision.com"
+			},
+			{
+				"manifest_url": "https://dev.cdni.callofduty.com/codp/main/manifest.json",
+				"manifest_entry_base": "https://dev.cdni.callofduty.com",
+				"allow_failure": true
+			}
+		]
+	}
+}

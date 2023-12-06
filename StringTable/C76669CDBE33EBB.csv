@@ -1,0 +1,10 @@
+ui_br_plunder_repository,1,,c,i,0,0,2147483647,,,,,,,#31 bits packed: (1 visible, 1 type, 14 endtime, 15 contents)
+ui_br_plunder_repository_event_amount,1,,c,i,0,0,32767,,,,,,,#cash being deposited in repository (size: 15 bits)
+ui_br_plunder_repo_ent_1,1,,c,i,-1,-1,2048,,,,,,,#fulton ent num
+ui_br_plunder_repo_ent_2,1,,c,i,-1,-1,2048,,,,,,,#fulton ent num
+ui_br_plunder_repo_ent_3,1,,c,i,-1,-1,2048,,,,,,,#fulton ent num
+ui_br_plunder_repo_info_1,1,,c,i,0,0,33554431,,,,,,,#25 bits packed: (1 visible, 14 endtime, 10 contents)
+ui_br_plunder_repo_info_2,1,,c,i,0,0,33554431,,,,,,,#25 bits packed: (1 visible, 14 endtime, 10 contents)
+ui_br_plunder_repo_info_3,1,,c,i,0,0,33554431,,,,,,,#25 bits packed: (1 visible, 14 endtime, 10 contents)
+ui_br_plunder_extract_state,1,,c,i,0,0,4,,,,,,,
+ui_persistent_item_status,1,,c,i,0,0,65535,,,,,,,

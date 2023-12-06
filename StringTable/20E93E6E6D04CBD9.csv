@@ -1,0 +1,6 @@
+inherit,mp/loot/br/resurgence_poi/lootset_root.csv,,,,
+tagReject,nocache,100,,,
+reqAdd,,1,,,# chance for gear
+reqAdd,health,1,,,
+reqAdd,weapon,1,,,
+reqAdd,ammo,1,,,

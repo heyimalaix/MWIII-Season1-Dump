@@ -1,0 +1,2472 @@
+{
+  "parent": "",
+  "optionsData": {
+    "AutoDeployParachuteMobile": 3,
+    "AutoPickupItemsMobile": 2,
+    "AutoFireMobile": 1,
+    "AutoSprintMobile": 2,
+    "AutoEquipArmorMobile": 1,
+    "PrimaryFireButtonModeMobile": 2,
+    "ADSBehaviorMobile": 2,
+    "AutoMantleMobile": 2,
+    "AutoMantleAnyDirectionMobile": 1,
+    "AutoMantleSensitivityMobile": 1,
+    "PrimaryFireButtonSnapMobile": 1,
+    "SecondaryFireButtonModeMobile": 1,
+    "VehicleControls": 2,
+    "AutoFireRangeLimiterMobile": 1,
+    "AutoCrouchMobile": 2,
+    "AutoTurnCornersMobile": 2,
+    "ResupplyAlertMobile": 2,
+    "ProneButtonBehavior": 1,
+    "SlideTriggerMobile": 1,
+    "AutoStairsMobile": 2,
+    "MobileCameraHorzSensitivity": 45.0,
+    "MobileCameraVertSensitivity": 0.5,
+    "MobileADSSensitivityLow": 2.2,
+    "MobileADSSensitivityHigh": 5.0,
+    "WeaponAlterFireTypeMobile": 1,
+    "WeaponAmmoCounterTypeMobile": 2,
+    "WeaponAmmoCounterTypeMobileMP": 2,
+    "IsJoystickEnableDirectionZoneMobile": 1,
+    "MinimapStyleMobile": 1,
+    "BRMinimapStyleMobile": 1,
+    "MinimapRotationMobile": 1,
+    "BRMinimapRotationMobile": 1,
+    "SquadInfoLayoutMobile": 1,
+    "TouchClusterReleaseToUseMobile": 1,
+    "HighPriorityArmorTouchMobile": 1,
+    "ShowCancelReloadFeedbackMobile": 2,
+    "HighPriorityReloadTouchMobile": 1,
+    "TouchSquadInfoDisplaySelfMobile": 1,
+    "CustomZoomSensitivityEnabledTouch": 1,
+    "AdsLowZoomTouchSensitivityMultiplier": 3.0,
+    "Ads2xZoomTouchSensitivityMultiplier": 1.0,
+    "Ads4xZoomTouchSensitivityMultiplier": 1.0,
+    "Ads6xZoomTouchSensitivityMultiplier": 1.0,
+    "Ads8xZoomTouchSensitivityMultiplier": 1.0,
+    "AdsHighZoomTouchSensitivityMultiplier": 1.0,
+    "AutoGrabWeaponByClassPriority1": 1,
+    "AutoGrabWeaponByClassPriority2": 3,
+    "AutoGrabWeaponByClassPriority3": 2,
+    "AutoGrabWeaponByClassPriority4": 6,
+    "AutoGrabWeaponByClassPriority5": 4,
+    "AutoGrabWeaponByClassPriority6": 7,
+    "AutoGrabWeaponByClassPriority7": 5,
+    "AimWithGyroscopeMobile": 1,
+    "AimWithGyroscopeReverseAxesMobile": 1,
+    "AimWithGyroscopeActiveStateADSMobile": 2,
+    "AimWithGyroscopeActiveStateNoADSMobile": 2,
+    "AimWithGyroscopeActiveStateVehicleMobile": 1
+  },
+  "dynamicPreviewList": [
+    "Joystick",
+    "HipFireButton",
+    "RightJoystick",
+    "ADSButton",
+    "EquipmentArea",
+    "GrenadeArea",
+    "JumpButton",
+    "CrouchButton",
+    "ProneButton",
+    "SquatButton"
+  ],
+  "layoutData": {
+    "SpectatorPlayerCard": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 65.384,
+        "verticalOffset": 635.0,
+        "width": 450.0,
+        "height": 400.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "RightJoystick": {
+      "_deadZoneRadius": 1.0,
+      "_fuzzyTouchRadius": 0.07,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "holdDelay": 0.0,
+      "isHidden": false,
+      "maxPositionOffsetFactor": 0.5,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 311.0,
+        "verticalOffset": 250.0,
+        "width": 216.0,
+        "height": 216.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ADSButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 274.0,
+        "verticalOffset": 445.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "JumpButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 108.0,
+        "verticalOffset": 335.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ReloadButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.04,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 570.0,
+        "verticalOffset": 166.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "SquatButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 325.0,
+        "verticalOffset": 35.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "CrouchButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 317.0,
+        "verticalOffset": 52.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ProneButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 167.0,
+        "verticalOffset": 52.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "Joystick": {
+      "_deadZoneRadius": 15.0,
+      "_directionZones": {
+        "1": {
+          "startAngle": 342,
+          "endAngle": 18,
+          "directionAngle": 0
+        },
+        "2": {
+          "startAngle": 19,
+          "endAngle": 77,
+          "directionAngle": 45
+        },
+        "3": {
+          "startAngle": 78,
+          "endAngle": 105,
+          "directionAngle": 90
+        },
+        "4": {
+          "startAngle": 255,
+          "endAngle": 282,
+          "directionAngle": 270
+        },
+        "5": {
+          "startAngle": 283,
+          "endAngle": 341,
+          "directionAngle": 315
+        }
+      },
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "autoRunButtonYOff": 400.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 296.0,
+        "verticalOffset": 97.0,
+        "width": 288.0,
+        "height": 288.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ],
+      "sprintMultiplier": 0.7,
+      "superSprintMultiplier": 1.5
+    },
+    "HipFireButton": {
+      "_deadZoneRadius": 1.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 125.0,
+        "verticalOffset": 405.0,
+        "width": 168.0,
+        "height": 168.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "PlayerStance": {
+      "_deadZoneRadius": 1.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": -302.0,
+        "verticalOffset": 195.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "SpectatorArmorHealth": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 64.0,
+        "width": 446.0,
+        "height": 80.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "ArmorHealth": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 12.0,
+        "verticalOffset": 151.0,
+        "width": 795.0,
+        "height": 16.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "AmmoCounter": {
+      "_alignment": 1.0,
+      "_deadZoneRadius": 1.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 432.0,
+        "verticalOffset": 166.0,
+        "width": 100.0,
+        "height": 100.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "AmmoCounterMP": {
+      "_alignment": 1.0,
+      "_deadZoneRadius": 1.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 432.0,
+        "verticalOffset": 166.0,
+        "width": 100.0,
+        "height": 100.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "GrenadeArea": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 349.0,
+        "verticalOffset": 66.0,
+        "width": 250.0,
+        "height": 112.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "GrenadeAreaMP": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 349.0,
+        "verticalOffset": 66.0,
+        "width": 250.0,
+        "height": 112.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "DebugAutoFireToggleButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 24.0,
+        "width": 125.0,
+        "height": 25.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 1.8,
+      "showInGameTypes": []
+    },
+    "ActivateButton": {
+      "_deadZoneRadius": 1.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.5,
+        "bottomAnchor": 0.5,
+        "horizontalOffset": 62.5,
+        "verticalOffset": 200.0,
+        "width": 12.0,
+        "height": 50.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": []
+    },
+    "ContextualButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 522.0,
+        "verticalOffset": 606.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "GrenadeCountdownPrompt": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 320.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "WeaponMountButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 570.0,
+        "verticalOffset": 285.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "OffhandCancelButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 552.0,
+        "verticalOffset": 129.0,
+        "width": 96.0,
+        "height": 96.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ADSZoomButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 248.0,
+        "verticalOffset": 606.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ADSThermalButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 500.0,
+        "verticalOffset": 440.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ADSHoldBreathButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 500.0,
+        "verticalOffset": 300.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "SuperSprintButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 360.0,
+        "verticalOffset": 640.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ExecutionButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 596.0,
+        "verticalOffset": 446.0,
+        "width": 162.0,
+        "height": 162.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "MeleeButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 500.0,
+        "verticalOffset": 350.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ThrowBackButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 520.0,
+        "verticalOffset": 180.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "MicrophoneButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1001.0,
+        "verticalOffset": 86.0,
+        "width": 64.0,
+        "height": 64.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "PauseButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1780.0,
+        "verticalOffset": 20.0,
+        "width": 64.0,
+        "height": 64.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.56,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "FieldUpgradeButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 108.0,
+        "verticalOffset": 460.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "FieldUpgradeButtonMP": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 108.0,
+        "verticalOffset": 460.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "PlaneJumpButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.5,
+        "bottomAnchor": 0.5,
+        "horizontalOffset": 595.0,
+        "verticalOffset": 35.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "BRParachuteWidget": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1325.0,
+        "verticalOffset": 515.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "BRParachuteSwitchCameraButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1551.0,
+        "verticalOffset": 694.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "ApplyArmorButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 104.0,
+        "verticalOffset": 650.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "KillstreakButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 108.0,
+        "verticalOffset": 360.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "JoystickVehicle": {
+      "_deadZoneRadius": 15.0,
+      "_directionZones": {
+        "1": {
+          "startAngle": 82,
+          "endAngle": 98,
+          "directionAngle": 90
+        },
+        "2": {
+          "startAngle": 262,
+          "endAngle": 278,
+          "directionAngle": 270
+        }
+      },
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "maxJoystickDistance": 250.0,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 276.0,
+        "verticalOffset": 224.0,
+        "width": 200.0,
+        "height": 200.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.26,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ExitVehicleButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 375.0,
+        "verticalOffset": 375.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "PickupOnUseHint": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 660.0,
+        "verticalOffset": 840.0,
+        "width": 100.0,
+        "height": 100.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.2,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "BRAltimeterDisplay": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 580.0,
+        "verticalOffset": 200.0,
+        "width": 88.0,
+        "height": 624.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": -0.2,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "UpstairsButton": {
+      "_deadZoneRadius": 1.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 377.0,
+        "verticalOffset": 787.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "DownstairsButton": {
+      "_deadZoneRadius": 1.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 503.524,
+        "verticalOffset": 699.374,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "TeamHealthBarContainer": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 85.0,
+        "verticalOffset": 99.75,
+        "width": 456.0,
+        "height": 232.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "SquadLeadInfoPrompt": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.5,
+        "bottomAnchor": 0.5,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 300.0,
+        "width": 500.0,
+        "height": 160.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.3,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "TacMapButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 420.0,
+        "verticalOffset": 107.5,
+        "width": 100.0,
+        "height": 100.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "BRGasmaskReadout": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 485.0,
+        "verticalOffset": 979.0,
+        "width": 90.0,
+        "height": 90.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.4,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "MobileEventPointsDisplay": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1553.5,
+        "verticalOffset": 56.5,
+        "width": 100.0,
+        "height": 34.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.5,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "BRMatchStatusInfo": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1449.0,
+        "verticalOffset": 58.5,
+        "width": 433.0,
+        "height": 34.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "Compass": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 25.0,
+        "width": 750.0,
+        "height": 65.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "Obituary": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 93.0,
+        "verticalOffset": 405.0,
+        "width": 600.0,
+        "height": 192.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "BRMinimap": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 20.5,
+        "verticalOffset": 20.0,
+        "width": 335.0,
+        "height": 380.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "MinimapMP": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 20.5,
+        "verticalOffset": 20.0,
+        "width": 335.0,
+        "height": 335.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "MinimapMobile": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": true,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 33.482,
+        "verticalOffset": 45.0,
+        "width": 335.0,
+        "height": 335.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": []
+    },
+    "PlunderAmount": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": -125.0,
+        "verticalOffset": 180.0,
+        "width": 300.0,
+        "height": 40.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "SpectatorEquipmentSection": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 116.0,
+        "verticalOffset": 45.0,
+        "width": 440.0,
+        "height": 240.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "EquipmentArea": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": -57.0,
+        "verticalOffset": 66.0,
+        "width": 534.0,
+        "height": 112.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "EquipmentAreaMP": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": -57.0,
+        "verticalOffset": 66.0,
+        "width": 534.0,
+        "height": 112.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "VehicleDirectionalArrows": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 150.0,
+        "verticalOffset": 175.0,
+        "width": 500.0,
+        "height": 200.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "VehicleDiagram": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 705.0,
+        "verticalOffset": 62.3999939,
+        "width": 128.0,
+        "height": 256.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "VehicleFlares": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 401.0,
+        "verticalOffset": 105.399994,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "VehicleFlyUpButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 80.0,
+        "verticalOffset": 200.0,
+        "width": 200.0,
+        "height": 200.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "VehicleFlyDownButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 105.0,
+        "verticalOffset": 35.0,
+        "width": 150.0,
+        "height": 150.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "BRKioskQuickPurchase": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 109.0,
+        "verticalOffset": 223.0,
+        "width": 320.0,
+        "height": 96.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.05,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "BRInteractiveLootCard": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.03,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 268.0,
+        "verticalOffset": 314.0,
+        "width": 438.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "MobilePingButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 455.308,
+        "verticalOffset": 263.936,
+        "width": 100.0,
+        "height": 100.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ChopperCamera": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": true,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": -0.5,
+        "verticalOffset": -0.5,
+        "width": 1.0,
+        "height": 1.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "DefaultCamera": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 259.5,
+        "verticalOffset": 759.5,
+        "width": 1.0,
+        "height": 1.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "MissionTracker": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 33.482,
+        "verticalOffset": 440.0,
+        "width": 474.0,
+        "height": 193.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "MobileOpenInventoryButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 350.0,
+        "verticalOffset": 12.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "BRLoadoutFlyOut": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.5,
+        "bottomAnchor": 0.5,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 0.0,
+        "width": 1668.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "SelfReviveIcon": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 586.0,
+        "verticalOffset": 902.0,
+        "width": 40.0,
+        "height": 40.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "SpectatorRequestRedeploy": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1328.0,
+        "verticalOffset": 593.0,
+        "width": 124.0,
+        "height": 124.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.35,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "MobileGameplayWarning": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": -2.0,
+        "verticalOffset": 405.0,
+        "width": 480.0,
+        "height": 40.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "MobileLootFeedback": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 429.0,
+        "width": 480.0,
+        "height": 40.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "GoToPosition": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 457.0,
+        "verticalOffset": 335.0,
+        "width": 64.0,
+        "height": 64.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "TouchVehicleArrowControls": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 160.0,
+        "verticalOffset": 137.5,
+        "width": 200.0,
+        "height": 475.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "TacCamParked": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1589.0,
+        "verticalOffset": 433.0,
+        "width": 260.0,
+        "height": 90.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "HealthBar": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 62.0,
+        "width": 500.0,
+        "height": 16.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "MobileGlobalPlayerSplash": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 413.0,
+        "width": 442.0,
+        "height": 74.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "MobileOpenSpectatingLoadoutButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.5,
+        "bottomAnchor": 0.5,
+        "horizontalOffset": 100.0,
+        "verticalOffset": 0.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "SpectatingLoadout": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 90.5,
+        "verticalOffset": 0.0,
+        "width": 849.0,
+        "height": 1080.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "VehicleHorn": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 375.0,
+        "verticalOffset": 120.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "IntroductionSplash": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 0.0,
+        "width": 2340.0,
+        "height": 1080.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ControlSettingButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 608.0,
+        "verticalOffset": 168.0,
+        "width": 64.0,
+        "height": 64.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "TurretHeat": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 97.0,
+        "width": 300.0,
+        "height": 100.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "EarnedStreak": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 97.0,
+        "verticalOffset": 502.0,
+        "width": 104.0,
+        "height": 104.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "C4DetonateButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 492.0,
+        "verticalOffset": 545.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "DropBombButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1420.0,
+        "verticalOffset": 900.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "UseBombButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1410.0,
+        "verticalOffset": 255.0,
+        "width": 120.0,
+        "height": 120.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "KillstreakList": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 178.482,
+        "verticalOffset": 81.0,
+        "width": 212.0,
+        "height": 64.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "MatchStatusScores": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 0.0,
+        "verticalOffset": 75.0,
+        "width": 318.0,
+        "height": 122.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "ChampionTeamScore": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 100.0,
+        "verticalOffset": 42.0,
+        "width": 204.0,
+        "height": 23.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.5,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "WeaponInspectButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 192.0,
+        "verticalOffset": 18.0,
+        "width": 64.0,
+        "height": 64.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    },
+    "ChampionMissionTracker": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 9.0,
+        "verticalOffset": 380.5,
+        "width": 315.0,
+        "height": 142.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": -0.202834,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "BRLoadoutSelectionButton": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.0,
+        "rightAnchor": 1.0,
+        "topAnchor": 0.0,
+        "bottomAnchor": 1.0,
+        "horizontalOffset": 1278.462,
+        "verticalOffset": 39.0,
+        "width": 64.0,
+        "height": 64.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br"
+      ]
+    },
+    "HoverJetMoveToPlayer": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 1.0,
+        "rightAnchor": 0.0,
+        "topAnchor": 1.0,
+        "bottomAnchor": 0.0,
+        "horizontalOffset": 53.0,
+        "verticalOffset": 598.0,
+        "width": 104.0,
+        "height": 104.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "mp"
+      ]
+    },
+    "PublicEventGameplayTimer": {
+      "_deadZoneRadius": 0.0,
+      "_fuzzyTouchRadius": 0.0,
+      "alpha": 1.0,
+      "classID": 1.0,
+      "isHidden": false,
+      "requiredInfo": {
+        "leftAnchor": 0.5,
+        "rightAnchor": 0.5,
+        "topAnchor": 0.5,
+        "bottomAnchor": 0.5,
+        "horizontalOffset": -434.0,
+        "verticalOffset": -408.0,
+        "width": 160.0,
+        "height": 60.0,
+        "scalable": false,
+        "shakeable": false
+      },
+      "scale": 0.0,
+      "showInGameTypes": [
+        "br",
+        "mp"
+      ]
+    }
+  }
+}

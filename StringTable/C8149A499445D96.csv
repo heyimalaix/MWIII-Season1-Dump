@@ -1,0 +1,6 @@
+include,omnvars/mp/gametypes/br/omnvars_resurgence.csv,,,,,,,,,,,,,
+ui_zonecontrol_client_data,1,,c,a,0,0,,,,,,1,,#0-12 bits : score / 13-25 bits : enemyScore
+ui_zonecontrol_client_data2,1,,c,a,0,0,,,,,,1,,#0-5 bits : rank / 6-18 bits : scorestreak / 19 bits : squadBonusActive / 20 bits : leaderKilled / 21 bits : takeoverActive / 22 bits : scoreSquadBonus / 23-25 bits : takeoverProgress
+ui_zonecontrol_game_data,1,,g,a,0,0,,,,,,,,#0-12 bits : scoreForVictory / #13-14 bits : roundTimerType
+ui_zonecontrol_round_timer_value,1,,g,i,0,0,2147483647,,,,,,,
+ui_zonecontrol_scorestreak_value,1,,c,i,0,0,2147483647,,,,,,,

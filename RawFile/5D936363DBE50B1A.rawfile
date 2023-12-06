@@ -1,0 +1,52 @@
+%force_cs_anim_index_match
+		
+riot_strafe: blendspace2d( rangex="-180,180", rangey="0,250", blend_time="250",
+coords="{-180,56},{-138,56},{-135,56},{-90,56},{-45,56},{0,56},{42,56},{45,56},{90,56},{135,56},{180,56},{-180,120},{-138,120},{-135,120},{-90,120},{-45,120},{0,120},{42,120},{45,120},{90,120},{135,120},{180,120},{-180,0},{-138,0},{-135,0},{-90,0},{-45,0},{0,0},{42,0},{45,0},{90,0},{135,0},{180,0},{-180,250},{-138,250},{-135,250},{-90,250},{-45,250},{0,250},{42,250},{45,250},{90,250},{135,250},{180,250}",
+edges="{23,1,22},{12,1,2},{23,2,1},{12,11,1},{25,3,24},{14,3,4},{25,4,3},{14,13,3},{40,39,18},{13,2,3},{22,1,0},{11,0,1},{27,5,26},{33,11,12},{39,17,18},{13,12,2},{16,5,6},{15,4,5},{15,14,4},{37,15,16},{16,15,5},{17,6,7},{17,16,6},{34,12,13},{19,18,8},{18,7,8},{18,17,7},{34,33,12},{35,13,14},{19,8,9},{41,40,19},{20,19,9},{20,9,10},{21,20,10},{24,2,23},{24,3,2},{27,6,5},{26,4,25},{26,5,4},{29,7,28},{29,8,7},{31,9,30},{28,6,27},{28,7,6},{30,8,29},{30,9,8},{31,10,9},{32,10,31},{35,34,13},{36,14,15},{36,35,14},{37,36,15},{39,38,17},{38,16,17},{38,37,16},{40,18,19},{41,19,20},{43,42,21},{42,41,20},{42,20,21}",
+valuex=[strafeyaw], valuey=[desiredspeed] ) loopsync 
+	{
+			sdr_cqb_riot_strafe_walk_2
+			sdr_cqb_riot_strafe_walk_3
+			sdr_cqb_riot_strafe_walk_3_alt
+			sdr_cqb_riot_strafe_walk_6
+			sdr_cqb_riot_strafe_walk_9
+			sdr_cqb_riot_strafe_walk_8
+			sdr_cqb_riot_strafe_walk_7
+			sdr_cqb_riot_strafe_walk_7_alt
+			sdr_cqb_riot_strafe_walk_4
+			sdr_cqb_riot_strafe_walk_1
+			sdr_cqb_riot_strafe_walk_2@1
+			sdr_cqb_riot_strafe_fast_2
+			sdr_cqb_riot_strafe_fast_3
+			sdr_cqb_riot_strafe_fast_3_alt
+			sdr_cqb_riot_strafe_fast_6
+			sdr_cqb_riot_strafe_fast_9
+			sdr_cqb_riot_strafe_fast_8
+			sdr_cqb_riot_strafe_fast_7
+			sdr_cqb_riot_strafe_fast_7_alt
+			sdr_cqb_riot_strafe_fast_4
+			sdr_cqb_riot_strafe_fast_1
+			sdr_cqb_riot_strafe_fast_2@1
+			sdr_cqb_riot_strafe_walk_2@2
+			sdr_cqb_riot_strafe_walk_3@1
+			sdr_cqb_riot_strafe_walk_3_alt@1
+			sdr_cqb_riot_strafe_walk_6@1
+			sdr_cqb_riot_strafe_walk_9@1
+			sdr_cqb_riot_strafe_walk_8@1
+			sdr_cqb_riot_strafe_walk_7@1
+			sdr_cqb_riot_strafe_walk_7_alt@1
+			sdr_cqb_riot_strafe_walk_4@1
+			sdr_cqb_riot_strafe_walk_1@1
+			sdr_cqb_riot_strafe_walk_2@3
+			sdr_cqb_riot_strafe_fast_2@2
+			sdr_cqb_riot_strafe_fast_3@1
+			sdr_cqb_riot_strafe_fast_3_alt@1
+			sdr_cqb_riot_strafe_fast_6@1
+			sdr_cqb_riot_strafe_fast_9@1
+			sdr_cqb_riot_strafe_fast_8@1
+			sdr_cqb_riot_strafe_fast_7@1
+			sdr_cqb_riot_strafe_fast_7_alt@1
+			sdr_cqb_riot_strafe_fast_4@1
+			sdr_cqb_riot_strafe_fast_1@1
+			sdr_cqb_riot_strafe_fast_2@3
+	}

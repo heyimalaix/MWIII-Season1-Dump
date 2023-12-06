@@ -1,0 +1,69 @@
+bg_viewBobMax 5
+
+set #x361acbdc5d1c692a7 120
+set #x3e68be6e7387d3be2 200
+set #x33ff42c31b152dfc9 10
+set #x3631ce834f996873c 1000
+
+//stairs/////////////////////////
+
+set #x314c55c42db429a34 1
+set #x396ca87e5e21159b2 1
+
+set #x3d53f3f53c2743aa5 0.8
+set #x36d997fdd5afd9138 0.95
+set #x3a7cb8fb3b5e21c31 1
+
+set #x33e015edd1801b1ec 2.2
+set #x3ed43fa6af5cab211 1.45
+set #x3f248f1d8a7a43d17 2.2
+set #x3ed9231c41379c2aa 1.6
+set #x36180b2215c530fd0 1.0
+set #x3da6221eed136113d 1.0
+
+set #x3acf40dceb20d33c5 2.4
+set #x3229f2adcd1a78610 1.2
+set #x3a8e00c58c7ef6882 2.7
+set #x376e4595afdfc4af 1.2
+set #x35fa477c5ef75ca57 1.0
+set #x34da5d4bf82db3ea 1.0
+
+set #x34e5ff7363e450bf5 0.4
+
+
+//slopes/////////////////////////
+
+set #x32b54f9ef1b5d4402 0.8
+set #x3f9197855309b61af 1
+set #x317301b5b2939bb80 1
+
+set #x33e042661585aedcd 45
+set #x3aa6ab0459c34cb8f 0
+
+set #x39a97ccd99d0358d 1.3
+set #x3573a6fe615f8df48 1.2
+set #x382c48ea79d1513ca 1.28
+set #x3939ba62171e625c7 0.9
+set #x399b68a1b54fb656f 1.0
+set #x3617baee6d5dcde52 1.0
+
+set #x3c062b9609bc66d62 1.3
+set #x385c9506641ebe48f 1.17
+set #x36f796d0b0e5994f1 1.28
+set #x33a2d1b85e8f3e314 0.9
+set #x3ed7391397bbe0e8e 1.0
+set #x3762fa4e339f2afa3 1.0
+
+//popuphieght
+cg_viewZSmoothingUpTimeMax 0.4
+cg_viewZSmoothingUpTimeMin 0.15
+cg_viewZSmoothingDownTimeMax 0.4
+cg_viewZSmoothingDownTimeMin 0.15
+cg_viewZSmoothingDownTimeMax 0.4
+cg_viewZSmoothingInterpType 2//ease in out
+cg_viewZSmoothingMax 32
+cg_viewZSmoothingMin 0.05
+cg_viewZSmoothingPlayerSpeedCeil 100
+cg_viewZSmoothingPlayerSpeedFloor 32
+
+
